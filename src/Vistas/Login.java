@@ -85,6 +85,7 @@ public class Login extends javax.swing.JFrame {
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Crear una cuenta");
         jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton2.addActionListener(this::jButton2ActionPerformed);
 
         jLabel5.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
@@ -219,6 +220,12 @@ public class Login extends javax.swing.JFrame {
     private void txtContraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtContraseñaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtContraseñaActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        java.awt.EventQueue.invokeLater(() -> new Registro().setVisible(true));
+        this.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
