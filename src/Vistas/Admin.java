@@ -31,35 +31,91 @@ public class Admin extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        jpnBarra = new javax.swing.JPanel();
+        JpnInicio = new javax.swing.JPanel();
+        lbLogo = new javax.swing.JLabel();
+        jpnServicios = new javax.swing.JPanel();
+        lblServiciostitulos = new javax.swing.JLabel();
+        JpnIngresos = new javax.swing.JPanel();
+        lbingresos = new javax.swing.JLabel();
+        JpnTecnicos = new javax.swing.JPanel();
+        lbtecnicos = new javax.swing.JLabel();
+        JpnInventario = new javax.swing.JPanel();
+        lbinventario = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(11, 15, 26));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 220, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 650, Short.MAX_VALUE)
-        );
+        jpnBarra.setBackground(new java.awt.Color(11, 15, 26));
+        jpnBarra.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 60, 93)));
+        jpnBarra.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 650));
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 0, 840, 100));
+        JpnInicio.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        JpnInicio.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jpnBarra.add(JpnInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, 960, 50));
 
-        jLabel1.setText("jLabel1");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 300, -1, -1));
+        lbLogo.setText("jLabel1");
+        jpnBarra.add(lbLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 50, -1));
+
+        add(jpnBarra, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 90));
+
+        jpnServicios.setBackground(new java.awt.Color(16, 31, 51));
+        jpnServicios.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 60, 93)));
+        jpnServicios.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lblServiciostitulos.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        lblServiciostitulos.setForeground(new java.awt.Color(169, 195, 224));
+        lblServiciostitulos.setText("SERVICIOS ");
+        jpnServicios.add(lblServiciostitulos, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+
+        add(jpnServicios, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, 320, 140));
+
+        JpnIngresos.setBackground(new java.awt.Color(16, 31, 51));
+        JpnIngresos.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 60, 93)));
+        JpnIngresos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lbingresos.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        lbingresos.setForeground(new java.awt.Color(169, 195, 224));
+        lbingresos.setText("INGRESOS");
+        JpnIngresos.add(lbingresos, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+
+        add(JpnIngresos, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 350, 320, 140));
+
+        JpnTecnicos.setBackground(new java.awt.Color(16, 31, 51));
+        JpnTecnicos.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 60, 93)));
+        JpnTecnicos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lbtecnicos.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        lbtecnicos.setForeground(new java.awt.Color(169, 195, 224));
+        lbtecnicos.setText("TECNICOS");
+        JpnTecnicos.add(lbtecnicos, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+
+        add(JpnTecnicos, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 170, 320, 140));
+
+        JpnInventario.setBackground(new java.awt.Color(16, 31, 51));
+        JpnInventario.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 60, 93)));
+        JpnInventario.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lbinventario.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        lbinventario.setForeground(new java.awt.Color(169, 195, 224));
+        lbinventario.setText("INVENTARIO");
+        JpnInventario.add(lbinventario, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+
+        add(JpnInventario, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 350, 320, 140));
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel JpnIngresos;
+    private javax.swing.JPanel JpnInicio;
+    private javax.swing.JPanel JpnInventario;
+    private javax.swing.JPanel JpnTecnicos;
+    private javax.swing.JPanel jpnBarra;
+    private javax.swing.JPanel jpnServicios;
+    private javax.swing.JLabel lbLogo;
+    private javax.swing.JLabel lbingresos;
+    private javax.swing.JLabel lbinventario;
+    private javax.swing.JLabel lblServiciostitulos;
+    private javax.swing.JLabel lbtecnicos;
     // End of variables declaration//GEN-END:variables
 }
