@@ -75,7 +75,11 @@
             </Constraint>
           </Constraints>
         </Component>
+<<<<<<< HEAD
         <Component class="javax.swing.JButton" name="jButton2">
+=======
+        <Component class="javax.swing.JButton" name="btn_servicios">
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="1b" green="d" red="5" type="rgb"/>
@@ -98,13 +102,23 @@
               </Border>
             </Property>
           </Properties>
+<<<<<<< HEAD
+=======
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_serviciosActionPerformed"/>
+          </Events>
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="490" y="20" width="80" height="30"/>
             </Constraint>
           </Constraints>
         </Component>
+<<<<<<< HEAD
         <Component class="javax.swing.JButton" name="jButton3">
+=======
+        <Component class="javax.swing.JButton" name="btn_perfil">
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="1b" green="d" red="5" type="rgb"/>
@@ -133,7 +147,11 @@
             </Constraint>
           </Constraints>
         </Component>
+<<<<<<< HEAD
         <Component class="javax.swing.JButton" name="jButton4">
+=======
+        <Component class="javax.swing.JButton" name="btn_Contactos">
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="1b" green="d" red="5" type="rgb"/>
@@ -157,7 +175,11 @@
             </Property>
           </Properties>
           <Events>
+<<<<<<< HEAD
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+=======
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_ContactosActionPerformed"/>
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -383,7 +405,11 @@
                 </Constraint>
               </Constraints>
             </Component>
+<<<<<<< HEAD
             <Component class="javax.swing.JButton" name="jButton5">
+=======
+            <Component class="javax.swing.JButton" name="btn_sel_1">
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="99" green="cc" red="0" type="rgb"/>
@@ -479,7 +505,11 @@
                 </Constraint>
               </Constraints>
             </Component>
+<<<<<<< HEAD
             <Component class="javax.swing.JButton" name="jButton6">
+=======
+            <Component class="javax.swing.JButton" name="btn_sel_2">
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="99" green="cc" red="0" type="rgb"/>
@@ -575,7 +605,11 @@
                 </Constraint>
               </Constraints>
             </Component>
+<<<<<<< HEAD
             <Component class="javax.swing.JButton" name="jButton7">
+=======
+            <Component class="javax.swing.JButton" name="btn_sel_3">
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="99" green="cc" red="0" type="rgb"/>
@@ -648,7 +682,11 @@
             <Component class="javax.swing.JLabel" name="jLabel32">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+<<<<<<< HEAD
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
+=======
+                  <Color blue="cc" green="cc" red="cc" type="rgb"/>
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
                 </Property>
                 <Property name="text" type="java.lang.String" value="instalaciones100% seguras"/>
               </Properties>
@@ -661,7 +699,11 @@
             <Component class="javax.swing.JLabel" name="jLabel33">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+<<<<<<< HEAD
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
+=======
+                  <Color blue="cc" green="cc" red="cc" type="rgb"/>
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
                 </Property>
                 <Property name="text" type="java.lang.String" value="sin desorganizar su espacio."/>
               </Properties>
@@ -671,7 +713,11 @@
                 </Constraint>
               </Constraints>
             </Component>
+<<<<<<< HEAD
             <Component class="javax.swing.JButton" name="jButton8">
+=======
+            <Component class="javax.swing.JButton" name="btn_sel_4">
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="99" green="cc" red="0" type="rgb"/>

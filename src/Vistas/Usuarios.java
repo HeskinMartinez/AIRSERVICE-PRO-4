@@ -28,9 +28,15 @@ public class Usuarios extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
+<<<<<<< HEAD
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+=======
+        btn_servicios = new javax.swing.JButton();
+        btn_perfil = new javax.swing.JButton();
+        btn_Contactos = new javax.swing.JButton();
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -45,25 +51,41 @@ public class Usuarios extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
+<<<<<<< HEAD
         jButton5 = new javax.swing.JButton();
+=======
+        btn_sel_1 = new javax.swing.JButton();
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
         jPanel3 = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
+<<<<<<< HEAD
         jButton6 = new javax.swing.JButton();
+=======
+        btn_sel_2 = new javax.swing.JButton();
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
         jPanel4 = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
+<<<<<<< HEAD
         jButton7 = new javax.swing.JButton();
+=======
+        btn_sel_3 = new javax.swing.JButton();
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
         jPanel5 = new javax.swing.JPanel();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
+<<<<<<< HEAD
         jButton8 = new javax.swing.JButton();
+=======
+        btn_sel_4 = new javax.swing.JButton();
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
@@ -90,6 +112,7 @@ public class Usuarios extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 20, 90, 30));
 
+<<<<<<< HEAD
         jButton2.setBackground(new java.awt.Color(5, 13, 27));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
@@ -118,6 +141,41 @@ public class Usuarios extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 20, 90, 30));
+=======
+        btn_servicios.setBackground(new java.awt.Color(5, 13, 27));
+        btn_servicios.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btn_servicios.setForeground(new java.awt.Color(255, 255, 255));
+        btn_servicios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/planner_11984705.png"))); // NOI18N
+        btn_servicios.setText("Servicios");
+        btn_servicios.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(5, 51, 102), null));
+        btn_servicios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_serviciosActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn_servicios, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 20, 80, 30));
+
+        btn_perfil.setBackground(new java.awt.Color(5, 13, 27));
+        btn_perfil.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btn_perfil.setForeground(new java.awt.Color(255, 255, 255));
+        btn_perfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/usuario.png"))); // NOI18N
+        btn_perfil.setText("Mi perfil");
+        btn_perfil.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(5, 51, 102), null));
+        jPanel1.add(btn_perfil, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 20, 80, 30));
+
+        btn_Contactos.setBackground(new java.awt.Color(5, 13, 27));
+        btn_Contactos.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btn_Contactos.setForeground(new java.awt.Color(255, 255, 255));
+        btn_Contactos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/telephone_14336267.png"))); // NOI18N
+        btn_Contactos.setText("Contacto");
+        btn_Contactos.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 51, 102), null));
+        btn_Contactos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_ContactosActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn_Contactos, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 20, 90, 30));
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -181,11 +239,19 @@ public class Usuarios extends javax.swing.JFrame {
         jLabel14.setText("estado por mas tiempo.");
         jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
 
+<<<<<<< HEAD
         jButton5.setBackground(new java.awt.Color(0, 204, 153));
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/circulo-de-flecha.png"))); // NOI18N
         jButton5.setText("Seleccionar ");
         jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, -1, -1));
+=======
+        btn_sel_1.setBackground(new java.awt.Color(0, 204, 153));
+        btn_sel_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/circulo-de-flecha.png"))); // NOI18N
+        btn_sel_1.setText("Seleccionar ");
+        btn_sel_1.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jPanel2.add(btn_sel_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, -1, -1));
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 210, 200));
 
@@ -209,11 +275,19 @@ public class Usuarios extends javax.swing.JFrame {
         jLabel18.setText("para tus aires acondicionados");
         jPanel3.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
 
+<<<<<<< HEAD
         jButton6.setBackground(new java.awt.Color(0, 204, 153));
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/circulo-de-flecha.png"))); // NOI18N
         jButton6.setText("Seleccionar");
         jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jPanel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, -1, -1));
+=======
+        btn_sel_2.setBackground(new java.awt.Color(0, 204, 153));
+        btn_sel_2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/circulo-de-flecha.png"))); // NOI18N
+        btn_sel_2.setText("Seleccionar");
+        btn_sel_2.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jPanel3.add(btn_sel_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, -1, -1));
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 400, 200, 200));
 
@@ -237,11 +311,19 @@ public class Usuarios extends javax.swing.JFrame {
         jLabel22.setText("en tu espacio.");
         jPanel4.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, -1, -1));
 
+<<<<<<< HEAD
         jButton7.setBackground(new java.awt.Color(0, 204, 153));
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/circulo-de-flecha.png"))); // NOI18N
         jButton7.setText("Seleccionar");
         jButton7.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jPanel4.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, -1, -1));
+=======
+        btn_sel_3.setBackground(new java.awt.Color(0, 204, 153));
+        btn_sel_3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/circulo-de-flecha.png"))); // NOI18N
+        btn_sel_3.setText("Seleccionar");
+        btn_sel_3.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jPanel4.add(btn_sel_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, -1, -1));
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
 
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 400, 190, 200));
 
@@ -257,6 +339,7 @@ public class Usuarios extends javax.swing.JFrame {
         jLabel31.setText("Instalaciones");
         jPanel5.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, -1, -1));
 
+<<<<<<< HEAD
         jLabel32.setForeground(new java.awt.Color(255, 255, 255));
         jLabel32.setText("instalaciones100% seguras");
         jPanel5.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
@@ -270,6 +353,21 @@ public class Usuarios extends javax.swing.JFrame {
         jButton8.setText("seleccionar");
         jButton8.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jPanel5.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, -1));
+=======
+        jLabel32.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel32.setText("instalaciones100% seguras");
+        jPanel5.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
+
+        jLabel33.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel33.setText("sin desorganizar su espacio.");
+        jPanel5.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
+
+        btn_sel_4.setBackground(new java.awt.Color(0, 204, 153));
+        btn_sel_4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/circulo-de-flecha.png"))); // NOI18N
+        btn_sel_4.setText("seleccionar");
+        btn_sel_4.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jPanel5.add(btn_sel_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, -1));
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
 
         jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 390, 180, 180));
 
@@ -337,9 +435,19 @@ public class Usuarios extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
+<<<<<<< HEAD
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
+=======
+    private void btn_ContactosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ContactosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_ContactosActionPerformed
+
+    private void btn_serviciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_serviciosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_serviciosActionPerformed
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
 
     /**
      * @param args the command line arguments
@@ -377,6 +485,7 @@ public class Usuarios extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+<<<<<<< HEAD
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -385,6 +494,16 @@ public class Usuarios extends javax.swing.JFrame {
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
+=======
+    private javax.swing.JButton btn_Contactos;
+    private javax.swing.JButton btn_perfil;
+    private javax.swing.JButton btn_sel_1;
+    private javax.swing.JButton btn_sel_2;
+    private javax.swing.JButton btn_sel_3;
+    private javax.swing.JButton btn_sel_4;
+    private javax.swing.JButton btn_servicios;
+    private javax.swing.JButton jButton1;
+>>>>>>> 1346e51b5becf9398934e5896d70e6838ced9d44
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
