@@ -58,6 +58,7 @@ public class Pagos extends javax.swing.JFrame {
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jPanel20 = new javax.swing.JPanel();
+        jButton5 = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         jPanel11 = new javax.swing.JPanel();
         jLabel21 = new javax.swing.JLabel();
@@ -139,6 +140,36 @@ public class Pagos extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         HistorialUsuario = new javax.swing.JTable();
         jPanel3 = new javax.swing.JPanel();
+        jPanel21 = new javax.swing.JPanel();
+        jLabel68 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
+        jLabel70 = new javax.swing.JLabel();
+        jLabel71 = new javax.swing.JLabel();
+        jSeparator9 = new javax.swing.JSeparator();
+        jTextField8 = new javax.swing.JTextField();
+        jLabel72 = new javax.swing.JLabel();
+        jSeparator10 = new javax.swing.JSeparator();
+        jTextField9 = new javax.swing.JTextField();
+        jLabel73 = new javax.swing.JLabel();
+        jSeparator11 = new javax.swing.JSeparator();
+        jTextField10 = new javax.swing.JTextField();
+        jLabel74 = new javax.swing.JLabel();
+        jSeparator12 = new javax.swing.JSeparator();
+        jTextField11 = new javax.swing.JTextField();
+        jLabel75 = new javax.swing.JLabel();
+        jTextField12 = new javax.swing.JTextField();
+        jSeparator13 = new javax.swing.JSeparator();
+        jPanel22 = new javax.swing.JPanel();
+        jLabel66 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
+        jPanel23 = new javax.swing.JPanel();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jLabel76 = new javax.swing.JLabel();
+        jLabel77 = new javax.swing.JLabel();
+        jLabel79 = new javax.swing.JLabel();
+        jLabel78 = new javax.swing.JLabel();
+        jLabel80 = new javax.swing.JLabel();
         jLabel52 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
 
@@ -183,6 +214,11 @@ public class Pagos extends javax.swing.JFrame {
         jLabel8.setText("Pagar mas rapido");
 
         jButton1.setText("Agregar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -234,6 +270,11 @@ public class Pagos extends javax.swing.JFrame {
         jLabel12.setText("de su tarjeta.");
 
         jButton2.setText("Editar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -345,18 +386,18 @@ public class Pagos extends javax.swing.JFrame {
         jLabel20.setText("Y 100% SEGUROS");
         jPanel5.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 300, -1, -1));
 
-        javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
-        jPanel20.setLayout(jPanel20Layout);
-        jPanel20Layout.setHorizontalGroup(
-            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jPanel20Layout.setVerticalGroup(
-            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
+        jPanel20.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel20.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(51, 255, 0), null));
+        jPanel20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel5.add(jPanel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 230, 230, 100));
+        jButton5.setBackground(new java.awt.Color(153, 204, 0));
+        jButton5.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/boton-agregarEfectivo.png"))); // NOI18N
+        jButton5.setText("Pago en efectivo");
+        jButton5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 255, 51)));
+        jPanel20.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 160, 40));
+
+        jPanel5.add(jPanel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 260, 210, 60));
 
         jTabbedPane2.addTab("Metodos de pago", jPanel5);
 
@@ -477,8 +518,8 @@ public class Pagos extends javax.swing.JFrame {
         jPanel13.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, -1, -1));
 
         jLabel36.setFont(new java.awt.Font("Yu Gothic UI", 1, 12)); // NOI18N
-        jLabel36.setText("Direccion");
-        jPanel13.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 70, -1, -1));
+        jLabel36.setText("Direccion (# calle, etc)");
+        jPanel13.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 70, -1, -1));
 
         jTextField5.setBorder(null);
         jPanel13.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 80, 20));
@@ -494,10 +535,10 @@ public class Pagos extends javax.swing.JFrame {
         jPanel13.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 70, -1));
 
         jSeparator7.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel13.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 110, 90, 10));
+        jPanel13.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 110, 120, 10));
 
         jTextField7.setBorder(null);
-        jPanel13.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 90, 90, -1));
+        jPanel13.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, 120, 20));
 
         jPanel14.setBackground(new java.awt.Color(255, 255, 255));
         jPanel14.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(51, 255, 204), null));
@@ -773,10 +814,10 @@ public class Pagos extends javax.swing.JFrame {
 
         jLabel64.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         jLabel64.setForeground(new java.awt.Color(51, 255, 0));
-        jLabel64.setText("Activo");
+        jLabel64.setText("XXX");
 
         jLabel65.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel65.setText("No hay pagos pendientes");
+        jLabel65.setText("Direccion del envio:");
 
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
         jPanel19.setLayout(jPanel19Layout);
@@ -788,26 +829,28 @@ public class Pagos extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jLabel62)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel63))
+                        .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel19Layout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addComponent(jLabel65))
+                            .addComponent(jLabel63)))
                     .addGroup(jPanel19Layout.createSequentialGroup()
                         .addGap(85, 85, 85)
-                        .addComponent(jLabel64, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel19Layout.createSequentialGroup()
-                        .addGap(42, 42, 42)
-                        .addComponent(jLabel65)))
-                .addContainerGap(48, Short.MAX_VALUE))
+                        .addComponent(jLabel64, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
         jPanel19Layout.setVerticalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel19Layout.createSequentialGroup()
                 .addGap(11, 11, 11)
                 .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel63)
+                    .addGroup(jPanel19Layout.createSequentialGroup()
+                        .addComponent(jLabel63)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel65))
                     .addComponent(jLabel62))
-                .addGap(12, 12, 12)
-                .addComponent(jLabel64)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel65)
+                .addComponent(jLabel64)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -832,7 +875,7 @@ public class Pagos extends javax.swing.JFrame {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 122, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 138, Short.MAX_VALUE)
                 .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(117, 117, 117)
                 .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -893,23 +936,218 @@ public class Pagos extends javax.swing.JFrame {
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel21.setBackground(new java.awt.Color(1, 10, 28));
+        jPanel21.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 51, 255), null));
+        jPanel21.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel68.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/usuario (1)AAA.png"))); // NOI18N
+        jPanel21.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, -10, 70, 90));
+
+        jLabel69.setFont(new java.awt.Font("Yu Gothic UI", 1, 24)); // NOI18N
+        jLabel69.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel69.setText("Datos del Usuario");
+        jPanel21.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 10, -1, -1));
+
+        jLabel70.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        jLabel70.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel70.setText("Nombre Completo");
+        jPanel21.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, -1));
+
+        jLabel71.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel71.setForeground(new java.awt.Color(51, 255, 0));
+        jLabel71.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/boton.png"))); // NOI18N
+        jLabel71.setText("Rol usuario");
+        jPanel21.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 130, 40));
+
+        jSeparator9.setBackground(new java.awt.Color(0, 255, 153));
+        jSeparator9.setForeground(new java.awt.Color(0, 204, 153));
+        jPanel21.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 171, -1));
+
+        jTextField8.setBackground(new java.awt.Color(1, 10, 28));
+        jTextField8.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField8.setBorder(null);
+        jPanel21.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 171, 20));
+
+        jLabel72.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        jLabel72.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel72.setText("Correo Electronico");
+        jPanel21.add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 122, -1, -1));
+
+        jSeparator10.setForeground(new java.awt.Color(0, 255, 153));
+        jPanel21.add(jSeparator10, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 180, 160, 10));
+
+        jTextField9.setBackground(new java.awt.Color(1, 10, 28));
+        jTextField9.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField9.setBorder(null);
+        jPanel21.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, 160, 20));
+
+        jLabel73.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        jLabel73.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel73.setText("Numero de identificacion");
+        jPanel21.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, -1));
+
+        jSeparator11.setForeground(new java.awt.Color(0, 255, 153));
+        jPanel21.add(jSeparator11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 170, -1));
+
+        jTextField10.setBackground(new java.awt.Color(1, 10, 28));
+        jTextField10.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField10.setBorder(null);
+        jPanel21.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 262, 171, 20));
+
+        jLabel74.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        jLabel74.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel74.setText("Telefono");
+        jPanel21.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 220, 71, -1));
+
+        jSeparator12.setForeground(new java.awt.Color(0, 255, 153));
+        jPanel21.add(jSeparator12, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 270, 160, -1));
+
+        jTextField11.setBackground(new java.awt.Color(1, 10, 28));
+        jTextField11.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField11.setBorder(null);
+        jPanel21.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 250, 160, 20));
+
+        jLabel75.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        jLabel75.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel75.setText("Direccion");
+        jPanel21.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 74, -1));
+
+        jTextField12.setBackground(new java.awt.Color(1, 10, 28));
+        jTextField12.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField12.setBorder(null);
+        jPanel21.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 180, -1));
+
+        jSeparator13.setForeground(new java.awt.Color(0, 255, 153));
+        jPanel21.add(jSeparator13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 347, 180, -1));
+
+        jPanel3.add(jPanel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 550, 370));
+
+        jPanel22.setBackground(new java.awt.Color(0, 10, 58));
+        jPanel22.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 51, 204), null));
+
+        jLabel66.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel66.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel66.setText("Perfil");
+
+        jLabel67.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        jLabel67.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel67.setText("Revise y actualice su perfil de manera segura ");
+
+        javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
+        jPanel22.setLayout(jPanel22Layout);
+        jPanel22Layout.setHorizontalGroup(
+            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel22Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel66, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel67))
+                .addContainerGap(755, Short.MAX_VALUE))
+        );
+        jPanel22Layout.setVerticalGroup(
+            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel22Layout.createSequentialGroup()
+                .addComponent(jLabel66)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel67)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel3.add(jPanel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 1050, 60));
+
+        jPanel23.setBackground(new java.awt.Color(0, 10, 28));
+        jPanel23.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 1, 255), null));
+
+        jButton6.setBackground(new java.awt.Color(0, 102, 153));
+        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(255, 255, 255));
+        jButton6.setText("Guardar Cambios");
+
+        jButton7.setBackground(new java.awt.Color(255, 0, 0));
+        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(255, 255, 255));
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cruzar.png"))); // NOI18N
+        jButton7.setText("Cancelar");
+
+        jLabel76.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/usuario (1)AAA.png"))); // NOI18N
+
+        jLabel77.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        jLabel77.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel77.setText("Podra editar los campos si lo desea pero debe ");
+
+        jLabel79.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        jLabel79.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel79.setText("confirmarlos, si no quiere lo puede cancelar ");
+
+        jLabel78.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        jLabel78.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel78.setText("para dejarlo igual.");
+
+        jLabel80.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel80.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel80.setText("Querido usuario");
+
+        javax.swing.GroupLayout jPanel23Layout = new javax.swing.GroupLayout(jPanel23);
+        jPanel23.setLayout(jPanel23Layout);
+        jPanel23Layout.setHorizontalGroup(
+            jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel23Layout.createSequentialGroup()
+                .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel23Layout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addComponent(jButton6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton7))
+                    .addGroup(jPanel23Layout.createSequentialGroup()
+                        .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel23Layout.createSequentialGroup()
+                                .addGap(121, 121, 121)
+                                .addComponent(jLabel76))
+                            .addGroup(jPanel23Layout.createSequentialGroup()
+                                .addGap(76, 76, 76)
+                                .addComponent(jLabel80, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel23Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel78)
+                                    .addComponent(jLabel79))))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(jPanel23Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel77)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel23Layout.setVerticalGroup(
+            jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel23Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabel76)
+                .addGap(4, 4, 4)
+                .addComponent(jLabel80)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel77)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel79)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel78, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 148, Short.MAX_VALUE)
+                .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton6)
+                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+
+        jPanel3.add(jPanel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 170, 320, 370));
+
+        jLabel52.setForeground(new java.awt.Color(51, 153, 255));
         jLabel52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo tecnológico oscuro AIRSERVICE PRO (1).png"))); // NOI18N
         jPanel3.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 620));
 
-        jTabbedPane1.addTab("Mi perfil", jPanel3);
+        jTabbedPane1.addTab("MI PERFIL", jPanel3);
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1056, Short.MAX_VALUE)
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 611, Short.MAX_VALUE)
-        );
-
-        jTabbedPane1.addTab("Contacto", jPanel4);
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jTabbedPane1.addTab("CONTACTO", jPanel4);
 
         jPanel1.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 650));
 
@@ -944,6 +1182,18 @@ public class Pagos extends javax.swing.JFrame {
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        AgregarTarjeta AT = new AgregarTarjeta();
+        AT.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        EditarTarjeta ed = new EditarTarjeta();
+        ed.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -987,6 +1237,9 @@ public class Pagos extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
@@ -1052,8 +1305,23 @@ public class Pagos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel64;
     private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel80;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
@@ -1068,6 +1336,9 @@ public class Pagos extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
+    private javax.swing.JPanel jPanel21;
+    private javax.swing.JPanel jPanel22;
+    private javax.swing.JPanel jPanel23;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
@@ -1077,6 +1348,10 @@ public class Pagos extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator10;
+    private javax.swing.JSeparator jSeparator11;
+    private javax.swing.JSeparator jSeparator12;
+    private javax.swing.JSeparator jSeparator13;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
@@ -1084,15 +1359,21 @@ public class Pagos extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSeparator jSeparator8;
+    private javax.swing.JSeparator jSeparator9;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
     private javax.swing.JLabel jlabelResumenSer;
     private javax.swing.JLabel jlabelTotal;
     private javax.swing.JLabel jlabelresumenPago;
