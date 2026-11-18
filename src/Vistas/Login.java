@@ -4,6 +4,9 @@
  */
 package Vistas;
 
+import Modelos.ConexionBD;
+import Modelos.CrearTablasBD;
+
 /**
  *
  * @author Heskin Martinez
@@ -20,6 +23,9 @@ public class Login extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         this.setFocusable(true);
         this.requestFocusInWindow();
+        
+        ConexionBD.conectar();
+        CrearTablasBD.crearTablas();
     }
 
     /**
