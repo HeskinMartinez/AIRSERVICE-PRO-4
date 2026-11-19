@@ -10,9 +10,15 @@ package Vistas;
  */
 public class Pagos extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Pagos
-     */
+    public void mostrarMetodosPago(){
+        jTabbedPane1.setSelectedIndex(0);
+        jTabbedPane2.setSelectedIndex(0);
+        
+        this.setVisible(true);
+
+    }
+    
+    
     public Pagos() {
         initComponents();
     }
@@ -1185,14 +1191,19 @@ public class Pagos extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        AgregarTarjeta AT = new AgregarTarjeta();
-        AT.setVisible(true);
+        AgregarTarjeta ventana = new AgregarTarjeta(this);
+        ventana.setVisible(true);
+        this.setVisible(false);
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        EditarTarjeta ed = new EditarTarjeta();
-        ed.setVisible(true);
+        EditarTarjeta ventanaE = new EditarTarjeta(this);
+        ventanaE.setVisible(true);
+        this.setVisible(false);
+        
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

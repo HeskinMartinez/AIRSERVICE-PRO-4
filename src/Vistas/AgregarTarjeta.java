@@ -4,17 +4,19 @@
  */
 package Vistas;
 
+import Modelos.Tarjeta;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author ACER1
  */
 public class AgregarTarjeta extends javax.swing.JFrame {
+private Pagos ventanaPagos;
 
-    /**
-     * Creates new form AgregarTarjeta
-     */
-    public AgregarTarjeta() {
+    public AgregarTarjeta(Pagos ventanaPagos) {
         initComponents();
+        this.ventanaPagos = ventanaPagos;
     }
 
     /**
@@ -27,20 +29,22 @@ public class AgregarTarjeta extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
-        jLabel6 = new javax.swing.JLabel();
-        jSeparator3 = new javax.swing.JSeparator();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
         jSeparator2 = new javax.swing.JSeparator();
-        jSeparator4 = new javax.swing.JSeparator();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        txt_NumeroTarjeta = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jSeparator3 = new javax.swing.JSeparator();
+        txt_nombretitular = new javax.swing.JTextField();
+        txt_codigoseguridad = new javax.swing.JTextField();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabel6 = new javax.swing.JLabel();
+        txt_fechavencim = new javax.swing.JTextField();
+        jSeparator4 = new javax.swing.JSeparator();
+        btn_agregartarjeta = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -49,52 +53,9 @@ public class AgregarTarjeta extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/AGREGARTarjetaPAGOo.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 70, 60));
 
-        jLabel3.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 153, 153));
-        jLabel3.setText("Numero de tarjeta");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
-
-        jTextField1.setBorder(null);
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 120, -1));
-
-        jTextField2.setBorder(null);
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 110, 70, 20));
-
-        jLabel5.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 153, 153));
-        jLabel5.setText("Nombre del titular");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, -1, -1));
-
-        jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 130, 70, 10));
-
-        jLabel6.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 153, 153));
-        jLabel6.setText("Fecha de vencimiento");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 200, -1, -1));
-
-        jSeparator3.setBackground(new java.awt.Color(255, 255, 255));
-        jSeparator3.setForeground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 120, 10));
-
-        jTextField3.setBorder(null);
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 120, -1));
-
-        jTextField4.setBorder(null);
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 220, 130, 20));
-
         jSeparator2.setBackground(new java.awt.Color(255, 255, 255));
         jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 133, 120, 10));
-
-        jSeparator4.setBackground(new java.awt.Color(0, 0, 0));
-        jSeparator4.setForeground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 240, 130, 10));
+        getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 113, 120, 30));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -107,16 +68,118 @@ public class AgregarTarjeta extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 153, 153));
         jLabel4.setText("CVV");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 90, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, -1, -1));
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/flecha-izquierda (2).png"))); // NOI18N
+        jButton1.setBorder(null);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 10, -1, 30));
+
+        jLabel3.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 153, 153));
+        jLabel3.setText("Numero de tarjeta");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, -1, -1));
+
+        txt_NumeroTarjeta.setBorder(null);
+        jPanel1.add(txt_NumeroTarjeta, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 120, 20));
+
+        jLabel5.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 153, 153));
+        jLabel5.setText("Nombre del titular");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, -1));
+
+        jSeparator3.setBackground(new java.awt.Color(255, 255, 255));
+        jSeparator3.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 120, 10));
+
+        txt_nombretitular.setBorder(null);
+        txt_nombretitular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_nombretitularActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txt_nombretitular, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 120, 20));
+
+        txt_codigoseguridad.setBorder(null);
+        jPanel1.add(txt_codigoseguridad, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, 70, 20));
+
+        jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 110, 70, 10));
+
+        jLabel6.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 153, 153));
+        jLabel6.setText("Fecha de vencimiento");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 150, -1, -1));
+
+        txt_fechavencim.setBorder(null);
+        txt_fechavencim.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_fechavencimActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txt_fechavencim, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 170, 130, 20));
+
+        jSeparator4.setBackground(new java.awt.Color(0, 0, 0));
+        jSeparator4.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 190, 130, 10));
+
+        btn_agregartarjeta.setBackground(new java.awt.Color(51, 255, 153));
+        btn_agregartarjeta.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        btn_agregartarjeta.setText("Agregar");
+        btn_agregartarjeta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_agregartarjetaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn_agregartarjeta, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 220, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 270));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+    private void txt_fechavencimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_fechavencimActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_txt_fechavencimActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        ventanaPagos.mostrarMetodosPago();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void txt_nombretitularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_nombretitularActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_nombretitularActionPerformed
+
+    private void btn_agregartarjetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_agregartarjetaActionPerformed
+        // TODO add your handling code here:
+       String NombreTitular = txt_nombretitular.getText().trim();
+        String FechaVencimiento = txt_fechavencim.getText().trim();
+        String NumeroTarjeta = txt_NumeroTarjeta.getText().trim();
+        String CodigoS = txt_codigoseguridad.getText().trim();
+        
+        if(NombreTitular.isEmpty() || FechaVencimiento.isEmpty() || NumeroTarjeta.isEmpty() || CodigoS.isEmpty() ){
+            JOptionPane.showMessageDialog(this, "Algun Campo esta vacio.",
+                    "Campos incompletos " , JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        if(NumeroTarjeta.length() < 16){
+            JOptionPane.showMessageDialog(this, "El numero de tarjeta debe contener al menos 16 digitos.",
+           "numero invalido" , JOptionPane.ERROR_MESSAGE );
+            return;
+        }
+        if (CodigoS.length() < 3){
+            JOptionPane.showMessageDialog(this, " EL codigo de seguridad (CVV) debe tener al menos 3-4 digitos.",
+               "COdigo invalido" , JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        
+       
+    }//GEN-LAST:event_btn_agregartarjetaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -148,12 +211,14 @@ public class AgregarTarjeta extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new AgregarTarjeta().setVisible(true);
+                
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_agregartarjeta;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -165,9 +230,9 @@ public class AgregarTarjeta extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField txt_NumeroTarjeta;
+    private javax.swing.JTextField txt_codigoseguridad;
+    private javax.swing.JTextField txt_fechavencim;
+    private javax.swing.JTextField txt_nombretitular;
     // End of variables declaration//GEN-END:variables
 }
