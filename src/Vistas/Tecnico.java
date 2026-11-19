@@ -1491,7 +1491,7 @@ public class Tecnico extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("tab6", jPanel13);
 
-        jPanel1.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1060, 500));
+        jPanel1.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 1060, 500));
 
         jLabel12.setBackground(new java.awt.Color(255, 255, 255));
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
