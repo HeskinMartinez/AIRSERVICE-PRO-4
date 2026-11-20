@@ -46,16 +46,16 @@ public class Pagos extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btn_AgregarTarjeta = new javax.swing.JButton();
         jPanel9 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        btn_EditarTarjeta = new javax.swing.JButton();
         jPanel10 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        btn_ListarTarjeta = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
@@ -64,7 +64,7 @@ public class Pagos extends javax.swing.JFrame {
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jPanel20 = new javax.swing.JPanel();
-        jButton5 = new javax.swing.JButton();
+        btn_PagoEfectivo = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         jPanel11 = new javax.swing.JPanel();
         jLabel21 = new javax.swing.JLabel();
@@ -72,16 +72,16 @@ public class Pagos extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jTextField1 = new javax.swing.JTextField();
+        txt_nombrecompleto = new javax.swing.JTextField();
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        txt_correo = new javax.swing.JTextField();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
-        jTextField3 = new javax.swing.JTextField();
+        txt_telefono = new javax.swing.JTextField();
         jSeparator4 = new javax.swing.JSeparator();
-        jTextField4 = new javax.swing.JTextField();
+        txt_documento = new javax.swing.JTextField();
         jPanel12 = new javax.swing.JPanel();
         jLabel29 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
@@ -93,38 +93,38 @@ public class Pagos extends javax.swing.JFrame {
         jLabel31 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        txt_departamento = new javax.swing.JTextField();
         jSeparator5 = new javax.swing.JSeparator();
         jSeparator6 = new javax.swing.JSeparator();
-        jTextField6 = new javax.swing.JTextField();
+        txt_municipio = new javax.swing.JTextField();
         jSeparator7 = new javax.swing.JSeparator();
-        jTextField7 = new javax.swing.JTextField();
+        txt_direccioncalle = new javax.swing.JTextField();
         jPanel14 = new javax.swing.JPanel();
         jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jcombo_metodopago = new javax.swing.JComboBox<>();
         jLabel40 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        jcombo_servicios = new javax.swing.JComboBox<>();
         jPanel15 = new javax.swing.JPanel();
         jLabel41 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
         jLabel44 = new javax.swing.JLabel();
-        jlabelResumenSer = new javax.swing.JLabel();
+        jlabel_mostarservicio = new javax.swing.JLabel();
         jLabel45 = new javax.swing.JLabel();
-        jlabelresumenPago = new javax.swing.JLabel();
+        Jlabe_mostarmetodopago = new javax.swing.JLabel();
         jSeparator8 = new javax.swing.JSeparator();
         jLabel46 = new javax.swing.JLabel();
-        jlabelTotal = new javax.swing.JLabel();
+        jlabel_TotalPago = new javax.swing.JLabel();
         jLabel47 = new javax.swing.JLabel();
         jPanel16 = new javax.swing.JPanel();
         jLabel48 = new javax.swing.JLabel();
         jLabel49 = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jButton4 = new javax.swing.JButton();
-        Cancelar = new javax.swing.JButton();
+        Jcheck_terminosycondiciones = new javax.swing.JCheckBox();
+        btn_comprar = new javax.swing.JButton();
+        btn_cancelar = new javax.swing.JButton();
         jLabel51 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         jPanel17 = new javax.swing.JPanel();
@@ -141,7 +141,7 @@ public class Pagos extends javax.swing.JFrame {
         jPanel19 = new javax.swing.JPanel();
         jLabel62 = new javax.swing.JLabel();
         jLabel63 = new javax.swing.JLabel();
-        jLabel64 = new javax.swing.JLabel();
+        jlabel_direccionEnvio = new javax.swing.JLabel();
         jLabel65 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         HistorialUsuario = new javax.swing.JTable();
@@ -152,25 +152,25 @@ public class Pagos extends javax.swing.JFrame {
         jLabel70 = new javax.swing.JLabel();
         jLabel71 = new javax.swing.JLabel();
         jSeparator9 = new javax.swing.JSeparator();
-        jTextField8 = new javax.swing.JTextField();
+        txt_mostrarNombre = new javax.swing.JTextField();
         jLabel72 = new javax.swing.JLabel();
         jSeparator10 = new javax.swing.JSeparator();
-        jTextField9 = new javax.swing.JTextField();
+        txt_mostrarcorreo = new javax.swing.JTextField();
         jLabel73 = new javax.swing.JLabel();
         jSeparator11 = new javax.swing.JSeparator();
-        jTextField10 = new javax.swing.JTextField();
+        txt_mostrarid = new javax.swing.JTextField();
         jLabel74 = new javax.swing.JLabel();
         jSeparator12 = new javax.swing.JSeparator();
-        jTextField11 = new javax.swing.JTextField();
+        txt_mostrartel = new javax.swing.JTextField();
         jLabel75 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
+        txt_mostrardireccion = new javax.swing.JTextField();
         jSeparator13 = new javax.swing.JSeparator();
         jPanel22 = new javax.swing.JPanel();
         jLabel66 = new javax.swing.JLabel();
         jLabel67 = new javax.swing.JLabel();
         jPanel23 = new javax.swing.JPanel();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
+        btn_guardarcambios = new javax.swing.JButton();
+        btn_cancelarcambios = new javax.swing.JButton();
         jLabel76 = new javax.swing.JLabel();
         jLabel77 = new javax.swing.JLabel();
         jLabel79 = new javax.swing.JLabel();
@@ -219,10 +219,10 @@ public class Pagos extends javax.swing.JFrame {
 
         jLabel8.setText("Pagar mas rapido");
 
-        jButton1.setText("Agregar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btn_AgregarTarjeta.setText("Agregar");
+        btn_AgregarTarjeta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btn_AgregarTarjetaActionPerformed(evt);
             }
         });
 
@@ -235,7 +235,7 @@ public class Pagos extends javax.swing.JFrame {
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1)
+                    .addComponent(btn_AgregarTarjeta)
                     .addComponent(jLabel6)
                     .addComponent(jLabel7)
                     .addComponent(jLabel8))
@@ -256,7 +256,7 @@ public class Pagos extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel8)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
+                .addComponent(btn_AgregarTarjeta)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -275,10 +275,10 @@ public class Pagos extends javax.swing.JFrame {
 
         jLabel12.setText("de su tarjeta.");
 
-        jButton2.setText("Editar");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btn_EditarTarjeta.setText("Editar");
+        btn_EditarTarjeta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btn_EditarTarjetaActionPerformed(evt);
             }
         });
 
@@ -290,7 +290,7 @@ public class Pagos extends javax.swing.JFrame {
                 .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton2)
+                    .addComponent(btn_EditarTarjeta)
                     .addComponent(jLabel11)
                     .addComponent(jLabel10)
                     .addComponent(jLabel12))
@@ -308,7 +308,7 @@ public class Pagos extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel12)
                 .addGap(18, 18, 18)
-                .addComponent(jButton2)
+                .addComponent(btn_EditarTarjeta)
                 .addContainerGap())
         );
 
@@ -319,7 +319,7 @@ public class Pagos extends javax.swing.JFrame {
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/listar.png"))); // NOI18N
 
-        jButton3.setText("Listar ");
+        btn_ListarTarjeta.setText("Listar ");
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(0, 204, 153));
@@ -348,7 +348,7 @@ public class Pagos extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton3)
+                .addComponent(btn_ListarTarjeta)
                 .addGap(80, 80, 80))
         );
         jPanel10Layout.setVerticalGroup(
@@ -366,7 +366,7 @@ public class Pagos extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel16)))
                 .addGap(18, 18, 18)
-                .addComponent(jButton3)
+                .addComponent(btn_ListarTarjeta)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -396,12 +396,12 @@ public class Pagos extends javax.swing.JFrame {
         jPanel20.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(51, 255, 0), null));
         jPanel20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton5.setBackground(new java.awt.Color(153, 204, 0));
-        jButton5.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/boton-agregarEfectivo.png"))); // NOI18N
-        jButton5.setText("Pago en efectivo");
-        jButton5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 255, 51)));
-        jPanel20.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 160, 40));
+        btn_PagoEfectivo.setBackground(new java.awt.Color(153, 204, 0));
+        btn_PagoEfectivo.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        btn_PagoEfectivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/boton-agregarEfectivo.png"))); // NOI18N
+        btn_PagoEfectivo.setText("Pago en efectivo");
+        btn_PagoEfectivo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 255, 51)));
+        jPanel20.add(btn_PagoEfectivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 160, 40));
 
         jPanel5.add(jPanel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 260, 210, 60));
 
@@ -433,13 +433,13 @@ public class Pagos extends javax.swing.JFrame {
         jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
         jPanel11.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 140, 10));
 
-        jTextField1.setBorder(null);
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        txt_nombrecompleto.setBorder(null);
+        txt_nombrecompleto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                txt_nombrecompletoActionPerformed(evt);
             }
         });
-        jPanel11.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 140, 20));
+        jPanel11.add(txt_nombrecompleto, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 140, 20));
 
         jLabel25.setFont(new java.awt.Font("Yu Gothic UI", 0, 12)); // NOI18N
         jLabel25.setText("Correo Electronico");
@@ -453,13 +453,13 @@ public class Pagos extends javax.swing.JFrame {
         jLabel27.setText("Documento");
         jPanel11.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, -1, -1));
 
-        jTextField2.setBorder(null);
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        txt_correo.setBorder(null);
+        txt_correo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                txt_correoActionPerformed(evt);
             }
         });
-        jPanel11.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, 140, 20));
+        jPanel11.add(txt_correo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, 140, 20));
 
         jSeparator2.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
@@ -468,19 +468,19 @@ public class Pagos extends javax.swing.JFrame {
         jSeparator3.setForeground(new java.awt.Color(0, 0, 0));
         jPanel11.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 120, 10));
 
-        jTextField3.setBorder(null);
-        jPanel11.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 120, -1));
+        txt_telefono.setBorder(null);
+        jPanel11.add(txt_telefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 120, -1));
 
         jSeparator4.setForeground(new java.awt.Color(0, 0, 0));
         jPanel11.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 100, 10));
 
-        jTextField4.setBorder(null);
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+        txt_documento.setBorder(null);
+        txt_documento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
+                txt_documentoActionPerformed(evt);
             }
         });
-        jPanel11.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 220, 100, 20));
+        jPanel11.add(txt_documento, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 220, 100, 20));
 
         jPanel12.setBackground(new java.awt.Color(226, 238, 249));
         jPanel12.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 255, 204), null));
@@ -516,19 +516,19 @@ public class Pagos extends javax.swing.JFrame {
         jPanel13.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
 
         jLabel31.setFont(new java.awt.Font("Yu Gothic UI", 1, 12)); // NOI18N
-        jLabel31.setText("Municipio");
-        jPanel13.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, -1, -1));
+        jLabel31.setText("Departamento");
+        jPanel13.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, -1));
 
         jLabel35.setFont(new java.awt.Font("Yu Gothic UI", 1, 12)); // NOI18N
-        jLabel35.setText("Barrio");
-        jPanel13.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, -1, -1));
+        jLabel35.setText("Municipio");
+        jPanel13.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, -1, -1));
 
         jLabel36.setFont(new java.awt.Font("Yu Gothic UI", 1, 12)); // NOI18N
         jLabel36.setText("Direccion (# calle, etc)");
         jPanel13.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 70, -1, -1));
 
-        jTextField5.setBorder(null);
-        jPanel13.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 80, 20));
+        txt_departamento.setBorder(null);
+        jPanel13.add(txt_departamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 80, 20));
 
         jSeparator5.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator5.setForeground(new java.awt.Color(0, 0, 0));
@@ -537,14 +537,14 @@ public class Pagos extends javax.swing.JFrame {
         jSeparator6.setForeground(new java.awt.Color(0, 0, 0));
         jPanel13.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 70, 10));
 
-        jTextField6.setBorder(null);
-        jPanel13.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 70, -1));
+        txt_municipio.setBorder(null);
+        jPanel13.add(txt_municipio, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 70, -1));
 
         jSeparator7.setForeground(new java.awt.Color(0, 0, 0));
         jPanel13.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 110, 120, 10));
 
-        jTextField7.setBorder(null);
-        jPanel13.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, 120, 20));
+        txt_direccioncalle.setBorder(null);
+        jPanel13.add(txt_direccioncalle, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, 120, 20));
 
         jPanel14.setBackground(new java.awt.Color(255, 255, 255));
         jPanel14.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(51, 255, 204), null));
@@ -562,15 +562,15 @@ public class Pagos extends javax.swing.JFrame {
         jLabel39.setText("Selecciona un metodo de pago");
         jPanel14.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel14.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 170, -1));
+        jcombo_metodopago.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel14.add(jcombo_metodopago, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 170, -1));
 
         jLabel40.setFont(new java.awt.Font("Yu Gothic UI", 0, 12)); // NOI18N
         jLabel40.setText("Seleccione un servicio");
         jPanel14.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel14.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 170, -1));
+        jcombo_servicios.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel14.add(jcombo_servicios, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 170, -1));
 
         jPanel15.setBackground(new java.awt.Color(255, 255, 255));
         jPanel15.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(51, 255, 153), null));
@@ -591,15 +591,15 @@ public class Pagos extends javax.swing.JFrame {
         jLabel44.setText("Servicio seleccionado :");
         jPanel15.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, -1));
 
-        jlabelResumenSer.setText("jLabel45");
-        jPanel15.add(jlabelResumenSer, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, -1, -1));
+        jlabel_mostarservicio.setText("jLabel45");
+        jPanel15.add(jlabel_mostarservicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, -1, -1));
 
         jLabel45.setFont(new java.awt.Font("Yu Gothic UI", 1, 12)); // NOI18N
         jLabel45.setText("Metodo de pago :");
         jPanel15.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
 
-        jlabelresumenPago.setText("jLabel46");
-        jPanel15.add(jlabelresumenPago, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, -1, -1));
+        Jlabe_mostarmetodopago.setText("jLabel46");
+        jPanel15.add(Jlabe_mostarmetodopago, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, -1, -1));
 
         jSeparator8.setForeground(new java.awt.Color(204, 204, 204));
         jPanel15.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 230, 10));
@@ -608,9 +608,9 @@ public class Pagos extends javax.swing.JFrame {
         jLabel46.setText("Total a Pagar :");
         jPanel15.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
 
-        jlabelTotal.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
-        jlabelTotal.setText("jLabel47");
-        jPanel15.add(jlabelTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, -1, -1));
+        jlabel_TotalPago.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        jlabel_TotalPago.setText("jLabel47");
+        jPanel15.add(jlabel_TotalPago, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, -1, -1));
 
         jLabel47.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel47.setForeground(new java.awt.Color(0, 204, 153));
@@ -632,31 +632,31 @@ public class Pagos extends javax.swing.JFrame {
         jLabel50.setText("finalice su compra ");
         jPanel16.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, -1, -1));
 
-        jCheckBox1.setFont(new java.awt.Font("Yu Gothic UI", 0, 12)); // NOI18N
-        jCheckBox1.setText("Acepto");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+        Jcheck_terminosycondiciones.setFont(new java.awt.Font("Yu Gothic UI", 0, 12)); // NOI18N
+        Jcheck_terminosycondiciones.setText("Acepto");
+        Jcheck_terminosycondiciones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
+                Jcheck_terminosycondicionesActionPerformed(evt);
             }
         });
-        jPanel16.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, -1, -1));
+        jPanel16.add(Jcheck_terminosycondiciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, -1, -1));
 
-        jButton4.setBackground(new java.awt.Color(204, 255, 0));
-        jButton4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/controlar.png"))); // NOI18N
-        jButton4.setText("Comprar");
-        jButton4.setToolTipText("");
-        jButton4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(102, 255, 102), new java.awt.Color(102, 255, 102), new java.awt.Color(102, 255, 153), new java.awt.Color(102, 255, 153)));
-        jPanel16.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, 90, -1));
+        btn_comprar.setBackground(new java.awt.Color(204, 255, 0));
+        btn_comprar.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        btn_comprar.setForeground(new java.awt.Color(255, 255, 255));
+        btn_comprar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/controlar.png"))); // NOI18N
+        btn_comprar.setText("Comprar");
+        btn_comprar.setToolTipText("");
+        btn_comprar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(102, 255, 102), new java.awt.Color(102, 255, 102), new java.awt.Color(102, 255, 153), new java.awt.Color(102, 255, 153)));
+        jPanel16.add(btn_comprar, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, 90, -1));
 
-        Cancelar.setBackground(new java.awt.Color(255, 0, 0));
-        Cancelar.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        Cancelar.setForeground(new java.awt.Color(255, 255, 255));
-        Cancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cruzar.png"))); // NOI18N
-        Cancelar.setText("Cancelar");
-        Cancelar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 0, 51), new java.awt.Color(153, 0, 102), new java.awt.Color(255, 102, 0), new java.awt.Color(255, 204, 51)));
-        jPanel16.add(Cancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 70, 90, -1));
+        btn_cancelar.setBackground(new java.awt.Color(255, 0, 0));
+        btn_cancelar.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        btn_cancelar.setForeground(new java.awt.Color(255, 255, 255));
+        btn_cancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cruzar.png"))); // NOI18N
+        btn_cancelar.setText("Cancelar");
+        btn_cancelar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 0, 51), new java.awt.Color(153, 0, 102), new java.awt.Color(255, 102, 0), new java.awt.Color(255, 204, 51)));
+        jPanel16.add(btn_cancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 70, 90, -1));
 
         jLabel51.setFont(new java.awt.Font("Yu Gothic UI", 0, 12)); // NOI18N
         jLabel51.setForeground(new java.awt.Color(26, 96, 244));
@@ -818,9 +818,9 @@ public class Pagos extends javax.swing.JFrame {
         jLabel63.setForeground(new java.awt.Color(51, 255, 153));
         jLabel63.setText("Estado general");
 
-        jLabel64.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
-        jLabel64.setForeground(new java.awt.Color(51, 255, 0));
-        jLabel64.setText("XXX");
+        jlabel_direccionEnvio.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        jlabel_direccionEnvio.setForeground(new java.awt.Color(51, 255, 0));
+        jlabel_direccionEnvio.setText("XXX");
 
         jLabel65.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel65.setText("Direccion del envio:");
@@ -842,7 +842,7 @@ public class Pagos extends javax.swing.JFrame {
                             .addComponent(jLabel63)))
                     .addGroup(jPanel19Layout.createSequentialGroup()
                         .addGap(85, 85, 85)
-                        .addComponent(jLabel64, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jlabel_direccionEnvio, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(40, Short.MAX_VALUE))
         );
         jPanel19Layout.setVerticalGroup(
@@ -856,7 +856,7 @@ public class Pagos extends javax.swing.JFrame {
                         .addComponent(jLabel65))
                     .addComponent(jLabel62))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel64)
+                .addComponent(jlabel_direccionEnvio)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -969,10 +969,10 @@ public class Pagos extends javax.swing.JFrame {
         jSeparator9.setForeground(new java.awt.Color(0, 204, 153));
         jPanel21.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 171, -1));
 
-        jTextField8.setBackground(new java.awt.Color(1, 10, 28));
-        jTextField8.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField8.setBorder(null);
-        jPanel21.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 171, 20));
+        txt_mostrarNombre.setBackground(new java.awt.Color(1, 10, 28));
+        txt_mostrarNombre.setForeground(new java.awt.Color(255, 255, 255));
+        txt_mostrarNombre.setBorder(null);
+        jPanel21.add(txt_mostrarNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 171, 20));
 
         jLabel72.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
         jLabel72.setForeground(new java.awt.Color(255, 255, 255));
@@ -982,10 +982,10 @@ public class Pagos extends javax.swing.JFrame {
         jSeparator10.setForeground(new java.awt.Color(0, 255, 153));
         jPanel21.add(jSeparator10, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 180, 160, 10));
 
-        jTextField9.setBackground(new java.awt.Color(1, 10, 28));
-        jTextField9.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField9.setBorder(null);
-        jPanel21.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, 160, 20));
+        txt_mostrarcorreo.setBackground(new java.awt.Color(1, 10, 28));
+        txt_mostrarcorreo.setForeground(new java.awt.Color(255, 255, 255));
+        txt_mostrarcorreo.setBorder(null);
+        jPanel21.add(txt_mostrarcorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, 160, 20));
 
         jLabel73.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
         jLabel73.setForeground(new java.awt.Color(255, 255, 255));
@@ -995,10 +995,10 @@ public class Pagos extends javax.swing.JFrame {
         jSeparator11.setForeground(new java.awt.Color(0, 255, 153));
         jPanel21.add(jSeparator11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 170, -1));
 
-        jTextField10.setBackground(new java.awt.Color(1, 10, 28));
-        jTextField10.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField10.setBorder(null);
-        jPanel21.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 262, 171, 20));
+        txt_mostrarid.setBackground(new java.awt.Color(1, 10, 28));
+        txt_mostrarid.setForeground(new java.awt.Color(255, 255, 255));
+        txt_mostrarid.setBorder(null);
+        jPanel21.add(txt_mostrarid, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 262, 171, 20));
 
         jLabel74.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
         jLabel74.setForeground(new java.awt.Color(255, 255, 255));
@@ -1008,20 +1008,20 @@ public class Pagos extends javax.swing.JFrame {
         jSeparator12.setForeground(new java.awt.Color(0, 255, 153));
         jPanel21.add(jSeparator12, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 270, 160, -1));
 
-        jTextField11.setBackground(new java.awt.Color(1, 10, 28));
-        jTextField11.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField11.setBorder(null);
-        jPanel21.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 250, 160, 20));
+        txt_mostrartel.setBackground(new java.awt.Color(1, 10, 28));
+        txt_mostrartel.setForeground(new java.awt.Color(255, 255, 255));
+        txt_mostrartel.setBorder(null);
+        jPanel21.add(txt_mostrartel, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 250, 160, 20));
 
         jLabel75.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
         jLabel75.setForeground(new java.awt.Color(255, 255, 255));
         jLabel75.setText("Direccion");
         jPanel21.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 74, -1));
 
-        jTextField12.setBackground(new java.awt.Color(1, 10, 28));
-        jTextField12.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField12.setBorder(null);
-        jPanel21.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 180, -1));
+        txt_mostrardireccion.setBackground(new java.awt.Color(1, 10, 28));
+        txt_mostrardireccion.setForeground(new java.awt.Color(255, 255, 255));
+        txt_mostrardireccion.setBorder(null);
+        jPanel21.add(txt_mostrardireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 180, -1));
 
         jSeparator13.setForeground(new java.awt.Color(0, 255, 153));
         jPanel21.add(jSeparator13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 347, 180, -1));
@@ -1064,16 +1064,16 @@ public class Pagos extends javax.swing.JFrame {
         jPanel23.setBackground(new java.awt.Color(0, 10, 28));
         jPanel23.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 1, 255), null));
 
-        jButton6.setBackground(new java.awt.Color(0, 102, 153));
-        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("Guardar Cambios");
+        btn_guardarcambios.setBackground(new java.awt.Color(0, 102, 153));
+        btn_guardarcambios.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_guardarcambios.setForeground(new java.awt.Color(255, 255, 255));
+        btn_guardarcambios.setText("Guardar Cambios");
 
-        jButton7.setBackground(new java.awt.Color(255, 0, 0));
-        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cruzar.png"))); // NOI18N
-        jButton7.setText("Cancelar");
+        btn_cancelarcambios.setBackground(new java.awt.Color(255, 0, 0));
+        btn_cancelarcambios.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_cancelarcambios.setForeground(new java.awt.Color(255, 255, 255));
+        btn_cancelarcambios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cruzar.png"))); // NOI18N
+        btn_cancelarcambios.setText("Cancelar");
 
         jLabel76.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/usuario (1)AAA.png"))); // NOI18N
 
@@ -1101,9 +1101,9 @@ public class Pagos extends javax.swing.JFrame {
                 .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel23Layout.createSequentialGroup()
                         .addGap(15, 15, 15)
-                        .addComponent(jButton6)
+                        .addComponent(btn_guardarcambios)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton7))
+                        .addComponent(btn_cancelarcambios))
                     .addGroup(jPanel23Layout.createSequentialGroup()
                         .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel23Layout.createSequentialGroup()
@@ -1139,8 +1139,8 @@ public class Pagos extends javax.swing.JFrame {
                 .addComponent(jLabel78, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 148, Short.MAX_VALUE)
                 .addGroup(jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton6)
-                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btn_guardarcambios)
+                    .addComponent(btn_cancelarcambios, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -1173,38 +1173,38 @@ public class Pagos extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void txt_nombrecompletoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_nombrecompletoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_txt_nombrecompletoActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void txt_correoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_correoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_txt_correoActionPerformed
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+    private void txt_documentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_documentoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_txt_documentoActionPerformed
 
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+    private void Jcheck_terminosycondicionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Jcheck_terminosycondicionesActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
+    }//GEN-LAST:event_Jcheck_terminosycondicionesActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btn_AgregarTarjetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_AgregarTarjetaActionPerformed
         // TODO add your handling code here:
         AgregarTarjeta ventana = new AgregarTarjeta(this);
         ventana.setVisible(true);
         this.setVisible(false);
         
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btn_AgregarTarjetaActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btn_EditarTarjetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_EditarTarjetaActionPerformed
         // TODO add your handling code here:
         EditarTarjeta ventanaE = new EditarTarjeta(this);
         ventanaE.setVisible(true);
         this.setVisible(false);
         
         
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btn_EditarTarjetaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1242,18 +1242,17 @@ public class Pagos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Cancelar;
     private javax.swing.JTable HistorialUsuario;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JCheckBox Jcheck_terminosycondiciones;
+    private javax.swing.JLabel Jlabe_mostarmetodopago;
+    private javax.swing.JButton btn_AgregarTarjeta;
+    private javax.swing.JButton btn_EditarTarjeta;
+    private javax.swing.JButton btn_ListarTarjeta;
+    private javax.swing.JButton btn_PagoEfectivo;
+    private javax.swing.JButton btn_cancelar;
+    private javax.swing.JButton btn_cancelarcambios;
+    private javax.swing.JButton btn_comprar;
+    private javax.swing.JButton btn_guardarcambios;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1314,7 +1313,6 @@ public class Pagos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel63;
-    private javax.swing.JLabel jLabel64;
     private javax.swing.JLabel jLabel65;
     private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel67;
@@ -1373,20 +1371,22 @@ public class Pagos extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator9;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
-    private javax.swing.JLabel jlabelResumenSer;
-    private javax.swing.JLabel jlabelTotal;
-    private javax.swing.JLabel jlabelresumenPago;
+    private javax.swing.JComboBox<String> jcombo_metodopago;
+    private javax.swing.JComboBox<String> jcombo_servicios;
+    private javax.swing.JLabel jlabel_TotalPago;
+    private javax.swing.JLabel jlabel_direccionEnvio;
+    private javax.swing.JLabel jlabel_mostarservicio;
+    private javax.swing.JTextField txt_correo;
+    private javax.swing.JTextField txt_departamento;
+    private javax.swing.JTextField txt_direccioncalle;
+    private javax.swing.JTextField txt_documento;
+    private javax.swing.JTextField txt_mostrarNombre;
+    private javax.swing.JTextField txt_mostrarcorreo;
+    private javax.swing.JTextField txt_mostrardireccion;
+    private javax.swing.JTextField txt_mostrarid;
+    private javax.swing.JTextField txt_mostrartel;
+    private javax.swing.JTextField txt_municipio;
+    private javax.swing.JTextField txt_nombrecompleto;
+    private javax.swing.JTextField txt_telefono;
     // End of variables declaration//GEN-END:variables
 }

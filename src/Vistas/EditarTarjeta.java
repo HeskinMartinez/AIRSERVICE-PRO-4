@@ -45,7 +45,7 @@ public class EditarTarjeta extends javax.swing.JFrame {
         jSeparator4 = new javax.swing.JSeparator();
         jTextField4 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        btn_editarT = new javax.swing.JButton();
+        btn_ConfirmarEdit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -113,10 +113,10 @@ public class EditarTarjeta extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 10, 40, 30));
 
-        btn_editarT.setBackground(new java.awt.Color(51, 255, 153));
-        btn_editarT.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
-        btn_editarT.setText("Confirmar");
-        jPanel1.add(btn_editarT, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 200, -1, -1));
+        btn_ConfirmarEdit.setBackground(new java.awt.Color(51, 255, 153));
+        btn_ConfirmarEdit.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        btn_ConfirmarEdit.setText("Confirmar");
+        jPanel1.add(btn_ConfirmarEdit, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 200, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -173,7 +173,7 @@ public class EditarTarjeta extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_editarT;
+    private javax.swing.JButton btn_ConfirmarEdit;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
