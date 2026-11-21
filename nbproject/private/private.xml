@@ -3,11 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ACER1/OneDrive/Desktop/ProAula4/AIRSERVICE-PRO-4/src/Modelos/Pago.java</file>
-            <file>file:/C:/Users/ACER1/OneDrive/Desktop/ProAula4/AIRSERVICE-PRO-4/src/Controladores/ControladorJ_Usuario.java</file>
-            <file>file:/C:/Users/ACER1/OneDrive/Desktop/ProAula4/AIRSERVICE-PRO-4/src/Vistas/Usuarios.java</file>
+            <file>file:/C:/Users/ACER1/OneDrive/Desktop/ProAula4/AIRSERVICE-PRO-4/src/Vistas/Pagos.java</file>
+            <file>file:/C:/Users/ACER1/OneDrive/Desktop/ProAula4/AIRSERVICE-PRO-4/src/Vistas/AgregarTarjeta.java</file>
+            <file>file:/C:/Users/ACER1/OneDrive/Desktop/ProAula4/AIRSERVICE-PRO-4/src/Modelos/Tarjeta.java</file>
             <file>file:/C:/Users/ACER1/OneDrive/Desktop/ProAula4/AIRSERVICE-PRO-4/src/Controladores/ControladorPagos.java</file>
-            <file>file:/C:/Users/ACER1/OneDrive/Desktop/ProAula4/AIRSERVICE-PRO-4/src/Modelos/ServicioJ.java</file>
         </group>
     </open-files>
 </project-private>

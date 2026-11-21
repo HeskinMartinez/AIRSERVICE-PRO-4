@@ -67,38 +67,44 @@ public class ControladorPagos {
     private String validarTarjeta(String titular, String numero, String vence, String cvv){
         if(titular.isBlank() || numero.isBlank() || vence.isBlank() || cvv.isBlank()){
             
-            JOptionPane.showConfirmDialog(null, "Algun Campo esta vacio","Campo Vacio",JOptionPane.WARNING_MESSAGE);
-            return null;
+            
+            return "Algun Campo esta vacio";
         }
         
         if(!titular.trim().matches("[\\p{L} .'-]+")){
-            JOptionPane.showMessageDialog(null, "El nombre del tituar solo puede tener letras","SOLO LETRAS",JOptionPane.WARNING_MESSAGE);
-           return null; 
+            
+           return "El nombre del titular solo puede tener letras"; 
         }
         if(!numero.replace("","").matches("\\d{16}")){
-            JOptionPane.showMessageDialog(null, "El numero de tarjeta debe tener 16 digitos numericos", "SON 16 DIGITOS",JOptionPane.WARNING_MESSAGE);
-            return null;
+            
+            return "El numero de tarjeta debe tener 16 digitos numericos";
         }
         if(!cvv.trim().matches("\\d{3,4}")){
-            JOptionPane.showConfirmDialog(null, "El CVV debe tener 3 o 4 digitos numericos","SOLO 3 0 4 DIGITOS", JOptionPane.WARNING_MESSAGE);
-            return null;
+            
+            return "El CVV debe tener 3 o 4 digitos numericos";
         }
         try{
             
-            YearMonth ym =YearMonth.parse(vence.trim(),DateTimeFormatter.ofPattern("MM//YY"));
-            if(ym.isBefore(YearMonth.now())){
+           DateTimeFormatter formato = DateTimeFormatter.ofPattern("MM/yy");
+           YearMonth fechaTarjeta = YearMonth.parse(vence,formato);
+            if(fechaTarjeta.isBefore(YearMonth.now())){
                 
-                JOptionPane.showMessageDialog(null, "La tarjeta esta vencida", "VENCIDA",JOptionPane.WARNING_MESSAGE); 
+               return"La tarjeta esta vencida";
             }
         }catch(DateTimeException e){
-            JOptionPane.showMessageDialog(null, "La fecha debe tener formato MM//AA (ej: 08/28)", "FORMATO INCORRECTO", JOptionPane.WARNING_MESSAGE);
+            
+            return "La fecha debe tener formato MM/AA (ej: 08/28";
+            
+           
         }
         return null;
     }
      // DEUVELVE NULL SI SE AGREGO, O EL MENSAJE DE ERROR //
     public String agregarTarjeta(String titular, String numero, String vence, String cvv) {
         String error = validarTarjeta(titular, numero, vence, cvv);
-        if (error != null) return error;
+        if (error != null){
+            return error;
+        }
         tarjetas.agregarFinal(new Tarjeta(titular.trim(), numero.replace(" ", ""), vence.trim(), cvv.trim()));
         return null;
     }
@@ -126,27 +132,31 @@ public class ControladorPagos {
     
     // COMPRA // 
     
-    public Pago comprar(String cliente, String servicio, String metodo, boolean terminos){
+    public Pago comprar(String cliente, String servicio, String metodo, boolean terminos) throws IllegalAccessException{
+        
+        
         if(!terminos){
-            JOptionPane.showMessageDialog(null, "Debes aceptar los terminos y condiciones", "ACEPTE LOS TERMINOS Y CONDICIONES",JOptionPane.WARNING_MESSAGE);
+            
+           throw new IllegalAccessException("Debes aceptar los terminos y Condiciones");
+            
         }
         
        if(cliente == null || cliente.isBlank()){
-           JOptionPane.showMessageDialog(null, "Escribe tu nombre completo", "CASILLAS VACIAS",JOptionPane.WARNING_MESSAGE);
+           throw new IllegalAccessException("Escribe tu nombre completo");
        }
        
        double precio = precioDe(servicio);
        if(precio <= 0){
-           JOptionPane.showMessageDialog(null, "Seleccione un servicio", "CASILLA VACIA",JOptionPane.WARNING_MESSAGE);
+           throw new IllegalAccessException("Seleccione un servicio");
            
        }
        
       if(!TARJETA.equals(metodo) && !EFECTIVO.equals(metodo)){
-          JOptionPane.showMessageDialog(null, "Seleccione un metodo de pago", "METODO DE PAGO VACIO",JOptionPane.WARNING_MESSAGE);
+          throw new IllegalAccessException("Seleccione un metodo de pago");
       }
       
       if(TARJETA.equals(metodo) && tarjetas.estaVacia()){
-          JOptionPane.showMessageDialog(null, "Agrega una tarjeta antes de pagar", "AGREGE TARJETA",JOptionPane.WARNING_MESSAGE);
+          throw new IllegalAccessException("Agrega una tarjeta antes de pagar con tarjeta");
       }
       
      

@@ -55,24 +55,22 @@ public class ControladorJ_Usuario {
     
            if(!correo.trim().matches("^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$")){
                
-            JOptionPane.showMessageDialog(null, "El formato del correo es invalido", "Correo invalido", JOptionPane.WARNING_MESSAGE);
-           
-           return null;
+            return"El formato del correo es invalido";
            }
 
 
            if(clave.length()< 4){
                
-           JOptionPane.showMessageDialog(null, "la contraseña debe tener al menos 4 caracteres", "Contraseña invalida",JOptionPane.WARNING_MESSAGE);
            
-           return null;
+           
+           return "la contraseña debe tener al menos 4 caracteres";
            }
            
            if(buscarPorCorreo(correo) != null){
                
-               JOptionPane.showMessageDialog(null, "Este correo ya esta registrado");
+               
            
-           return null;
+           return "Ese Correo ya esta registrado";
            }
 
            
