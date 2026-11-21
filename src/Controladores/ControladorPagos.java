@@ -170,5 +170,10 @@ public class ControladorPagos {
     public ListaDoble<Pago> getHistorial(){
         return historial;
     }
-    
+    public void eliminarHistorial() {
+    if (historial != null) { 
+        historial.limpiar();
+    }
+}
+
 }

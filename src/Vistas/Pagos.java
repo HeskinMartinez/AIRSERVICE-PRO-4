@@ -20,7 +20,14 @@ public class Pagos extends javax.swing.JFrame {
 
 private final ControladorPagos ctrl = ControladorPagos.getInstancia();
 private final NumberFormat moneda = NumberFormat.getInstance(Locale.forLanguageTag("es-CO"));
-    
+private String nombreOriginal = "";
+private String correoOriginal = "";
+private String telefonoOriginal = "";
+private String idOriginal ="";
+private String direccionOriginal = "";
+private int contadorTransacciones = 0;
+private double totalPagadoAcumulado = 0.0;
+
     public void mostrarMetodosPago(){
         jTabbedPane1.setSelectedIndex(0);
         jTabbedPane2.setSelectedIndex(0);
@@ -257,8 +264,8 @@ private void listarTarjetas() {
         jSeparator12 = new javax.swing.JSeparator();
         txt_mostrartel = new javax.swing.JTextField();
         jLabel75 = new javax.swing.JLabel();
-        txt_mostrardireccion = new javax.swing.JTextField();
         jSeparator13 = new javax.swing.JSeparator();
+        txt_mostrardireccion = new javax.swing.JTextField();
         jPanel22 = new javax.swing.JPanel();
         jLabel66 = new javax.swing.JLabel();
         jLabel67 = new javax.swing.JLabel();
@@ -270,8 +277,38 @@ private void listarTarjetas() {
         jLabel79 = new javax.swing.JLabel();
         jLabel78 = new javax.swing.JLabel();
         jLabel80 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         jLabel52 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
+        jPanel24 = new javax.swing.JPanel();
+        jLabel64 = new javax.swing.JLabel();
+        jLabel81 = new javax.swing.JLabel();
+        jLabel82 = new javax.swing.JLabel();
+        jLabel83 = new javax.swing.JLabel();
+        jLabel84 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jPanel25 = new javax.swing.JPanel();
+        jLabel85 = new javax.swing.JLabel();
+        jLabel86 = new javax.swing.JLabel();
+        jLabel87 = new javax.swing.JLabel();
+        jSeparator14 = new javax.swing.JSeparator();
+        jLabel88 = new javax.swing.JLabel();
+        jLabel89 = new javax.swing.JLabel();
+        jSeparator15 = new javax.swing.JSeparator();
+        jLabel90 = new javax.swing.JLabel();
+        jLabel91 = new javax.swing.JLabel();
+        jLabel92 = new javax.swing.JLabel();
+        jSeparator16 = new javax.swing.JSeparator();
+        jLabel93 = new javax.swing.JLabel();
+        jLabel94 = new javax.swing.JLabel();
+        jLabel95 = new javax.swing.JLabel();
+        jSeparator17 = new javax.swing.JSeparator();
+        jPanel26 = new javax.swing.JPanel();
+        jLabel96 = new javax.swing.JLabel();
+        jLabel97 = new javax.swing.JLabel();
+        jLabel98 = new javax.swing.JLabel();
+        jLabel99 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -533,6 +570,11 @@ private void listarTarjetas() {
                 txt_nombrecompletoActionPerformed(evt);
             }
         });
+        txt_nombrecompleto.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_nombrecompletoKeyTyped(evt);
+            }
+        });
         jPanel11.add(txt_nombrecompleto, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 140, 20));
 
         jLabel25.setFont(new java.awt.Font("Yu Gothic UI", 0, 12)); // NOI18N
@@ -563,6 +605,11 @@ private void listarTarjetas() {
         jPanel11.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 120, 10));
 
         txt_telefono.setBorder(null);
+        txt_telefono.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_telefonoKeyTyped(evt);
+            }
+        });
         jPanel11.add(txt_telefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 120, -1));
 
         jSeparator4.setForeground(new java.awt.Color(0, 0, 0));
@@ -572,6 +619,11 @@ private void listarTarjetas() {
         txt_documento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_documentoActionPerformed(evt);
+            }
+        });
+        txt_documento.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_documentoKeyTyped(evt);
             }
         });
         jPanel11.add(txt_documento, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 220, 100, 20));
@@ -622,6 +674,11 @@ private void listarTarjetas() {
         jPanel13.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 70, -1, -1));
 
         txt_departamento.setBorder(null);
+        txt_departamento.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_departamentoKeyTyped(evt);
+            }
+        });
         jPanel13.add(txt_departamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 80, 20));
 
         jSeparator5.setBackground(new java.awt.Color(0, 0, 0));
@@ -632,6 +689,11 @@ private void listarTarjetas() {
         jPanel13.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 70, 10));
 
         txt_municipio.setBorder(null);
+        txt_municipio.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_municipioKeyTyped(evt);
+            }
+        });
         jPanel13.add(txt_municipio, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 70, -1));
 
         jSeparator7.setForeground(new java.awt.Color(0, 0, 0));
@@ -685,14 +747,14 @@ private void listarTarjetas() {
         jLabel44.setText("Servicio seleccionado :");
         jPanel15.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, -1));
 
-        jlabel_mostarservicio.setText("jLabel45");
+        jlabel_mostarservicio.setText("XXXX");
         jPanel15.add(jlabel_mostarservicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, -1, -1));
 
         jLabel45.setFont(new java.awt.Font("Yu Gothic UI", 1, 12)); // NOI18N
         jLabel45.setText("Metodo de pago :");
         jPanel15.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
 
-        Jlabe_mostarmetodopago.setText("jLabel46");
+        Jlabe_mostarmetodopago.setText("XXXX");
         jPanel15.add(Jlabe_mostarmetodopago, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, -1, -1));
 
         jSeparator8.setForeground(new java.awt.Color(204, 204, 204));
@@ -703,13 +765,13 @@ private void listarTarjetas() {
         jPanel15.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
 
         jlabel_TotalPago.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
-        jlabel_TotalPago.setText("jLabel47");
+        jlabel_TotalPago.setText("XXXXXX");
         jPanel15.add(jlabel_TotalPago, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, -1, -1));
 
         jLabel47.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel47.setForeground(new java.awt.Color(0, 204, 153));
         jLabel47.setText("/COP");
-        jPanel15.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 120, -1, -1));
+        jPanel15.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, -1, -1));
 
         jPanel16.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(102, 0, 102), null));
         jPanel16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -938,18 +1000,17 @@ private void listarTarjetas() {
         jPanel19Layout.setHorizontalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel19Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel19Layout.createSequentialGroup()
-                        .addContainerGap()
                         .addComponent(jLabel62)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel65)
-                            .addComponent(jLabel63)))
-                    .addGroup(jPanel19Layout.createSequentialGroup()
-                        .addGap(82, 82, 82)
-                        .addComponent(jlabel_direccionEnvio, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(40, Short.MAX_VALUE))
+                            .addComponent(jLabel63))
+                        .addGap(0, 34, Short.MAX_VALUE))
+                    .addComponent(jlabel_direccionEnvio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanel19Layout.setVerticalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -986,11 +1047,11 @@ private void listarTarjetas() {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 138, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 168, Short.MAX_VALUE)
                 .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(117, 117, 117)
                 .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(87, 87, 87))
+                .addGap(57, 57, 57))
             .addComponent(jScrollPane1)
         );
         jPanel7Layout.setVerticalGroup(
@@ -1059,7 +1120,7 @@ private void listarTarjetas() {
         jLabel69.setText("Datos del Usuario");
         jPanel21.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 10, -1, -1));
 
-        jLabel70.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        jLabel70.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         jLabel70.setForeground(new java.awt.Color(255, 255, 255));
         jLabel70.setText("Nombre Completo");
         jPanel21.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, -1));
@@ -1075,11 +1136,17 @@ private void listarTarjetas() {
         jPanel21.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 171, -1));
 
         txt_mostrarNombre.setBackground(new java.awt.Color(1, 10, 28));
+        txt_mostrarNombre.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         txt_mostrarNombre.setForeground(new java.awt.Color(255, 255, 255));
         txt_mostrarNombre.setBorder(null);
+        txt_mostrarNombre.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_mostrarNombreKeyTyped(evt);
+            }
+        });
         jPanel21.add(txt_mostrarNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 171, 20));
 
-        jLabel72.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        jLabel72.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         jLabel72.setForeground(new java.awt.Color(255, 255, 255));
         jLabel72.setText("Correo Electronico");
         jPanel21.add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 122, -1, -1));
@@ -1088,11 +1155,12 @@ private void listarTarjetas() {
         jPanel21.add(jSeparator10, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 180, 160, 10));
 
         txt_mostrarcorreo.setBackground(new java.awt.Color(1, 10, 28));
+        txt_mostrarcorreo.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         txt_mostrarcorreo.setForeground(new java.awt.Color(255, 255, 255));
         txt_mostrarcorreo.setBorder(null);
         jPanel21.add(txt_mostrarcorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, 160, 20));
 
-        jLabel73.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        jLabel73.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         jLabel73.setForeground(new java.awt.Color(255, 255, 255));
         jLabel73.setText("Numero de identificacion");
         jPanel21.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, -1));
@@ -1101,11 +1169,17 @@ private void listarTarjetas() {
         jPanel21.add(jSeparator11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 170, -1));
 
         txt_mostrarid.setBackground(new java.awt.Color(1, 10, 28));
+        txt_mostrarid.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         txt_mostrarid.setForeground(new java.awt.Color(255, 255, 255));
         txt_mostrarid.setBorder(null);
+        txt_mostrarid.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_mostraridKeyTyped(evt);
+            }
+        });
         jPanel21.add(txt_mostrarid, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 262, 171, 20));
 
-        jLabel74.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        jLabel74.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         jLabel74.setForeground(new java.awt.Color(255, 255, 255));
         jLabel74.setText("Telefono");
         jPanel21.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 220, 71, -1));
@@ -1114,22 +1188,29 @@ private void listarTarjetas() {
         jPanel21.add(jSeparator12, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 270, 160, -1));
 
         txt_mostrartel.setBackground(new java.awt.Color(1, 10, 28));
+        txt_mostrartel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         txt_mostrartel.setForeground(new java.awt.Color(255, 255, 255));
         txt_mostrartel.setBorder(null);
+        txt_mostrartel.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_mostrartelKeyTyped(evt);
+            }
+        });
         jPanel21.add(txt_mostrartel, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 250, 160, 20));
 
-        jLabel75.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        jLabel75.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
         jLabel75.setForeground(new java.awt.Color(255, 255, 255));
         jLabel75.setText("Direccion");
         jPanel21.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 74, -1));
 
+        jSeparator13.setForeground(new java.awt.Color(0, 255, 153));
+        jPanel21.add(jSeparator13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 347, 310, -1));
+
         txt_mostrardireccion.setBackground(new java.awt.Color(1, 10, 28));
+        txt_mostrardireccion.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         txt_mostrardireccion.setForeground(new java.awt.Color(255, 255, 255));
         txt_mostrardireccion.setBorder(null);
-        jPanel21.add(txt_mostrardireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 180, -1));
-
-        jSeparator13.setForeground(new java.awt.Color(0, 255, 153));
-        jPanel21.add(jSeparator13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 347, 180, -1));
+        jPanel21.add(txt_mostrardireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 310, -1));
 
         jPanel3.add(jPanel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 550, 370));
 
@@ -1151,9 +1232,9 @@ private void listarTarjetas() {
             .addGroup(jPanel22Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel66, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel67))
-                .addContainerGap(755, Short.MAX_VALUE))
+                    .addComponent(jLabel67)
+                    .addComponent(jLabel66, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel22Layout.setVerticalGroup(
             jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1173,12 +1254,22 @@ private void listarTarjetas() {
         btn_guardarcambios.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btn_guardarcambios.setForeground(new java.awt.Color(255, 255, 255));
         btn_guardarcambios.setText("Guardar Cambios");
+        btn_guardarcambios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_guardarcambiosActionPerformed(evt);
+            }
+        });
 
         btn_cancelarcambios.setBackground(new java.awt.Color(255, 0, 0));
         btn_cancelarcambios.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btn_cancelarcambios.setForeground(new java.awt.Color(255, 255, 255));
         btn_cancelarcambios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cruzar.png"))); // NOI18N
         btn_cancelarcambios.setText("Cancelar");
+        btn_cancelarcambios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_cancelarcambiosActionPerformed(evt);
+            }
+        });
 
         jLabel76.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/usuario (1)AAA.png"))); // NOI18N
 
@@ -1249,7 +1340,19 @@ private void listarTarjetas() {
                 .addContainerGap())
         );
 
-        jPanel3.add(jPanel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 170, 320, 370));
+        jPanel3.add(jPanel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 160, 320, 370));
+
+        jButton1.setFont(new java.awt.Font("Yu Gothic UI", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 0, 0));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/usuario_eliminado.png"))); // NOI18N
+        jButton1.setText("Eliminar Usuario");
+        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(255, 51, 51), new java.awt.Color(255, 51, 51), new java.awt.Color(153, 0, 0), new java.awt.Color(153, 0, 0)));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 580, 150, 30));
 
         jLabel52.setForeground(new java.awt.Color(51, 153, 255));
         jLabel52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo tecnológico oscuro AIRSERVICE PRO (1).png"))); // NOI18N
@@ -1258,6 +1361,154 @@ private void listarTarjetas() {
         jTabbedPane1.addTab("MI PERFIL", jPanel3);
 
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel24.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel64.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/agente-de-servicio-al-cliente (2).png"))); // NOI18N
+        jPanel24.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, -1, -1));
+
+        jLabel81.setFont(new java.awt.Font("Yu Gothic UI", 1, 24)); // NOI18N
+        jLabel81.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel81.setText("Contacto");
+        jPanel24.add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, -1, -1));
+
+        jLabel82.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel82.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel82.setText("Estamos aqui para ayudarte,");
+        jPanel24.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 210, 180, -1));
+
+        jLabel83.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel83.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel83.setText("Si tienes alguna duda o necesitas soporte, ");
+        jPanel24.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 230, -1, -1));
+
+        jLabel84.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel84.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel84.setText("contactenos");
+        jPanel24.add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, -1, -1));
+
+        jLabel60.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo tecnológico de aire acondicionado helado (1)rescalado.png"))); // NOI18N
+        jPanel24.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 800, 180));
+
+        jPanel25.setBackground(new java.awt.Color(0, 5, 36));
+        jPanel25.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 204, 204), new java.awt.Color(0, 204, 204)));
+        jPanel25.setForeground(new java.awt.Color(0, 5, 36));
+        jPanel25.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel85.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel85.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel85.setText("Informacion de contacto");
+        jPanel25.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, -1, -1));
+
+        jLabel86.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/informacion (2).png"))); // NOI18N
+        jPanel25.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 2, -1, -1));
+
+        jLabel87.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel87.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/llamada.png"))); // NOI18N
+        jPanel25.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 49, -1, -1));
+
+        jSeparator14.setForeground(new java.awt.Color(51, 255, 255));
+        jPanel25.add(jSeparator14, new org.netbeans.lib.awtextra.AbsoluteConstraints(66, 23, 190, 10));
+
+        jLabel88.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel88.setForeground(new java.awt.Color(0, 255, 153));
+        jLabel88.setText("Telefono");
+        jPanel25.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 49, -1, -1));
+
+        jLabel89.setFont(new java.awt.Font("Yu Gothic UI", 0, 12)); // NOI18N
+        jLabel89.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel89.setText("+57 01 8000 8888");
+        jPanel25.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, -1, -1));
+
+        jSeparator15.setForeground(new java.awt.Color(102, 255, 255));
+        jPanel25.add(jSeparator15, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 97, 285, 10));
+
+        jLabel90.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/correo-electronico.png"))); // NOI18N
+        jPanel25.add(jLabel90, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 113, 43, -1));
+
+        jLabel91.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel91.setForeground(new java.awt.Color(51, 255, 204));
+        jLabel91.setText("Correo Electronico");
+        jPanel25.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, -1, -1));
+
+        jLabel92.setFont(new java.awt.Font("Yu Gothic UI", 0, 12)); // NOI18N
+        jLabel92.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel92.setText("Soporte@ariservice.com");
+        jPanel25.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, -1, -1));
+
+        jSeparator16.setForeground(new java.awt.Color(0, 204, 255));
+        jPanel25.add(jSeparator16, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 167, 320, 10));
+
+        jLabel93.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/marcador-de-posicion.png"))); // NOI18N
+        jPanel25.add(jLabel93, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, -1, -1));
+
+        jLabel94.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel94.setForeground(new java.awt.Color(0, 255, 153));
+        jLabel94.setText("Nuestra Direccion");
+        jPanel25.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, 132, -1));
+
+        jLabel95.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel95.setText("Av. PedroHeredia Calle #23");
+        jPanel25.add(jLabel95, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 150, -1));
+        jPanel25.add(jSeparator17, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 290, 10));
+
+        jPanel24.add(jPanel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, 330, 280));
+
+        jPanel26.setBackground(new java.awt.Color(0, 5, 36));
+        jPanel26.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 204, 204), new java.awt.Color(0, 204, 204)));
+
+        jLabel96.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel96.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel96.setText("Gracias por preferir Air Service Pro !! ");
+
+        jLabel97.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel97.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel97.setText("Deje su reseña");
+
+        jLabel98.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/clasificacion.png"))); // NOI18N
+
+        jLabel99.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/resena-del-producto.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel26Layout = new javax.swing.GroupLayout(jPanel26);
+        jPanel26.setLayout(jPanel26Layout);
+        jPanel26Layout.setHorizontalGroup(
+            jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel26Layout.createSequentialGroup()
+                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel26Layout.createSequentialGroup()
+                        .addGap(165, 165, 165)
+                        .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel98)
+                            .addComponent(jLabel97, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel26Layout.createSequentialGroup()
+                        .addGap(60, 60, 60)
+                        .addComponent(jLabel96))
+                    .addGroup(jPanel26Layout.createSequentialGroup()
+                        .addGap(202, 202, 202)
+                        .addComponent(jLabel99)))
+                .addContainerGap(78, Short.MAX_VALUE))
+        );
+        jPanel26Layout.setVerticalGroup(
+            jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel26Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel97)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel98, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel96)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel99)
+                .addContainerGap(15, Short.MAX_VALUE))
+        );
+
+        jPanel24.add(jPanel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 330, 460, 200));
+
+        jLabel55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo tecnológico oscuro AIRSERVICE PRO (1).png"))); // NOI18N
+        jPanel24.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 610));
+
+        jPanel4.add(jPanel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 610));
+
         jTabbedPane1.addTab("CONTACTO", jPanel4);
 
         jPanel1.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 650));
@@ -1317,26 +1568,217 @@ private void listarTarjetas() {
 
     private void btn_comprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_comprarActionPerformed
         // TODO add your handling code here:
+   
+     if (txt_nombrecompleto.getText().trim().isEmpty() ||
+        txt_correo.getText().trim().isEmpty() ||
+        txt_telefono.getText().trim().isEmpty() ||
+        txt_documento.getText().trim().isEmpty() ||
+        txt_departamento.getText().trim().isEmpty() ||
+        txt_municipio.getText().trim().isEmpty() ||
+        txt_direccioncalle.getText().trim().isEmpty()) {
+        
+        javax.swing.JOptionPane.showMessageDialog(this, 
+            "Por favor, complete todos los datos del usuario y la dirección de envío.", 
+            "Campos Incompletos", 
+            javax.swing.JOptionPane.WARNING_MESSAGE);
+        return; 
+    }
+     String correo = txt_correo.getText().trim();
+     String regexCorreo = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$";
+     
+     if (!correo.matches(regexCorreo)) {
+    javax.swing.JOptionPane.showMessageDialog(this, 
+        "El formato del correo electrónico no es válido.\nEjemplo: usuario@dominio.com", 
+        "Correo Inválido", 
+        javax.swing.JOptionPane.WARNING_MESSAGE);
+    txt_correo.requestFocus(); 
+    return;       
+}
+      if (txt_telefono.getText().trim().length() < 7 || txt_documento.getText().trim().length() < 6) {
+    javax.swing.JOptionPane.showMessageDialog(this, 
+        "El teléfono debe tener al menos 7 dígitos y el documento al menos 6.", 
+        "Datos Inválidos", 
+        javax.swing.JOptionPane.WARNING_MESSAGE);
+    return;
+}
+       
+
+        
         try {
             Pago p = ctrl.comprar(txt_nombrecompleto.getText(), (String)jcombo_servicios.getSelectedItem(),(String)jcombo_metodopago.getSelectedItem(),Jcheck_terminosycondiciones.isSelected());
             refrescarHistorial();
+            String textoPrecio = jlabel_TotalPago.getText();
+            String textoLimpio = textoPrecio.replace("$", "")
+                                .replace("COP", "")
+                                .replace(" ", "")
+                                .replace(".", "");
+            double montoActual = Double.parseDouble(textoLimpio);
+            totalPagadoAcumulado += montoActual;
+            contadorTransacciones++;
+            jTotalpagado.setText("$" + String.format(java.util.Locale.US,"%,.0f", totalPagadoAcumulado));
+            jPagosrealizados.setText(String.valueOf(contadorTransacciones));
+            String direccionEnvio = txt_departamento.getText() + "," + txt_municipio.getText() + "," + txt_direccioncalle.getText();
+            jlabel_direccionEnvio.setText(direccionEnvio);
+            
             JOptionPane.showMessageDialog(this,
             "Compra completada exitosamente.\nFactura: " + p.getNumeroFactura()
             + "\nTotal: $ " + moneda.format(p.getTotal()) + " COP",
             "Pago exitoso", JOptionPane.INFORMATION_MESSAGE);
-            limpiarPago();
+            
             jTabbedPane2.setSelectedIndex(2);
+            //Pasar datos al perfil
+    txt_mostrarNombre.setText(txt_nombrecompleto.getText());
+    txt_mostrarcorreo.setText(txt_correo.getText());
+    txt_mostrarid.setText(txt_documento.getText());
+    txt_mostrartel.setText(txt_telefono.getText());
+    String direccionCompleta = txt_direccioncalle.getText() + ", " + txt_municipio.getText() + ", " + txt_departamento.getText();
+    txt_mostrardireccion.setText(direccionCompleta);
+    //guarda valores originales
+    nombreOriginal = txt_mostrarNombre.getText();
+    correoOriginal = txt_mostrarcorreo.getText();
+    idOriginal = txt_mostrarid.getText();
+    telefonoOriginal = txt_mostrartel.getText();
+    direccionOriginal = txt_mostrardireccion.getText();
+    
+    
+    limpiarPago();
+            
             
         
         }catch(IllegalAccessException ex){
             JOptionPane.showMessageDialog(this, ex.getMessage(),
                     "No se pudo completar la compra",JOptionPane.INFORMATION_MESSAGE);
         }
+        
+        
     }//GEN-LAST:event_btn_comprarActionPerformed
 
     private void btn_cancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cancelarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_cancelarActionPerformed
+
+    private void btn_guardarcambiosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_guardarcambiosActionPerformed
+        // TODO add your handling code here:
+     if (txt_telefono.getText().trim().length() < 7 || txt_documento.getText().trim().length() < 6) {
+    javax.swing.JOptionPane.showMessageDialog(this, 
+        "El teléfono debe tener al menos 7 dígitos y el documento al menos 6.", 
+        "Datos Inválidos", 
+        javax.swing.JOptionPane.WARNING_MESSAGE);
+    return;
+}
+        
+    nombreOriginal = txt_mostrarNombre.getText();
+    correoOriginal = txt_mostrarcorreo.getText();
+    idOriginal = txt_mostrarid.getText();
+    telefonoOriginal = txt_mostrartel.getText();
+    direccionOriginal = txt_mostrardireccion.getText();
+    
+    javax.swing.JOptionPane.showMessageDialog(this, "Tus datos de perfil han sido actualizados.");
+        
+    }//GEN-LAST:event_btn_guardarcambiosActionPerformed
+
+    private void btn_cancelarcambiosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cancelarcambiosActionPerformed
+        // TODO add your handling code here:
+     txt_mostrarNombre.setText(nombreOriginal);
+    txt_mostrarcorreo.setText(correoOriginal);
+    txt_mostrarid.setText(idOriginal);
+    txt_mostrartel.setText(telefonoOriginal);
+    txt_mostrardireccion.setText(direccionOriginal);
+    
+    javax.swing.JOptionPane.showMessageDialog(this, "Edición cancelada. Se han restaurado tus datos.");
+    }//GEN-LAST:event_btn_cancelarcambiosActionPerformed
+
+    private void txt_nombrecompletoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_nombrecompletoKeyTyped
+        // TODO add your handling code here:
+        validarSoloLetras(evt);
+    }//GEN-LAST:event_txt_nombrecompletoKeyTyped
+
+    private void txt_telefonoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_telefonoKeyTyped
+        // TODO add your handling code here:
+        validarSoloNumeros(evt, txt_telefono, 10);
+        
+
+    }//GEN-LAST:event_txt_telefonoKeyTyped
+
+    private void txt_documentoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_documentoKeyTyped
+        // TODO add your handling code here:
+        validarSoloNumeros(evt, txt_documento, 10);
+       
+    }//GEN-LAST:event_txt_documentoKeyTyped
+
+    private void txt_departamentoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_departamentoKeyTyped
+        // TODO add your handling code here:
+        validarSinCaracteresEspeciales(evt);
+    }//GEN-LAST:event_txt_departamentoKeyTyped
+
+    private void txt_municipioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_municipioKeyTyped
+        // TODO add your handling code here:
+        validarSinCaracteresEspeciales(evt);
+    }//GEN-LAST:event_txt_municipioKeyTyped
+
+    private void txt_mostrarNombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_mostrarNombreKeyTyped
+        // TODO add your handling code here:
+        validarSoloLetras(evt);
+    }//GEN-LAST:event_txt_mostrarNombreKeyTyped
+
+    private void txt_mostraridKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_mostraridKeyTyped
+        // TODO add your handling code here:
+        validarSoloNumeros(evt, txt_mostrarid, 10);
+    }//GEN-LAST:event_txt_mostraridKeyTyped
+
+    private void txt_mostrartelKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_mostrartelKeyTyped
+        // TODO add your handling code here:
+        validarSoloNumeros(evt, txt_correo, 10);
+    }//GEN-LAST:event_txt_mostrartelKeyTyped
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        // Valida que exista un usuario activo
+    if (txt_mostrarNombre.getText().trim().isEmpty()) {
+        javax.swing.JOptionPane.showMessageDialog(this, 
+            "No hay ningún perfil activo para eliminar.", 
+            "Aviso", 
+            javax.swing.JOptionPane.INFORMATION_MESSAGE);
+        return;
+    }
+
+    //  PRIMERA ADVERTENCIA
+    int primeraAdvertencia = javax.swing.JOptionPane.showConfirmDialog(this, 
+            "¿Estás seguro que deseas eliminar permanentemente tus datos?", 
+            "Advertencia de Eliminación", 
+            javax.swing.JOptionPane.YES_NO_OPTION, 
+            javax.swing.JOptionPane.WARNING_MESSAGE);
+            
+    if (primeraAdvertencia == javax.swing.JOptionPane.YES_OPTION) {
+        
+        // SEGUNDA ADVERTENCIA (Crítica)
+        int segundaAdvertencia = javax.swing.JOptionPane.showConfirmDialog(this, 
+                "¡ATENCIÓN! Al eliminar tu usuario se borrará también todo tu historial de pagos y los datos que has ingresado.\n¿Deseas continuar de todas formas?", 
+                "Peligro - Eliminación Definitiva", 
+                javax.swing.JOptionPane.YES_NO_OPTION, 
+                javax.swing.JOptionPane.ERROR_MESSAGE);
+                
+        if (segundaAdvertencia == javax.swing.JOptionPane.YES_OPTION) {
+            
+            // A. Borrar el historial de pagos del controlador 
+            if (ctrl != null) {
+                ctrl.eliminarHistorial();
+            }
+            
+            
+            javax.swing.JOptionPane.showMessageDialog(this, 
+                "Tu usuario, datos personales e historial de pagos han sido eliminados permanentemente.", 
+                "Cuenta Eliminada", 
+                javax.swing.JOptionPane.INFORMATION_MESSAGE);
+                
+           
+            Login vistaLogin = new Login();
+            vistaLogin.setVisible(true);
+            vistaLogin.setLocationRelativeTo(null); 
+            this.dispose(); 
+        }
+    }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1372,7 +1814,31 @@ private void listarTarjetas() {
             }
         });
     }
+    // Permite solo letras y espacios
+private void validarSoloLetras(java.awt.event.KeyEvent evt) {
+    char c = evt.getKeyChar();
+    if (!Character.isLetter(c) && !Character.isWhitespace(c) && c != java.awt.event.KeyEvent.VK_BACK_SPACE) {
+        evt.consume();
+    }
+}
 
+// Permite solo números y limita la cantidad máxima de dígitos
+private void validarSoloNumeros(java.awt.event.KeyEvent evt, javax.swing.JTextField campo, int limite) {
+    char c = evt.getKeyChar();
+    // Si no es número o ya alcanzó el límite de caracteres, bloquea la tecla
+    if (!Character.isDigit(c) || campo.getText().length() >= limite) {
+        evt.consume();
+    }
+}
+
+// Bloquea caracteres especiales (permite letras, números y espacios)
+private void validarSinCaracteresEspeciales(java.awt.event.KeyEvent evt) {
+    char c = evt.getKeyChar();
+    if (!Character.isLetterOrDigit(c) && !Character.isWhitespace(c) && c != java.awt.event.KeyEvent.VK_BACK_SPACE) {
+        evt.consume();
+    }
+}
+   
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable HistorialUsuario;
     private javax.swing.JCheckBox Jcheck_terminosycondiciones;
@@ -1385,6 +1851,7 @@ private void listarTarjetas() {
     private javax.swing.JButton btn_cancelarcambios;
     private javax.swing.JButton btn_comprar;
     private javax.swing.JButton btn_guardarcambios;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1435,14 +1902,17 @@ private void listarTarjetas() {
     private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
     private javax.swing.JLabel jLabel65;
     private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel67;
@@ -1461,7 +1931,26 @@ private void listarTarjetas() {
     private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel80;
+    private javax.swing.JLabel jLabel81;
+    private javax.swing.JLabel jLabel82;
+    private javax.swing.JLabel jLabel83;
+    private javax.swing.JLabel jLabel84;
+    private javax.swing.JLabel jLabel85;
+    private javax.swing.JLabel jLabel86;
+    private javax.swing.JLabel jLabel87;
+    private javax.swing.JLabel jLabel88;
+    private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel90;
+    private javax.swing.JLabel jLabel91;
+    private javax.swing.JLabel jLabel92;
+    private javax.swing.JLabel jLabel93;
+    private javax.swing.JLabel jLabel94;
+    private javax.swing.JLabel jLabel95;
+    private javax.swing.JLabel jLabel96;
+    private javax.swing.JLabel jLabel97;
+    private javax.swing.JLabel jLabel98;
+    private javax.swing.JLabel jLabel99;
     private javax.swing.JLabel jPagosrealizados;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
@@ -1479,6 +1968,9 @@ private void listarTarjetas() {
     private javax.swing.JPanel jPanel21;
     private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel23;
+    private javax.swing.JPanel jPanel24;
+    private javax.swing.JPanel jPanel25;
+    private javax.swing.JPanel jPanel26;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
@@ -1492,6 +1984,10 @@ private void listarTarjetas() {
     private javax.swing.JSeparator jSeparator11;
     private javax.swing.JSeparator jSeparator12;
     private javax.swing.JSeparator jSeparator13;
+    private javax.swing.JSeparator jSeparator14;
+    private javax.swing.JSeparator jSeparator15;
+    private javax.swing.JSeparator jSeparator16;
+    private javax.swing.JSeparator jSeparator17;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
