@@ -77,6 +77,7 @@ public class Usuarios extends javax.swing.JFrame {
         jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -348,6 +349,9 @@ public class Usuarios extends javax.swing.JFrame {
         jLabel29.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         jPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 580, -1, -1));
 
+        jLabel34.setText("aaaaAA");
+        jPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, -1, -1));
+
         jLabel1.setForeground(new java.awt.Color(11, 31, 58));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo tecnológico oscuro AIRSERVICE PRO (1).png"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 660));
@@ -490,6 +494,7 @@ public class Usuarios extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
