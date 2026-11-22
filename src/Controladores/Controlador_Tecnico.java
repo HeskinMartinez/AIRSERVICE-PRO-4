@@ -4,11 +4,16 @@
  */
 package Controladores;
 
+import Modelos.Busqueda;
+import Modelos.Material;
 import Modelos.Modelo_login;
 import Modelos.Tecnico;
 import java.awt.Component;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
@@ -93,6 +98,253 @@ public class Controlador_Tecnico {
 
     public void cerrarSesion() {
         Modelo_login.cerrarSesion();
+    }
+
+    /** Label Almacen: abre la ventana de inventario y cierra la del tecnico. */
+    public void abrirAlmacen(javax.swing.JFrame ventanaActual) {
+        java.awt.EventQueue.invokeLater(() -> new Vistas.INVENTARIO().setVisible(true));
+        ventanaActual.dispose();
+    }
+
+    // ---------------------------------------------------------------
+    // Inventario: materiales usados y busqueda (lista de Controlador_Inventario)
+    // ---------------------------------------------------------------
+
+    private final Controlador_Inventario inventario = new Controlador_Inventario();
+    private JTable tablaUsados;       // ID, Material, Disponible, Cantidad Usada
+    private JTable tablaInventario;   // ID, Material, Estado, Cantidad
+    private JComboBox<?> criterioBusqueda;
+    private JTextField textoBusqueda;
+
+    // Despues de buscar, el campo de texto se limpia solo (los resultados se quedan en la tabla).
+    private int segundosLimpiarCampo = 5;
+    private javax.swing.Timer temporizadorLimpiar;
+    private boolean limpiandoCampo = false;
+
+    /** La vista entrega las dos tablas, el combo "Buscar por" y el campo de texto de la busqueda. */
+    public void enlazarInventario(JTable usados, JTable inventarioTabla, JComboBox<?> criterio, JTextField texto) {
+        this.tablaUsados = usados;
+        this.tablaInventario = inventarioTabla;
+        this.criterioBusqueda = criterio;
+        this.textoBusqueda = texto;
+        // Enter en el campo busca; si el campo se vacia, vuelven todos los materiales.
+        texto.addActionListener(e -> buscarMateriales());
+        texto.getDocument().addDocumentListener(new javax.swing.event.DocumentListener() {
+            @Override
+            public void insertUpdate(javax.swing.event.DocumentEvent e) {
+                textoCambio();
+            }
+
+            @Override
+            public void removeUpdate(javax.swing.event.DocumentEvent e) {
+                textoCambio();
+            }
+
+            @Override
+            public void changedUpdate(javax.swing.event.DocumentEvent e) {
+                textoCambio();
+            }
+        });
+        // La lista de materiales no tiene "categoria"; se muestra el estado del almacen.
+        inventarioTabla.getColumnModel().getColumn(2).setHeaderValue("Estado");
+        inventarioTabla.getTableHeader().repaint();
+    }
+
+    /** Si el usuario escribe se cancela la limpieza automatica; si deja el campo vacio, vuelven todos los materiales. */
+    private void textoCambio() {
+        if (limpiandoCampo) {
+            return; // es la limpieza automatica: los resultados se quedan
+        }
+        if (temporizadorLimpiar != null) {
+            temporizadorLimpiar.stop();
+        }
+        if (tablaInventario != null && textoBusqueda.getText().trim().isEmpty()) {
+            llenarTablaInventario(inventario.obtenerMateriales());
+        }
+    }
+
+    /** Limpia el campo de texto pasados unos segundos, sin tocar los resultados de la tabla. */
+    private void programarLimpiezaCampo() {
+        if (temporizadorLimpiar != null) {
+            temporizadorLimpiar.stop();
+        }
+        temporizadorLimpiar = new javax.swing.Timer(segundosLimpiarCampo * 1000, e -> {
+            limpiandoCampo = true;
+            try {
+                textoBusqueda.setText("");
+            } finally {
+                limpiandoCampo = false;
+            }
+        });
+        temporizadorLimpiar.setRepeats(false);
+        temporizadorLimpiar.start();
+    }
+
+    /** Cuantos segundos tarda en limpiarse el campo de busqueda despues de buscar (por defecto 5). */
+    public void setSegundosLimpiarCampo(int segundos) {
+        this.segundosLimpiarCampo = Math.max(1, segundos);
+    }
+
+    /** Borra el texto de la busqueda y vuelve a mostrar todos los materiales. */
+    public void limpiarBusqueda() {
+        if (temporizadorLimpiar != null) {
+            temporizadorLimpiar.stop();
+        }
+        if (textoBusqueda != null) {
+            textoBusqueda.setText("");
+        }
+        if (tablaInventario != null) {
+            llenarTablaInventario(inventario.obtenerMateriales());
+        }
+    }
+
+    /** Llena las dos tablas con todos los materiales y su stock actual. */
+    public void cargarInventario() {
+        if (tablaUsados == null || tablaInventario == null) {
+            return;
+        }
+        llenarTablaUsados();
+        llenarTablaInventario(inventario.obtenerMateriales());
+    }
+
+    /**
+     * Busca por ID (busqueda binaria sobre la lista ordenada por codigo) o por
+     * nombre (busqueda lineal) segun el combo, y muestra el resultado.
+     * Con el campo vacio muestra todos los materiales.
+     */
+    public void buscarMateriales() {
+        if (tablaInventario == null) {
+            return;
+        }
+        String texto = textoBusqueda.getText().trim();
+        if (texto.isEmpty()) {
+            llenarTablaInventario(inventario.obtenerMateriales());
+            return;
+        }
+
+        List<Material> resultado = new ArrayList<>();
+        if ("ID".equals(String.valueOf(criterioBusqueda.getSelectedItem()))) {
+            List<Material> ordenada = Busqueda.ordenarPorCodigo(inventario.obtenerMateriales());
+            Material encontrado = Busqueda.buscarPorCodigo(ordenada, normalizarCodigo(texto));
+            if (encontrado != null) {
+                resultado.add(encontrado);
+            }
+        } else {
+            resultado = Busqueda.buscarPorNombre(inventario.obtenerMateriales(), texto);
+        }
+
+        llenarTablaInventario(resultado);
+        if (resultado.isEmpty()) {
+            JOptionPane.showMessageDialog(tablaInventario, "No se encontraron materiales con ese dato.",
+                    "Buscar material", JOptionPane.INFORMATION_MESSAGE);
+        } else {
+            programarLimpiezaCampo();
+        }
+    }
+
+    /**
+     * Toma la "Cantidad Usada" escrita en la tabla de materiales usados, la
+     * valida, descuenta el stock, la guarda en materiales_usados.txt y
+     * actualiza las tablas. Si algo esta mal no se guarda nada.
+     */
+    public boolean registrarMaterialesUsados(Component padre) {
+        if (tablaUsados == null) {
+            return false;
+        }
+        if (tablaUsados.isEditing() && !tablaUsados.getCellEditor().stopCellEditing()) {
+            aviso(padre, "Corrige la cantidad usada: debe ser un numero entero.", JOptionPane.WARNING_MESSAGE);
+            return false;
+        }
+
+        List<Material> materiales = inventario.obtenerMateriales();
+        List<Material> usados = new ArrayList<>();
+        List<Integer> cantidades = new ArrayList<>();
+        for (int fila = 0; fila < tablaUsados.getRowCount(); fila++) {
+            Object valor = tablaUsados.getValueAt(fila, 3);
+            String texto = valor == null ? "" : valor.toString().trim();
+            if (texto.isEmpty()) {
+                continue;
+            }
+            String codigo = String.valueOf(tablaUsados.getValueAt(fila, 0));
+            Material material = null;
+            for (Material m : materiales) {
+                if (m.getCodigo().equals(codigo)) {
+                    material = m;
+                }
+            }
+            int cantidad;
+            try {
+                cantidad = Integer.parseInt(texto);
+            } catch (NumberFormatException e) {
+                aviso(padre, "La cantidad usada de " + codigo + " debe ser un numero entero.",
+                        JOptionPane.WARNING_MESSAGE);
+                return false;
+            }
+            if (material == null || cantidad <= 0) {
+                aviso(padre, "La cantidad usada de " + codigo + " debe ser mayor a 0.", JOptionPane.WARNING_MESSAGE);
+                return false;
+            }
+            if (cantidad > material.getStockDisponible()) {
+                aviso(padre, "No hay suficiente stock de " + material.getNombre() + ". Disponible: "
+                        + material.getStockDisponible() + ".", JOptionPane.WARNING_MESSAGE);
+                return false;
+            }
+            usados.add(material);
+            cantidades.add(cantidad);
+        }
+
+        if (usados.isEmpty()) {
+            aviso(padre, "Escribe la cantidad usada en al menos un material.", JOptionPane.WARNING_MESSAGE);
+            return false;
+        }
+
+        try {
+            String idTecnico = idTecnicoActual();
+            for (int i = 0; i < usados.size(); i++) {
+                modelo.registrarUsoMaterial(idTecnico, usados.get(i).getCodigo(),
+                        usados.get(i).getNombre(), cantidades.get(i));
+                usados.get(i).setStockDisponible(usados.get(i).getStockDisponible() - cantidades.get(i));
+            }
+        } catch (IOException e) {
+            aviso(padre, "No se pudo guardar el uso de materiales: " + e.getMessage(), JOptionPane.ERROR_MESSAGE);
+            return false;
+        }
+
+        cargarInventario();
+        aviso(padre, "Materiales registrados correctamente.", JOptionPane.INFORMATION_MESSAGE);
+        return true;
+    }
+
+    private void llenarTablaUsados() {
+        DefaultTableModel m = (DefaultTableModel) tablaUsados.getModel();
+        m.setRowCount(0);
+        for (Material material : inventario.obtenerMateriales()) {
+            m.addRow(new Object[]{material.getCodigo(), material.getNombre(),
+                material.getStockDisponible(), null});
+        }
+    }
+
+    private void llenarTablaInventario(List<Material> materiales) {
+        DefaultTableModel m = (DefaultTableModel) tablaInventario.getModel();
+        m.setRowCount(0);
+        for (Material material : materiales) {
+            m.addRow(new Object[]{material.getCodigo(), material.getNombre(),
+                material.getEstadoAlmacen(), material.getStockDisponible()});
+        }
+    }
+
+    /** "1" o "001" se entienden como MAT-001. */
+    private String normalizarCodigo(String texto) {
+        String t = texto.trim().toUpperCase();
+        if (t.matches("\\d{1,3}")) {
+            return String.format("MAT-%03d", Integer.parseInt(t));
+        }
+        return t;
+    }
+
+    private String idTecnicoActual() throws IOException {
+        String[] perfil = modelo.obtenerPerfil(Modelo_login.getIdUsuarioActual());
+        return perfil != null ? perfil[Tecnico.ID] : "SIN-ID";
     }
 
     /**
@@ -249,5 +501,4 @@ public class Controlador_Tecnico {
     private void aviso(Component padre, String mensaje, int tipo) {
         JOptionPane.showMessageDialog(padre, mensaje, "Perfil", tipo);
     }
-    
 }

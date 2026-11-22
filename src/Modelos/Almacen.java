@@ -6,8 +6,12 @@ package Modelos;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.*;
-import java.util.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Guarda y lee los datos en archivos de texto dentro de la carpeta "datos".
@@ -27,6 +31,7 @@ public class Almacen {
     static final String USUARIOS = "usuarios.txt";
     static final String TECNICOS = "tecnicos.txt";
     static final String CLIENTES = "clientes.txt";
+    static final String MATERIALES_USADOS = "materiales_usados.txt";
 
     // Cuenta de administrador que se crea sola la primera vez.
     private static final String ADMIN_NOMBRE = "Administrador";
@@ -41,7 +46,7 @@ public class Almacen {
             return;
         }
         Files.createDirectories(Paths.get(CARPETA));
-        for (String archivo : new String[]{USUARIOS, TECNICOS, CLIENTES}) {
+        for (String archivo : new String[]{USUARIOS, TECNICOS, CLIENTES, MATERIALES_USADOS}) {
             Path ruta = ruta(archivo);
             if (!Files.exists(ruta)) {
                 Files.createFile(ruta);
