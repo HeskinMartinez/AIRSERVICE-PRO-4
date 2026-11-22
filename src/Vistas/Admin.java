@@ -1722,7 +1722,7 @@ public class Admin extends javax.swing.JFrame {
         lbServicio3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lbServicio3.setForeground(new java.awt.Color(255, 255, 255));
         lbServicio3.setText("SERVICIOS");
-        JpnServicio3.add(lbServicio3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 30));
+        JpnServicio3.add(lbServicio3, new org.netbeans.lib.awtextra.AbsoluteConstraints(9, 0, 70, 30));
 
         jPanel4.add(JpnServicio3, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 40, 90, 30));
 
@@ -5082,9 +5082,6 @@ public class Admin extends javax.swing.JFrame {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JpnUsuario13MouseClicked(evt);
             }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnUsuario13MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 JpnUsuario13MouseExited(evt);
             }
@@ -6887,550 +6884,6 @@ public class Admin extends javax.swing.JFrame {
         getContentPane().add(Principal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 680));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void agregarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarUsuarioMouseMoved
-        agregarUsuario.setBackground(new Color(0, 90, 200));
-    }//GEN-LAST:event_agregarUsuarioMouseMoved
-
-    private void agregarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarUsuarioMouseClicked
-        Principal.setSelectedIndex(4);
-    }//GEN-LAST:event_agregarUsuarioMouseClicked
-
-    private void agregarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarUsuarioMouseExited
-        agregarUsuario.setBackground(new Color(0, 122, 255));
-    }//GEN-LAST:event_agregarUsuarioMouseExited
-
-    private void agregarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarUsuarioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_agregarUsuarioActionPerformed
-
-    private void eliminarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarUsuarioMouseMoved
-        eliminarUsuario.setBackground(new Color(200, 30, 30));
-    }//GEN-LAST:event_eliminarUsuarioMouseMoved
-
-    private void eliminarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarUsuarioMouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_eliminarUsuarioMouseClicked
-
-    private void eliminarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarUsuarioMouseExited
-        eliminarUsuario.setBackground(new Color(254, 226, 226));
-    }//GEN-LAST:event_eliminarUsuarioMouseExited
-
-    private void eliminarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminarUsuarioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_eliminarUsuarioActionPerformed
-
-    private void volverUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverUsuarioMouseMoved
-        volverUsuario.setBackground(new Color(0, 90, 200));
-    }//GEN-LAST:event_volverUsuarioMouseMoved
-
-    private void volverUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverUsuarioMouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_volverUsuarioMouseClicked
-
-    private void volverUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverUsuarioMouseExited
-        volverUsuario.setBackground(new Color(0, 122, 255));
-    }//GEN-LAST:event_volverUsuarioMouseExited
-
-    private void actualizarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarUsuarioMouseMoved
-        actualizarUsuario.setBackground(new Color(0, 90, 200));
-    }//GEN-LAST:event_actualizarUsuarioMouseMoved
-
-    private void actualizarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarUsuarioMouseClicked
-        Principal.setSelectedIndex(16);
-    }//GEN-LAST:event_actualizarUsuarioMouseClicked
-
-    private void actualizarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarUsuarioMouseExited
-        actualizarUsuario.setBackground(new Color(0, 122, 255));
-    }//GEN-LAST:event_actualizarUsuarioMouseExited
-
-    private void actualizarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actualizarUsuarioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_actualizarUsuarioActionPerformed
-
-    private void buscarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarUsuarioMouseMoved
-        buscarUsuario.setBackground(new Color(0, 90, 200));
-    }//GEN-LAST:event_buscarUsuarioMouseMoved
-
-    private void buscarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarUsuarioMouseClicked
-        Principal.setSelectedIndex(5);
-    }//GEN-LAST:event_buscarUsuarioMouseClicked
-
-    private void buscarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarUsuarioMouseExited
-        buscarUsuario.setBackground(new Color(0, 122, 255));
-    }//GEN-LAST:event_buscarUsuarioMouseExited
-
-    private void buscarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscarUsuarioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buscarUsuarioActionPerformed
-
-    private void listarUsuariosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarUsuariosMouseMoved
-        listarUsuarios.setBackground(new Color(0, 90, 200));
-    }//GEN-LAST:event_listarUsuariosMouseMoved
-
-    private void listarUsuariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarUsuariosMouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_listarUsuariosMouseClicked
-
-    private void listarUsuariosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarUsuariosMouseExited
-        listarUsuarios.setBackground(new Color(0, 122, 255));
-    }//GEN-LAST:event_listarUsuariosMouseExited
-
-    private void listarUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listarUsuariosActionPerformed
-
-    }//GEN-LAST:event_listarUsuariosActionPerformed
-
-    private void volverTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverTecnicoMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverTecnicoMouseMoved
-
-    private void volverTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverTecnicoMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverTecnicoMouseClicked
-
-    private void volverTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverTecnicoMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverTecnicoMouseExited
-
-    private void listarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarTecnicoMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_listarTecnicoMouseMoved
-
-    private void listarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarTecnicoMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_listarTecnicoMouseClicked
-
-    private void listarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarTecnicoMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_listarTecnicoMouseExited
-
-    private void listarTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listarTecnicoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_listarTecnicoActionPerformed
-
-    private void buscarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarTecnicoMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buscarTecnicoMouseMoved
-
-    private void buscarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarTecnicoMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buscarTecnicoMouseClicked
-
-    private void buscarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarTecnicoMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buscarTecnicoMouseExited
-
-    private void buscarTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscarTecnicoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buscarTecnicoActionPerformed
-
-    private void actualizarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarTecnicoMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_actualizarTecnicoMouseMoved
-
-    private void actualizarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarTecnicoMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_actualizarTecnicoMouseClicked
-
-    private void actualizarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarTecnicoMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_actualizarTecnicoMouseExited
-
-    private void actualizarTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actualizarTecnicoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_actualizarTecnicoActionPerformed
-
-    private void eliminarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarTecnicoMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_eliminarTecnicoMouseMoved
-
-    private void eliminarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarTecnicoMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_eliminarTecnicoMouseClicked
-
-    private void eliminarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarTecnicoMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_eliminarTecnicoMouseExited
-
-    private void eliminarTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminarTecnicoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_eliminarTecnicoActionPerformed
-
-    private void agregarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarTecnicoMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_agregarTecnicoMouseMoved
-
-    private void agregarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarTecnicoMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_agregarTecnicoMouseClicked
-
-    private void agregarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarTecnicoMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_agregarTecnicoMouseExited
-
-    private void agregarTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarTecnicoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_agregarTecnicoActionPerformed
-
-    private void volverServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverServicioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverServicioMouseMoved
-
-    private void volverServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverServicioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverServicioMouseClicked
-
-    private void volverServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverServicioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverServicioMouseExited
-
-    private void agregarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarServicioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_agregarServicioMouseMoved
-
-    private void agregarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarServicioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_agregarServicioMouseClicked
-
-    private void agregarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarServicioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_agregarServicioMouseExited
-
-    private void agregarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarServicioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_agregarServicioActionPerformed
-
-    private void actualizarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarServicioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_actualizarServicioMouseMoved
-
-    private void actualizarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarServicioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_actualizarServicioMouseClicked
-
-    private void actualizarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarServicioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_actualizarServicioMouseExited
-
-    private void actualizarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actualizarServicioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_actualizarServicioActionPerformed
-
-    private void eliminarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarServicioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_eliminarServicioMouseMoved
-
-    private void eliminarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarServicioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_eliminarServicioMouseClicked
-
-    private void eliminarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarServicioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_eliminarServicioMouseExited
-
-    private void eliminarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminarServicioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_eliminarServicioActionPerformed
-
-    private void buscarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarServicioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buscarServicioMouseMoved
-
-    private void buscarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarServicioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buscarServicioMouseClicked
-
-    private void buscarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarServicioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buscarServicioMouseExited
-
-    private void buscarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscarServicioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buscarServicioActionPerformed
-
-    private void listarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarServicioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_listarServicioMouseMoved
-
-    private void listarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarServicioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_listarServicioMouseClicked
-
-    private void listarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarServicioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_listarServicioMouseExited
-
-    private void listarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listarServicioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_listarServicioActionPerformed
-
-    private void btnAgregarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarUsuarioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAgregarUsuarioMouseMoved
-
-    private void btnAgregarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarUsuarioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAgregarUsuarioMouseClicked
-
-    private void btnAgregarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarUsuarioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAgregarUsuarioMouseExited
-
-    private void volverRegistrarNuevoUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverRegistrarNuevoUsuarioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverRegistrarNuevoUsuarioMouseMoved
-
-    private void volverRegistrarNuevoUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverRegistrarNuevoUsuarioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverRegistrarNuevoUsuarioMouseClicked
-
-    private void volverRegistrarNuevoUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverRegistrarNuevoUsuarioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverRegistrarNuevoUsuarioMouseExited
-
-    private void volverBuscarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverBuscarUsuarioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverBuscarUsuarioMouseMoved
-
-    private void volverBuscarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverBuscarUsuarioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverBuscarUsuarioMouseClicked
-
-    private void volverBuscarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverBuscarUsuarioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverBuscarUsuarioMouseExited
-
-    private void btnBuscarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarUsuarioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarUsuarioMouseMoved
-
-    private void btnBuscarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarUsuarioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarUsuarioMouseClicked
-
-    private void btnBuscarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarUsuarioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarUsuarioMouseExited
-
-    private void btnBuscarEliminarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarEliminarUsuarioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarEliminarUsuarioMouseMoved
-
-    private void btnBuscarEliminarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarEliminarUsuarioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarEliminarUsuarioMouseClicked
-
-    private void btnBuscarEliminarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarEliminarUsuarioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarEliminarUsuarioMouseExited
-
-    private void btnEliminarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEliminarUsuarioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnEliminarUsuarioMouseMoved
-
-    private void btnEliminarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEliminarUsuarioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnEliminarUsuarioMouseClicked
-
-    private void btnEliminarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEliminarUsuarioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnEliminarUsuarioMouseExited
-
-    private void volverEliminarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverEliminarUsuarioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverEliminarUsuarioMouseMoved
-
-    private void volverEliminarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverEliminarUsuarioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverEliminarUsuarioMouseClicked
-
-    private void volverEliminarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverEliminarUsuarioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverEliminarUsuarioMouseExited
-
-    private void volverListarUsuariosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverListarUsuariosMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverListarUsuariosMouseMoved
-
-    private void volverListarUsuariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverListarUsuariosMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverListarUsuariosMouseClicked
-
-    private void volverListarUsuariosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverListarUsuariosMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverListarUsuariosMouseExited
-
-    private void btnListarUsuariosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnListarUsuariosMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnListarUsuariosMouseMoved
-
-    private void btnListarUsuariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnListarUsuariosMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnListarUsuariosMouseClicked
-
-    private void btnListarUsuariosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnListarUsuariosMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnListarUsuariosMouseExited
-
-    private void btnGuardarDatosActualizarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarUsuarioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarDatosActualizarUsuarioMouseMoved
-
-    private void btnGuardarDatosActualizarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarUsuarioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarDatosActualizarUsuarioMouseClicked
-
-    private void btnGuardarDatosActualizarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarUsuarioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarDatosActualizarUsuarioMouseExited
-
-    private void btnGuardarDatosActualizarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarUsuarioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarDatosActualizarUsuarioActionPerformed
-
-    private void volverActualizarUsuariosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarUsuariosMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverActualizarUsuariosMouseMoved
-
-    private void volverActualizarUsuariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarUsuariosMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverActualizarUsuariosMouseClicked
-
-    private void volverActualizarUsuariosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarUsuariosMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverActualizarUsuariosMouseExited
-
-    private void btnAgregarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarTecnicoMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAgregarTecnicoMouseMoved
-
-    private void btnAgregarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarTecnicoMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAgregarTecnicoMouseClicked
-
-    private void btnAgregarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarTecnicoMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAgregarTecnicoMouseExited
-
-    private void volverRegistrarNuevoTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverRegistrarNuevoTecnicoMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverRegistrarNuevoTecnicoMouseMoved
-
-    private void volverRegistrarNuevoTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverRegistrarNuevoTecnicoMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverRegistrarNuevoTecnicoMouseClicked
-
-    private void volverRegistrarNuevoTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverRegistrarNuevoTecnicoMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverRegistrarNuevoTecnicoMouseExited
-
-    private void btnBuscarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarTecnicoMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarTecnicoMouseMoved
-
-    private void btnBuscarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarTecnicoMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarTecnicoMouseClicked
-
-    private void btnBuscarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarTecnicoMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarTecnicoMouseExited
-
-    private void volverBuscarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverBuscarTecnicoMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverBuscarTecnicoMouseMoved
-
-    private void volverBuscarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverBuscarTecnicoMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverBuscarTecnicoMouseClicked
-
-    private void volverBuscarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverBuscarTecnicoMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverBuscarTecnicoMouseExited
-
-    private void btnBuscarEliminarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarEliminarTecnicoMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarEliminarTecnicoMouseMoved
-
-    private void btnBuscarEliminarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarEliminarTecnicoMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarEliminarTecnicoMouseClicked
-
-    private void btnBuscarEliminarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarEliminarTecnicoMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarEliminarTecnicoMouseExited
-
-    private void btnEliminarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEliminarTecnicoMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnEliminarTecnicoMouseMoved
-
-    private void btnEliminarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEliminarTecnicoMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnEliminarTecnicoMouseClicked
-
-    private void btnEliminarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEliminarTecnicoMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnEliminarTecnicoMouseExited
-
-    private void volverEliminarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverEliminarTecnicoMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverEliminarTecnicoMouseMoved
-
-    private void volverEliminarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverEliminarTecnicoMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverEliminarTecnicoMouseClicked
-
-    private void volverEliminarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverEliminarTecnicoMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverEliminarTecnicoMouseExited
-
-    private void volverListarTecnicosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverListarTecnicosMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverListarTecnicosMouseMoved
-
-    private void volverListarTecnicosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverListarTecnicosMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverListarTecnicosMouseClicked
-
-    private void volverListarTecnicosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverListarTecnicosMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverListarTecnicosMouseExited
-
-    private void btnListarTecnicosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnListarTecnicosMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnListarTecnicosMouseMoved
-
-    private void btnListarTecnicosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnListarTecnicosMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnListarTecnicosMouseClicked
-
-    private void btnListarTecnicosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnListarTecnicosMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnListarTecnicosMouseExited
-
-    private void btnGuardarDatosActualizarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarTecnicoMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarDatosActualizarTecnicoMouseMoved
-
-    private void btnGuardarDatosActualizarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarTecnicoMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarDatosActualizarTecnicoMouseClicked
-
-    private void btnGuardarDatosActualizarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarTecnicoMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarDatosActualizarTecnicoMouseExited
-
-    private void volverActualizarTecnicosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarTecnicosMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverActualizarTecnicosMouseMoved
-
-    private void volverActualizarTecnicosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarTecnicosMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverActualizarTecnicosMouseClicked
-
-    private void volverActualizarTecnicosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarTecnicosMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverActualizarTecnicosMouseExited
-
     private void btnAsignarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAsignarServicioMouseMoved
         // TODO add your handling code here:
     }//GEN-LAST:event_btnAsignarServicioMouseMoved
@@ -7551,54 +7004,6 @@ public class Admin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_volverActualizarServiciosMouseExited
 
-    private void btnBuscarActualizarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarActualizarUsuarioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarActualizarUsuarioMouseMoved
-
-    private void btnBuscarActualizarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarActualizarUsuarioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarActualizarUsuarioMouseClicked
-
-    private void btnBuscarActualizarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarActualizarUsuarioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarActualizarUsuarioMouseExited
-
-    private void btnActualizarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActualizarUsuarioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnActualizarUsuarioMouseMoved
-
-    private void btnActualizarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActualizarUsuarioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnActualizarUsuarioMouseClicked
-
-    private void btnActualizarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActualizarUsuarioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnActualizarUsuarioMouseExited
-
-    private void btnBuscarTecnico1MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarTecnico1MouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarTecnico1MouseMoved
-
-    private void btnBuscarTecnico1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarTecnico1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarTecnico1MouseClicked
-
-    private void btnBuscarTecnico1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarTecnico1MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarTecnico1MouseExited
-
-    private void btnActualizarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActualizarTecnicoMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnActualizarTecnicoMouseMoved
-
-    private void btnActualizarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActualizarTecnicoMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnActualizarTecnicoMouseClicked
-
-    private void btnActualizarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActualizarTecnicoMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnActualizarTecnicoMouseExited
-
     private void volverActualizarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarServicioMouseMoved
         // TODO add your handling code here:
     }//GEN-LAST:event_volverActualizarServicioMouseMoved
@@ -7610,1049 +7015,6 @@ public class Admin extends javax.swing.JFrame {
     private void volverActualizarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarServicioMouseExited
         // TODO add your handling code here:
     }//GEN-LAST:event_volverActualizarServicioMouseExited
-
-    private void volverActualizarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarUsuarioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverActualizarUsuarioMouseMoved
-
-    private void volverActualizarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarUsuarioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverActualizarUsuarioMouseClicked
-
-    private void volverActualizarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarUsuarioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverActualizarUsuarioMouseExited
-
-    private void volverActualizarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarTecnicoMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverActualizarTecnicoMouseMoved
-
-    private void volverActualizarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarTecnicoMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverActualizarTecnicoMouseClicked
-
-    private void volverActualizarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarTecnicoMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverActualizarTecnicoMouseExited
-
-    private void JpnInicioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicioMouseEntered
-        JpnInicio.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnInicioMouseEntered
-
-    private void JpnInicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicioMouseExited
-        JpnInicio.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnInicioMouseExited
-
-    private void JpnInicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicioMouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnInicioMouseClicked
-
-    private void JpnInicio1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio1MouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnInicio1MouseClicked
-
-    private void JpnUsuarioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuarioMouseEntered
-        JpnUsuario.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuarioMouseEntered
-
-    private void JpnUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuarioMouseExited
-        JpnUsuario.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnUsuarioMouseExited
-
-    private void JpnUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuarioMouseClicked
-        Principal.setSelectedIndex(1);
-    }//GEN-LAST:event_JpnUsuarioMouseClicked
-
-    private void JpnTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnicoMouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnTecnicoMouseClicked
-
-    private void JpnTecnicoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnicoMouseEntered
-        JpnTecnico.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnTecnicoMouseEntered
-
-    private void JpnTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnicoMouseExited
-        JpnTecnico.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnicoMouseExited
-
-    private void JpnServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicioMouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnServicioMouseClicked
-
-    private void JpnServicioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicioMouseEntered
-        JpnServicio.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicioMouseEntered
-
-    private void JpnServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicioMouseExited
-        JpnServicio.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnServicioMouseExited
-
-    private void JpnSalirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalirMouseClicked
-        int opcion = javax.swing.JOptionPane.showConfirmDialog(
-                this,
-                "¿Estás seguro de que deseas salir del programa?",
-                "Confirmar salida",
-                javax.swing.JOptionPane.YES_NO_OPTION,
-                javax.swing.JOptionPane.QUESTION_MESSAGE);
-
-        if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-            System.exit(0);
-        }
-    }//GEN-LAST:event_JpnSalirMouseClicked
-
-    private void JpnInicio1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio1MouseEntered
-        JpnInicio1.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnInicio1MouseEntered
-
-    private void JpnInicio1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio1MouseExited
-        JpnInicio1.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnInicio1MouseExited
-
-    private void JpnUsuario1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario1MouseClicked
-        Principal.setSelectedIndex(1);
-    }//GEN-LAST:event_JpnUsuario1MouseClicked
-
-    private void JpnUsuario1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario1MouseEntered
-        JpnUsuario1.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario1MouseEntered
-
-    private void JpnUsuario1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario1MouseExited
-        JpnUsuario1.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnUsuario1MouseExited
-
-    private void JpnTecnico1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico1MouseEntered
-        JpnTecnico1.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnTecnico1MouseEntered
-
-    private void JpnTecnico1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico1MouseExited
-        JpnTecnico1.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnico1MouseExited
-
-    private void JpnTecnico1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico1MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnTecnico1MouseClicked
-
-    private void JpnServicio1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio1MouseEntered
-        JpnServicio1.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicio1MouseEntered
-
-    private void JpnServicio1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio1MouseExited
-        JpnServicio1.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnServicio1MouseExited
-
-    private void JpnServicio1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio1MouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnServicio1MouseClicked
-
-    private void JpnSalir1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir1MouseClicked
-        int opcion = javax.swing.JOptionPane.showConfirmDialog(
-                this,
-                "¿Estás seguro de que deseas salir del programa?",
-                "Confirmar salida",
-                javax.swing.JOptionPane.YES_NO_OPTION,
-                javax.swing.JOptionPane.QUESTION_MESSAGE);
-
-        if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-            System.exit(0);
-        }
-    }//GEN-LAST:event_JpnSalir1MouseClicked
-
-    private void JpnSalir1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir1MouseEntered
-        JpnSalir.setBackground(new java.awt.Color(239, 68, 68));
-    }//GEN-LAST:event_JpnSalir1MouseEntered
-
-    private void JpnSalir1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir1MouseExited
-        JpnSalir.setBackground(new java.awt.Color(24, 43, 68));
-    }//GEN-LAST:event_JpnSalir1MouseExited
-
-    private void JpnInicio2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio2MouseEntered
-        JpnInicio2.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnInicio2MouseEntered
-
-    private void JpnInicio2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio2MouseExited
-        JpnInicio2.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnInicio2MouseExited
-
-    private void JpnInicio2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio2MouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnInicio2MouseClicked
-
-    private void JpnUsuario2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario2MouseClicked
-        Principal.setSelectedIndex(1);
-    }//GEN-LAST:event_JpnUsuario2MouseClicked
-
-    private void JpnUsuario2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario2MouseEntered
-        JpnUsuario2.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario2MouseEntered
-
-    private void JpnUsuario2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario2MouseExited
-        JpnUsuario2.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnUsuario2MouseExited
-
-    private void JpnTecnico2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico2MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnTecnico2MouseClicked
-
-    private void JpnTecnico2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico2MouseEntered
-        JpnTecnico2.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnTecnico2MouseEntered
-
-    private void JpnTecnico2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico2MouseExited
-        JpnTecnico2.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnico2MouseExited
-
-    private void JpnServicio2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio2MouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnServicio2MouseClicked
-
-    private void JpnServicio2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio2MouseEntered
-        JpnServicio2.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicio2MouseEntered
-
-    private void JpnServicio2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio2MouseExited
-        JpnServicio2.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnServicio2MouseExited
-
-    private void JpnSalir2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir2MouseClicked
-        int opcion = javax.swing.JOptionPane.showConfirmDialog(
-                this,
-                "¿Estás seguro de que deseas salir del programa?",
-                "Confirmar salida",
-                javax.swing.JOptionPane.YES_NO_OPTION,
-                javax.swing.JOptionPane.QUESTION_MESSAGE);
-
-        if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-            System.exit(0);
-        }
-    }//GEN-LAST:event_JpnSalir2MouseClicked
-
-    private void JpnSalir2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir2MouseEntered
-        JpnSalir2.setBackground(new java.awt.Color(239, 68, 68));
-    }//GEN-LAST:event_JpnSalir2MouseEntered
-
-    private void JpnSalir2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir2MouseExited
-        JpnSalir2.setBackground(new java.awt.Color(24, 43, 68));
-    }//GEN-LAST:event_JpnSalir2MouseExited
-
-    private void JpnInicio3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio3MouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnInicio3MouseClicked
-
-    private void JpnInicio3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio3MouseEntered
-        JpnInicio3.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnInicio3MouseEntered
-
-    private void JpnInicio3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio3MouseExited
-        JpnInicio3.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnInicio3MouseExited
-
-    private void JpnUsuario3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario3MouseClicked
-        Principal.setSelectedIndex(1);
-    }//GEN-LAST:event_JpnUsuario3MouseClicked
-
-    private void JpnUsuario3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario3MouseEntered
-        JpnUsuario3.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario3MouseEntered
-
-    private void JpnUsuario3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario3MouseExited
-        JpnUsuario3.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnUsuario3MouseExited
-
-    private void JpnTecnico3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico3MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnTecnico3MouseClicked
-
-    private void JpnTecnico3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico3MouseEntered
-        JpnTecnico3.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnTecnico3MouseEntered
-
-    private void JpnTecnico3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico3MouseExited
-        JpnTecnico3.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnico3MouseExited
-
-    private void JpnServicio3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio3MouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnServicio3MouseClicked
-
-    private void JpnServicio3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio3MouseEntered
-        JpnServicio3.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicio3MouseEntered
-
-    private void JpnServicio3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio3MouseExited
-        JpnServicio3.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnServicio3MouseExited
-
-    private void JpnSalir3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir3MouseClicked
-        int opcion = javax.swing.JOptionPane.showConfirmDialog(
-    this,
-    "¿Estás seguro de que deseas salir del programa?",
-    "Confirmar salida",
-    javax.swing.JOptionPane.YES_NO_OPTION,
-    javax.swing.JOptionPane.QUESTION_MESSAGE);
-
-    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-    System.exit(0);
-        }
-    
-    }//GEN-LAST:event_JpnSalir3MouseClicked
-
-    private void JpnSalir3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir3MouseEntered
-        JpnSalir3.setBackground(new java.awt.Color(239, 68, 68));
-    }//GEN-LAST:event_JpnSalir3MouseEntered
-
-    private void JpnSalir3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir3MouseExited
-        JpnSalir3.setBackground(new java.awt.Color(24, 43, 68));   
-    }//GEN-LAST:event_JpnSalir3MouseExited
-
-    private void JpnInicio4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio4MouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnInicio4MouseClicked
-
-    private void JpnInicio4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio4MouseEntered
-        JpnInicio4.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnInicio4MouseEntered
-
-    private void JpnInicio4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio4MouseExited
-        JpnInicio4.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnInicio4MouseExited
-
-    private void JpnUsuario4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario4MouseClicked
-        Principal.setSelectedIndex(1);
-    }//GEN-LAST:event_JpnUsuario4MouseClicked
-
-    private void JpnUsuario4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario4MouseEntered
-        JpnUsuario4.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario4MouseEntered
-
-    private void JpnUsuario4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario4MouseExited
-        JpnUsuario4.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnUsuario4MouseExited
-
-    private void JpnTecnico4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico4MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnTecnico4MouseClicked
-
-    private void JpnTecnico4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico4MouseEntered
-        JpnTecnico4.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnTecnico4MouseEntered
-
-    private void JpnTecnico4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico4MouseExited
-        JpnTecnico4.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnico4MouseExited
-
-    private void JpnServicio4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio4MouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnServicio4MouseClicked
-
-    private void JpnServicio4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio4MouseEntered
-        JpnServicio4.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicio4MouseEntered
-
-    private void JpnServicio4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio4MouseExited
-        JpnServicio4.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnServicio4MouseExited
-
-    private void JpnSalir4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir4MouseClicked
-             int opcion = javax.swing.JOptionPane.showConfirmDialog(
-    this,
-    "¿Estás seguro de que deseas salir del programa?",
-    "Confirmar salida",
-    javax.swing.JOptionPane.YES_NO_OPTION,
-    javax.swing.JOptionPane.QUESTION_MESSAGE);
-
-    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-    System.exit(0);
-        }
-    }//GEN-LAST:event_JpnSalir4MouseClicked
-
-    private void JpnSalir4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir4MouseEntered
-        JpnSalir4.setBackground(new java.awt.Color(239, 68, 68));
-    }//GEN-LAST:event_JpnSalir4MouseEntered
-
-    private void JpnSalir4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir4MouseExited
-        JpnSalir4.setBackground(new java.awt.Color(24, 43, 68));
-    }//GEN-LAST:event_JpnSalir4MouseExited
-
-    private void JpnInicio5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio5MouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnInicio5MouseClicked
-
-    private void JpnInicio5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio5MouseEntered
-        JpnInicio5.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnInicio5MouseEntered
-
-    private void JpnInicio5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio5MouseExited
-        JpnInicio5.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnInicio5MouseExited
-
-    private void JpnUsuario5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario5MouseClicked
-        Principal.setSelectedIndex(1);
-    }//GEN-LAST:event_JpnUsuario5MouseClicked
-
-    private void JpnUsuario5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario5MouseEntered
-        JpnUsuario5.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario5MouseEntered
-
-    private void JpnUsuario5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario5MouseExited
-        JpnUsuario5.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnUsuario5MouseExited
-
-    private void JpnTecnico5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico5MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnTecnico5MouseClicked
-
-    private void JpnTecnico5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico5MouseEntered
-        JpnTecnico5.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnTecnico5MouseEntered
-
-    private void JpnTecnico5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico5MouseExited
-        JpnTecnico5.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnico5MouseExited
-
-    private void JpnServicio5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio5MouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnServicio5MouseClicked
-
-    private void JpnServicio5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio5MouseEntered
-        JpnServicio5.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicio5MouseEntered
-
-    private void JpnServicio5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio5MouseExited
-        JpnServicio5.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnServicio5MouseExited
-
-    private void JpnSalir5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir5MouseClicked
-             int opcion = javax.swing.JOptionPane.showConfirmDialog(
-    this,
-    "¿Estás seguro de que deseas salir del programa?",
-    "Confirmar salida",
-    javax.swing.JOptionPane.YES_NO_OPTION,
-    javax.swing.JOptionPane.QUESTION_MESSAGE);
-
-    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-    System.exit(0);
-        }
-    }//GEN-LAST:event_JpnSalir5MouseClicked
-
-    private void JpnSalir5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir5MouseEntered
-        JpnSalir5.setBackground(new java.awt.Color(239, 68, 68));
-    }//GEN-LAST:event_JpnSalir5MouseEntered
-
-    private void JpnSalir5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir5MouseExited
-       JpnSalir5.setBackground(new java.awt.Color(24, 43, 68));
-    }//GEN-LAST:event_JpnSalir5MouseExited
-
-    private void JpnInicio6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio6MouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnInicio6MouseClicked
-
-    private void JpnInicio6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio6MouseEntered
-        JpnInicio6.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnInicio6MouseEntered
-
-    private void JpnInicio6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio6MouseExited
-        JpnInicio6.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnInicio6MouseExited
-
-    private void JpnUsuario6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario6MouseClicked
-        Principal.setSelectedIndex(1);
-    }//GEN-LAST:event_JpnUsuario6MouseClicked
-
-    private void JpnUsuario6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario6MouseEntered
-        JpnUsuario6.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario6MouseEntered
-
-    private void JpnUsuario6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario6MouseExited
-        JpnUsuario6.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnUsuario6MouseExited
-
-    private void JpnTecnico6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico6MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnTecnico6MouseClicked
-
-    private void JpnTecnico6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico6MouseEntered
-        JpnTecnico6.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnTecnico6MouseEntered
-
-    private void JpnTecnico6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico6MouseExited
-        JpnTecnico6.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnico6MouseExited
-
-    private void JpnServicio6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio6MouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnServicio6MouseClicked
-
-    private void JpnServicio6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio6MouseEntered
-        JpnServicio6.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicio6MouseEntered
-
-    private void JpnServicio6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio6MouseExited
-        JpnServicio6.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnServicio6MouseExited
-
-    private void JpnSalir6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir6MouseClicked
-        int opcion = javax.swing.JOptionPane.showConfirmDialog(
-    this,
-    "¿Estás seguro de que deseas salir del programa?",
-    "Confirmar salida",
-    javax.swing.JOptionPane.YES_NO_OPTION,
-    javax.swing.JOptionPane.QUESTION_MESSAGE);
-
-    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-    System.exit(0);
-        }
-    }//GEN-LAST:event_JpnSalir6MouseClicked
-
-    private void JpnSalir6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir6MouseEntered
-        JpnSalir6.setBackground(new java.awt.Color(239, 68, 68));
-    }//GEN-LAST:event_JpnSalir6MouseEntered
-
-    private void JpnSalir6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir6MouseExited
-        JpnSalir6.setBackground(new java.awt.Color(24, 43, 68));
-    }//GEN-LAST:event_JpnSalir6MouseExited
-
-    private void JpnInicio7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio7MouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnInicio7MouseClicked
-
-    private void JpnInicio7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio7MouseEntered
-        JpnInicio7.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnInicio7MouseEntered
-
-    private void JpnInicio7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio7MouseExited
-        JpnInicio7.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnInicio7MouseExited
-
-    private void JpnUsuario7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario7MouseClicked
-        Principal.setSelectedIndex(1);
-    }//GEN-LAST:event_JpnUsuario7MouseClicked
-
-    private void JpnUsuario7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario7MouseEntered
-        JpnUsuario7.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario7MouseEntered
-
-    private void JpnUsuario7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario7MouseExited
-        JpnUsuario7.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnUsuario7MouseExited
-
-    private void JpnTecnico7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico7MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnTecnico7MouseClicked
-
-    private void JpnTecnico7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico7MouseEntered
-        JpnTecnico7.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnTecnico7MouseEntered
-
-    private void JpnTecnico7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico7MouseExited
-        JpnTecnico7.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnico7MouseExited
-
-    private void JpnServicio7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio7MouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnServicio7MouseClicked
-
-    private void JpnServicio7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio7MouseEntered
-        JpnServicio7.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicio7MouseEntered
-
-    private void JpnServicio7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio7MouseExited
-        JpnServicio7.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnServicio7MouseExited
-
-    private void JpnSalir7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir7MouseClicked
-             int opcion = javax.swing.JOptionPane.showConfirmDialog(
-    this,
-    "¿Estás seguro de que deseas salir del programa?",
-    "Confirmar salida",
-    javax.swing.JOptionPane.YES_NO_OPTION,
-    javax.swing.JOptionPane.QUESTION_MESSAGE);
-
-    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-    System.exit(0);
-        }
-    }//GEN-LAST:event_JpnSalir7MouseClicked
-
-    private void JpnSalir7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir7MouseEntered
-        JpnSalir7.setBackground(new java.awt.Color(239, 68, 68));
-    }//GEN-LAST:event_JpnSalir7MouseEntered
-
-    private void JpnSalir7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir7MouseExited
-        JpnSalir7.setBackground(new java.awt.Color(24, 43, 68));
-    }//GEN-LAST:event_JpnSalir7MouseExited
-
-    private void JpnInicio19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio19MouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnInicio19MouseClicked
-
-    private void JpnInicio19MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio19MouseEntered
-        JpnInicio19.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnInicio19MouseEntered
-
-    private void JpnInicio19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio19MouseExited
-        JpnInicio19.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnInicio19MouseExited
-
-    private void JpnUsuario19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario19MouseClicked
-        Principal.setSelectedIndex(1);
-    }//GEN-LAST:event_JpnUsuario19MouseClicked
-
-    private void JpnUsuario19MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario19MouseEntered
-        JpnUsuario19.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario19MouseEntered
-
-    private void JpnUsuario19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario19MouseExited
-        JpnUsuario19.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnUsuario19MouseExited
-
-    private void JpnTecnico19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico19MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnTecnico19MouseClicked
-
-    private void JpnTecnico19MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico19MouseEntered
-        JpnTecnico19.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnTecnico19MouseEntered
-
-    private void JpnTecnico19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico19MouseExited
-        JpnTecnico19.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnico19MouseExited
-
-    private void JpnServicio19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio19MouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnServicio19MouseClicked
-
-    private void JpnServicio19MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio19MouseEntered
-        JpnServicio19.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicio19MouseEntered
-
-    private void JpnServicio19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio19MouseExited
-        JpnServicio19.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnServicio19MouseExited
-
-    private void JpnSalir19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir19MouseClicked
-             int opcion = javax.swing.JOptionPane.showConfirmDialog(
-    this,
-    "¿Estás seguro de que deseas salir del programa?",
-    "Confirmar salida",
-    javax.swing.JOptionPane.YES_NO_OPTION,
-    javax.swing.JOptionPane.QUESTION_MESSAGE);
-
-    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-    System.exit(0);
-        }
-    }//GEN-LAST:event_JpnSalir19MouseClicked
-
-    private void JpnSalir19MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir19MouseEntered
-        JpnSalir19.setBackground(new java.awt.Color(239, 68, 68));
-    }//GEN-LAST:event_JpnSalir19MouseEntered
-
-    private void JpnSalir19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir19MouseExited
-        JpnSalir19.setBackground(new java.awt.Color(24, 43, 68));
-    }//GEN-LAST:event_JpnSalir19MouseExited
-
-    private void JpnInicio8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio8MouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnInicio8MouseClicked
-
-    private void JpnInicio8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio8MouseEntered
-        JpnInicio8.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnInicio8MouseEntered
-
-    private void JpnInicio8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio8MouseExited
-        JpnInicio8.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnInicio8MouseExited
-
-    private void JpnUsuario8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario8MouseClicked
-        Principal.setSelectedIndex(1);
-    }//GEN-LAST:event_JpnUsuario8MouseClicked
-
-    private void JpnUsuario8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario8MouseEntered
-        JpnUsuario8.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario8MouseEntered
-
-    private void JpnUsuario8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario8MouseExited
-        JpnUsuario8.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnUsuario8MouseExited
-
-    private void JpnTecnico8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico8MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnTecnico8MouseClicked
-
-    private void JpnTecnico8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico8MouseEntered
-        JpnTecnico8.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnTecnico8MouseEntered
-
-    private void JpnTecnico8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico8MouseExited
-        JpnTecnico8.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnico8MouseExited
-
-    private void JpnServicio8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio8MouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnServicio8MouseClicked
-
-    private void JpnServicio8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio8MouseEntered
-        JpnServicio8.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicio8MouseEntered
-
-    private void JpnServicio8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio8MouseExited
-        JpnServicio8.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnServicio8MouseExited
-
-    private void JpnSalir8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir8MouseClicked
-             int opcion = javax.swing.JOptionPane.showConfirmDialog(
-    this,
-    "¿Estás seguro de que deseas salir del programa?",
-    "Confirmar salida",
-    javax.swing.JOptionPane.YES_NO_OPTION,
-    javax.swing.JOptionPane.QUESTION_MESSAGE);
-
-    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-    System.exit(0);
-        }
-    }//GEN-LAST:event_JpnSalir8MouseClicked
-
-    private void JpnSalir8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir8MouseEntered
-        JpnSalir8.setBackground(new java.awt.Color(239, 68, 68));
-    }//GEN-LAST:event_JpnSalir8MouseEntered
-
-    private void JpnSalir8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir8MouseExited
-        JpnSalir8.setBackground(new java.awt.Color(24, 43, 68));
-    }//GEN-LAST:event_JpnSalir8MouseExited
-
-    private void JpnInicio9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio9MouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnInicio9MouseClicked
-
-    private void JpnInicio9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio9MouseEntered
-        JpnInicio9.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnInicio9MouseEntered
-
-    private void JpnInicio9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio9MouseExited
-        JpnInicio9.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnInicio9MouseExited
-
-    private void JpnUsuario9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario9MouseClicked
-        Principal.setSelectedIndex(1);
-    }//GEN-LAST:event_JpnUsuario9MouseClicked
-
-    private void JpnUsuario9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario9MouseEntered
-        JpnUsuario9.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario9MouseEntered
-
-    private void JpnUsuario9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario9MouseExited
-        JpnUsuario9.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnUsuario9MouseExited
-
-    private void JpnTecnico9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico9MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnTecnico9MouseClicked
-
-    private void JpnTecnico9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico9MouseEntered
-        JpnTecnico9.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnTecnico9MouseEntered
-
-    private void JpnTecnico9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico9MouseExited
-        JpnTecnico9.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnico9MouseExited
-
-    private void JpnServicio9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio9MouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnServicio9MouseClicked
-
-    private void JpnServicio9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio9MouseEntered
-        JpnServicio9.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicio9MouseEntered
-
-    private void JpnServicio9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio9MouseExited
-        JpnServicio9.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnServicio9MouseExited
-
-    private void JpnConfiguracion9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion9MouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnConfiguracion9MouseClicked
-
-    private void JpnConfiguracion9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion9MouseEntered
-        JpnConfiguracion9.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnConfiguracion9MouseEntered
-
-    private void JpnConfiguracion9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion9MouseExited
-        JpnConfiguracion9.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnConfiguracion9MouseExited
-
-    private void JpnInicio10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio10MouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnInicio10MouseClicked
-
-    private void JpnInicio10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio10MouseEntered
-        JpnInicio10.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnInicio10MouseEntered
-
-    private void JpnInicio10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio10MouseExited
-        JpnInicio10.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnInicio10MouseExited
-
-    private void JpnUsuario10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario10MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnUsuario10MouseClicked
-
-    private void JpnUsuario10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario10MouseEntered
-        JpnUsuario10.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario10MouseEntered
-
-    private void JpnUsuario10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario10MouseExited
-        JpnUsuario10.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnUsuario10MouseExited
-
-    private void JpnTecnico10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico10MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnTecnico10MouseClicked
-
-    private void JpnTecnico10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico10MouseEntered
-        JpnTecnico10.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnTecnico10MouseEntered
-
-    private void JpnTecnico10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico10MouseExited
-        JpnTecnico10.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnico10MouseExited
-
-    private void JpnServicio10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio10MouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnServicio10MouseClicked
-
-    private void JpnServicio10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio10MouseEntered
-        JpnServicio10.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicio10MouseEntered
-
-    private void JpnServicio10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio10MouseExited
-        JpnServicio10.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnServicio10MouseExited
-
-    private void JpnSalir10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir10MouseClicked
-             int opcion = javax.swing.JOptionPane.showConfirmDialog(
-    this,
-    "¿Estás seguro de que deseas salir del programa?",
-    "Confirmar salida",
-    javax.swing.JOptionPane.YES_NO_OPTION,
-    javax.swing.JOptionPane.QUESTION_MESSAGE);
-
-    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-    System.exit(0);
-        }
-    }//GEN-LAST:event_JpnSalir10MouseClicked
-
-    private void JpnSalir10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir10MouseEntered
-        JpnSalir10.setBackground(new java.awt.Color(239, 68, 68));
-    }//GEN-LAST:event_JpnSalir10MouseEntered
-
-    private void JpnSalir10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir10MouseExited
-        JpnSalir10.setBackground(new java.awt.Color(24, 43, 68));
-    }//GEN-LAST:event_JpnSalir10MouseExited
-
-    private void JpnInicio11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio11MouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnInicio11MouseClicked
-
-    private void JpnInicio11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio11MouseEntered
-        JpnInicio11.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnInicio11MouseEntered
-
-    private void JpnInicio11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio11MouseExited
-        JpnInicio11.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnInicio11MouseExited
-
-    private void JpnUsuario11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario11MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnUsuario11MouseClicked
-
-    private void JpnUsuario11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario11MouseEntered
-        JpnUsuario11.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario11MouseEntered
-
-    private void JpnUsuario11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario11MouseExited
-        JpnUsuario11.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnUsuario11MouseExited
-
-    private void JpnTecnico11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico11MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnTecnico11MouseClicked
-
-    private void JpnTecnico11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico11MouseEntered
-        JpnTecnico11.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnico11MouseEntered
-
-    private void JpnTecnico11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico11MouseExited
-        JpnTecnico11.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnico11MouseExited
-
-    private void JpnServicio11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio11MouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnServicio11MouseClicked
-
-    private void JpnServicio11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio11MouseEntered
-        JpnServicio11.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicio11MouseEntered
-
-    private void JpnServicio11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio11MouseExited
-        JpnServicio11.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnServicio11MouseExited
-
-    private void JpnSalir11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir11MouseClicked
-        int opcion = javax.swing.JOptionPane.showConfirmDialog(
-    this,
-    "¿Estás seguro de que deseas salir del programa?",
-    "Confirmar salida",
-    javax.swing.JOptionPane.YES_NO_OPTION,
-    javax.swing.JOptionPane.QUESTION_MESSAGE);
-
-    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-    System.exit(0);
-        }
-    }//GEN-LAST:event_JpnSalir11MouseClicked
-
-    private void JpnSalir11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir11MouseEntered
-        JpnSalir11.setBackground(new java.awt.Color(239, 68, 68));
-    }//GEN-LAST:event_JpnSalir11MouseEntered
-
-    private void JpnSalir11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir11MouseExited
-        JpnSalir11.setBackground(new java.awt.Color(24, 43, 68));
-    }//GEN-LAST:event_JpnSalir11MouseExited
-
-    private void JpnInicio12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio12MouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnInicio12MouseClicked
-
-    private void JpnInicio12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio12MouseEntered
-        JpnInicio12.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnInicio12MouseEntered
-
-    private void JpnInicio12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio12MouseExited
-        JpnInicio12.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnInicio12MouseExited
-
-    private void JpnUsuario12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario12MouseClicked
-        Principal.setSelectedIndex(1);
-    }//GEN-LAST:event_JpnUsuario12MouseClicked
-
-    private void JpnUsuario12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario12MouseEntered
-        JpnUsuario12.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario12MouseEntered
-
-    private void JpnUsuario12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario12MouseExited
-        JpnUsuario12.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnUsuario12MouseExited
-
-    private void JpnTecnico12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico12MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnTecnico12MouseClicked
-
-    private void JpnTecnico12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico12MouseEntered
-        JpnTecnico12.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnTecnico12MouseEntered
-
-    private void JpnTecnico12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico12MouseExited
-        JpnTecnico12.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnico12MouseExited
-
-    private void JpnServicio12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio12MouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnServicio12MouseClicked
-
-    private void JpnServicio12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio12MouseEntered
-        JpnServicio12.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicio12MouseEntered
-
-    private void JpnServicio12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio12MouseExited
-        JpnServicio12.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnServicio12MouseExited
-
-    private void JpnSalir12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir12MouseClicked
-        int opcion = javax.swing.JOptionPane.showConfirmDialog(
-    this,
-    "¿Estás seguro de que deseas salir del programa?",
-    "Confirmar salida",
-    javax.swing.JOptionPane.YES_NO_OPTION,
-    javax.swing.JOptionPane.QUESTION_MESSAGE);
-
-    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-    System.exit(0);
-        }
-    }//GEN-LAST:event_JpnSalir12MouseClicked
-
-    private void JpnSalir12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir12MouseEntered
-        JpnSalir12.setBackground(new java.awt.Color(239, 68, 68));
-    }//GEN-LAST:event_JpnSalir12MouseEntered
-
-    private void JpnSalir12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir12MouseExited
-        JpnSalir12.setBackground(new java.awt.Color(24, 43, 68));
-    }//GEN-LAST:event_JpnSalir12MouseExited
-
-    private void JpnInicio20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio20MouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnInicio20MouseClicked
-
-    private void JpnInicio20MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio20MouseEntered
-        JpnInicio20.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnInicio20MouseEntered
-
-    private void JpnInicio20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio20MouseExited
-        JpnInicio20.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnInicio20MouseExited
-
-    private void JpnUsuario20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario20MouseClicked
-        Principal.setSelectedIndex(1);
-    }//GEN-LAST:event_JpnUsuario20MouseClicked
-
-    private void JpnUsuario20MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario20MouseEntered
-        JpnUsuario20.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario20MouseEntered
-
-    private void JpnUsuario20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario20MouseExited
-        JpnUsuario20.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnUsuario20MouseExited
-
-    private void JpnTecnico20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico20MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnTecnico20MouseClicked
-
-    private void JpnTecnico20MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico20MouseEntered
-        JpnTecnico20.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnTecnico20MouseEntered
-
-    private void JpnTecnico20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico20MouseExited
-        JpnTecnico20.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnico20MouseExited
-
-    private void JpnServicio20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio20MouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnServicio20MouseClicked
-
-    private void JpnServicio20MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio20MouseEntered
-        JpnServicio20.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicio20MouseEntered
-
-    private void JpnServicio20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio20MouseExited
-        JpnServicio20.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnServicio20MouseExited
-
-    private void JpnSalir20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir20MouseClicked
-             int opcion = javax.swing.JOptionPane.showConfirmDialog(
-    this,
-    "¿Estás seguro de que deseas salir del programa?",
-    "Confirmar salida",
-    javax.swing.JOptionPane.YES_NO_OPTION,
-    javax.swing.JOptionPane.QUESTION_MESSAGE);
-
-    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-    System.exit(0);
-        }
-    }//GEN-LAST:event_JpnSalir20MouseClicked
-
-    private void JpnSalir20MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir20MouseEntered
-        JpnSalir20.setBackground(new java.awt.Color(239, 68, 68));
-    }//GEN-LAST:event_JpnSalir20MouseEntered
-
-    private void JpnSalir20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir20MouseExited
-        JpnSalir20.setBackground(new java.awt.Color(24, 43, 68));
-    }//GEN-LAST:event_JpnSalir20MouseExited
 
     private void JpnInicio13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio13MouseClicked
         Principal.setSelectedIndex(0);
@@ -8666,62 +7028,13 @@ public class Admin extends javax.swing.JFrame {
         JpnInicio13.setBackground(new java.awt.Color(16, 31, 51));
     }//GEN-LAST:event_JpnInicio13MouseExited
 
-    private void JpnUsuario13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario13MouseClicked
-        Principal.setSelectedIndex(1);
-    }//GEN-LAST:event_JpnUsuario13MouseClicked
-
-    private void JpnUsuario13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario13MouseEntered
+    private void JpnUsuario13MouseEntered(java.awt.event.MouseEvent evt) {                                          
         JpnUsuario13.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario13MouseEntered
+    }                                         
 
     private void JpnUsuario13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario13MouseExited
         JpnUsuario13.setBackground(new java.awt.Color(16, 31, 51));
     }//GEN-LAST:event_JpnUsuario13MouseExited
-
-    private void JpnTecnico13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico13MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnTecnico13MouseClicked
-
-    private void JpnTecnico13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico13MouseEntered
-        JpnTecnico13.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnTecnico13MouseEntered
-
-    private void JpnTecnico13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico13MouseExited
-        JpnTecnico13.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnico13MouseExited
-
-    private void JpnServicio13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio13MouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnServicio13MouseClicked
-
-    private void JpnServicio13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio13MouseEntered
-        JpnServicio13.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicio13MouseEntered
-
-    private void JpnServicio13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio13MouseExited
-        JpnServicio13.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnServicio13MouseExited
-
-    private void JpnSalir13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir13MouseClicked
-        int opcion = javax.swing.JOptionPane.showConfirmDialog(
-    this,
-    "¿Estás seguro de que deseas salir del programa?",
-    "Confirmar salida",
-    javax.swing.JOptionPane.YES_NO_OPTION,
-    javax.swing.JOptionPane.QUESTION_MESSAGE);
-
-    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-    System.exit(0);
-        }
-    }//GEN-LAST:event_JpnSalir13MouseClicked
-
-    private void JpnSalir13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir13MouseEntered
-       JpnSalir13.setBackground(new java.awt.Color(239, 68, 68));
-    }//GEN-LAST:event_JpnSalir13MouseEntered
-
-    private void JpnSalir13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir13MouseExited
-       JpnSalir13.setBackground(new java.awt.Color(24, 43, 68));
-    }//GEN-LAST:event_JpnSalir13MouseExited
 
     private void JpnInicio14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio14MouseClicked
         Principal.setSelectedIndex(0);
@@ -9137,219 +7450,6 @@ public class Admin extends javax.swing.JFrame {
         JpnSalir18.setBackground(new java.awt.Color(24, 43, 68));
     }//GEN-LAST:event_JpnSalir18MouseExited
 
-    private void btnAgregarTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarTecnicoActionPerformed
-        boolean registrado = controlador.procesarRegistroTecnico(
-        txtNombreTecnico.getText(),
-        txtApellidosTecnico.getText(),
-        cbxTipoDocTecnico.getSelectedItem().toString(),
-        txtNumDocTecnico.getText(),
-        txtTelefonoTecnico.getText(),
-        txtDireccionTecnico.getText(),
-        txtCorreoTecnico.getText(),
-        txtPassTecnico.getText(),
-        txtRepetirPassTecnico.getText(),
-        cbxNivelTecnico.getSelectedItem().toString()
-    );
-
-    if (registrado) {
-        txtNombreTecnico.setText("");
-        txtApellidosTecnico.setText("");
-        cbxTipoDocTecnico.setSelectedIndex(0);
-        txtNumDocTecnico.setText("");
-        txtTelefonoTecnico.setText("");
-        txtDireccionTecnico.setText("");
-        txtCorreoTecnico.setText("");
-        txtPassTecnico.setText("");
-        txtRepetirPassTecnico.setText("");
-        cbxNivelTecnico.setSelectedIndex(0);
-        
-        // Si ya tienes la tabla de listar técnicos en esta misma ventana, descomenta la siguiente línea para refrescarla:
-        // controlador.cargarTablaTecnicos(tblTecnicos);
-    }
-    }//GEN-LAST:event_btnAgregarTecnicoActionPerformed
-
-    private void btnBuscarTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarTecnicoActionPerformed
-        String[] d = controlador.procesarBuscarTecnico(txtBuscarDocTecnico.getText());
-
-    if (d != null) {
-        String[] partesNombre = d[Tecnico.NOMBRE].split(" ", 2);
-        txtNombreBuscarTec.setText(partesNombre[0]);
-        txtApellidosBuscarTec.setText(partesNombre.length > 1 ? partesNombre[1] : "");
-
-        txtNumDocBuscarTec.setText(d[Tecnico.DOCUMENTO]);
-        txtDireccionBuscarTec.setText(d[Tecnico.CIUDAD]);
-        txtTelefonoBuscarTec.setText(d[Tecnico.TELEFONO]);
-        txtCorreoBuscarTec.setText(d[Tecnico.CORREO]);
-        
-        if (!d[Tecnico.DESCRIPCION].isEmpty()) {
-            cbxTipoDocBuscarTec.setSelectedItem(d[Tecnico.DESCRIPCION]);
-        } else {
-            cbxTipoDocBuscarTec.setSelectedIndex(0);
-        }
-        cbxNivelBuscarTec.setSelectedItem(d[Tecnico.ESPECIALIDAD]);
-    } else {
-        txtNombreBuscarTec.setText("");
-        txtApellidosBuscarTec.setText("");
-        txtNumDocBuscarTec.setText("");
-        txtDireccionBuscarTec.setText("");
-        txtTelefonoBuscarTec.setText("");
-        txtCorreoBuscarTec.setText("");
-        cbxTipoDocBuscarTec.setSelectedIndex(0);
-        cbxNivelBuscarTec.setSelectedIndex(0);
-    }
-    }//GEN-LAST:event_btnBuscarTecnicoActionPerformed
-
-    private void btnBuscarEliminarTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarEliminarTecnicoActionPerformed
-        String[] d = controlador.procesarBuscarTecnico(txtBuscarDocEliminarTec.getText());
-
-    if (d != null) {
-        String[] partesNombre = d[Tecnico.NOMBRE].split(" ", 2);
-        txtNombreEliminarTec.setText(partesNombre[0]);
-        txtApellidosEliminarTec.setText(partesNombre.length > 1 ? partesNombre[1] : "");
-
-        txtNumDocEliminarTec.setText(d[Tecnico.DOCUMENTO]);
-        txtDireccionEliminarTec.setText(d[Tecnico.CIUDAD]);
-        txtTelefonoEliminarTec.setText(d[Tecnico.TELEFONO]);
-        txtCorreoEliminarTec.setText(d[Tecnico.CORREO]);
-        
-        if (!d[Tecnico.DESCRIPCION].isEmpty()) {
-            cbxTipoDocEliminarTec.setSelectedItem(d[Tecnico.DESCRIPCION]);
-        } else {
-            cbxTipoDocEliminarTec.setSelectedIndex(0);
-        }
-    } else {
-        txtNombreEliminarTec.setText("");
-        txtApellidosEliminarTec.setText("");
-        txtNumDocEliminarTec.setText("");
-        txtDireccionEliminarTec.setText("");
-        txtTelefonoEliminarTec.setText("");
-        txtCorreoEliminarTec.setText("");
-        cbxTipoDocEliminarTec.setSelectedIndex(0);
-    }
-    }//GEN-LAST:event_btnBuscarEliminarTecnicoActionPerformed
-
-    private void btnEliminarTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarTecnicoActionPerformed
-        boolean eliminado = controlador.procesarEliminarTecnico(txtBuscarDocEliminarTec.getText());
-
-    if (eliminado) {
-        txtBuscarDocEliminarTec.setText("");
-        txtNombreEliminarTec.setText("");
-        txtApellidosEliminarTec.setText("");
-        txtNumDocEliminarTec.setText("");
-        txtDireccionEliminarTec.setText("");
-        txtTelefonoEliminarTec.setText("");
-        txtCorreoEliminarTec.setText("");
-        cbxTipoDocEliminarTec.setSelectedIndex(0);
-        
-        // Refresca la tabla de técnicos automáticamente
-        controlador.cargarTablaTecnicos(tblTecnicos);
-    }
-    }//GEN-LAST:event_btnEliminarTecnicoActionPerformed
-
-    private void btnListarTecnicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListarTecnicosActionPerformed
-        controlador.cargarTablaTecnicos(tblTecnicos);
-    }//GEN-LAST:event_btnListarTecnicosActionPerformed
-
-    private void btnBuscarTecnico1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarTecnico1ActionPerformed
-       String[] d = controlador.procesarBuscarTecnico(txtBuscarDocActualizarTec.getText());
-
-    if (d != null) {
-        // Guardamos el documento encontrado para permitir el paso a la siguiente página
-        docTecnicoEncontrado = d[Tecnico.DOCUMENTO];
-
-        String[] partesNombre = d[Tecnico.NOMBRE].split(" ", 2);
-        txtNombreActualizarTec.setText(partesNombre[0]);
-        txtApellidosActualizarTec.setText(partesNombre.length > 1 ? partesNombre[1] : "");
-
-        txtNumDocActualizarTec.setText(d[Tecnico.DOCUMENTO]);
-        txtDireccionActualizarTec.setText(d[Tecnico.CIUDAD]);
-        txtTelefonoActualizarTec.setText(d[Tecnico.TELEFONO]);
-        txtCorreoActualizarTec.setText(d[Tecnico.CORREO]);
-        
-        if (!d[Tecnico.DESCRIPCION].isEmpty()) {
-            cbxTipoDocActualizarTec.setSelectedItem(d[Tecnico.DESCRIPCION]);
-        } else {
-            cbxTipoDocActualizarTec.setSelectedIndex(0);
-        }
-        cbxNivelActualizarTec.setSelectedItem(d[Tecnico.ESPECIALIDAD]);
-    } else {
-        // Bloqueamos el paso si no existe
-        docTecnicoEncontrado = null;
-
-        txtNombreActualizarTec.setText("");
-        txtApellidosActualizarTec.setText("");
-        txtNumDocActualizarTec.setText("");
-        txtDireccionActualizarTec.setText("");
-        txtTelefonoActualizarTec.setText("");
-        txtCorreoActualizarTec.setText("");
-        cbxTipoDocActualizarTec.setSelectedIndex(0);
-        cbxNivelActualizarTec.setSelectedIndex(0);
-    }
-    }//GEN-LAST:event_btnBuscarTecnico1ActionPerformed
-
-    private void btnActualizarTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizarTecnicoActionPerformed
-        if (docTecnicoEncontrado == null) {
-        javax.swing.JOptionPane.showMessageDialog(
-            this,
-            "Primero debes buscar y encontrar un técnico válido antes de pasar a actualizar sus datos.",
-            "Acceso denegado",
-            javax.swing.JOptionPane.WARNING_MESSAGE
-        );
-        return; // Detiene la ejecución aquí, no lo deja pasar
-    }
-
-    // Si sí lo encontró, aquí pones la línea con la que cambias a la página de edición:
-    Principal.setSelectedIndex(15);
-    }//GEN-LAST:event_btnActualizarTecnicoActionPerformed
-
-    private void btnGuardarDatosActualizarTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarTecnicoActionPerformed
-        boolean actualizado = controlador.procesarActualizarTecnico(
-        docTecnicoEncontrado, // El documento que se encontró en la pantalla anterior
-        txtNombreEditarTec.getText(),
-        txtApellidosEditarTec.getText(),
-        cbxTipoDocEditarTec.getSelectedItem().toString(),
-        txtNumDocEditarTec.getText(),
-        txtTelefonoEditarTec.getText(),
-        txtDireccionEditarTec.getText(),
-        txtCorreoEditarTec.getText(),
-        cbxNivelEditarTec.getSelectedItem().toString(),
-        txtPassEditarTec.getText(),
-        txtRepetirPassEditarTec.getText()
-    );
-
-    if (actualizado) {
-        docTecnicoEncontrado = null; // Reiniciamos el bloqueo para la próxima vez
-        txtNombreEditarTec.setText("");
-        txtApellidosEditarTec.setText("");
-        cbxTipoDocEditarTec.setSelectedIndex(0);
-        txtNumDocEditarTec.setText("");
-        txtTelefonoEditarTec.setText("");
-        txtDireccionEditarTec.setText("");
-        txtCorreoEditarTec.setText("");
-        cbxNivelEditarTec.setSelectedIndex(0);
-        txtPassEditarTec.setText("");
-        txtRepetirPassEditarTec.setText("");
-        controlador.cargarTablaTecnicos(tblTecnicos);
-    }
-    }//GEN-LAST:event_btnGuardarDatosActualizarTecnicoActionPerformed
-
-    private void txtBuscarDocActualizarTecKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtBuscarDocActualizarTecKeyReleased
-        // Si el texto actual de la cajita ya no coincide con el documento que se había encontrado, bloqueamos el paso
-    if (docTecnicoEncontrado != null && !txtBuscarDocActualizarTec.getText().trim().equals(docTecnicoEncontrado)) {
-        docTecnicoEncontrado = null;
-        
-        // Limpiamos también la vista previa para que no quede información de otro técnico en pantalla
-        txtNombreActualizarTec.setText("");
-        txtApellidosActualizarTec.setText("");
-        txtNumDocActualizarTec.setText("");
-        txtDireccionActualizarTec.setText("");
-        txtTelefonoActualizarTec.setText("");
-        txtCorreoActualizarTec.setText("");
-        cbxTipoDocActualizarTec.setSelectedIndex(0);
-        cbxNivelActualizarTec.setSelectedIndex(0);
-    }
-    }//GEN-LAST:event_txtBuscarDocActualizarTecKeyReleased
-
     private void btnAsignarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAsignarServicioActionPerformed
         boolean asignado = controlador.procesarAsignarServicio(
         txtNombreClienteSrv.getText(),
@@ -9573,6 +7673,1919 @@ Principal.setSelectedIndex(21);
         controlador.cargarTablaServicios(tblServicios);
     }
     }//GEN-LAST:event_btnGuardarDatosActualizarServiciosActionPerformed
+
+    private void JpnTecnico13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico13MouseExited
+        JpnTecnico13.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico13MouseExited
+
+    private void JpnTecnico13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico13MouseEntered
+        JpnTecnico13.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico13MouseEntered
+
+    private void JpnTecnico13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico13MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico13MouseClicked
+
+    private void JpnServicio13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio13MouseExited
+        JpnServicio13.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio13MouseExited
+
+    private void JpnServicio13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio13MouseEntered
+        JpnServicio13.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio13MouseEntered
+
+    private void JpnServicio13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio13MouseClicked
+        new AdminServicios().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_JpnServicio13MouseClicked
+
+    private void JpnSalir13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir13MouseExited
+        JpnSalir13.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir13MouseExited
+
+    private void JpnSalir13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir13MouseEntered
+        JpnSalir13.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir13MouseEntered
+
+    private void JpnSalir13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir13MouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+            this,
+            "¿Estás seguro de que deseas salir del programa?",
+            "Confirmar salida",
+            javax.swing.JOptionPane.YES_NO_OPTION,
+            javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+        if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir13MouseClicked
+
+    private void btnGuardarDatosActualizarTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarTecnicoActionPerformed
+        boolean actualizado = controlador.procesarActualizarTecnico(
+            docTecnicoEncontrado, // El documento que se encontró en la pantalla anterior
+            txtNombreEditarTec.getText(),
+            txtApellidosEditarTec.getText(),
+            cbxTipoDocEditarTec.getSelectedItem().toString(),
+            txtNumDocEditarTec.getText(),
+            txtTelefonoEditarTec.getText(),
+            txtDireccionEditarTec.getText(),
+            txtCorreoEditarTec.getText(),
+            cbxNivelEditarTec.getSelectedItem().toString(),
+            txtPassEditarTec.getText(),
+            txtRepetirPassEditarTec.getText()
+        );
+
+        if (actualizado) {
+            docTecnicoEncontrado = null; // Reiniciamos el bloqueo para la próxima vez
+            txtNombreEditarTec.setText("");
+            txtApellidosEditarTec.setText("");
+            cbxTipoDocEditarTec.setSelectedIndex(0);
+            txtNumDocEditarTec.setText("");
+            txtTelefonoEditarTec.setText("");
+            txtDireccionEditarTec.setText("");
+            txtCorreoEditarTec.setText("");
+            cbxNivelEditarTec.setSelectedIndex(0);
+            txtPassEditarTec.setText("");
+            txtRepetirPassEditarTec.setText("");
+            controlador.cargarTablaTecnicos(tblTecnicos);
+        }
+    }//GEN-LAST:event_btnGuardarDatosActualizarTecnicoActionPerformed
+
+    private void btnGuardarDatosActualizarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarTecnicoMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGuardarDatosActualizarTecnicoMouseExited
+
+    private void btnGuardarDatosActualizarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarTecnicoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGuardarDatosActualizarTecnicoMouseClicked
+
+    private void btnGuardarDatosActualizarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarTecnicoMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGuardarDatosActualizarTecnicoMouseMoved
+
+    private void volverActualizarTecnicosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarTecnicosMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverActualizarTecnicosMouseExited
+
+    private void volverActualizarTecnicosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarTecnicosMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverActualizarTecnicosMouseClicked
+
+    private void volverActualizarTecnicosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarTecnicosMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverActualizarTecnicosMouseMoved
+
+    private void btnActualizarTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizarTecnicoActionPerformed
+        if (docTecnicoEncontrado == null) {
+            javax.swing.JOptionPane.showMessageDialog(
+                this,
+                "Primero debes buscar y encontrar un técnico válido antes de pasar a actualizar sus datos.",
+                "Acceso denegado",
+                javax.swing.JOptionPane.WARNING_MESSAGE
+            );
+            return; // Detiene la ejecución aquí, no lo deja pasar
+        }
+
+        // Si sí lo encontró, aquí pones la línea con la que cambias a la página de edición:
+        Principal.setSelectedIndex(15);
+    }//GEN-LAST:event_btnActualizarTecnicoActionPerformed
+
+    private void btnActualizarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActualizarTecnicoMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnActualizarTecnicoMouseExited
+
+    private void btnActualizarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActualizarTecnicoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnActualizarTecnicoMouseClicked
+
+    private void btnActualizarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActualizarTecnicoMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnActualizarTecnicoMouseMoved
+
+    private void txtBuscarDocActualizarTecKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtBuscarDocActualizarTecKeyReleased
+        // Si el texto actual de la cajita ya no coincide con el documento que se había encontrado, bloqueamos el paso
+        if (docTecnicoEncontrado != null && !txtBuscarDocActualizarTec.getText().trim().equals(docTecnicoEncontrado)) {
+            docTecnicoEncontrado = null;
+
+            // Limpiamos también la vista previa para que no quede información de otro técnico en pantalla
+            txtNombreActualizarTec.setText("");
+            txtApellidosActualizarTec.setText("");
+            txtNumDocActualizarTec.setText("");
+            txtDireccionActualizarTec.setText("");
+            txtTelefonoActualizarTec.setText("");
+            txtCorreoActualizarTec.setText("");
+            cbxTipoDocActualizarTec.setSelectedIndex(0);
+            cbxNivelActualizarTec.setSelectedIndex(0);
+        }
+    }//GEN-LAST:event_txtBuscarDocActualizarTecKeyReleased
+
+    private void btnBuscarTecnico1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarTecnico1ActionPerformed
+        String[] d = controlador.procesarBuscarTecnico(txtBuscarDocActualizarTec.getText());
+
+        if (d != null) {
+            // Guardamos el documento encontrado para permitir el paso a la siguiente página
+            docTecnicoEncontrado = d[Tecnico.DOCUMENTO];
+
+            String[] partesNombre = d[Tecnico.NOMBRE].split(" ", 2);
+            txtNombreActualizarTec.setText(partesNombre[0]);
+            txtApellidosActualizarTec.setText(partesNombre.length > 1 ? partesNombre[1] : "");
+
+            txtNumDocActualizarTec.setText(d[Tecnico.DOCUMENTO]);
+            txtDireccionActualizarTec.setText(d[Tecnico.CIUDAD]);
+            txtTelefonoActualizarTec.setText(d[Tecnico.TELEFONO]);
+            txtCorreoActualizarTec.setText(d[Tecnico.CORREO]);
+
+            if (!d[Tecnico.DESCRIPCION].isEmpty()) {
+                cbxTipoDocActualizarTec.setSelectedItem(d[Tecnico.DESCRIPCION]);
+            } else {
+                cbxTipoDocActualizarTec.setSelectedIndex(0);
+            }
+            cbxNivelActualizarTec.setSelectedItem(d[Tecnico.ESPECIALIDAD]);
+        } else {
+            // Bloqueamos el paso si no existe
+            docTecnicoEncontrado = null;
+
+            txtNombreActualizarTec.setText("");
+            txtApellidosActualizarTec.setText("");
+            txtNumDocActualizarTec.setText("");
+            txtDireccionActualizarTec.setText("");
+            txtTelefonoActualizarTec.setText("");
+            txtCorreoActualizarTec.setText("");
+            cbxTipoDocActualizarTec.setSelectedIndex(0);
+            cbxNivelActualizarTec.setSelectedIndex(0);
+        }
+    }//GEN-LAST:event_btnBuscarTecnico1ActionPerformed
+
+    private void btnBuscarTecnico1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarTecnico1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscarTecnico1MouseExited
+
+    private void btnBuscarTecnico1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarTecnico1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscarTecnico1MouseClicked
+
+    private void btnBuscarTecnico1MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarTecnico1MouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscarTecnico1MouseMoved
+
+    private void JpnInicio20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio20MouseExited
+        JpnInicio20.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio20MouseExited
+
+    private void JpnInicio20MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio20MouseEntered
+        JpnInicio20.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio20MouseEntered
+
+    private void JpnInicio20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio20MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio20MouseClicked
+
+    private void JpnUsuario20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario20MouseExited
+        JpnUsuario20.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario20MouseExited
+
+    private void JpnUsuario20MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario20MouseEntered
+        JpnUsuario20.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario20MouseEntered
+
+    private void JpnUsuario20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario20MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario20MouseClicked
+
+    private void JpnTecnico20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico20MouseExited
+        JpnTecnico20.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico20MouseExited
+
+    private void JpnTecnico20MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico20MouseEntered
+        JpnTecnico20.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico20MouseEntered
+
+    private void JpnTecnico20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico20MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico20MouseClicked
+
+    private void JpnServicio20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio20MouseExited
+        JpnServicio20.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio20MouseExited
+
+    private void JpnServicio20MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio20MouseEntered
+        JpnServicio20.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio20MouseEntered
+
+    private void JpnServicio20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio20MouseClicked
+        new AdminServicios().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_JpnServicio20MouseClicked
+
+    private void JpnSalir20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir20MouseExited
+        JpnSalir20.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir20MouseExited
+
+    private void JpnSalir20MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir20MouseEntered
+        JpnSalir20.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir20MouseEntered
+
+    private void JpnSalir20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir20MouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+            this,
+            "¿Estás seguro de que deseas salir del programa?",
+            "Confirmar salida",
+            javax.swing.JOptionPane.YES_NO_OPTION,
+            javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+        if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir20MouseClicked
+
+    private void volverActualizarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarTecnicoMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverActualizarTecnicoMouseExited
+
+    private void volverActualizarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarTecnicoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverActualizarTecnicoMouseClicked
+
+    private void volverActualizarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarTecnicoMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverActualizarTecnicoMouseMoved
+
+    private void JpnInicio12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio12MouseExited
+        JpnInicio12.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio12MouseExited
+
+    private void JpnInicio12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio12MouseEntered
+        JpnInicio12.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio12MouseEntered
+
+    private void JpnInicio12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio12MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio12MouseClicked
+
+    private void JpnUsuario12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario12MouseExited
+        JpnUsuario12.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario12MouseExited
+
+    private void JpnUsuario12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario12MouseEntered
+        JpnUsuario12.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario12MouseEntered
+
+    private void JpnUsuario12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario12MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario12MouseClicked
+
+    private void JpnTecnico12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico12MouseExited
+        JpnTecnico12.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico12MouseExited
+
+    private void JpnTecnico12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico12MouseEntered
+        JpnTecnico12.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico12MouseEntered
+
+    private void JpnTecnico12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico12MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico12MouseClicked
+
+    private void JpnServicio12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio12MouseExited
+        JpnServicio12.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio12MouseExited
+
+    private void JpnServicio12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio12MouseEntered
+        JpnServicio12.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio12MouseEntered
+
+    private void JpnServicio12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio12MouseClicked
+        new AdminServicios().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_JpnServicio12MouseClicked
+
+    private void JpnSalir12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir12MouseExited
+        JpnSalir12.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir12MouseExited
+
+    private void JpnSalir12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir12MouseEntered
+        JpnSalir12.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir12MouseEntered
+
+    private void JpnSalir12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir12MouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+            this,
+            "¿Estás seguro de que deseas salir del programa?",
+            "Confirmar salida",
+            javax.swing.JOptionPane.YES_NO_OPTION,
+            javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+        if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir12MouseClicked
+
+    private void volverListarTecnicosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverListarTecnicosMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverListarTecnicosMouseExited
+
+    private void volverListarTecnicosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverListarTecnicosMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverListarTecnicosMouseClicked
+
+    private void volverListarTecnicosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverListarTecnicosMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverListarTecnicosMouseMoved
+
+    private void btnListarTecnicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListarTecnicosActionPerformed
+        controlador.cargarTablaTecnicos(tblTecnicos);
+    }//GEN-LAST:event_btnListarTecnicosActionPerformed
+
+    private void btnListarTecnicosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnListarTecnicosMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnListarTecnicosMouseExited
+
+    private void btnListarTecnicosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnListarTecnicosMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnListarTecnicosMouseClicked
+
+    private void btnListarTecnicosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnListarTecnicosMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnListarTecnicosMouseMoved
+
+    private void JpnInicio11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio11MouseExited
+        JpnInicio11.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio11MouseExited
+
+    private void JpnInicio11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio11MouseEntered
+        JpnInicio11.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio11MouseEntered
+
+    private void JpnInicio11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio11MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio11MouseClicked
+
+    private void JpnUsuario11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario11MouseExited
+        JpnUsuario11.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario11MouseExited
+
+    private void JpnUsuario11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario11MouseEntered
+        JpnUsuario11.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario11MouseEntered
+
+    private void JpnUsuario11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario11MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnUsuario11MouseClicked
+
+    private void JpnTecnico11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico11MouseExited
+        JpnTecnico11.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico11MouseExited
+
+    private void JpnTecnico11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico11MouseEntered
+        JpnTecnico11.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico11MouseEntered
+
+    private void JpnTecnico11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico11MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico11MouseClicked
+
+    private void JpnServicio11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio11MouseExited
+        JpnServicio11.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio11MouseExited
+
+    private void JpnServicio11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio11MouseEntered
+        JpnServicio11.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio11MouseEntered
+
+    private void JpnServicio11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio11MouseClicked
+        new AdminServicios().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_JpnServicio11MouseClicked
+
+    private void JpnSalir11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir11MouseExited
+        JpnSalir11.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir11MouseExited
+
+    private void JpnSalir11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir11MouseEntered
+        JpnSalir11.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir11MouseEntered
+
+    private void JpnSalir11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir11MouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+            this,
+            "¿Estás seguro de que deseas salir del programa?",
+            "Confirmar salida",
+            javax.swing.JOptionPane.YES_NO_OPTION,
+            javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+        if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir11MouseClicked
+
+    private void btnEliminarTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarTecnicoActionPerformed
+        boolean eliminado = controlador.procesarEliminarTecnico(txtBuscarDocEliminarTec.getText());
+
+        if (eliminado) {
+            txtBuscarDocEliminarTec.setText("");
+            txtNombreEliminarTec.setText("");
+            txtApellidosEliminarTec.setText("");
+            txtNumDocEliminarTec.setText("");
+            txtDireccionEliminarTec.setText("");
+            txtTelefonoEliminarTec.setText("");
+            txtCorreoEliminarTec.setText("");
+            cbxTipoDocEliminarTec.setSelectedIndex(0);
+
+            // Refresca la tabla de técnicos automáticamente
+            controlador.cargarTablaTecnicos(tblTecnicos);
+        }
+    }//GEN-LAST:event_btnEliminarTecnicoActionPerformed
+
+    private void btnEliminarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEliminarTecnicoMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEliminarTecnicoMouseExited
+
+    private void btnEliminarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEliminarTecnicoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEliminarTecnicoMouseClicked
+
+    private void btnEliminarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEliminarTecnicoMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEliminarTecnicoMouseMoved
+
+    private void btnBuscarEliminarTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarEliminarTecnicoActionPerformed
+        String[] d = controlador.procesarBuscarTecnico(txtBuscarDocEliminarTec.getText());
+
+        if (d != null) {
+            String[] partesNombre = d[Tecnico.NOMBRE].split(" ", 2);
+            txtNombreEliminarTec.setText(partesNombre[0]);
+            txtApellidosEliminarTec.setText(partesNombre.length > 1 ? partesNombre[1] : "");
+
+            txtNumDocEliminarTec.setText(d[Tecnico.DOCUMENTO]);
+            txtDireccionEliminarTec.setText(d[Tecnico.CIUDAD]);
+            txtTelefonoEliminarTec.setText(d[Tecnico.TELEFONO]);
+            txtCorreoEliminarTec.setText(d[Tecnico.CORREO]);
+
+            if (!d[Tecnico.DESCRIPCION].isEmpty()) {
+                cbxTipoDocEliminarTec.setSelectedItem(d[Tecnico.DESCRIPCION]);
+            } else {
+                cbxTipoDocEliminarTec.setSelectedIndex(0);
+            }
+        } else {
+            txtNombreEliminarTec.setText("");
+            txtApellidosEliminarTec.setText("");
+            txtNumDocEliminarTec.setText("");
+            txtDireccionEliminarTec.setText("");
+            txtTelefonoEliminarTec.setText("");
+            txtCorreoEliminarTec.setText("");
+            cbxTipoDocEliminarTec.setSelectedIndex(0);
+        }
+    }//GEN-LAST:event_btnBuscarEliminarTecnicoActionPerformed
+
+    private void btnBuscarEliminarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarEliminarTecnicoMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscarEliminarTecnicoMouseExited
+
+    private void btnBuscarEliminarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarEliminarTecnicoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscarEliminarTecnicoMouseClicked
+
+    private void btnBuscarEliminarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarEliminarTecnicoMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscarEliminarTecnicoMouseMoved
+
+    private void volverEliminarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverEliminarTecnicoMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverEliminarTecnicoMouseExited
+
+    private void volverEliminarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverEliminarTecnicoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverEliminarTecnicoMouseClicked
+
+    private void volverEliminarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverEliminarTecnicoMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverEliminarTecnicoMouseMoved
+
+    private void JpnInicio10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio10MouseExited
+        JpnInicio10.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio10MouseExited
+
+    private void JpnInicio10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio10MouseEntered
+        JpnInicio10.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio10MouseEntered
+
+    private void JpnInicio10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio10MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio10MouseClicked
+
+    private void JpnUsuario10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario10MouseExited
+        JpnUsuario10.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario10MouseExited
+
+    private void JpnUsuario10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario10MouseEntered
+        JpnUsuario10.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario10MouseEntered
+
+    private void JpnUsuario10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario10MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnUsuario10MouseClicked
+
+    private void JpnTecnico10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico10MouseExited
+        JpnTecnico10.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico10MouseExited
+
+    private void JpnTecnico10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico10MouseEntered
+        JpnTecnico10.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico10MouseEntered
+
+    private void JpnTecnico10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico10MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico10MouseClicked
+
+    private void JpnServicio10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio10MouseExited
+        JpnServicio10.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio10MouseExited
+
+    private void JpnServicio10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio10MouseEntered
+        JpnServicio10.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio10MouseEntered
+
+    private void JpnServicio10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio10MouseClicked
+        new AdminServicios().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_JpnServicio10MouseClicked
+
+    private void JpnSalir10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir10MouseExited
+        JpnSalir10.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir10MouseExited
+
+    private void JpnSalir10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir10MouseEntered
+        JpnSalir10.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir10MouseEntered
+
+    private void JpnSalir10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir10MouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+            this,
+            "¿Estás seguro de que deseas salir del programa?",
+            "Confirmar salida",
+            javax.swing.JOptionPane.YES_NO_OPTION,
+            javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+        if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir10MouseClicked
+
+    private void btnBuscarTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarTecnicoActionPerformed
+        String[] d = controlador.procesarBuscarTecnico(txtBuscarDocTecnico.getText());
+
+        if (d != null) {
+            String[] partesNombre = d[Tecnico.NOMBRE].split(" ", 2);
+            txtNombreBuscarTec.setText(partesNombre[0]);
+            txtApellidosBuscarTec.setText(partesNombre.length > 1 ? partesNombre[1] : "");
+
+            txtNumDocBuscarTec.setText(d[Tecnico.DOCUMENTO]);
+            txtDireccionBuscarTec.setText(d[Tecnico.CIUDAD]);
+            txtTelefonoBuscarTec.setText(d[Tecnico.TELEFONO]);
+            txtCorreoBuscarTec.setText(d[Tecnico.CORREO]);
+
+            if (!d[Tecnico.DESCRIPCION].isEmpty()) {
+                cbxTipoDocBuscarTec.setSelectedItem(d[Tecnico.DESCRIPCION]);
+            } else {
+                cbxTipoDocBuscarTec.setSelectedIndex(0);
+            }
+            cbxNivelBuscarTec.setSelectedItem(d[Tecnico.ESPECIALIDAD]);
+        } else {
+            txtNombreBuscarTec.setText("");
+            txtApellidosBuscarTec.setText("");
+            txtNumDocBuscarTec.setText("");
+            txtDireccionBuscarTec.setText("");
+            txtTelefonoBuscarTec.setText("");
+            txtCorreoBuscarTec.setText("");
+            cbxTipoDocBuscarTec.setSelectedIndex(0);
+            cbxNivelBuscarTec.setSelectedIndex(0);
+        }
+    }//GEN-LAST:event_btnBuscarTecnicoActionPerformed
+
+    private void btnBuscarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarTecnicoMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscarTecnicoMouseExited
+
+    private void btnBuscarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarTecnicoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscarTecnicoMouseClicked
+
+    private void btnBuscarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarTecnicoMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscarTecnicoMouseMoved
+
+    private void volverBuscarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverBuscarTecnicoMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverBuscarTecnicoMouseExited
+
+    private void volverBuscarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverBuscarTecnicoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverBuscarTecnicoMouseClicked
+
+    private void volverBuscarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverBuscarTecnicoMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverBuscarTecnicoMouseMoved
+
+    private void JpnInicio9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio9MouseExited
+        JpnInicio9.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio9MouseExited
+
+    private void JpnInicio9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio9MouseEntered
+        JpnInicio9.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio9MouseEntered
+
+    private void JpnInicio9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio9MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio9MouseClicked
+
+    private void JpnUsuario9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario9MouseExited
+        JpnUsuario9.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario9MouseExited
+
+    private void JpnUsuario9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario9MouseEntered
+        JpnUsuario9.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario9MouseEntered
+
+    private void JpnUsuario9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario9MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario9MouseClicked
+
+    private void JpnTecnico9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico9MouseExited
+        JpnTecnico9.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico9MouseExited
+
+    private void JpnTecnico9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico9MouseEntered
+        JpnTecnico9.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico9MouseEntered
+
+    private void JpnTecnico9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico9MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico9MouseClicked
+
+    private void JpnServicio9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio9MouseExited
+        JpnServicio9.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio9MouseExited
+
+    private void JpnServicio9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio9MouseEntered
+        JpnServicio9.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio9MouseEntered
+
+    private void JpnServicio9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio9MouseClicked
+        new AdminServicios().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_JpnServicio9MouseClicked
+
+    private void JpnConfiguracion9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion9MouseExited
+        JpnConfiguracion9.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnConfiguracion9MouseExited
+
+    private void JpnConfiguracion9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion9MouseEntered
+        JpnConfiguracion9.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnConfiguracion9MouseEntered
+
+    private void JpnConfiguracion9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion9MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnConfiguracion9MouseClicked
+
+    private void btnAgregarTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarTecnicoActionPerformed
+        boolean registrado = controlador.procesarRegistroTecnico(
+            txtNombreTecnico.getText(),
+            txtApellidosTecnico.getText(),
+            cbxTipoDocTecnico.getSelectedItem().toString(),
+            txtNumDocTecnico.getText(),
+            txtTelefonoTecnico.getText(),
+            txtDireccionTecnico.getText(),
+            txtCorreoTecnico.getText(),
+            txtPassTecnico.getText(),
+            txtRepetirPassTecnico.getText(),
+            cbxNivelTecnico.getSelectedItem().toString()
+        );
+
+        if (registrado) {
+            txtNombreTecnico.setText("");
+            txtApellidosTecnico.setText("");
+            cbxTipoDocTecnico.setSelectedIndex(0);
+            txtNumDocTecnico.setText("");
+            txtTelefonoTecnico.setText("");
+            txtDireccionTecnico.setText("");
+            txtCorreoTecnico.setText("");
+            txtPassTecnico.setText("");
+            txtRepetirPassTecnico.setText("");
+            cbxNivelTecnico.setSelectedIndex(0);
+
+            // Si ya tienes la tabla de listar técnicos en esta misma ventana, descomenta la siguiente línea para refrescarla:
+            // controlador.cargarTablaTecnicos(tblTecnicos);
+        }
+    }//GEN-LAST:event_btnAgregarTecnicoActionPerformed
+
+    private void btnAgregarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarTecnicoMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAgregarTecnicoMouseExited
+
+    private void btnAgregarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarTecnicoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAgregarTecnicoMouseClicked
+
+    private void btnAgregarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarTecnicoMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAgregarTecnicoMouseMoved
+
+    private void volverRegistrarNuevoTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverRegistrarNuevoTecnicoMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverRegistrarNuevoTecnicoMouseExited
+
+    private void volverRegistrarNuevoTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverRegistrarNuevoTecnicoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverRegistrarNuevoTecnicoMouseClicked
+
+    private void volverRegistrarNuevoTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverRegistrarNuevoTecnicoMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverRegistrarNuevoTecnicoMouseMoved
+
+    private void volverActualizarUsuariosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarUsuariosMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverActualizarUsuariosMouseExited
+
+    private void volverActualizarUsuariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarUsuariosMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverActualizarUsuariosMouseClicked
+
+    private void volverActualizarUsuariosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarUsuariosMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverActualizarUsuariosMouseMoved
+
+    private void JpnInicio8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio8MouseExited
+        JpnInicio8.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio8MouseExited
+
+    private void JpnInicio8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio8MouseEntered
+        JpnInicio8.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio8MouseEntered
+
+    private void JpnInicio8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio8MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio8MouseClicked
+
+    private void JpnUsuario8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario8MouseExited
+        JpnUsuario8.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario8MouseExited
+
+    private void JpnUsuario8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario8MouseEntered
+        JpnUsuario8.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario8MouseEntered
+
+    private void JpnUsuario8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario8MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario8MouseClicked
+
+    private void JpnTecnico8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico8MouseExited
+        JpnTecnico8.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico8MouseExited
+
+    private void JpnTecnico8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico8MouseEntered
+        JpnTecnico8.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico8MouseEntered
+
+    private void JpnTecnico8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico8MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico8MouseClicked
+
+    private void JpnServicio8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio8MouseExited
+        JpnServicio8.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio8MouseExited
+
+    private void JpnServicio8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio8MouseEntered
+        JpnServicio8.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio8MouseEntered
+
+    private void JpnServicio8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio8MouseClicked
+        new AdminServicios().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_JpnServicio8MouseClicked
+
+    private void JpnSalir8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir8MouseExited
+        JpnSalir8.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir8MouseExited
+
+    private void JpnSalir8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir8MouseEntered
+        JpnSalir8.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir8MouseEntered
+
+    private void JpnSalir8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir8MouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+            this,
+            "¿Estás seguro de que deseas salir del programa?",
+            "Confirmar salida",
+            javax.swing.JOptionPane.YES_NO_OPTION,
+            javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+        if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir8MouseClicked
+
+    private void btnGuardarDatosActualizarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGuardarDatosActualizarUsuarioActionPerformed
+
+    private void btnGuardarDatosActualizarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarUsuarioMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGuardarDatosActualizarUsuarioMouseExited
+
+    private void btnGuardarDatosActualizarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarUsuarioMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGuardarDatosActualizarUsuarioMouseClicked
+
+    private void btnGuardarDatosActualizarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarUsuarioMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGuardarDatosActualizarUsuarioMouseMoved
+
+    private void btnActualizarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActualizarUsuarioMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnActualizarUsuarioMouseExited
+
+    private void btnActualizarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActualizarUsuarioMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnActualizarUsuarioMouseClicked
+
+    private void btnActualizarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActualizarUsuarioMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnActualizarUsuarioMouseMoved
+
+    private void btnBuscarActualizarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarActualizarUsuarioMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscarActualizarUsuarioMouseExited
+
+    private void btnBuscarActualizarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarActualizarUsuarioMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscarActualizarUsuarioMouseClicked
+
+    private void btnBuscarActualizarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarActualizarUsuarioMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscarActualizarUsuarioMouseMoved
+
+    private void JpnInicio19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio19MouseExited
+        JpnInicio19.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio19MouseExited
+
+    private void JpnInicio19MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio19MouseEntered
+        JpnInicio19.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio19MouseEntered
+
+    private void JpnInicio19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio19MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio19MouseClicked
+
+    private void JpnUsuario19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario19MouseExited
+        JpnUsuario19.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario19MouseExited
+
+    private void JpnUsuario19MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario19MouseEntered
+        JpnUsuario19.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario19MouseEntered
+
+    private void JpnUsuario19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario19MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario19MouseClicked
+
+    private void JpnTecnico19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico19MouseExited
+        JpnTecnico19.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico19MouseExited
+
+    private void JpnTecnico19MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico19MouseEntered
+        JpnTecnico19.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico19MouseEntered
+
+    private void JpnTecnico19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico19MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico19MouseClicked
+
+    private void JpnServicio19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio19MouseExited
+        JpnServicio19.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio19MouseExited
+
+    private void JpnServicio19MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio19MouseEntered
+        JpnServicio19.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio19MouseEntered
+
+    private void JpnServicio19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio19MouseClicked
+        new AdminServicios().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_JpnServicio19MouseClicked
+
+    private void JpnSalir19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir19MouseExited
+        JpnSalir19.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir19MouseExited
+
+    private void JpnSalir19MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir19MouseEntered
+        JpnSalir19.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir19MouseEntered
+
+    private void JpnSalir19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir19MouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+            this,
+            "¿Estás seguro de que deseas salir del programa?",
+            "Confirmar salida",
+            javax.swing.JOptionPane.YES_NO_OPTION,
+            javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+        if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir19MouseClicked
+
+    private void volverActualizarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarUsuarioMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverActualizarUsuarioMouseExited
+
+    private void volverActualizarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarUsuarioMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverActualizarUsuarioMouseClicked
+
+    private void volverActualizarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarUsuarioMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverActualizarUsuarioMouseMoved
+
+    private void JpnInicio7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio7MouseExited
+        JpnInicio7.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio7MouseExited
+
+    private void JpnInicio7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio7MouseEntered
+        JpnInicio7.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio7MouseEntered
+
+    private void JpnInicio7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio7MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio7MouseClicked
+
+    private void JpnUsuario7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario7MouseExited
+        JpnUsuario7.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario7MouseExited
+
+    private void JpnUsuario7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario7MouseEntered
+        JpnUsuario7.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario7MouseEntered
+
+    private void JpnUsuario7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario7MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario7MouseClicked
+
+    private void JpnTecnico7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico7MouseExited
+        JpnTecnico7.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico7MouseExited
+
+    private void JpnTecnico7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico7MouseEntered
+        JpnTecnico7.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico7MouseEntered
+
+    private void JpnTecnico7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico7MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico7MouseClicked
+
+    private void JpnServicio7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio7MouseExited
+        JpnServicio7.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio7MouseExited
+
+    private void JpnServicio7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio7MouseEntered
+        JpnServicio7.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio7MouseEntered
+
+    private void JpnServicio7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio7MouseClicked
+        new AdminServicios().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_JpnServicio7MouseClicked
+
+    private void JpnSalir7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir7MouseExited
+        JpnSalir7.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir7MouseExited
+
+    private void JpnSalir7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir7MouseEntered
+        JpnSalir7.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir7MouseEntered
+
+    private void JpnSalir7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir7MouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+            this,
+            "¿Estás seguro de que deseas salir del programa?",
+            "Confirmar salida",
+            javax.swing.JOptionPane.YES_NO_OPTION,
+            javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+        if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir7MouseClicked
+
+    private void volverListarUsuariosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverListarUsuariosMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverListarUsuariosMouseExited
+
+    private void volverListarUsuariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverListarUsuariosMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverListarUsuariosMouseClicked
+
+    private void volverListarUsuariosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverListarUsuariosMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverListarUsuariosMouseMoved
+
+    private void btnListarUsuariosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnListarUsuariosMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnListarUsuariosMouseExited
+
+    private void btnListarUsuariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnListarUsuariosMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnListarUsuariosMouseClicked
+
+    private void btnListarUsuariosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnListarUsuariosMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnListarUsuariosMouseMoved
+
+    private void JpnInicio6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio6MouseExited
+        JpnInicio6.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio6MouseExited
+
+    private void JpnInicio6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio6MouseEntered
+        JpnInicio6.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio6MouseEntered
+
+    private void JpnInicio6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio6MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio6MouseClicked
+
+    private void JpnUsuario6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario6MouseExited
+        JpnUsuario6.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario6MouseExited
+
+    private void JpnUsuario6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario6MouseEntered
+        JpnUsuario6.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario6MouseEntered
+
+    private void JpnUsuario6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario6MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario6MouseClicked
+
+    private void JpnTecnico6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico6MouseExited
+        JpnTecnico6.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico6MouseExited
+
+    private void JpnTecnico6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico6MouseEntered
+        JpnTecnico6.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico6MouseEntered
+
+    private void JpnTecnico6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico6MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico6MouseClicked
+
+    private void JpnServicio6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio6MouseExited
+        JpnServicio6.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio6MouseExited
+
+    private void JpnServicio6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio6MouseEntered
+        JpnServicio6.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio6MouseEntered
+
+    private void JpnServicio6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio6MouseClicked
+        new AdminServicios().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_JpnServicio6MouseClicked
+
+    private void JpnSalir6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir6MouseExited
+        JpnSalir6.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir6MouseExited
+
+    private void JpnSalir6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir6MouseEntered
+        JpnSalir6.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir6MouseEntered
+
+    private void JpnSalir6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir6MouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+            this,
+            "¿Estás seguro de que deseas salir del programa?",
+            "Confirmar salida",
+            javax.swing.JOptionPane.YES_NO_OPTION,
+            javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+        if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir6MouseClicked
+
+    private void volverEliminarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverEliminarUsuarioMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverEliminarUsuarioMouseExited
+
+    private void volverEliminarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverEliminarUsuarioMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverEliminarUsuarioMouseClicked
+
+    private void volverEliminarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverEliminarUsuarioMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverEliminarUsuarioMouseMoved
+
+    private void btnEliminarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEliminarUsuarioMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEliminarUsuarioMouseExited
+
+    private void btnEliminarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEliminarUsuarioMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEliminarUsuarioMouseClicked
+
+    private void btnEliminarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEliminarUsuarioMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEliminarUsuarioMouseMoved
+
+    private void btnBuscarEliminarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarEliminarUsuarioMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscarEliminarUsuarioMouseExited
+
+    private void btnBuscarEliminarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarEliminarUsuarioMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscarEliminarUsuarioMouseClicked
+
+    private void btnBuscarEliminarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarEliminarUsuarioMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscarEliminarUsuarioMouseMoved
+
+    private void volverBuscarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverBuscarUsuarioMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverBuscarUsuarioMouseExited
+
+    private void volverBuscarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverBuscarUsuarioMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverBuscarUsuarioMouseClicked
+
+    private void volverBuscarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverBuscarUsuarioMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverBuscarUsuarioMouseMoved
+
+    private void btnBuscarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarUsuarioMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscarUsuarioMouseExited
+
+    private void btnBuscarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarUsuarioMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscarUsuarioMouseClicked
+
+    private void btnBuscarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarUsuarioMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscarUsuarioMouseMoved
+
+    private void JpnInicio5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio5MouseExited
+        JpnInicio5.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio5MouseExited
+
+    private void JpnInicio5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio5MouseEntered
+        JpnInicio5.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio5MouseEntered
+
+    private void JpnInicio5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio5MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio5MouseClicked
+
+    private void JpnUsuario5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario5MouseExited
+        JpnUsuario5.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario5MouseExited
+
+    private void JpnUsuario5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario5MouseEntered
+        JpnUsuario5.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario5MouseEntered
+
+    private void JpnUsuario5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario5MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario5MouseClicked
+
+    private void JpnTecnico5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico5MouseExited
+        JpnTecnico5.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico5MouseExited
+
+    private void JpnTecnico5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico5MouseEntered
+        JpnTecnico5.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico5MouseEntered
+
+    private void JpnTecnico5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico5MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico5MouseClicked
+
+    private void JpnServicio5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio5MouseExited
+        JpnServicio5.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio5MouseExited
+
+    private void JpnServicio5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio5MouseEntered
+        JpnServicio5.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio5MouseEntered
+
+    private void JpnServicio5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio5MouseClicked
+        new AdminServicios().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_JpnServicio5MouseClicked
+
+    private void JpnSalir5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir5MouseExited
+        JpnSalir5.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir5MouseExited
+
+    private void JpnSalir5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir5MouseEntered
+        JpnSalir5.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir5MouseEntered
+
+    private void JpnSalir5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir5MouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+            this,
+            "¿Estás seguro de que deseas salir del programa?",
+            "Confirmar salida",
+            javax.swing.JOptionPane.YES_NO_OPTION,
+            javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+        if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir5MouseClicked
+
+    private void JpnInicio4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio4MouseExited
+        JpnInicio4.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio4MouseExited
+
+    private void JpnInicio4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio4MouseEntered
+        JpnInicio4.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio4MouseEntered
+
+    private void JpnInicio4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio4MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio4MouseClicked
+
+    private void JpnUsuario4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario4MouseExited
+        JpnUsuario4.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario4MouseExited
+
+    private void JpnUsuario4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario4MouseEntered
+        JpnUsuario4.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario4MouseEntered
+
+    private void JpnUsuario4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario4MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario4MouseClicked
+
+    private void JpnTecnico4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico4MouseExited
+        JpnTecnico4.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico4MouseExited
+
+    private void JpnTecnico4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico4MouseEntered
+        JpnTecnico4.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico4MouseEntered
+
+    private void JpnTecnico4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico4MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico4MouseClicked
+
+    private void JpnServicio4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio4MouseExited
+        JpnServicio4.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio4MouseExited
+
+    private void JpnServicio4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio4MouseEntered
+        JpnServicio4.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio4MouseEntered
+
+    private void JpnServicio4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio4MouseClicked
+        new AdminServicios().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_JpnServicio4MouseClicked
+
+    private void JpnSalir4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir4MouseExited
+        JpnSalir4.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir4MouseExited
+
+    private void JpnSalir4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir4MouseEntered
+        JpnSalir4.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir4MouseEntered
+
+    private void JpnSalir4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir4MouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+            this,
+            "¿Estás seguro de que deseas salir del programa?",
+            "Confirmar salida",
+            javax.swing.JOptionPane.YES_NO_OPTION,
+            javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+        if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir4MouseClicked
+
+    private void btnAgregarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarUsuarioMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAgregarUsuarioMouseExited
+
+    private void btnAgregarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarUsuarioMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAgregarUsuarioMouseClicked
+
+    private void btnAgregarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarUsuarioMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAgregarUsuarioMouseMoved
+
+    private void volverRegistrarNuevoUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverRegistrarNuevoUsuarioMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverRegistrarNuevoUsuarioMouseExited
+
+    private void volverRegistrarNuevoUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverRegistrarNuevoUsuarioMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverRegistrarNuevoUsuarioMouseClicked
+
+    private void volverRegistrarNuevoUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverRegistrarNuevoUsuarioMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverRegistrarNuevoUsuarioMouseMoved
+
+    private void JpnInicio3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio3MouseExited
+        JpnInicio3.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio3MouseExited
+
+    private void JpnInicio3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio3MouseEntered
+        JpnInicio3.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio3MouseEntered
+
+    private void JpnInicio3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio3MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio3MouseClicked
+
+    private void JpnUsuario3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario3MouseExited
+        JpnUsuario3.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario3MouseExited
+
+    private void JpnUsuario3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario3MouseEntered
+        JpnUsuario3.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario3MouseEntered
+
+    private void JpnUsuario3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario3MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario3MouseClicked
+
+    private void JpnTecnico3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico3MouseExited
+        JpnTecnico3.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico3MouseExited
+
+    private void JpnTecnico3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico3MouseEntered
+        JpnTecnico3.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico3MouseEntered
+
+    private void JpnTecnico3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico3MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico3MouseClicked
+
+    private void JpnServicio3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio3MouseExited
+        JpnServicio3.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio3MouseExited
+
+    private void JpnServicio3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio3MouseEntered
+        JpnServicio3.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio3MouseEntered
+
+    private void JpnServicio3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio3MouseClicked
+        new AdminServicios().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_JpnServicio3MouseClicked
+
+    private void JpnSalir3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir3MouseExited
+        JpnSalir3.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir3MouseExited
+
+    private void JpnSalir3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir3MouseEntered
+        JpnSalir3.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir3MouseEntered
+
+    private void JpnSalir3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir3MouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+            this,
+            "¿Estás seguro de que deseas salir del programa?",
+            "Confirmar salida",
+            javax.swing.JOptionPane.YES_NO_OPTION,
+            javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+        if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }
+
+    }//GEN-LAST:event_JpnSalir3MouseClicked
+
+    private void volverServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverServicioMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverServicioMouseExited
+
+    private void volverServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverServicioMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverServicioMouseClicked
+
+    private void volverServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverServicioMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverServicioMouseMoved
+
+    private void agregarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarServicioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_agregarServicioActionPerformed
+
+    private void agregarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarServicioMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_agregarServicioMouseExited
+
+    private void agregarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarServicioMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_agregarServicioMouseClicked
+
+    private void agregarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarServicioMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_agregarServicioMouseMoved
+
+    private void actualizarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actualizarServicioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_actualizarServicioActionPerformed
+
+    private void actualizarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarServicioMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_actualizarServicioMouseExited
+
+    private void actualizarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarServicioMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_actualizarServicioMouseClicked
+
+    private void actualizarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarServicioMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_actualizarServicioMouseMoved
+
+    private void eliminarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminarServicioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_eliminarServicioActionPerformed
+
+    private void eliminarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarServicioMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_eliminarServicioMouseExited
+
+    private void eliminarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarServicioMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_eliminarServicioMouseClicked
+
+    private void eliminarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarServicioMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_eliminarServicioMouseMoved
+
+    private void buscarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscarServicioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buscarServicioActionPerformed
+
+    private void buscarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarServicioMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buscarServicioMouseExited
+
+    private void buscarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarServicioMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buscarServicioMouseClicked
+
+    private void buscarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarServicioMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buscarServicioMouseMoved
+
+    private void listarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listarServicioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_listarServicioActionPerformed
+
+    private void listarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarServicioMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_listarServicioMouseExited
+
+    private void listarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarServicioMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_listarServicioMouseClicked
+
+    private void listarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarServicioMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_listarServicioMouseMoved
+
+    private void JpnInicio2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio2MouseExited
+        JpnInicio2.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio2MouseExited
+
+    private void JpnInicio2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio2MouseEntered
+        JpnInicio2.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio2MouseEntered
+
+    private void JpnInicio2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio2MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio2MouseClicked
+
+    private void JpnUsuario2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario2MouseExited
+        JpnUsuario2.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario2MouseExited
+
+    private void JpnUsuario2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario2MouseEntered
+        JpnUsuario2.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario2MouseEntered
+
+    private void JpnUsuario2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario2MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario2MouseClicked
+
+    private void JpnServicio2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio2MouseExited
+        JpnServicio2.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio2MouseExited
+
+    private void JpnServicio2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio2MouseEntered
+        JpnServicio2.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio2MouseEntered
+
+    private void JpnServicio2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio2MouseClicked
+        new AdminServicios().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_JpnServicio2MouseClicked
+
+    private void JpnTecnico2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico2MouseExited
+        JpnTecnico2.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico2MouseExited
+
+    private void JpnTecnico2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico2MouseEntered
+        JpnTecnico2.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico2MouseEntered
+
+    private void JpnTecnico2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico2MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico2MouseClicked
+
+    private void JpnSalir2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir2MouseExited
+        JpnSalir2.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir2MouseExited
+
+    private void JpnSalir2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir2MouseEntered
+        JpnSalir2.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir2MouseEntered
+
+    private void JpnSalir2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir2MouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+            this,
+            "¿Estás seguro de que deseas salir del programa?",
+            "Confirmar salida",
+            javax.swing.JOptionPane.YES_NO_OPTION,
+            javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+        if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir2MouseClicked
+
+    private void volverTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverTecnicoMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverTecnicoMouseExited
+
+    private void volverTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverTecnicoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverTecnicoMouseClicked
+
+    private void volverTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverTecnicoMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_volverTecnicoMouseMoved
+
+    private void listarTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listarTecnicoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_listarTecnicoActionPerformed
+
+    private void listarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarTecnicoMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_listarTecnicoMouseExited
+
+    private void listarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarTecnicoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_listarTecnicoMouseClicked
+
+    private void listarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarTecnicoMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_listarTecnicoMouseMoved
+
+    private void buscarTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscarTecnicoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buscarTecnicoActionPerformed
+
+    private void buscarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarTecnicoMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buscarTecnicoMouseExited
+
+    private void buscarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarTecnicoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buscarTecnicoMouseClicked
+
+    private void buscarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarTecnicoMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buscarTecnicoMouseMoved
+
+    private void agregarTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarTecnicoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_agregarTecnicoActionPerformed
+
+    private void agregarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarTecnicoMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_agregarTecnicoMouseExited
+
+    private void agregarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarTecnicoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_agregarTecnicoMouseClicked
+
+    private void agregarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarTecnicoMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_agregarTecnicoMouseMoved
+
+    private void eliminarTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminarTecnicoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_eliminarTecnicoActionPerformed
+
+    private void eliminarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarTecnicoMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_eliminarTecnicoMouseExited
+
+    private void eliminarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarTecnicoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_eliminarTecnicoMouseClicked
+
+    private void eliminarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarTecnicoMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_eliminarTecnicoMouseMoved
+
+    private void actualizarTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actualizarTecnicoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_actualizarTecnicoActionPerformed
+
+    private void actualizarTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarTecnicoMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_actualizarTecnicoMouseExited
+
+    private void actualizarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarTecnicoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_actualizarTecnicoMouseClicked
+
+    private void actualizarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarTecnicoMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_actualizarTecnicoMouseMoved
+
+    private void JpnInicio1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio1MouseExited
+        JpnInicio1.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio1MouseExited
+
+    private void JpnInicio1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio1MouseEntered
+        JpnInicio1.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio1MouseEntered
+
+    private void JpnInicio1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio1MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio1MouseClicked
+
+    private void JpnUsuario1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario1MouseExited
+        JpnUsuario1.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario1MouseExited
+
+    private void JpnUsuario1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario1MouseEntered
+        JpnUsuario1.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario1MouseEntered
+
+    private void JpnUsuario1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario1MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario1MouseClicked
+
+    private void JpnTecnico1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico1MouseExited
+        JpnTecnico1.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico1MouseExited
+
+    private void JpnTecnico1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico1MouseEntered
+        JpnTecnico1.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico1MouseEntered
+
+    private void JpnTecnico1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico1MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico1MouseClicked
+
+    private void JpnServicio1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio1MouseExited
+        JpnServicio1.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio1MouseExited
+
+    private void JpnServicio1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio1MouseEntered
+        JpnServicio1.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio1MouseEntered
+
+    private void JpnServicio1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio1MouseClicked
+        new AdminServicios().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_JpnServicio1MouseClicked
+
+    private void JpnSalir1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir1MouseExited
+        JpnSalir.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir1MouseExited
+
+    private void JpnSalir1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir1MouseEntered
+        JpnSalir.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir1MouseEntered
+
+    private void JpnSalir1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir1MouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+            this,
+            "¿Estás seguro de que deseas salir del programa?",
+            "Confirmar salida",
+            javax.swing.JOptionPane.YES_NO_OPTION,
+            javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+        if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir1MouseClicked
+
+    private void agregarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_agregarUsuarioActionPerformed
+
+    private void agregarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarUsuarioMouseExited
+        agregarUsuario.setBackground(new Color(0, 122, 255));
+    }//GEN-LAST:event_agregarUsuarioMouseExited
+
+    private void agregarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarUsuarioMouseClicked
+        Principal.setSelectedIndex(4);
+    }//GEN-LAST:event_agregarUsuarioMouseClicked
+
+    private void agregarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarUsuarioMouseMoved
+        agregarUsuario.setBackground(new Color(0, 90, 200));
+    }//GEN-LAST:event_agregarUsuarioMouseMoved
+
+    private void eliminarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminarUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_eliminarUsuarioActionPerformed
+
+    private void eliminarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarUsuarioMouseExited
+        eliminarUsuario.setBackground(new Color(254, 226, 226));
+    }//GEN-LAST:event_eliminarUsuarioMouseExited
+
+    private void eliminarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarUsuarioMouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_eliminarUsuarioMouseClicked
+
+    private void eliminarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarUsuarioMouseMoved
+        eliminarUsuario.setBackground(new Color(200, 30, 30));
+    }//GEN-LAST:event_eliminarUsuarioMouseMoved
+
+    private void volverUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverUsuarioMouseExited
+        volverUsuario.setBackground(new Color(0, 122, 255));
+    }//GEN-LAST:event_volverUsuarioMouseExited
+
+    private void volverUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverUsuarioMouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_volverUsuarioMouseClicked
+
+    private void volverUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverUsuarioMouseMoved
+        volverUsuario.setBackground(new Color(0, 90, 200));
+    }//GEN-LAST:event_volverUsuarioMouseMoved
+
+    private void actualizarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actualizarUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_actualizarUsuarioActionPerformed
+
+    private void actualizarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarUsuarioMouseExited
+        actualizarUsuario.setBackground(new Color(0, 122, 255));
+    }//GEN-LAST:event_actualizarUsuarioMouseExited
+
+    private void actualizarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarUsuarioMouseClicked
+        Principal.setSelectedIndex(16);
+    }//GEN-LAST:event_actualizarUsuarioMouseClicked
+
+    private void actualizarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarUsuarioMouseMoved
+        actualizarUsuario.setBackground(new Color(0, 90, 200));
+    }//GEN-LAST:event_actualizarUsuarioMouseMoved
+
+    private void buscarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscarUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buscarUsuarioActionPerformed
+
+    private void buscarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarUsuarioMouseExited
+        buscarUsuario.setBackground(new Color(0, 122, 255));
+    }//GEN-LAST:event_buscarUsuarioMouseExited
+
+    private void buscarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarUsuarioMouseClicked
+        Principal.setSelectedIndex(5);
+    }//GEN-LAST:event_buscarUsuarioMouseClicked
+
+    private void buscarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarUsuarioMouseMoved
+        buscarUsuario.setBackground(new Color(0, 90, 200));
+    }//GEN-LAST:event_buscarUsuarioMouseMoved
+
+    private void listarUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listarUsuariosActionPerformed
+
+    }//GEN-LAST:event_listarUsuariosActionPerformed
+
+    private void listarUsuariosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarUsuariosMouseExited
+        listarUsuarios.setBackground(new Color(0, 122, 255));
+    }//GEN-LAST:event_listarUsuariosMouseExited
+
+    private void listarUsuariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarUsuariosMouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_listarUsuariosMouseClicked
+
+    private void listarUsuariosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarUsuariosMouseMoved
+        listarUsuarios.setBackground(new Color(0, 90, 200));
+    }//GEN-LAST:event_listarUsuariosMouseMoved
+
+    private void JpnInicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicioMouseExited
+        JpnInicio.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicioMouseExited
+
+    private void JpnInicioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicioMouseEntered
+        JpnInicio.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicioMouseEntered
+
+    private void JpnInicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicioMouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicioMouseClicked
+
+    private void JpnUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuarioMouseExited
+        JpnUsuario.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuarioMouseExited
+
+    private void JpnUsuarioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuarioMouseEntered
+        JpnUsuario.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuarioMouseEntered
+
+    private void JpnUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuarioMouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuarioMouseClicked
+
+    private void JpnTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnicoMouseExited
+        JpnTecnico.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnicoMouseExited
+
+    private void JpnTecnicoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnicoMouseEntered
+        JpnTecnico.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnicoMouseEntered
+
+    private void JpnTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnicoMouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnicoMouseClicked
+
+    private void JpnServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicioMouseExited
+        JpnServicio.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicioMouseExited
+
+    private void JpnServicioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicioMouseEntered
+        JpnServicio.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicioMouseEntered
+
+    private void JpnServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicioMouseClicked
+        new AdminServicios().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_JpnServicioMouseClicked
+
+    private void JpnSalirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalirMouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+            this,
+            "¿Estás seguro de que deseas salir del programa?",
+            "Confirmar salida",
+            javax.swing.JOptionPane.YES_NO_OPTION,
+            javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+        if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalirMouseClicked
+
+    private void JpnUsuario13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario13MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario13MouseClicked
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(() -> {
