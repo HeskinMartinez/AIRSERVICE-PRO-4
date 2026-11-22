@@ -80,8 +80,6 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="126" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-<<<<<<< HEAD
-<<<<<<< HEAD
                                           <Group type="102" alignment="1" attributes="0">
                                               <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                                               <Component id="jCheckBox1" min="-2" max="-2" attributes="0"/>
@@ -89,31 +87,10 @@
                                               <Component id="jCheckBox2" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                                           </Group>
-=======
->>>>>>> d20b74a65ec72765b975f2c42b3763137f77f898
-=======
->>>>>>> 474cab85edcf0405b0948cdb478342227d7ae337
                                           <Component id="jButton1" pref="200" max="32767" attributes="0"/>
                                           <Component id="jButton2" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 474cab85edcf0405b0948cdb478342227d7ae337
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="140" max="-2" attributes="0"/>
-                                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="189" max="-2" attributes="0"/>
-                                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-<<<<<<< HEAD
->>>>>>> d20b74a65ec72765b975f2c42b3763137f77f898
-=======
->>>>>>> 474cab85edcf0405b0948cdb478342227d7ae337
                               </Group>
                               <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
                           </Group>
@@ -138,8 +115,6 @@
                               <EmptySpace min="-2" pref="132" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-<<<<<<< HEAD
-<<<<<<< HEAD
                               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="188" max="-2" attributes="0"/>
                           </Group>
@@ -150,14 +125,6 @@
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
-=======
-                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
->>>>>>> d20b74a65ec72765b975f2c42b3763137f77f898
-=======
-                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
->>>>>>> 474cab85edcf0405b0948cdb478342227d7ae337
                           </Group>
                       </Group>
                   </Group>
@@ -166,8 +133,6 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-<<<<<<< HEAD
-<<<<<<< HEAD
                       <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                       <Component id="jLabel2" min="-2" pref="65" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -188,28 +153,6 @@
                           <Component id="jCheckBox2" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="15" max="32767" attributes="0"/>
-=======
-=======
->>>>>>> 474cab85edcf0405b0948cdb478342227d7ae337
-                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                      <Component id="jLabel2" min="-2" pref="65" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="18" max="32767" attributes="0"/>
-                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txtCorreo" min="-2" pref="33" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txtContraseña" min="-2" pref="33" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-<<<<<<< HEAD
->>>>>>> d20b74a65ec72765b975f2c42b3763137f77f898
-=======
->>>>>>> 474cab85edcf0405b0948cdb478342227d7ae337
                       <Component id="jButton1" min="-2" pref="35" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
@@ -393,8 +336,6 @@
                 <Property name="text" type="java.lang.String" value="Gmail:"/>
               </Properties>
             </Component>
-<<<<<<< HEAD
-<<<<<<< HEAD
             <Component class="javax.swing.JCheckBox" name="jCheckBox1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Tecnico"/>
@@ -411,10 +352,6 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox2ActionPerformed"/>
               </Events>
             </Component>
-=======
->>>>>>> d20b74a65ec72765b975f2c42b3763137f77f898
-=======
->>>>>>> 474cab85edcf0405b0948cdb478342227d7ae337
           </SubComponents>
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel1">
