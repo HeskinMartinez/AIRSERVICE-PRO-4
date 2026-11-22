@@ -21,6 +21,9 @@ public class Tecnico extends javax.swing.JFrame {
     public Tecnico() {
         initComponents();
         setLocationRelativeTo(null);
+        this.setResizable(false);
+        this.setLocationRelativeTo(null);
+        this.setSize(1060, 650);
         
         new Controladores.Controlador_Tecnico().cargarClientes(jTable1);
 
