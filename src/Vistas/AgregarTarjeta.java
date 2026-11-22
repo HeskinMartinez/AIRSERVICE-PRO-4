@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package Vistas;
-
+import Controladores.ControladorPagos;
 import Modelos.Tarjeta;
 import javax.swing.JOptionPane;
 
@@ -14,7 +14,13 @@ import javax.swing.JOptionPane;
 public class AgregarTarjeta extends javax.swing.JFrame {
 private Pagos ventanaPagos;
 
-    public AgregarTarjeta(Pagos ventanaPagos) {
+public AgregarTarjeta(){
+    initComponents();
+    setLocationRelativeTo(null);
+}    
+
+
+public AgregarTarjeta(Pagos ventanaPagos) {
         initComponents();
         this.ventanaPagos = ventanaPagos;
     }
@@ -44,7 +50,7 @@ private Pagos ventanaPagos;
         jLabel6 = new javax.swing.JLabel();
         txt_fechavencim = new javax.swing.JTextField();
         jSeparator4 = new javax.swing.JSeparator();
-        btn_agregartarjeta = new javax.swing.JButton();
+        btn_confirmarAgregar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -127,15 +133,15 @@ private Pagos ventanaPagos;
         jSeparator4.setForeground(new java.awt.Color(0, 0, 0));
         jPanel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 190, 130, 10));
 
-        btn_agregartarjeta.setBackground(new java.awt.Color(51, 255, 153));
-        btn_agregartarjeta.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
-        btn_agregartarjeta.setText("Agregar");
-        btn_agregartarjeta.addActionListener(new java.awt.event.ActionListener() {
+        btn_confirmarAgregar.setBackground(new java.awt.Color(51, 255, 153));
+        btn_confirmarAgregar.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        btn_confirmarAgregar.setText("Confirmar");
+        btn_confirmarAgregar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_agregartarjetaActionPerformed(evt);
+                btn_confirmarAgregarActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_agregartarjeta, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 220, -1, -1));
+        jPanel1.add(btn_confirmarAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 220, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 270));
 
@@ -148,38 +154,44 @@ private Pagos ventanaPagos;
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        ventanaPagos.mostrarMetodosPago();
+        
+        if(ventanaPagos != null){
+            ventanaPagos.mostrarMetodosPago();
+        }else{
+            new Pagos().setVisible(true);
+        }
+        this.dispose();
+        
+        
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void txt_nombretitularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_nombretitularActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_nombretitularActionPerformed
 
-    private void btn_agregartarjetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_agregartarjetaActionPerformed
+    private void btn_confirmarAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_confirmarAgregarActionPerformed
         // TODO add your handling code here:
-       String NombreTitular = txt_nombretitular.getText().trim();
-        String FechaVencimiento = txt_fechavencim.getText().trim();
-        String NumeroTarjeta = txt_NumeroTarjeta.getText().trim();
-        String CodigoS = txt_codigoseguridad.getText().trim();
+    String titular = txt_nombretitular.getText();
+    String numero = txt_NumeroTarjeta.getText(); // Verifica el nombre exacto de este campo
+    String vence = txt_fechavencim.getText();
+    String cvv = txt_codigoseguridad.getText();
         
-        if(NombreTitular.isEmpty() || FechaVencimiento.isEmpty() || NumeroTarjeta.isEmpty() || CodigoS.isEmpty() ){
-            JOptionPane.showMessageDialog(this, "Algun Campo esta vacio.",
-                    "Campos incompletos " , JOptionPane.WARNING_MESSAGE);
-            return;
-        }
-        if(NumeroTarjeta.length() < 16){
-            JOptionPane.showMessageDialog(this, "El numero de tarjeta debe contener al menos 16 digitos.",
-           "numero invalido" , JOptionPane.ERROR_MESSAGE );
-            return;
-        }
-        if (CodigoS.length() < 3){
-            JOptionPane.showMessageDialog(this, " EL codigo de seguridad (CVV) debe tener al menos 3-4 digitos.",
-               "COdigo invalido" , JOptionPane.ERROR_MESSAGE);
-            return;
-        }
         
+        String error = ControladorPagos.getInstancia().agregarTarjeta(titular, numero, vence, cvv);
+if (error != null) {
+    JOptionPane.showMessageDialog(this, error, "Datos invalidos", JOptionPane.ERROR_MESSAGE);
+    return;
+}
+JOptionPane.showMessageDialog(this, "Tarjeta agregada correctamente.");
+if (ventanaPagos != null) {
+    ventanaPagos.tarjetaGuardada();   // deja "Tarjeta" elegida y vuelve a Pagos
+} else {
+    new Pagos().setVisible(true);     // opcional: abre Pagos si ejecutaste AgregarTarjeta directo
+}
+this.dispose();
        
-    }//GEN-LAST:event_btn_agregartarjetaActionPerformed
+    }//GEN-LAST:event_btn_confirmarAgregarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -211,13 +223,14 @@ private Pagos ventanaPagos;
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+                new AgregarTarjeta().setVisible(true);
                 
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_agregartarjeta;
+    private javax.swing.JButton btn_confirmarAgregar;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

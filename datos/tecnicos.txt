@@ -1,2 +1,2 @@
-TEC-001|2|Heskin Martinez|duvan07@gmail.com|3046554657|Cartagena|23/12/2007|1042584178|Reparaciones|10|Siempre amable y bondadoso
+TEC-001|2|Heskin Martinez|duvan07@gmail.com|3046554657|Cartagena|23/12/2007|1042584178|Reparaciones|8|Siempre amable y bondadoso
 TEC-002|4|Daniel Atencio|daniel@gmail.com|3007216292|Cartagena|||||

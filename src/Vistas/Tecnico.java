@@ -23,7 +23,7 @@ public class Tecnico extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         this.setResizable(false);
         this.setLocationRelativeTo(null);
-        this.setSize(1060, 650);
+        this.setSize(1070, 680);
         
         new Controladores.Controlador_Tecnico().cargarClientes(jTable1);
 
@@ -48,6 +48,8 @@ public class Tecnico extends javax.swing.JFrame {
         controlador.cargarCampos();
         controlador.enlazarInventario(jTable3, jTable4, jComboBox1, jTextField10);
         controlador.cargarInventario();
+        controlador.enlazarSolicitudes(jTable5, jTable2);
+        controlador.cargarSolicitudes();
     }
     public Tecnico(int pestanaInicial) {
         this();
@@ -1597,12 +1599,14 @@ public class Tecnico extends javax.swing.JFrame {
         // TODO add your handling code here:
         //Label de Inicio
         jTabbedPane1.setSelectedIndex(0);
+        controlador.cargarSolicitudes();
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
         // TODO add your handling code here:
         //Label de mis solicitudes
         jTabbedPane1.setSelectedIndex(1);
+        controlador.cargarSolicitudes();
     }//GEN-LAST:event_jLabel4MouseClicked
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked

@@ -24,7 +24,7 @@ public class Registro extends javax.swing.JFrame {
         this.requestFocusInWindow();
         this.setResizable(false);
         this.setLocationRelativeTo(null);
-        this.setSize(1060, 650);
+        this.setSize(1060, 680);
     }
 
     /**

@@ -10,9 +10,11 @@ import Modelos.Modelo_login;
 import Modelos.Tecnico;
 import java.awt.Component;
 import java.io.IOException;
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Queue;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -107,6 +109,50 @@ public class Controlador_Tecnico {
     }
 
     // ---------------------------------------------------------------
+    // Solicitudes de servicio (las crea el cliente al pagar)
+    // ---------------------------------------------------------------
+
+    private JTable tablaInicio;        // ID Solicitud, Cliente, Servicio, Fecha
+    private JTable tablaSolicitudes;   // ID, Cliente, Servicio, Fecha Asignada, Estado, Prioridad
+
+    /** La vista entrega la tabla de Inicio y la de Mis Solicitudes. */
+    public void enlazarSolicitudes(JTable inicio, JTable misSolicitudes) {
+        this.tablaInicio = inicio;
+        this.tablaSolicitudes = misSolicitudes;
+    }
+
+    /**
+     * Llena Mis Solicitudes con todas las del tecnico y Inicio con las
+     * pendientes, en el orden en que llegaron (cola: la primera en llegar sale primero).
+     */
+    public void cargarSolicitudes() {
+        if (tablaInicio == null || tablaSolicitudes == null) {
+            return;
+        }
+        DefaultTableModel inicio = (DefaultTableModel) tablaInicio.getModel();
+        DefaultTableModel todas = (DefaultTableModel) tablaSolicitudes.getModel();
+        inicio.setRowCount(0);
+        todas.setRowCount(0);
+        try {
+            Queue<String[]> pendientes = new ArrayDeque<>();
+            for (String[] fila : modelo.listarSolicitudes(idTecnicoActual())) {
+                todas.addRow(fila);
+                if (Tecnico.ESTADO_PENDIENTE.equals(fila[4])) {
+                    pendientes.add(fila);
+                }
+            }
+            while (!pendientes.isEmpty()) {
+                String[] fila = pendientes.poll();
+                inicio.addRow(new Object[]{fila[0], fila[1], fila[2], fila[3]});
+            }
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(tablaSolicitudes,
+                    "No se pudieron cargar las solicitudes: " + e.getMessage(),
+                    "Solicitudes", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+
+    // ---------------------------------------------------------------
     // Inventario: materiales usados y busqueda (lista de Controlador_Inventario)
     // ---------------------------------------------------------------
 
@@ -116,7 +162,7 @@ public class Controlador_Tecnico {
     private JComboBox<?> criterioBusqueda;
     private JTextField textoBusqueda;
 
-    // Despues de buscar, el campo de texto se limpia solo (los resultados se quedan en la tabla).
+    // Despues de buscar, el campo de texto se limpia solo y la tabla vuelve a mostrar todos los materiales.
     private int segundosLimpiarCampo = 5;
     private javax.swing.Timer temporizadorLimpiar;
     private boolean limpiandoCampo = false;
@@ -153,7 +199,7 @@ public class Controlador_Tecnico {
     /** Si el usuario escribe se cancela la limpieza automatica; si deja el campo vacio, vuelven todos los materiales. */
     private void textoCambio() {
         if (limpiandoCampo) {
-            return; // es la limpieza automatica: los resultados se quedan
+            return; // es la limpieza automatica: la tabla ya se restaura aparte
         }
         if (temporizadorLimpiar != null) {
             temporizadorLimpiar.stop();
@@ -163,7 +209,7 @@ public class Controlador_Tecnico {
         }
     }
 
-    /** Limpia el campo de texto pasados unos segundos, sin tocar los resultados de la tabla. */
+    /** Pasados unos segundos limpia el campo de texto y vuelve a mostrar todos los materiales. */
     private void programarLimpiezaCampo() {
         if (temporizadorLimpiar != null) {
             temporizadorLimpiar.stop();
@@ -175,6 +221,7 @@ public class Controlador_Tecnico {
             } finally {
                 limpiandoCampo = false;
             }
+            llenarTablaInventario(inventario.obtenerMateriales());
         });
         temporizadorLimpiar.setRepeats(false);
         temporizadorLimpiar.start();
