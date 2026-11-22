@@ -10,3 +10,5 @@
 >>>>>>> 474cab85edcf0405b0948cdb478342227d7ae337
 /build/
 /dist/
+build/ 
+nbproject/private/ 
