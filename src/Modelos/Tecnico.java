@@ -4,10 +4,106 @@
  */
 package Modelos;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Heskin Martinez
  */
 public class Tecnico {
     
+    public static final int ID = 0;
+    public static final int ID_USUARIO = 1;
+    public static final int NOMBRE = 2;
+    public static final int CORREO = 3;
+    public static final int TELEFONO = 4;
+    public static final int CIUDAD = 5;
+    public static final int FECHA_NACIMIENTO = 6;
+    public static final int DOCUMENTO = 7;
+    public static final int ESPECIALIDAD = 8;
+    public static final int ANOS_EXPERIENCIA = 9;
+    public static final int DESCRIPCION = 10;
+
+    /**
+     * Clientes guardados desde el registro, ordenados por nombre.
+     * Cada fila: nombre, correo, telefono, ciudad.
+     */
+    public List<String[]> listarClientes() throws IOException {
+        Almacen.iniciar();
+        List<String[]> clientes = new ArrayList<>();
+        for (String[] fila : Almacen.leer(Almacen.CLIENTES)) {
+            if (fila.length >= 4) {
+                clientes.add(new String[]{fila[0], fila[1], fila[2], fila[3]});
+            }
+        }
+        clientes.sort((a, b) -> String.CASE_INSENSITIVE_ORDER.compare(a[0], b[0]));
+        return clientes;
+    }
+
+    /** Fila completa del perfil de ese usuario (11 datos) o null si no existe. */
+    public String[] obtenerPerfil(int idUsuario) throws IOException {
+        Almacen.iniciar();
+        for (String[] fila : Almacen.leer(Almacen.TECNICOS)) {
+            if (fila.length == 11 && fila[ID_USUARIO].trim().equals(String.valueOf(idUsuario))) {
+                return fila;
+            }
+        }
+        return null;
+    }
+
+    /** True si otro usuario (distinto a este) ya usa ese correo. */
+    public boolean correoEnUsoPorOtro(String correo, int idUsuario) throws IOException {
+        Almacen.iniciar();
+        String buscado = Modelo_registro.normalizar(correo);
+        for (String[] u : Almacen.leer(Almacen.USUARIOS)) {
+            if (u.length >= 3 && u[2].equalsIgnoreCase(buscado)
+                    && !u[0].trim().equals(String.valueOf(idUsuario))) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Guarda el perfil en tecnicos.txt y, como nombre y correo tambien estan
+     * en usuarios.txt, los actualiza ahi tambien. El ID del tecnico no cambia.
+     */
+    public void guardarPerfil(int idUsuario, String nombre, String correo, String telefono,
+            String ciudad, String fechaNacimiento, String documento, String especialidad,
+            String anosExperiencia, String descripcion) throws IOException {
+
+        Almacen.iniciar();
+        String id = String.valueOf(idUsuario);
+        String correoNormal = Modelo_registro.normalizar(correo);
+
+        List<String[]> tecnicos = Almacen.leer(Almacen.TECNICOS);
+        boolean encontrado = false;
+        for (int i = 0; i < tecnicos.size(); i++) {
+            String[] fila = tecnicos.get(i);
+            if (fila.length == 11 && fila[ID_USUARIO].trim().equals(id)) {
+                tecnicos.set(i, new String[]{fila[ID], id, nombre, correoNormal, telefono, ciudad,
+                    fechaNacimiento, documento, especialidad, anosExperiencia, descripcion});
+                encontrado = true;
+            }
+        }
+        if (!encontrado) {
+            tecnicos.add(new String[]{Almacen.formatoIdTecnico(Almacen.siguienteNumeroTecnico()), id,
+                nombre, correoNormal, telefono, ciudad, fechaNacimiento, documento, especialidad,
+                anosExperiencia, descripcion});
+        }
+
+        List<String[]> usuarios = Almacen.leer(Almacen.USUARIOS);
+        for (String[] u : usuarios) {
+            if (u.length >= 5 && u[0].trim().equals(id)) {
+                u[1] = nombre;
+                u[2] = correoNormal;
+            }
+        }
+
+        Almacen.reescribir(Almacen.USUARIOS, usuarios);
+        Almacen.reescribir(Almacen.TECNICOS, tecnicos);
+        Modelo_login.actualizarSesion(nombre.trim(), correoNormal);
+    }
 }

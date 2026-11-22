@@ -4,9 +4,6 @@
  */
 package Vistas;
 
-import Modelos.ConexionBD;
-import Modelos.CrearTablasBD;
-
 /**
  *
  * @author Heskin Martinez
@@ -24,8 +21,6 @@ public class Login extends javax.swing.JFrame {
         this.setFocusable(true);
         this.requestFocusInWindow();
         
-        ConexionBD.conectar();
-        CrearTablasBD.crearTablas();
     }
 
     /**
@@ -194,7 +189,7 @@ public class Login extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jCheckBox1)
                     .addComponent(jCheckBox2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
@@ -235,6 +230,10 @@ public class Login extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        //boton de iniciar sesion
+        String rolElegido = jCheckBox1.isSelected() ? "Tecnico" : (jCheckBox2.isSelected() ? "Cliente" : null);
+        new Controladores.Controlador_login(this).iniciarSesion(
+            txtCorreo.getText(), new String(txtContraseña.getPassword()), rolElegido);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void txtCorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCorreoActionPerformed
@@ -253,10 +252,18 @@ public class Login extends javax.swing.JFrame {
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
         // TODO add your handling code here:
+        //casilla tecnico
+        if (jCheckBox1.isSelected()) {
+        jCheckBox2.setSelected(false);
+        }
     }//GEN-LAST:event_jCheckBox1ActionPerformed
 
     private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed
         // TODO add your handling code here:
+        //casilla cliente
+        if (jCheckBox2.isSelected()) {
+        jCheckBox1.setSelected(false);
+        }
     }//GEN-LAST:event_jCheckBox2ActionPerformed
 
     /**
