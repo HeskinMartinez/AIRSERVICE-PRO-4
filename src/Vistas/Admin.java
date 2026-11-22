@@ -1,5 +1,5 @@
-
 package Vistas;
+
 
 import java.awt.Color;
 
@@ -696,7 +696,7 @@ public class Admin extends javax.swing.JFrame {
         jTextField98 = new javax.swing.JTextField();
         jLabel210 = new javax.swing.JLabel();
         jTextField99 = new javax.swing.JTextField();
-        btnBuscarServicio1 = new javax.swing.JButton();
+        btnBuscarActualizarServicio = new javax.swing.JButton();
         jLabel211 = new javax.swing.JLabel();
         jLabel212 = new javax.swing.JLabel();
         jTextField100 = new javax.swing.JTextField();
@@ -753,7 +753,7 @@ public class Admin extends javax.swing.JFrame {
         jTextField78 = new javax.swing.JTextField();
         jLabel174 = new javax.swing.JLabel();
         jTextField79 = new javax.swing.JTextField();
-        btnActualizarServicios = new javax.swing.JButton();
+        btnGuardarDatosActualizarServicios = new javax.swing.JButton();
         jLabel175 = new javax.swing.JLabel();
         jLabel176 = new javax.swing.JLabel();
         jTextField80 = new javax.swing.JTextField();
@@ -849,6 +849,11 @@ public class Admin extends javax.swing.JFrame {
 
         JpnSalir.setBackground(new java.awt.Color(19, 39, 63));
         JpnSalir.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnSalir.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnSalirMouseClicked(evt);
+            }
+        });
         JpnSalir.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbSalir.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -860,6 +865,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnConfiguracion.setBackground(new java.awt.Color(19, 39, 63));
         JpnConfiguracion.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnConfiguracion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnConfiguracionMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnConfiguracionMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnConfiguracionMouseExited(evt);
+            }
+        });
         JpnConfiguracion.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbConfiguracion.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -871,6 +887,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnServicio.setBackground(new java.awt.Color(19, 39, 63));
         JpnServicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnServicio.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnServicioMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnServicioMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnServicioMouseExited(evt);
+            }
+        });
         JpnServicio.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbServicio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -882,6 +909,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnTecnico.setBackground(new java.awt.Color(19, 39, 63));
         JpnTecnico.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnTecnico.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnTecnicoMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnTecnicoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnTecnicoMouseExited(evt);
+            }
+        });
         JpnTecnico.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbTecnico.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -893,6 +931,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnUsuario.setBackground(new java.awt.Color(19, 39, 63));
         JpnUsuario.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnUsuarioMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnUsuarioMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnUsuarioMouseExited(evt);
+            }
+        });
         JpnUsuario.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbUsuario.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -904,6 +953,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnInicio.setBackground(new java.awt.Color(19, 39, 63));
         JpnInicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnInicio.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnInicioMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnInicioMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnInicioMouseExited(evt);
+            }
+        });
         JpnInicio.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbInicio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1098,6 +1158,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnSalir1.setBackground(new java.awt.Color(19, 39, 63));
         JpnSalir1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnSalir1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnSalir1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnSalir1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnSalir1MouseExited(evt);
+            }
+        });
         JpnSalir1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbSalir1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1109,6 +1180,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnConfiguracion1.setBackground(new java.awt.Color(19, 39, 63));
         JpnConfiguracion1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnConfiguracion1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion1MouseExited(evt);
+            }
+        });
         JpnConfiguracion1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbConfiguracion1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1120,6 +1202,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnServicio1.setBackground(new java.awt.Color(19, 39, 63));
         JpnServicio1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnServicio1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnServicio1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnServicio1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnServicio1MouseExited(evt);
+            }
+        });
         JpnServicio1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbServicio1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1131,6 +1224,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnTecnico1.setBackground(new java.awt.Color(19, 39, 63));
         JpnTecnico1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnTecnico1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnTecnico1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnTecnico1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnTecnico1MouseExited(evt);
+            }
+        });
         JpnTecnico1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbTecnico1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1142,6 +1246,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnUsuario1.setBackground(new java.awt.Color(19, 39, 63));
         JpnUsuario1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnUsuario1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnUsuario1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnUsuario1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnUsuario1MouseExited(evt);
+            }
+        });
         JpnUsuario1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbUsuario1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1153,6 +1268,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnInicio1.setBackground(new java.awt.Color(19, 39, 63));
         JpnInicio1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnInicio1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnInicio1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnInicio1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnInicio1MouseExited(evt);
+            }
+        });
         JpnInicio1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbInicio2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1169,7 +1295,7 @@ public class Admin extends javax.swing.JFrame {
         jLabel4.setPreferredSize(new java.awt.Dimension(1060, 650));
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1070, 660));
 
-        Principal.addTab("tab2", jPanel2);
+        Principal.addTab("1", jPanel2);
 
         jPanel3.setMinimumSize(new java.awt.Dimension(1060, 660));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -1346,6 +1472,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnSalir2.setBackground(new java.awt.Color(19, 39, 63));
         JpnSalir2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnSalir2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnSalir2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnSalir2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnSalir2MouseExited(evt);
+            }
+        });
         JpnSalir2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbSalir2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1357,6 +1494,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnConfiguracion2.setBackground(new java.awt.Color(19, 39, 63));
         JpnConfiguracion2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnConfiguracion2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion2MouseExited(evt);
+            }
+        });
         JpnConfiguracion2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbConfiguracion2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1368,6 +1516,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnTecnico2.setBackground(new java.awt.Color(19, 39, 63));
         JpnTecnico2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnTecnico2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnTecnico2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnTecnico2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnTecnico2MouseExited(evt);
+            }
+        });
         JpnTecnico2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbTecnico2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1379,6 +1538,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnServicio2.setBackground(new java.awt.Color(19, 39, 63));
         JpnServicio2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnServicio2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnServicio2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnServicio2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnServicio2MouseExited(evt);
+            }
+        });
         JpnServicio2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbServicio2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1390,6 +1560,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnUsuario2.setBackground(new java.awt.Color(19, 39, 63));
         JpnUsuario2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnUsuario2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnUsuario2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnUsuario2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnUsuario2MouseExited(evt);
+            }
+        });
         JpnUsuario2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbUsuario2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1401,6 +1582,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnInicio2.setBackground(new java.awt.Color(19, 39, 63));
         JpnInicio2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnInicio2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnInicio2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnInicio2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnInicio2MouseExited(evt);
+            }
+        });
         JpnInicio2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbInicio3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1414,7 +1606,7 @@ public class Admin extends javax.swing.JFrame {
         jLabel6.setText("jLabel6");
         jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        Principal.addTab("tab3", jPanel3);
+        Principal.addTab("2", jPanel3);
 
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -1590,6 +1782,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnSalir3.setBackground(new java.awt.Color(19, 39, 63));
         JpnSalir3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnSalir3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnSalir3MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnSalir3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnSalir3MouseExited(evt);
+            }
+        });
         JpnSalir3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbSalir3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1601,6 +1804,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnConfiguracion3.setBackground(new java.awt.Color(19, 39, 63));
         JpnConfiguracion3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnConfiguracion3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion3MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion3MouseExited(evt);
+            }
+        });
         JpnConfiguracion3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbConfiguracion3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1612,6 +1826,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnServicio3.setBackground(new java.awt.Color(19, 39, 63));
         JpnServicio3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnServicio3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnServicio3MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnServicio3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnServicio3MouseExited(evt);
+            }
+        });
         JpnServicio3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbServicio3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1623,6 +1848,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnTecnico3.setBackground(new java.awt.Color(19, 39, 63));
         JpnTecnico3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnTecnico3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnTecnico3MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnTecnico3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnTecnico3MouseExited(evt);
+            }
+        });
         JpnTecnico3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbTecnico3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1634,6 +1870,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnUsuario3.setBackground(new java.awt.Color(19, 39, 63));
         JpnUsuario3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnUsuario3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnUsuario3MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnUsuario3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnUsuario3MouseExited(evt);
+            }
+        });
         JpnUsuario3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbUsuario3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1645,6 +1892,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnInicio3.setBackground(new java.awt.Color(19, 39, 63));
         JpnInicio3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnInicio3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnInicio3MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnInicio3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnInicio3MouseExited(evt);
+            }
+        });
         JpnInicio3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbInicio4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1658,7 +1916,7 @@ public class Admin extends javax.swing.JFrame {
         jLabel8.setText("jLabel8");
         jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        Principal.addTab("tab4", jPanel4);
+        Principal.addTab("3", jPanel4);
 
         jPanel5.setMinimumSize(new java.awt.Dimension(1060, 660));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -1822,6 +2080,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnSalir4.setBackground(new java.awt.Color(19, 39, 63));
         JpnSalir4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnSalir4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnSalir4MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnSalir4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnSalir4MouseExited(evt);
+            }
+        });
         JpnSalir4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbSalir4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1833,6 +2102,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnConfiguracion4.setBackground(new java.awt.Color(19, 39, 63));
         JpnConfiguracion4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnConfiguracion4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion4MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion4MouseExited(evt);
+            }
+        });
         JpnConfiguracion4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbConfiguracion4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1844,17 +2124,39 @@ public class Admin extends javax.swing.JFrame {
 
         JpnServicio4.setBackground(new java.awt.Color(19, 39, 63));
         JpnServicio4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnServicio4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnServicio4MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnServicio4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnServicio4MouseExited(evt);
+            }
+        });
         JpnServicio4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbServicio4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lbServicio4.setForeground(new java.awt.Color(255, 255, 255));
         lbServicio4.setText("SERVICIOS");
-        JpnServicio4.add(lbServicio4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 30));
+        JpnServicio4.add(lbServicio4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 70, 30));
 
         jPanel5.add(JpnServicio4, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 40, 90, 30));
 
         JpnTecnico4.setBackground(new java.awt.Color(19, 39, 63));
         JpnTecnico4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnTecnico4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnTecnico4MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnTecnico4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnTecnico4MouseExited(evt);
+            }
+        });
         JpnTecnico4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbTecnico4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1866,6 +2168,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnUsuario4.setBackground(new java.awt.Color(19, 39, 63));
         JpnUsuario4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnUsuario4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnUsuario4MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnUsuario4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnUsuario4MouseExited(evt);
+            }
+        });
         JpnUsuario4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbUsuario4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1877,6 +2190,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnInicio4.setBackground(new java.awt.Color(19, 39, 63));
         JpnInicio4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnInicio4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnInicio4MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnInicio4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnInicio4MouseExited(evt);
+            }
+        });
         JpnInicio4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbInicio5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1890,12 +2214,23 @@ public class Admin extends javax.swing.JFrame {
         jLabel10.setText("jLabel10");
         jPanel5.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        Principal.addTab("tab5", jPanel5);
+        Principal.addTab("4", jPanel5);
 
         jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         JpnSalir5.setBackground(new java.awt.Color(19, 39, 63));
         JpnSalir5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnSalir5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnSalir5MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnSalir5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnSalir5MouseExited(evt);
+            }
+        });
         JpnSalir5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbSalir5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1907,6 +2242,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnConfiguracion5.setBackground(new java.awt.Color(19, 39, 63));
         JpnConfiguracion5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnConfiguracion5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion5MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion5MouseExited(evt);
+            }
+        });
         JpnConfiguracion5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbConfiguracion5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1918,6 +2264,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnServicio5.setBackground(new java.awt.Color(19, 39, 63));
         JpnServicio5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnServicio5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnServicio5MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnServicio5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnServicio5MouseExited(evt);
+            }
+        });
         JpnServicio5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbServicio5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1929,6 +2286,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnTecnico5.setBackground(new java.awt.Color(19, 39, 63));
         JpnTecnico5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnTecnico5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnTecnico5MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnTecnico5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnTecnico5MouseExited(evt);
+            }
+        });
         JpnTecnico5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbTecnico5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1940,6 +2308,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnUsuario5.setBackground(new java.awt.Color(19, 39, 63));
         JpnUsuario5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnUsuario5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnUsuario5MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnUsuario5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnUsuario5MouseExited(evt);
+            }
+        });
         JpnUsuario5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbUsuario5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1951,6 +2330,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnInicio5.setBackground(new java.awt.Color(19, 39, 63));
         JpnInicio5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnInicio5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnInicio5MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnInicio5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnInicio5MouseExited(evt);
+            }
+        });
         JpnInicio5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbInicio6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2114,7 +2504,7 @@ public class Admin extends javax.swing.JFrame {
         jLabel23.setText("jLabel23");
         jPanel7.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 670));
 
-        Principal.addTab("tab6", jPanel7);
+        Principal.addTab("5", jPanel7);
 
         jPanel9.setMaximumSize(new java.awt.Dimension(1060, 650));
         jPanel9.setMinimumSize(new java.awt.Dimension(1060, 650));
@@ -2296,6 +2686,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnSalir6.setBackground(new java.awt.Color(19, 39, 63));
         JpnSalir6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnSalir6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnSalir6MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnSalir6MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnSalir6MouseExited(evt);
+            }
+        });
         JpnSalir6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbSalir6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2307,6 +2708,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnConfiguracion6.setBackground(new java.awt.Color(19, 39, 63));
         JpnConfiguracion6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnConfiguracion6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion6MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion6MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion6MouseExited(evt);
+            }
+        });
         JpnConfiguracion6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbConfiguracion6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2318,6 +2730,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnServicio6.setBackground(new java.awt.Color(19, 39, 63));
         JpnServicio6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnServicio6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnServicio6MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnServicio6MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnServicio6MouseExited(evt);
+            }
+        });
         JpnServicio6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbServicio6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2329,6 +2752,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnTecnico6.setBackground(new java.awt.Color(19, 39, 63));
         JpnTecnico6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnTecnico6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnTecnico6MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnTecnico6MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnTecnico6MouseExited(evt);
+            }
+        });
         JpnTecnico6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbTecnico6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2340,6 +2774,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnUsuario6.setBackground(new java.awt.Color(19, 39, 63));
         JpnUsuario6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnUsuario6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnUsuario6MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnUsuario6MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnUsuario6MouseExited(evt);
+            }
+        });
         JpnUsuario6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbUsuario6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2351,6 +2796,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnInicio6.setBackground(new java.awt.Color(19, 39, 63));
         JpnInicio6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnInicio6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnInicio6MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnInicio6MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnInicio6MouseExited(evt);
+            }
+        });
         JpnInicio6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbInicio7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2364,7 +2820,7 @@ public class Admin extends javax.swing.JFrame {
         jLabel29.setText("jLabel29");
         jPanel9.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        Principal.addTab("tab7", jPanel9);
+        Principal.addTab("6", jPanel9);
 
         jPanel11.setMaximumSize(new java.awt.Dimension(1060, 650));
         jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -2464,6 +2920,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnSalir7.setBackground(new java.awt.Color(19, 39, 63));
         JpnSalir7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnSalir7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnSalir7MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnSalir7MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnSalir7MouseExited(evt);
+            }
+        });
         JpnSalir7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbSalir7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2475,6 +2942,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnConfiguracion7.setBackground(new java.awt.Color(19, 39, 63));
         JpnConfiguracion7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnConfiguracion7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion7MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion7MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion7MouseExited(evt);
+            }
+        });
         JpnConfiguracion7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbConfiguracion7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2486,6 +2964,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnServicio7.setBackground(new java.awt.Color(19, 39, 63));
         JpnServicio7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnServicio7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnServicio7MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnServicio7MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnServicio7MouseExited(evt);
+            }
+        });
         JpnServicio7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbServicio7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2497,6 +2986,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnTecnico7.setBackground(new java.awt.Color(19, 39, 63));
         JpnTecnico7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnTecnico7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnTecnico7MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnTecnico7MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnTecnico7MouseExited(evt);
+            }
+        });
         JpnTecnico7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbTecnico7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2508,6 +3008,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnUsuario7.setBackground(new java.awt.Color(19, 39, 63));
         JpnUsuario7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnUsuario7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnUsuario7MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnUsuario7MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnUsuario7MouseExited(evt);
+            }
+        });
         JpnUsuario7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbUsuario7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2519,6 +3030,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnInicio7.setBackground(new java.awt.Color(19, 39, 63));
         JpnInicio7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnInicio7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnInicio7MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnInicio7MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnInicio7MouseExited(evt);
+            }
+        });
         JpnInicio7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbInicio8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2537,7 +3059,7 @@ public class Admin extends javax.swing.JFrame {
         jLabel48.setText("jLabel48");
         jPanel11.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        Principal.addTab("tab8", jPanel11);
+        Principal.addTab("7", jPanel11);
 
         jPanel33.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -2566,6 +3088,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnSalir19.setBackground(new java.awt.Color(19, 39, 63));
         JpnSalir19.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnSalir19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnSalir19MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnSalir19MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnSalir19MouseExited(evt);
+            }
+        });
         JpnSalir19.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbSalir19.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2577,6 +3110,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnConfiguracion19.setBackground(new java.awt.Color(19, 39, 63));
         JpnConfiguracion19.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnConfiguracion19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion19MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion19MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion19MouseExited(evt);
+            }
+        });
         JpnConfiguracion19.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbConfiguracion19.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2588,6 +3132,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnServicio19.setBackground(new java.awt.Color(19, 39, 63));
         JpnServicio19.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnServicio19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnServicio19MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnServicio19MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnServicio19MouseExited(evt);
+            }
+        });
         JpnServicio19.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbServicio19.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2599,6 +3154,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnTecnico19.setBackground(new java.awt.Color(19, 39, 63));
         JpnTecnico19.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnTecnico19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnTecnico19MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnTecnico19MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnTecnico19MouseExited(evt);
+            }
+        });
         JpnTecnico19.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbTecnico19.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2610,6 +3176,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnUsuario19.setBackground(new java.awt.Color(19, 39, 63));
         JpnUsuario19.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnUsuario19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnUsuario19MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnUsuario19MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnUsuario19MouseExited(evt);
+            }
+        });
         JpnUsuario19.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbUsuario19.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2621,6 +3198,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnInicio19.setBackground(new java.awt.Color(19, 39, 63));
         JpnInicio19.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnInicio19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnInicio19MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnInicio19MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnInicio19MouseExited(evt);
+            }
+        });
         JpnInicio19.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbInicio20.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2784,7 +3372,7 @@ public class Admin extends javax.swing.JFrame {
         jLabel179.setText("jLabel23");
         jPanel33.add(jLabel179, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 670));
 
-        Principal.addTab("tab21", jPanel33);
+        Principal.addTab("8", jPanel33);
 
         jPanel12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -2929,6 +3517,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnSalir8.setBackground(new java.awt.Color(19, 39, 63));
         JpnSalir8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnSalir8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnSalir8MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnSalir8MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnSalir8MouseExited(evt);
+            }
+        });
         JpnSalir8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbSalir8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2940,6 +3539,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnConfiguracion8.setBackground(new java.awt.Color(19, 39, 63));
         JpnConfiguracion8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnConfiguracion8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion8MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion8MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion8MouseExited(evt);
+            }
+        });
         JpnConfiguracion8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbConfiguracion8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2951,6 +3561,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnServicio8.setBackground(new java.awt.Color(19, 39, 63));
         JpnServicio8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnServicio8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnServicio8MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnServicio8MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnServicio8MouseExited(evt);
+            }
+        });
         JpnServicio8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbServicio8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2962,6 +3583,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnTecnico8.setBackground(new java.awt.Color(19, 39, 63));
         JpnTecnico8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnTecnico8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnTecnico8MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnTecnico8MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnTecnico8MouseExited(evt);
+            }
+        });
         JpnTecnico8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbTecnico8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2973,6 +3605,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnUsuario8.setBackground(new java.awt.Color(19, 39, 63));
         JpnUsuario8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnUsuario8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnUsuario8MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnUsuario8MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnUsuario8MouseExited(evt);
+            }
+        });
         JpnUsuario8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbUsuario8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2984,6 +3627,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnInicio8.setBackground(new java.awt.Color(19, 39, 63));
         JpnInicio8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnInicio8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnInicio8MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnInicio8MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnInicio8MouseExited(evt);
+            }
+        });
         JpnInicio8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbInicio9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3020,7 +3674,7 @@ public class Admin extends javax.swing.JFrame {
         jLabel50.setText("jLabel50");
         jPanel12.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        Principal.addTab("tab9", jPanel12);
+        Principal.addTab("9", jPanel12);
 
         jPanel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -3203,6 +3857,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnConfiguracion9.setBackground(new java.awt.Color(19, 39, 63));
         JpnConfiguracion9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnConfiguracion9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion9MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion9MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion9MouseExited(evt);
+            }
+        });
         JpnConfiguracion9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbConfiguracion9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3214,6 +3879,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnServicio9.setBackground(new java.awt.Color(19, 39, 63));
         JpnServicio9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnServicio9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnServicio9MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnServicio9MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnServicio9MouseExited(evt);
+            }
+        });
         JpnServicio9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbServicio9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3225,6 +3901,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnTecnico9.setBackground(new java.awt.Color(19, 39, 63));
         JpnTecnico9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnTecnico9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnTecnico9MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnTecnico9MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnTecnico9MouseExited(evt);
+            }
+        });
         JpnTecnico9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbTecnico9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3236,6 +3923,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnUsuario9.setBackground(new java.awt.Color(19, 39, 63));
         JpnUsuario9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnUsuario9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnUsuario9MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnUsuario9MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnUsuario9MouseExited(evt);
+            }
+        });
         JpnUsuario9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbUsuario9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3247,6 +3945,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnInicio9.setBackground(new java.awt.Color(19, 39, 63));
         JpnInicio9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnInicio9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnInicio9MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnInicio9MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnInicio9MouseExited(evt);
+            }
+        });
         JpnInicio9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbInicio10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3260,7 +3969,7 @@ public class Admin extends javax.swing.JFrame {
         jLabel64.setText("jLabel64");
         jPanel14.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        Principal.addTab("tab10", jPanel14);
+        Principal.addTab("10", jPanel14);
 
         jPanel16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -3425,6 +4134,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnSalir10.setBackground(new java.awt.Color(19, 39, 63));
         JpnSalir10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnSalir10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnSalir10MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnSalir10MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnSalir10MouseExited(evt);
+            }
+        });
         JpnSalir10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbSalir10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3436,6 +4156,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnConfiguracion10.setBackground(new java.awt.Color(19, 39, 63));
         JpnConfiguracion10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnConfiguracion10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion10MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion10MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion10MouseExited(evt);
+            }
+        });
         JpnConfiguracion10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbConfiguracion10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3447,6 +4178,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnServicio10.setBackground(new java.awt.Color(19, 39, 63));
         JpnServicio10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnServicio10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnServicio10MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnServicio10MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnServicio10MouseExited(evt);
+            }
+        });
         JpnServicio10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbServicio10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3458,6 +4200,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnTecnico10.setBackground(new java.awt.Color(19, 39, 63));
         JpnTecnico10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnTecnico10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnTecnico10MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnTecnico10MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnTecnico10MouseExited(evt);
+            }
+        });
         JpnTecnico10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbTecnico10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3469,6 +4222,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnUsuario10.setBackground(new java.awt.Color(19, 39, 63));
         JpnUsuario10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnUsuario10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnUsuario10MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnUsuario10MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnUsuario10MouseExited(evt);
+            }
+        });
         JpnUsuario10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbUsuario10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3480,6 +4244,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnInicio10.setBackground(new java.awt.Color(19, 39, 63));
         JpnInicio10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnInicio10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnInicio10MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnInicio10MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnInicio10MouseExited(evt);
+            }
+        });
         JpnInicio10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbInicio11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3493,7 +4268,7 @@ public class Admin extends javax.swing.JFrame {
         jLabel79.setText("jLabel79");
         jPanel16.add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        Principal.addTab("tab11", jPanel16);
+        Principal.addTab("11", jPanel16);
 
         jPanel18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -3667,6 +4442,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnSalir11.setBackground(new java.awt.Color(19, 39, 63));
         JpnSalir11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnSalir11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnSalir11MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnSalir11MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnSalir11MouseExited(evt);
+            }
+        });
         JpnSalir11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbSalir11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3678,6 +4464,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnConfiguracion11.setBackground(new java.awt.Color(19, 39, 63));
         JpnConfiguracion11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnConfiguracion11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion11MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion11MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion11MouseExited(evt);
+            }
+        });
         JpnConfiguracion11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbConfiguracion11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3689,6 +4486,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnServicio11.setBackground(new java.awt.Color(19, 39, 63));
         JpnServicio11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnServicio11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnServicio11MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnServicio11MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnServicio11MouseExited(evt);
+            }
+        });
         JpnServicio11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbServicio11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3700,6 +4508,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnTecnico11.setBackground(new java.awt.Color(19, 39, 63));
         JpnTecnico11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnTecnico11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnTecnico11MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnTecnico11MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnTecnico11MouseExited(evt);
+            }
+        });
         JpnTecnico11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbTecnico11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3711,6 +4530,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnUsuario11.setBackground(new java.awt.Color(19, 39, 63));
         JpnUsuario11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnUsuario11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnUsuario11MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnUsuario11MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnUsuario11MouseExited(evt);
+            }
+        });
         JpnUsuario11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbUsuario11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3722,6 +4552,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnInicio11.setBackground(new java.awt.Color(19, 39, 63));
         JpnInicio11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnInicio11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnInicio11MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnInicio11MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnInicio11MouseExited(evt);
+            }
+        });
         JpnInicio11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbInicio12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3740,7 +4581,7 @@ public class Admin extends javax.swing.JFrame {
         jLabel92.setText("jLabel92");
         jPanel18.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        Principal.addTab("tab12", jPanel18);
+        Principal.addTab("12", jPanel18);
 
         jPanel20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -3844,6 +4685,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnSalir12.setBackground(new java.awt.Color(19, 39, 63));
         JpnSalir12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnSalir12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnSalir12MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnSalir12MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnSalir12MouseExited(evt);
+            }
+        });
         JpnSalir12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbSalir12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3855,6 +4707,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnConfiguracion12.setBackground(new java.awt.Color(19, 39, 63));
         JpnConfiguracion12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnConfiguracion12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion12MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion12MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion12MouseExited(evt);
+            }
+        });
         JpnConfiguracion12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbConfiguracion12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3866,6 +4729,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnServicio12.setBackground(new java.awt.Color(19, 39, 63));
         JpnServicio12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnServicio12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnServicio12MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnServicio12MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnServicio12MouseExited(evt);
+            }
+        });
         JpnServicio12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbServicio12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3877,6 +4751,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnTecnico12.setBackground(new java.awt.Color(19, 39, 63));
         JpnTecnico12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnTecnico12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnTecnico12MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnTecnico12MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnTecnico12MouseExited(evt);
+            }
+        });
         JpnTecnico12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbTecnico12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3888,6 +4773,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnUsuario12.setBackground(new java.awt.Color(19, 39, 63));
         JpnUsuario12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnUsuario12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnUsuario12MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnUsuario12MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnUsuario12MouseExited(evt);
+            }
+        });
         JpnUsuario12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbUsuario12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3899,6 +4795,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnInicio12.setBackground(new java.awt.Color(19, 39, 63));
         JpnInicio12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnInicio12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnInicio12MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnInicio12MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnInicio12MouseExited(evt);
+            }
+        });
         JpnInicio12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbInicio13.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3912,7 +4819,7 @@ public class Admin extends javax.swing.JFrame {
         jLabel104.setText("jLabel104");
         jPanel20.add(jLabel104, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        Principal.addTab("tab13", jPanel20);
+        Principal.addTab("13", jPanel20);
 
         jPanel32.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -3941,6 +4848,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnSalir20.setBackground(new java.awt.Color(19, 39, 63));
         JpnSalir20.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnSalir20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnSalir20MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnSalir20MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnSalir20MouseExited(evt);
+            }
+        });
         JpnSalir20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbSalir20.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3952,6 +4870,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnConfiguracion20.setBackground(new java.awt.Color(19, 39, 63));
         JpnConfiguracion20.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnConfiguracion20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion20MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion20MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion20MouseExited(evt);
+            }
+        });
         JpnConfiguracion20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbConfiguracion20.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3963,6 +4892,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnServicio20.setBackground(new java.awt.Color(19, 39, 63));
         JpnServicio20.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnServicio20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnServicio20MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnServicio20MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnServicio20MouseExited(evt);
+            }
+        });
         JpnServicio20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbServicio20.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3974,6 +4914,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnTecnico20.setBackground(new java.awt.Color(19, 39, 63));
         JpnTecnico20.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnTecnico20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnTecnico20MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnTecnico20MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnTecnico20MouseExited(evt);
+            }
+        });
         JpnTecnico20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbTecnico20.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3985,6 +4936,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnUsuario20.setBackground(new java.awt.Color(19, 39, 63));
         JpnUsuario20.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnUsuario20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnUsuario20MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnUsuario20MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnUsuario20MouseExited(evt);
+            }
+        });
         JpnUsuario20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbUsuario20.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -3996,6 +4958,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnInicio20.setBackground(new java.awt.Color(19, 39, 63));
         JpnInicio20.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnInicio20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnInicio20MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnInicio20MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnInicio20MouseExited(evt);
+            }
+        });
         JpnInicio20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbInicio21.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -4168,7 +5141,7 @@ public class Admin extends javax.swing.JFrame {
         jLabel191.setText("jLabel79");
         jPanel32.add(jLabel191, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        Principal.addTab("tab20", jPanel32);
+        Principal.addTab("14", jPanel32);
 
         jPanel21.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -4336,6 +5309,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnSalir13.setBackground(new java.awt.Color(19, 39, 63));
         JpnSalir13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnSalir13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnSalir13MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnSalir13MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnSalir13MouseExited(evt);
+            }
+        });
         JpnSalir13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbSalir13.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -4347,6 +5331,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnConfiguracion13.setBackground(new java.awt.Color(19, 39, 63));
         JpnConfiguracion13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnConfiguracion13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion13MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion13MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnConfiguracion13MouseExited(evt);
+            }
+        });
         JpnConfiguracion13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbConfiguracion13.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -4358,6 +5353,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnServicio13.setBackground(new java.awt.Color(19, 39, 63));
         JpnServicio13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnServicio13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnServicio13MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnServicio13MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnServicio13MouseExited(evt);
+            }
+        });
         JpnServicio13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbServicio13.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -4369,6 +5375,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnTecnico13.setBackground(new java.awt.Color(19, 39, 63));
         JpnTecnico13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnTecnico13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnTecnico13MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnTecnico13MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnTecnico13MouseExited(evt);
+            }
+        });
         JpnTecnico13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbTecnico13.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -4380,6 +5397,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnUsuario13.setBackground(new java.awt.Color(19, 39, 63));
         JpnUsuario13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnUsuario13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnUsuario13MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnUsuario13MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnUsuario13MouseExited(evt);
+            }
+        });
         JpnUsuario13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbUsuario13.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -4391,6 +5419,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnInicio13.setBackground(new java.awt.Color(19, 39, 63));
         JpnInicio13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnInicio13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnInicio13MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnInicio13MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnInicio13MouseExited(evt);
+            }
+        });
         JpnInicio13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbInicio14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -4404,7 +5443,7 @@ public class Admin extends javax.swing.JFrame {
         jLabel106.setText("jLabel106");
         jPanel21.add(jLabel106, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        Principal.addTab("tab14", jPanel21);
+        Principal.addTab("15", jPanel21);
 
         jPanel23.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -4589,6 +5628,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnSalir14.setBackground(new java.awt.Color(19, 39, 63));
         JpnSalir14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnSalir14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnSalir14MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnSalir14MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnSalir14MouseExited(evt);
+            }
+        });
         JpnSalir14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbSalir14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -4611,6 +5661,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnServicio14.setBackground(new java.awt.Color(19, 39, 63));
         JpnServicio14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnServicio14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnServicio14MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnServicio14MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnServicio14MouseExited(evt);
+            }
+        });
         JpnServicio14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbServicio14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -4622,6 +5683,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnTecnico14.setBackground(new java.awt.Color(19, 39, 63));
         JpnTecnico14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnTecnico14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnTecnico14MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnTecnico14MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnTecnico14MouseExited(evt);
+            }
+        });
         JpnTecnico14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbTecnico14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -4633,6 +5705,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnUsuario14.setBackground(new java.awt.Color(19, 39, 63));
         JpnUsuario14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnUsuario14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnUsuario14MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnUsuario14MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnUsuario14MouseExited(evt);
+            }
+        });
         JpnUsuario14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbUsuario14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -4644,6 +5727,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnInicio14.setBackground(new java.awt.Color(19, 39, 63));
         JpnInicio14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnInicio14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnInicio14MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnInicio14MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnInicio14MouseExited(evt);
+            }
+        });
         JpnInicio14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbInicio15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -4657,7 +5751,7 @@ public class Admin extends javax.swing.JFrame {
         jLabel120.setText("jLabel120");
         jPanel23.add(jLabel120, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        Principal.addTab("tab15", jPanel23);
+        Principal.addTab("16", jPanel23);
 
         jPanel25.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -4854,6 +5948,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnSalir15.setBackground(new java.awt.Color(19, 39, 63));
         JpnSalir15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnSalir15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnSalir15MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnSalir15MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnSalir15MouseExited(evt);
+            }
+        });
         JpnSalir15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbSalir15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -4876,6 +5981,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnServicio15.setBackground(new java.awt.Color(19, 39, 63));
         JpnServicio15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnServicio15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnServicio15MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnServicio15MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnServicio15MouseExited(evt);
+            }
+        });
         JpnServicio15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbServicio15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -4887,6 +6003,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnTecnico15.setBackground(new java.awt.Color(19, 39, 63));
         JpnTecnico15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnTecnico15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnTecnico15MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnTecnico15MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnTecnico15MouseExited(evt);
+            }
+        });
         JpnTecnico15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbTecnico15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -4898,6 +6025,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnUsuario15.setBackground(new java.awt.Color(19, 39, 63));
         JpnUsuario15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnUsuario15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnUsuario15MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnUsuario15MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnUsuario15MouseExited(evt);
+            }
+        });
         JpnUsuario15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbUsuario15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -4909,6 +6047,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnInicio15.setBackground(new java.awt.Color(19, 39, 63));
         JpnInicio15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnInicio15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnInicio15MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnInicio15MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnInicio15MouseExited(evt);
+            }
+        });
         JpnInicio15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbInicio16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -4922,7 +6071,7 @@ public class Admin extends javax.swing.JFrame {
         jLabel135.setText("jLabel135");
         jPanel25.add(jLabel135, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        Principal.addTab("tab16", jPanel25);
+        Principal.addTab("17", jPanel25);
 
         jPanel27.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -5121,6 +6270,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnSalir16.setBackground(new java.awt.Color(19, 39, 63));
         JpnSalir16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnSalir16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnSalir16MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnSalir16MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnSalir16MouseExited(evt);
+            }
+        });
         JpnSalir16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbSalir16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -5143,6 +6303,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnServicio16.setBackground(new java.awt.Color(19, 39, 63));
         JpnServicio16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnServicio16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnServicio16MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnServicio16MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnServicio16MouseExited(evt);
+            }
+        });
         JpnServicio16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbServicio16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -5154,6 +6325,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnTecnico16.setBackground(new java.awt.Color(19, 39, 63));
         JpnTecnico16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnTecnico16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnTecnico16MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnTecnico16MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnTecnico16MouseExited(evt);
+            }
+        });
         JpnTecnico16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbTecnico16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -5165,6 +6347,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnUsuario16.setBackground(new java.awt.Color(19, 39, 63));
         JpnUsuario16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnUsuario16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnUsuario16MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnUsuario16MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnUsuario16MouseExited(evt);
+            }
+        });
         JpnUsuario16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbUsuario16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -5176,6 +6369,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnInicio16.setBackground(new java.awt.Color(19, 39, 63));
         JpnInicio16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnInicio16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnInicio16MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnInicio16MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnInicio16MouseExited(evt);
+            }
+        });
         JpnInicio16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbInicio17.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -5189,7 +6393,7 @@ public class Admin extends javax.swing.JFrame {
         jLabel149.setText("jLabel149");
         jPanel27.add(jLabel149, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        Principal.addTab("tab17", jPanel27);
+        Principal.addTab("18", jPanel27);
 
         jPanel29.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -5241,6 +6445,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnSalir17.setBackground(new java.awt.Color(19, 39, 63));
         JpnSalir17.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnSalir17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnSalir17MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnSalir17MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnSalir17MouseExited(evt);
+            }
+        });
         JpnSalir17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbSalir17.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -5263,6 +6478,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnServicio17.setBackground(new java.awt.Color(19, 39, 63));
         JpnServicio17.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnServicio17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnServicio17MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnServicio17MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnServicio17MouseExited(evt);
+            }
+        });
         JpnServicio17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbServicio17.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -5274,6 +6500,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnTecnico17.setBackground(new java.awt.Color(19, 39, 63));
         JpnTecnico17.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnTecnico17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnTecnico17MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnTecnico17MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnTecnico17MouseExited(evt);
+            }
+        });
         JpnTecnico17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbTecnico17.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -5285,6 +6522,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnUsuario17.setBackground(new java.awt.Color(19, 39, 63));
         JpnUsuario17.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnUsuario17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnUsuario17MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnUsuario17MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnUsuario17MouseExited(evt);
+            }
+        });
         JpnUsuario17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbUsuario17.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -5296,6 +6544,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnInicio17.setBackground(new java.awt.Color(19, 39, 63));
         JpnInicio17.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnInicio17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnInicio17MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnInicio17MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnInicio17MouseExited(evt);
+            }
+        });
         JpnInicio17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbInicio18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -5361,7 +6620,7 @@ public class Admin extends javax.swing.JFrame {
         jLabel163.setText("jLabel163");
         jPanel29.add(jLabel163, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        Principal.addTab("tab18", jPanel29);
+        Principal.addTab("19", jPanel29);
 
         jPanel34.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -5461,28 +6720,28 @@ public class Admin extends javax.swing.JFrame {
         jTextField99.setBorder(null);
         jPanel37.add(jTextField99, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 220, 200, 20));
 
-        btnBuscarServicio1.setBackground(new java.awt.Color(0, 210, 255));
-        btnBuscarServicio1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnBuscarServicio1.setForeground(new java.awt.Color(255, 255, 255));
-        btnBuscarServicio1.setText("Buscar");
-        btnBuscarServicio1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        btnBuscarServicio1.setBorderPainted(false);
-        btnBuscarServicio1.setContentAreaFilled(false);
-        btnBuscarServicio1.setOpaque(true);
-        btnBuscarServicio1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+        btnBuscarActualizarServicio.setBackground(new java.awt.Color(0, 210, 255));
+        btnBuscarActualizarServicio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnBuscarActualizarServicio.setForeground(new java.awt.Color(255, 255, 255));
+        btnBuscarActualizarServicio.setText("Buscar");
+        btnBuscarActualizarServicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        btnBuscarActualizarServicio.setBorderPainted(false);
+        btnBuscarActualizarServicio.setContentAreaFilled(false);
+        btnBuscarActualizarServicio.setOpaque(true);
+        btnBuscarActualizarServicio.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
-                btnBuscarServicio1MouseMoved(evt);
+                btnBuscarActualizarServicioMouseMoved(evt);
             }
         });
-        btnBuscarServicio1.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnBuscarActualizarServicio.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnBuscarServicio1MouseClicked(evt);
+                btnBuscarActualizarServicioMouseClicked(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnBuscarServicio1MouseExited(evt);
+                btnBuscarActualizarServicioMouseExited(evt);
             }
         });
-        jPanel37.add(btnBuscarServicio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 20, 110, 40));
+        jPanel37.add(btnBuscarActualizarServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 20, 110, 40));
 
         jLabel211.setText("Los campos con (*) son obligatorios.");
         jPanel37.add(jLabel211, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, -1, 20));
@@ -5558,6 +6817,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnSalir21.setBackground(new java.awt.Color(19, 39, 63));
         JpnSalir21.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnSalir21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnSalir21MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnSalir21MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnSalir21MouseExited(evt);
+            }
+        });
         JpnSalir21.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbSalir21.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -5580,6 +6850,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnServicio21.setBackground(new java.awt.Color(19, 39, 63));
         JpnServicio21.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnServicio21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnServicio21MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnServicio21MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnServicio21MouseExited(evt);
+            }
+        });
         JpnServicio21.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbServicio21.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -5591,6 +6872,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnTecnico21.setBackground(new java.awt.Color(19, 39, 63));
         JpnTecnico21.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnTecnico21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnTecnico21MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnTecnico21MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnTecnico21MouseExited(evt);
+            }
+        });
         JpnTecnico21.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbTecnico21.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -5602,6 +6894,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnUsuario21.setBackground(new java.awt.Color(19, 39, 63));
         JpnUsuario21.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnUsuario21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnUsuario21MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnUsuario21MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnUsuario21MouseExited(evt);
+            }
+        });
         JpnUsuario21.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbUsuario21.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -5613,6 +6916,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnInicio21.setBackground(new java.awt.Color(19, 39, 63));
         JpnInicio21.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnInicio21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnInicio21MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnInicio21MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnInicio21MouseExited(evt);
+            }
+        });
         JpnInicio21.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbInicio22.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -5626,7 +6940,7 @@ public class Admin extends javax.swing.JFrame {
         jLabel204.setText("jLabel135");
         jPanel34.add(jLabel204, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        Principal.addTab("tab22", jPanel34);
+        Principal.addTab("20", jPanel34);
 
         jPanel30.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -5637,6 +6951,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnSalir18.setBackground(new java.awt.Color(19, 39, 63));
         JpnSalir18.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnSalir18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnSalir18MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnSalir18MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnSalir18MouseExited(evt);
+            }
+        });
         JpnSalir18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbSalir18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -5659,6 +6984,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnServicio18.setBackground(new java.awt.Color(19, 39, 63));
         JpnServicio18.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnServicio18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnServicio18MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnServicio18MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnServicio18MouseExited(evt);
+            }
+        });
         JpnServicio18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbServicio18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -5670,6 +7006,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnTecnico18.setBackground(new java.awt.Color(19, 39, 63));
         JpnTecnico18.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnTecnico18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnTecnico18MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnTecnico18MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnTecnico18MouseExited(evt);
+            }
+        });
         JpnTecnico18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbTecnico18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -5681,6 +7028,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnUsuario18.setBackground(new java.awt.Color(19, 39, 63));
         JpnUsuario18.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnUsuario18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnUsuario18MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnUsuario18MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnUsuario18MouseExited(evt);
+            }
+        });
         JpnUsuario18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbUsuario18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -5692,6 +7050,17 @@ public class Admin extends javax.swing.JFrame {
 
         JpnInicio18.setBackground(new java.awt.Color(19, 39, 63));
         JpnInicio18.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        JpnInicio18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JpnInicio18MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                JpnInicio18MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                JpnInicio18MouseExited(evt);
+            }
+        });
         JpnInicio18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbInicio19.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -5779,33 +7148,33 @@ public class Admin extends javax.swing.JFrame {
         jTextField79.setBorder(null);
         jPanel31.add(jTextField79, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 170, 200, 20));
 
-        btnActualizarServicios.setBackground(new java.awt.Color(0, 210, 255));
-        btnActualizarServicios.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnActualizarServicios.setForeground(new java.awt.Color(255, 255, 255));
-        btnActualizarServicios.setText("Guardar Datos");
-        btnActualizarServicios.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        btnActualizarServicios.setBorderPainted(false);
-        btnActualizarServicios.setContentAreaFilled(false);
-        btnActualizarServicios.setOpaque(true);
-        btnActualizarServicios.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+        btnGuardarDatosActualizarServicios.setBackground(new java.awt.Color(0, 210, 255));
+        btnGuardarDatosActualizarServicios.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnGuardarDatosActualizarServicios.setForeground(new java.awt.Color(255, 255, 255));
+        btnGuardarDatosActualizarServicios.setText("Guardar Datos");
+        btnGuardarDatosActualizarServicios.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
+        btnGuardarDatosActualizarServicios.setBorderPainted(false);
+        btnGuardarDatosActualizarServicios.setContentAreaFilled(false);
+        btnGuardarDatosActualizarServicios.setOpaque(true);
+        btnGuardarDatosActualizarServicios.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
-                btnActualizarServiciosMouseMoved(evt);
+                btnGuardarDatosActualizarServiciosMouseMoved(evt);
             }
         });
-        btnActualizarServicios.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnGuardarDatosActualizarServicios.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnActualizarServiciosMouseClicked(evt);
+                btnGuardarDatosActualizarServiciosMouseClicked(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnActualizarServiciosMouseExited(evt);
+                btnGuardarDatosActualizarServiciosMouseExited(evt);
             }
         });
-        btnActualizarServicios.addActionListener(new java.awt.event.ActionListener() {
+        btnGuardarDatosActualizarServicios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnActualizarServiciosActionPerformed(evt);
+                btnGuardarDatosActualizarServiciosActionPerformed(evt);
             }
         });
-        jPanel31.add(btnActualizarServicios, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 290, 110, 30));
+        jPanel31.add(btnGuardarDatosActualizarServicios, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 290, 110, 30));
 
         jLabel175.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel175.setForeground(new java.awt.Color(255, 255, 255));
@@ -5879,13 +7248,13 @@ public class Admin extends javax.swing.JFrame {
         jLabel165.setText("jLabel165");
         jPanel30.add(jLabel165, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        Principal.addTab("tab19", jPanel30);
+        Principal.addTab("21", jPanel30);
 
-        getContentPane().add(Principal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1060, 680));
+        getContentPane().add(Principal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 680));
     }// </editor-fold>//GEN-END:initComponents
 
     private void agregarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarUsuarioMouseMoved
-        agregarUsuario.setBackground(new Color(0, 90, 200) );
+        agregarUsuario.setBackground(new Color(0, 90, 200));
     }//GEN-LAST:event_agregarUsuarioMouseMoved
 
     private void agregarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarUsuarioMouseClicked
@@ -5893,7 +7262,7 @@ public class Admin extends javax.swing.JFrame {
     }//GEN-LAST:event_agregarUsuarioMouseClicked
 
     private void agregarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarUsuarioMouseExited
-        agregarUsuario.setBackground(new Color(0,122,255));
+        agregarUsuario.setBackground(new Color(0, 122, 255));
     }//GEN-LAST:event_agregarUsuarioMouseExited
 
     private void agregarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarUsuarioActionPerformed
@@ -5901,15 +7270,15 @@ public class Admin extends javax.swing.JFrame {
     }//GEN-LAST:event_agregarUsuarioActionPerformed
 
     private void eliminarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarUsuarioMouseMoved
-        eliminarUsuario.setBackground(new Color(200, 30, 30) );
+        eliminarUsuario.setBackground(new Color(200, 30, 30));
     }//GEN-LAST:event_eliminarUsuarioMouseMoved
 
     private void eliminarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarUsuarioMouseClicked
-        Principal.setSelectedIndex(6);
+        Principal.setSelectedIndex(0);
     }//GEN-LAST:event_eliminarUsuarioMouseClicked
 
     private void eliminarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarUsuarioMouseExited
-        eliminarUsuario.setBackground(new Color(254,226,226));
+        eliminarUsuario.setBackground(new Color(254, 226, 226));
     }//GEN-LAST:event_eliminarUsuarioMouseExited
 
     private void eliminarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminarUsuarioActionPerformed
@@ -5917,7 +7286,7 @@ public class Admin extends javax.swing.JFrame {
     }//GEN-LAST:event_eliminarUsuarioActionPerformed
 
     private void volverUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverUsuarioMouseMoved
-        volverUsuario.setBackground(new Color(0, 90, 200) );
+        volverUsuario.setBackground(new Color(0, 90, 200));
     }//GEN-LAST:event_volverUsuarioMouseMoved
 
     private void volverUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverUsuarioMouseClicked
@@ -5925,11 +7294,11 @@ public class Admin extends javax.swing.JFrame {
     }//GEN-LAST:event_volverUsuarioMouseClicked
 
     private void volverUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverUsuarioMouseExited
-        volverUsuario.setBackground(new Color(0,122,255));
+        volverUsuario.setBackground(new Color(0, 122, 255));
     }//GEN-LAST:event_volverUsuarioMouseExited
 
     private void actualizarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarUsuarioMouseMoved
-        actualizarUsuario.setBackground(new Color(0,90,200) );
+        actualizarUsuario.setBackground(new Color(0, 90, 200));
     }//GEN-LAST:event_actualizarUsuarioMouseMoved
 
     private void actualizarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarUsuarioMouseClicked
@@ -5937,7 +7306,7 @@ public class Admin extends javax.swing.JFrame {
     }//GEN-LAST:event_actualizarUsuarioMouseClicked
 
     private void actualizarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarUsuarioMouseExited
-        actualizarUsuario.setBackground(new Color(0,122,255));
+        actualizarUsuario.setBackground(new Color(0, 122, 255));
     }//GEN-LAST:event_actualizarUsuarioMouseExited
 
     private void actualizarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actualizarUsuarioActionPerformed
@@ -5945,7 +7314,7 @@ public class Admin extends javax.swing.JFrame {
     }//GEN-LAST:event_actualizarUsuarioActionPerformed
 
     private void buscarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarUsuarioMouseMoved
-        buscarUsuario.setBackground(new Color(0, 90, 200) );
+        buscarUsuario.setBackground(new Color(0, 90, 200));
     }//GEN-LAST:event_buscarUsuarioMouseMoved
 
     private void buscarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarUsuarioMouseClicked
@@ -5953,7 +7322,7 @@ public class Admin extends javax.swing.JFrame {
     }//GEN-LAST:event_buscarUsuarioMouseClicked
 
     private void buscarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarUsuarioMouseExited
-        buscarUsuario.setBackground(new Color (0,122,255));
+        buscarUsuario.setBackground(new Color(0, 122, 255));
     }//GEN-LAST:event_buscarUsuarioMouseExited
 
     private void buscarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscarUsuarioActionPerformed
@@ -5961,7 +7330,7 @@ public class Admin extends javax.swing.JFrame {
     }//GEN-LAST:event_buscarUsuarioActionPerformed
 
     private void listarUsuariosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarUsuariosMouseMoved
-        listarUsuarios.setBackground(new Color (0,90,200));
+        listarUsuarios.setBackground(new Color(0, 90, 200));
     }//GEN-LAST:event_listarUsuariosMouseMoved
 
     private void listarUsuariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarUsuariosMouseClicked
@@ -5969,7 +7338,7 @@ public class Admin extends javax.swing.JFrame {
     }//GEN-LAST:event_listarUsuariosMouseClicked
 
     private void listarUsuariosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarUsuariosMouseExited
-        listarUsuarios.setBackground(new Color (0,122,255));
+        listarUsuarios.setBackground(new Color(0, 122, 255));
     }//GEN-LAST:event_listarUsuariosMouseExited
 
     private void listarUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listarUsuariosActionPerformed
@@ -6544,21 +7913,21 @@ public class Admin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_volverListarServiciosMouseExited
 
-    private void btnActualizarServiciosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActualizarServiciosMouseMoved
+    private void btnGuardarDatosActualizarServiciosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarServiciosMouseMoved
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnActualizarServiciosMouseMoved
+    }//GEN-LAST:event_btnGuardarDatosActualizarServiciosMouseMoved
 
-    private void btnActualizarServiciosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActualizarServiciosMouseClicked
+    private void btnGuardarDatosActualizarServiciosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarServiciosMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnActualizarServiciosMouseClicked
+    }//GEN-LAST:event_btnGuardarDatosActualizarServiciosMouseClicked
 
-    private void btnActualizarServiciosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnActualizarServiciosMouseExited
+    private void btnGuardarDatosActualizarServiciosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarServiciosMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnActualizarServiciosMouseExited
+    }//GEN-LAST:event_btnGuardarDatosActualizarServiciosMouseExited
 
-    private void btnActualizarServiciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizarServiciosActionPerformed
+    private void btnGuardarDatosActualizarServiciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarServiciosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnActualizarServiciosActionPerformed
+    }//GEN-LAST:event_btnGuardarDatosActualizarServiciosActionPerformed
 
     private void volverActualizarServiciosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarServiciosMouseMoved
         // TODO add your handling code here:
@@ -6620,17 +7989,17 @@ public class Admin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnActualizarTecnico2MouseExited
 
-    private void btnBuscarServicio1MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarServicio1MouseMoved
+    private void btnBuscarActualizarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarActualizarServicioMouseMoved
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarServicio1MouseMoved
+    }//GEN-LAST:event_btnBuscarActualizarServicioMouseMoved
 
-    private void btnBuscarServicio1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarServicio1MouseClicked
+    private void btnBuscarActualizarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarActualizarServicioMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarServicio1MouseClicked
+    }//GEN-LAST:event_btnBuscarActualizarServicioMouseClicked
 
-    private void btnBuscarServicio1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarServicio1MouseExited
+    private void btnBuscarActualizarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarActualizarServicioMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarServicio1MouseExited
+    }//GEN-LAST:event_btnBuscarActualizarServicioMouseExited
 
     private void volverActualizarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarServicioMouseMoved
         // TODO add your handling code here:
@@ -6668,11 +8037,1693 @@ public class Admin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_volverActualizarTecnicoMouseExited
 
+    private void JpnInicioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicioMouseEntered
+        JpnInicio.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicioMouseEntered
+
+    private void JpnInicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicioMouseExited
+        JpnInicio.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicioMouseExited
+
+    private void JpnInicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicioMouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicioMouseClicked
+
+    private void JpnInicio1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio1MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio1MouseClicked
+
+    private void JpnUsuarioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuarioMouseEntered
+        JpnUsuario.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuarioMouseEntered
+
+    private void JpnUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuarioMouseExited
+        JpnUsuario.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuarioMouseExited
+
+    private void JpnUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuarioMouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuarioMouseClicked
+
+    private void JpnTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnicoMouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnicoMouseClicked
+
+    private void JpnTecnicoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnicoMouseEntered
+        JpnTecnico.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnicoMouseEntered
+
+    private void JpnTecnicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnicoMouseExited
+        JpnTecnico.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnicoMouseExited
+
+    private void JpnServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicioMouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnServicioMouseClicked
+
+    private void JpnServicioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicioMouseEntered
+        JpnServicio.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicioMouseEntered
+
+    private void JpnServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicioMouseExited
+        JpnServicio.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicioMouseExited
+
+    private void JpnConfiguracionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracionMouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnConfiguracionMouseClicked
+
+    private void JpnConfiguracionMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracionMouseEntered
+        JpnConfiguracion.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnConfiguracionMouseEntered
+
+    private void JpnSalirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalirMouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+                this,
+                "¿Estás seguro de que deseas salir del programa?",
+                "Confirmar salida",
+                javax.swing.JOptionPane.YES_NO_OPTION,
+                javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+        if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalirMouseClicked
+
+    private void JpnConfiguracionMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracionMouseExited
+        JpnConfiguracion.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnConfiguracionMouseExited
+
+    private void JpnInicio1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio1MouseEntered
+        JpnInicio1.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio1MouseEntered
+
+    private void JpnInicio1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio1MouseExited
+        JpnInicio1.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio1MouseExited
+
+    private void JpnUsuario1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario1MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario1MouseClicked
+
+    private void JpnUsuario1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario1MouseEntered
+        JpnUsuario1.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario1MouseEntered
+
+    private void JpnUsuario1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario1MouseExited
+        JpnUsuario1.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario1MouseExited
+
+    private void JpnTecnico1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico1MouseEntered
+        JpnTecnico1.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico1MouseEntered
+
+    private void JpnTecnico1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico1MouseExited
+        JpnTecnico1.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico1MouseExited
+
+    private void JpnTecnico1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico1MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico1MouseClicked
+
+    private void JpnServicio1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio1MouseEntered
+        JpnServicio1.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio1MouseEntered
+
+    private void JpnServicio1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio1MouseExited
+        JpnServicio1.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio1MouseExited
+
+    private void JpnServicio1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio1MouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnServicio1MouseClicked
+
+    private void JpnConfiguracion1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion1MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnConfiguracion1MouseClicked
+
+    private void JpnConfiguracion1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion1MouseEntered
+        JpnConfiguracion1.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnConfiguracion1MouseEntered
+
+    private void JpnConfiguracion1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion1MouseExited
+        JpnConfiguracion1.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnConfiguracion1MouseExited
+
+    private void JpnSalir1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir1MouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+                this,
+                "¿Estás seguro de que deseas salir del programa?",
+                "Confirmar salida",
+                javax.swing.JOptionPane.YES_NO_OPTION,
+                javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+        if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir1MouseClicked
+
+    private void JpnSalir1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir1MouseEntered
+        JpnSalir.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir1MouseEntered
+
+    private void JpnSalir1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir1MouseExited
+        JpnSalir.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir1MouseExited
+
+    private void JpnInicio2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio2MouseEntered
+        JpnInicio2.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio2MouseEntered
+
+    private void JpnInicio2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio2MouseExited
+        JpnInicio2.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio2MouseExited
+
+    private void JpnInicio2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio2MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio2MouseClicked
+
+    private void JpnUsuario2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario2MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario2MouseClicked
+
+    private void JpnUsuario2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario2MouseEntered
+        JpnUsuario2.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario2MouseEntered
+
+    private void JpnUsuario2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario2MouseExited
+        JpnUsuario2.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario2MouseExited
+
+    private void JpnTecnico2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico2MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico2MouseClicked
+
+    private void JpnTecnico2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico2MouseEntered
+        JpnTecnico2.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico2MouseEntered
+
+    private void JpnTecnico2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico2MouseExited
+        JpnTecnico2.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico2MouseExited
+
+    private void JpnServicio2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio2MouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnServicio2MouseClicked
+
+    private void JpnServicio2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio2MouseEntered
+        JpnServicio2.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio2MouseEntered
+
+    private void JpnServicio2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio2MouseExited
+        JpnServicio2.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio2MouseExited
+
+    private void JpnConfiguracion2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion2MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnConfiguracion2MouseClicked
+
+    private void JpnConfiguracion2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion2MouseEntered
+        JpnConfiguracion2.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnConfiguracion2MouseEntered
+
+    private void JpnConfiguracion2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion2MouseExited
+        JpnConfiguracion2.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnConfiguracion2MouseExited
+
+    private void JpnSalir2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir2MouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+                this,
+                "¿Estás seguro de que deseas salir del programa?",
+                "Confirmar salida",
+                javax.swing.JOptionPane.YES_NO_OPTION,
+                javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+        if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir2MouseClicked
+
+    private void JpnSalir2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir2MouseEntered
+        JpnSalir2.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir2MouseEntered
+
+    private void JpnSalir2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir2MouseExited
+        JpnSalir2.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir2MouseExited
+
+    private void JpnInicio3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio3MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio3MouseClicked
+
+    private void JpnInicio3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio3MouseEntered
+        JpnInicio3.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio3MouseEntered
+
+    private void JpnInicio3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio3MouseExited
+        JpnInicio3.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio3MouseExited
+
+    private void JpnUsuario3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario3MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario3MouseClicked
+
+    private void JpnUsuario3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario3MouseEntered
+        JpnUsuario3.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario3MouseEntered
+
+    private void JpnUsuario3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario3MouseExited
+        JpnUsuario3.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario3MouseExited
+
+    private void JpnTecnico3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico3MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico3MouseClicked
+
+    private void JpnTecnico3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico3MouseEntered
+        JpnTecnico3.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico3MouseEntered
+
+    private void JpnTecnico3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico3MouseExited
+        JpnTecnico3.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico3MouseExited
+
+    private void JpnServicio3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio3MouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnServicio3MouseClicked
+
+    private void JpnServicio3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio3MouseEntered
+        JpnServicio3.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio3MouseEntered
+
+    private void JpnServicio3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio3MouseExited
+        JpnServicio3.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio3MouseExited
+
+    private void JpnConfiguracion3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion3MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnConfiguracion3MouseClicked
+
+    private void JpnConfiguracion3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion3MouseEntered
+        JpnConfiguracion3.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnConfiguracion3MouseEntered
+
+    private void JpnConfiguracion3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion3MouseExited
+        JpnConfiguracion3.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnConfiguracion3MouseExited
+
+    private void JpnSalir3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir3MouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+    this,
+    "¿Estás seguro de que deseas salir del programa?",
+    "Confirmar salida",
+    javax.swing.JOptionPane.YES_NO_OPTION,
+    javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+    System.exit(0);
+        }
+    
+    }//GEN-LAST:event_JpnSalir3MouseClicked
+
+    private void JpnSalir3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir3MouseEntered
+        JpnSalir3.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir3MouseEntered
+
+    private void JpnSalir3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir3MouseExited
+        JpnSalir3.setBackground(new java.awt.Color(24, 43, 68));   
+    }//GEN-LAST:event_JpnSalir3MouseExited
+
+    private void JpnInicio4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio4MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio4MouseClicked
+
+    private void JpnInicio4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio4MouseEntered
+        JpnInicio4.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio4MouseEntered
+
+    private void JpnInicio4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio4MouseExited
+        JpnInicio4.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio4MouseExited
+
+    private void JpnUsuario4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario4MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario4MouseClicked
+
+    private void JpnUsuario4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario4MouseEntered
+        JpnUsuario4.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario4MouseEntered
+
+    private void JpnUsuario4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario4MouseExited
+        JpnUsuario4.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario4MouseExited
+
+    private void JpnTecnico4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico4MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico4MouseClicked
+
+    private void JpnTecnico4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico4MouseEntered
+        JpnTecnico4.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico4MouseEntered
+
+    private void JpnTecnico4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico4MouseExited
+        JpnTecnico4.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico4MouseExited
+
+    private void JpnServicio4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio4MouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnServicio4MouseClicked
+
+    private void JpnServicio4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio4MouseEntered
+        JpnServicio4.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio4MouseEntered
+
+    private void JpnServicio4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio4MouseExited
+        JpnServicio4.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio4MouseExited
+
+    private void JpnConfiguracion4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion4MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnConfiguracion4MouseClicked
+
+    private void JpnConfiguracion4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion4MouseEntered
+        JpnConfiguracion4.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnConfiguracion4MouseEntered
+
+    private void JpnConfiguracion4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion4MouseExited
+        JpnConfiguracion4.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnConfiguracion4MouseExited
+
+    private void JpnSalir4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir4MouseClicked
+             int opcion = javax.swing.JOptionPane.showConfirmDialog(
+    this,
+    "¿Estás seguro de que deseas salir del programa?",
+    "Confirmar salida",
+    javax.swing.JOptionPane.YES_NO_OPTION,
+    javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+    System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir4MouseClicked
+
+    private void JpnSalir4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir4MouseEntered
+        JpnSalir4.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir4MouseEntered
+
+    private void JpnSalir4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir4MouseExited
+        JpnSalir4.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir4MouseExited
+
+    private void JpnInicio5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio5MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio5MouseClicked
+
+    private void JpnInicio5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio5MouseEntered
+        JpnInicio5.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio5MouseEntered
+
+    private void JpnInicio5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio5MouseExited
+        JpnInicio5.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio5MouseExited
+
+    private void JpnUsuario5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario5MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario5MouseClicked
+
+    private void JpnUsuario5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario5MouseEntered
+        JpnUsuario5.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario5MouseEntered
+
+    private void JpnUsuario5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario5MouseExited
+        JpnUsuario5.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario5MouseExited
+
+    private void JpnTecnico5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico5MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico5MouseClicked
+
+    private void JpnTecnico5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico5MouseEntered
+        JpnTecnico5.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico5MouseEntered
+
+    private void JpnTecnico5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico5MouseExited
+        JpnTecnico5.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico5MouseExited
+
+    private void JpnServicio5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio5MouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnServicio5MouseClicked
+
+    private void JpnServicio5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio5MouseEntered
+        JpnServicio5.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio5MouseEntered
+
+    private void JpnServicio5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio5MouseExited
+        JpnServicio5.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio5MouseExited
+
+    private void JpnConfiguracion5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion5MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnConfiguracion5MouseClicked
+
+    private void JpnConfiguracion5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion5MouseEntered
+        JpnConfiguracion5.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnConfiguracion5MouseEntered
+
+    private void JpnConfiguracion5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion5MouseExited
+        JpnConfiguracion5.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnConfiguracion5MouseExited
+
+    private void JpnSalir5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir5MouseClicked
+             int opcion = javax.swing.JOptionPane.showConfirmDialog(
+    this,
+    "¿Estás seguro de que deseas salir del programa?",
+    "Confirmar salida",
+    javax.swing.JOptionPane.YES_NO_OPTION,
+    javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+    System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir5MouseClicked
+
+    private void JpnSalir5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir5MouseEntered
+        JpnSalir5.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir5MouseEntered
+
+    private void JpnSalir5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir5MouseExited
+       JpnSalir5.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir5MouseExited
+
+    private void JpnInicio6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio6MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio6MouseClicked
+
+    private void JpnInicio6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio6MouseEntered
+        JpnInicio6.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio6MouseEntered
+
+    private void JpnInicio6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio6MouseExited
+        JpnInicio6.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio6MouseExited
+
+    private void JpnUsuario6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario6MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario6MouseClicked
+
+    private void JpnUsuario6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario6MouseEntered
+        JpnUsuario6.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario6MouseEntered
+
+    private void JpnUsuario6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario6MouseExited
+        JpnUsuario6.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario6MouseExited
+
+    private void JpnTecnico6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico6MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico6MouseClicked
+
+    private void JpnTecnico6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico6MouseEntered
+        JpnTecnico6.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico6MouseEntered
+
+    private void JpnTecnico6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico6MouseExited
+        JpnTecnico6.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico6MouseExited
+
+    private void JpnServicio6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio6MouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnServicio6MouseClicked
+
+    private void JpnServicio6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio6MouseEntered
+        JpnServicio6.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio6MouseEntered
+
+    private void JpnServicio6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio6MouseExited
+        JpnServicio6.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio6MouseExited
+
+    private void JpnConfiguracion6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion6MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnConfiguracion6MouseClicked
+
+    private void JpnConfiguracion6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion6MouseEntered
+        JpnConfiguracion6.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnConfiguracion6MouseEntered
+
+    private void JpnConfiguracion6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion6MouseExited
+        JpnConfiguracion6.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnConfiguracion6MouseExited
+
+    private void JpnSalir6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir6MouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+    this,
+    "¿Estás seguro de que deseas salir del programa?",
+    "Confirmar salida",
+    javax.swing.JOptionPane.YES_NO_OPTION,
+    javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+    System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir6MouseClicked
+
+    private void JpnSalir6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir6MouseEntered
+        JpnSalir6.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir6MouseEntered
+
+    private void JpnSalir6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir6MouseExited
+        JpnSalir6.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir6MouseExited
+
+    private void JpnInicio7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio7MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio7MouseClicked
+
+    private void JpnInicio7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio7MouseEntered
+        JpnInicio7.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio7MouseEntered
+
+    private void JpnInicio7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio7MouseExited
+        JpnInicio7.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio7MouseExited
+
+    private void JpnUsuario7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario7MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario7MouseClicked
+
+    private void JpnUsuario7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario7MouseEntered
+        JpnUsuario7.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario7MouseEntered
+
+    private void JpnUsuario7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario7MouseExited
+        JpnUsuario7.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario7MouseExited
+
+    private void JpnTecnico7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico7MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico7MouseClicked
+
+    private void JpnTecnico7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico7MouseEntered
+        JpnTecnico7.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico7MouseEntered
+
+    private void JpnTecnico7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico7MouseExited
+        JpnTecnico7.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico7MouseExited
+
+    private void JpnServicio7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio7MouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnServicio7MouseClicked
+
+    private void JpnServicio7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio7MouseEntered
+        JpnServicio7.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio7MouseEntered
+
+    private void JpnServicio7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio7MouseExited
+        JpnServicio7.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio7MouseExited
+
+    private void JpnConfiguracion7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion7MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnConfiguracion7MouseClicked
+
+    private void JpnConfiguracion7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion7MouseEntered
+        JpnConfiguracion7.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnConfiguracion7MouseEntered
+
+    private void JpnConfiguracion7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion7MouseExited
+        JpnConfiguracion7.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnConfiguracion7MouseExited
+
+    private void JpnSalir7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir7MouseClicked
+             int opcion = javax.swing.JOptionPane.showConfirmDialog(
+    this,
+    "¿Estás seguro de que deseas salir del programa?",
+    "Confirmar salida",
+    javax.swing.JOptionPane.YES_NO_OPTION,
+    javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+    System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir7MouseClicked
+
+    private void JpnSalir7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir7MouseEntered
+        JpnSalir7.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir7MouseEntered
+
+    private void JpnSalir7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir7MouseExited
+        JpnSalir7.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir7MouseExited
+
+    private void JpnInicio19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio19MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio19MouseClicked
+
+    private void JpnInicio19MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio19MouseEntered
+        JpnInicio19.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio19MouseEntered
+
+    private void JpnInicio19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio19MouseExited
+        JpnInicio19.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio19MouseExited
+
+    private void JpnUsuario19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario19MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario19MouseClicked
+
+    private void JpnUsuario19MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario19MouseEntered
+        JpnUsuario19.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario19MouseEntered
+
+    private void JpnUsuario19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario19MouseExited
+        JpnUsuario19.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario19MouseExited
+
+    private void JpnTecnico19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico19MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico19MouseClicked
+
+    private void JpnTecnico19MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico19MouseEntered
+        JpnTecnico19.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico19MouseEntered
+
+    private void JpnTecnico19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico19MouseExited
+        JpnTecnico19.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico19MouseExited
+
+    private void JpnServicio19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio19MouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnServicio19MouseClicked
+
+    private void JpnServicio19MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio19MouseEntered
+        JpnServicio19.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio19MouseEntered
+
+    private void JpnServicio19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio19MouseExited
+        JpnServicio19.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio19MouseExited
+
+    private void JpnConfiguracion19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion19MouseClicked
+       Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnConfiguracion19MouseClicked
+
+    private void JpnConfiguracion19MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion19MouseEntered
+        JpnServicio2.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnConfiguracion19MouseEntered
+
+    private void JpnConfiguracion19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion19MouseExited
+        JpnServicio2.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnConfiguracion19MouseExited
+
+    private void JpnSalir19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir19MouseClicked
+             int opcion = javax.swing.JOptionPane.showConfirmDialog(
+    this,
+    "¿Estás seguro de que deseas salir del programa?",
+    "Confirmar salida",
+    javax.swing.JOptionPane.YES_NO_OPTION,
+    javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+    System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir19MouseClicked
+
+    private void JpnSalir19MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir19MouseEntered
+        JpnSalir19.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir19MouseEntered
+
+    private void JpnSalir19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir19MouseExited
+        JpnSalir19.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir19MouseExited
+
+    private void JpnInicio8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio8MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio8MouseClicked
+
+    private void JpnInicio8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio8MouseEntered
+        JpnInicio8.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio8MouseEntered
+
+    private void JpnInicio8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio8MouseExited
+        JpnInicio8.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio8MouseExited
+
+    private void JpnUsuario8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario8MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario8MouseClicked
+
+    private void JpnUsuario8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario8MouseEntered
+        JpnUsuario8.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario8MouseEntered
+
+    private void JpnUsuario8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario8MouseExited
+        JpnUsuario8.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario8MouseExited
+
+    private void JpnTecnico8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico8MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico8MouseClicked
+
+    private void JpnTecnico8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico8MouseEntered
+        JpnTecnico8.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico8MouseEntered
+
+    private void JpnTecnico8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico8MouseExited
+        JpnTecnico8.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico8MouseExited
+
+    private void JpnServicio8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio8MouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnServicio8MouseClicked
+
+    private void JpnServicio8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio8MouseEntered
+        JpnServicio8.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio8MouseEntered
+
+    private void JpnServicio8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio8MouseExited
+        JpnServicio8.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio8MouseExited
+
+    private void JpnConfiguracion8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion8MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnConfiguracion8MouseClicked
+
+    private void JpnConfiguracion8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion8MouseEntered
+        JpnConfiguracion8.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnConfiguracion8MouseEntered
+
+    private void JpnConfiguracion8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion8MouseExited
+        JpnConfiguracion8.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnConfiguracion8MouseExited
+
+    private void JpnSalir8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir8MouseClicked
+             int opcion = javax.swing.JOptionPane.showConfirmDialog(
+    this,
+    "¿Estás seguro de que deseas salir del programa?",
+    "Confirmar salida",
+    javax.swing.JOptionPane.YES_NO_OPTION,
+    javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+    System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir8MouseClicked
+
+    private void JpnSalir8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir8MouseEntered
+        JpnSalir8.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir8MouseEntered
+
+    private void JpnSalir8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir8MouseExited
+        JpnSalir8.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir8MouseExited
+
+    private void JpnInicio9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio9MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio9MouseClicked
+
+    private void JpnInicio9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio9MouseEntered
+        JpnInicio9.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio9MouseEntered
+
+    private void JpnInicio9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio9MouseExited
+        JpnInicio9.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio9MouseExited
+
+    private void JpnUsuario9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario9MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario9MouseClicked
+
+    private void JpnUsuario9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario9MouseEntered
+        JpnUsuario9.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario9MouseEntered
+
+    private void JpnUsuario9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario9MouseExited
+        JpnUsuario9.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario9MouseExited
+
+    private void JpnTecnico9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico9MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico9MouseClicked
+
+    private void JpnTecnico9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico9MouseEntered
+        JpnTecnico9.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico9MouseEntered
+
+    private void JpnTecnico9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico9MouseExited
+        JpnTecnico9.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico9MouseExited
+
+    private void JpnServicio9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio9MouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnServicio9MouseClicked
+
+    private void JpnServicio9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio9MouseEntered
+        JpnServicio9.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio9MouseEntered
+
+    private void JpnServicio9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio9MouseExited
+        JpnServicio9.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio9MouseExited
+
+    private void JpnConfiguracion9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion9MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnConfiguracion9MouseClicked
+
+    private void JpnConfiguracion9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion9MouseEntered
+        JpnConfiguracion9.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnConfiguracion9MouseEntered
+
+    private void JpnConfiguracion9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion9MouseExited
+        JpnConfiguracion9.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnConfiguracion9MouseExited
+
+    private void JpnInicio10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio10MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio10MouseClicked
+
+    private void JpnInicio10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio10MouseEntered
+        JpnInicio10.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio10MouseEntered
+
+    private void JpnInicio10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio10MouseExited
+        JpnInicio10.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio10MouseExited
+
+    private void JpnUsuario10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario10MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnUsuario10MouseClicked
+
+    private void JpnUsuario10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario10MouseEntered
+        JpnUsuario10.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario10MouseEntered
+
+    private void JpnUsuario10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario10MouseExited
+        JpnUsuario10.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario10MouseExited
+
+    private void JpnTecnico10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico10MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico10MouseClicked
+
+    private void JpnTecnico10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico10MouseEntered
+        JpnTecnico10.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico10MouseEntered
+
+    private void JpnTecnico10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico10MouseExited
+        JpnTecnico10.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico10MouseExited
+
+    private void JpnServicio10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio10MouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnServicio10MouseClicked
+
+    private void JpnServicio10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio10MouseEntered
+        JpnServicio10.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio10MouseEntered
+
+    private void JpnServicio10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio10MouseExited
+        JpnServicio10.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio10MouseExited
+
+    private void JpnConfiguracion10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion10MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnConfiguracion10MouseClicked
+
+    private void JpnConfiguracion10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion10MouseEntered
+        JpnConfiguracion10.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnConfiguracion10MouseEntered
+
+    private void JpnConfiguracion10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion10MouseExited
+        JpnConfiguracion10.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnConfiguracion10MouseExited
+
+    private void JpnSalir10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir10MouseClicked
+             int opcion = javax.swing.JOptionPane.showConfirmDialog(
+    this,
+    "¿Estás seguro de que deseas salir del programa?",
+    "Confirmar salida",
+    javax.swing.JOptionPane.YES_NO_OPTION,
+    javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+    System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir10MouseClicked
+
+    private void JpnSalir10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir10MouseEntered
+        JpnSalir10.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir10MouseEntered
+
+    private void JpnSalir10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir10MouseExited
+        JpnSalir10.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir10MouseExited
+
+    private void JpnInicio11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio11MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio11MouseClicked
+
+    private void JpnInicio11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio11MouseEntered
+        JpnInicio11.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio11MouseEntered
+
+    private void JpnInicio11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio11MouseExited
+        JpnInicio11.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio11MouseExited
+
+    private void JpnUsuario11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario11MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnUsuario11MouseClicked
+
+    private void JpnUsuario11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario11MouseEntered
+        JpnUsuario11.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario11MouseEntered
+
+    private void JpnUsuario11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario11MouseExited
+        JpnUsuario11.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario11MouseExited
+
+    private void JpnTecnico11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico11MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico11MouseClicked
+
+    private void JpnTecnico11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico11MouseEntered
+        JpnTecnico11.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico11MouseEntered
+
+    private void JpnTecnico11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico11MouseExited
+        JpnTecnico11.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico11MouseExited
+
+    private void JpnServicio11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio11MouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnServicio11MouseClicked
+
+    private void JpnServicio11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio11MouseEntered
+        JpnServicio11.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio11MouseEntered
+
+    private void JpnServicio11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio11MouseExited
+        JpnServicio11.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio11MouseExited
+
+    private void JpnConfiguracion11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion11MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnConfiguracion11MouseClicked
+
+    private void JpnConfiguracion11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion11MouseEntered
+        JpnConfiguracion11.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnConfiguracion11MouseEntered
+
+    private void JpnConfiguracion11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion11MouseExited
+        JpnConfiguracion11.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnConfiguracion11MouseExited
+
+    private void JpnSalir11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir11MouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+    this,
+    "¿Estás seguro de que deseas salir del programa?",
+    "Confirmar salida",
+    javax.swing.JOptionPane.YES_NO_OPTION,
+    javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+    System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir11MouseClicked
+
+    private void JpnSalir11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir11MouseEntered
+        JpnSalir11.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir11MouseEntered
+
+    private void JpnSalir11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir11MouseExited
+        JpnSalir11.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir11MouseExited
+
+    private void JpnInicio12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio12MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio12MouseClicked
+
+    private void JpnInicio12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio12MouseEntered
+        JpnInicio12.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio12MouseEntered
+
+    private void JpnInicio12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio12MouseExited
+        JpnInicio12.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio12MouseExited
+
+    private void JpnUsuario12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario12MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario12MouseClicked
+
+    private void JpnUsuario12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario12MouseEntered
+        JpnUsuario12.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario12MouseEntered
+
+    private void JpnUsuario12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario12MouseExited
+        JpnUsuario12.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario12MouseExited
+
+    private void JpnTecnico12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico12MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico12MouseClicked
+
+    private void JpnTecnico12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico12MouseEntered
+        JpnTecnico12.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico12MouseEntered
+
+    private void JpnTecnico12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico12MouseExited
+        JpnTecnico12.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico12MouseExited
+
+    private void JpnServicio12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio12MouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnServicio12MouseClicked
+
+    private void JpnServicio12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio12MouseEntered
+        JpnServicio12.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio12MouseEntered
+
+    private void JpnServicio12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio12MouseExited
+        JpnServicio12.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio12MouseExited
+
+    private void JpnConfiguracion12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion12MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnConfiguracion12MouseClicked
+
+    private void JpnConfiguracion12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion12MouseEntered
+        JpnConfiguracion12.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnConfiguracion12MouseEntered
+
+    private void JpnConfiguracion12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion12MouseExited
+        JpnConfiguracion12.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnConfiguracion12MouseExited
+
+    private void JpnSalir12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir12MouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+    this,
+    "¿Estás seguro de que deseas salir del programa?",
+    "Confirmar salida",
+    javax.swing.JOptionPane.YES_NO_OPTION,
+    javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+    System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir12MouseClicked
+
+    private void JpnSalir12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir12MouseEntered
+        JpnSalir12.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir12MouseEntered
+
+    private void JpnSalir12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir12MouseExited
+        JpnSalir12.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir12MouseExited
+
+    private void JpnInicio20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio20MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio20MouseClicked
+
+    private void JpnInicio20MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio20MouseEntered
+        JpnInicio20.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio20MouseEntered
+
+    private void JpnInicio20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio20MouseExited
+        JpnInicio20.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio20MouseExited
+
+    private void JpnUsuario20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario20MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario20MouseClicked
+
+    private void JpnUsuario20MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario20MouseEntered
+        JpnUsuario20.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario20MouseEntered
+
+    private void JpnUsuario20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario20MouseExited
+        JpnUsuario20.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario20MouseExited
+
+    private void JpnTecnico20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico20MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico20MouseClicked
+
+    private void JpnTecnico20MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico20MouseEntered
+        JpnTecnico20.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico20MouseEntered
+
+    private void JpnTecnico20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico20MouseExited
+        JpnTecnico20.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico20MouseExited
+
+    private void JpnServicio20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio20MouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnServicio20MouseClicked
+
+    private void JpnServicio20MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio20MouseEntered
+        JpnServicio20.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio20MouseEntered
+
+    private void JpnServicio20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio20MouseExited
+        JpnServicio20.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio20MouseExited
+
+    private void JpnConfiguracion20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion20MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnConfiguracion20MouseClicked
+
+    private void JpnConfiguracion20MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion20MouseEntered
+        JpnConfiguracion20.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnConfiguracion20MouseEntered
+
+    private void JpnConfiguracion20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion20MouseExited
+        JpnConfiguracion20.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnConfiguracion20MouseExited
+
+    private void JpnSalir20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir20MouseClicked
+             int opcion = javax.swing.JOptionPane.showConfirmDialog(
+    this,
+    "¿Estás seguro de que deseas salir del programa?",
+    "Confirmar salida",
+    javax.swing.JOptionPane.YES_NO_OPTION,
+    javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+    System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir20MouseClicked
+
+    private void JpnSalir20MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir20MouseEntered
+        JpnSalir20.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir20MouseEntered
+
+    private void JpnSalir20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir20MouseExited
+        JpnSalir20.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir20MouseExited
+
+    private void JpnInicio13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio13MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio13MouseClicked
+
+    private void JpnInicio13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio13MouseEntered
+        JpnInicio13.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio13MouseEntered
+
+    private void JpnInicio13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio13MouseExited
+        JpnInicio13.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio13MouseExited
+
+    private void JpnUsuario13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario13MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario13MouseClicked
+
+    private void JpnUsuario13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario13MouseEntered
+        JpnUsuario13.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario13MouseEntered
+
+    private void JpnUsuario13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario13MouseExited
+        JpnUsuario13.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario13MouseExited
+
+    private void JpnTecnico13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico13MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico13MouseClicked
+
+    private void JpnTecnico13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico13MouseEntered
+        JpnTecnico13.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico13MouseEntered
+
+    private void JpnTecnico13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico13MouseExited
+        JpnTecnico13.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico13MouseExited
+
+    private void JpnServicio13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio13MouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnServicio13MouseClicked
+
+    private void JpnServicio13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio13MouseEntered
+        JpnServicio13.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio13MouseEntered
+
+    private void JpnServicio13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio13MouseExited
+        JpnServicio13.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio13MouseExited
+
+    private void JpnConfiguracion13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion13MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnConfiguracion13MouseClicked
+
+    private void JpnConfiguracion13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion13MouseEntered
+        JpnConfiguracion13.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnConfiguracion13MouseEntered
+
+    private void JpnConfiguracion13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnConfiguracion13MouseExited
+        JpnConfiguracion13.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnConfiguracion13MouseExited
+
+    private void JpnSalir13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir13MouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+    this,
+    "¿Estás seguro de que deseas salir del programa?",
+    "Confirmar salida",
+    javax.swing.JOptionPane.YES_NO_OPTION,
+    javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+    System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir13MouseClicked
+
+    private void JpnSalir13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir13MouseEntered
+       JpnSalir13.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir13MouseEntered
+
+    private void JpnSalir13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir13MouseExited
+       JpnSalir13.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir13MouseExited
+
+    private void JpnInicio14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio14MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio14MouseClicked
+
+    private void JpnInicio14MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio14MouseEntered
+        JpnInicio14.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio14MouseEntered
+
+    private void JpnInicio14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio14MouseExited
+        JpnInicio14.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio14MouseExited
+
+    private void JpnUsuario14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario14MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario14MouseClicked
+
+    private void JpnUsuario14MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario14MouseEntered
+        JpnUsuario14.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario14MouseEntered
+
+    private void JpnUsuario14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario14MouseExited
+        JpnUsuario14.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario14MouseExited
+
+    private void JpnTecnico14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico14MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico14MouseClicked
+
+    private void JpnTecnico14MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico14MouseEntered
+        JpnTecnico14.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico14MouseEntered
+
+    private void JpnTecnico14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico14MouseExited
+        JpnTecnico14.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico14MouseExited
+
+    private void JpnServicio14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio14MouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnServicio14MouseClicked
+
+    private void JpnServicio14MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio14MouseEntered
+        JpnServicio14.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio14MouseEntered
+
+    private void JpnServicio14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio14MouseExited
+        JpnServicio14.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio14MouseExited
+
+    private void JpnSalir14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir14MouseClicked
+             int opcion = javax.swing.JOptionPane.showConfirmDialog(
+    this,
+    "¿Estás seguro de que deseas salir del programa?",
+    "Confirmar salida",
+    javax.swing.JOptionPane.YES_NO_OPTION,
+    javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+    System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir14MouseClicked
+
+    private void JpnSalir14MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir14MouseEntered
+        JpnSalir14.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir14MouseEntered
+
+    private void JpnSalir14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir14MouseExited
+        JpnSalir14.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir14MouseExited
+
+    private void JpnInicio15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio15MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio15MouseClicked
+
+    private void JpnInicio15MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio15MouseEntered
+        JpnInicio15.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio15MouseEntered
+
+    private void JpnInicio15MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio15MouseExited
+        JpnInicio15.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio15MouseExited
+
+    private void JpnUsuario15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario15MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario15MouseClicked
+
+    private void JpnUsuario15MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario15MouseEntered
+        JpnUsuario15.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario15MouseEntered
+
+    private void JpnUsuario15MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario15MouseExited
+        JpnUsuario15.setBackground(new java.awt.Color(15, 31, 51));
+    }//GEN-LAST:event_JpnUsuario15MouseExited
+
+    private void JpnTecnico15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico15MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico15MouseClicked
+
+    private void JpnTecnico15MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico15MouseEntered
+        JpnTecnico15.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico15MouseEntered
+
+    private void JpnTecnico15MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico15MouseExited
+        JpnTecnico15.setBackground(new java.awt.Color(15, 31, 51));
+    }//GEN-LAST:event_JpnTecnico15MouseExited
+
+    private void JpnServicio15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio15MouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnServicio15MouseClicked
+
+    private void JpnServicio15MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio15MouseEntered
+        JpnServicio2.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio15MouseEntered
+
+    private void JpnServicio15MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio15MouseExited
+        JpnServicio2.setBackground(new java.awt.Color(15, 31, 51));
+    }//GEN-LAST:event_JpnServicio15MouseExited
+
+    private void JpnSalir15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir15MouseClicked
+             int opcion = javax.swing.JOptionPane.showConfirmDialog(
+    this,
+    "¿Estás seguro de que deseas salir del programa?",
+    "Confirmar salida",
+    javax.swing.JOptionPane.YES_NO_OPTION,
+    javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+    System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir15MouseClicked
+
+    private void JpnSalir15MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir15MouseEntered
+        JpnSalir15.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir15MouseEntered
+
+    private void JpnSalir15MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir15MouseExited
+        JpnSalir15.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir15MouseExited
+
+    private void JpnInicio16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio16MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio16MouseClicked
+
+    private void JpnInicio16MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio16MouseEntered
+        JpnInicio16.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio16MouseEntered
+
+    private void JpnInicio16MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio16MouseExited
+        JpnInicio16.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio16MouseExited
+
+    private void JpnUsuario16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario16MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario16MouseClicked
+
+    private void JpnUsuario16MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario16MouseEntered
+        JpnUsuario16.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario16MouseEntered
+
+    private void JpnUsuario16MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario16MouseExited
+        JpnUsuario16.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario16MouseExited
+
+    private void JpnTecnico16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico16MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico16MouseClicked
+
+    private void JpnTecnico16MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico16MouseEntered
+        JpnTecnico16.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico16MouseEntered
+
+    private void JpnTecnico16MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico16MouseExited
+        JpnTecnico16.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico16MouseExited
+
+    private void JpnServicio16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio16MouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnServicio16MouseClicked
+
+    private void JpnServicio16MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio16MouseEntered
+        JpnServicio16.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio16MouseEntered
+
+    private void JpnServicio16MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio16MouseExited
+        JpnServicio16.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio16MouseExited
+
+    private void JpnSalir16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir16MouseClicked
+             int opcion = javax.swing.JOptionPane.showConfirmDialog(
+    this,
+    "¿Estás seguro de que deseas salir del programa?",
+    "Confirmar salida",
+    javax.swing.JOptionPane.YES_NO_OPTION,
+    javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+    System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir16MouseClicked
+
+    private void JpnSalir16MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir16MouseEntered
+        JpnSalir16.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir16MouseEntered
+
+    private void JpnSalir16MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir16MouseExited
+        JpnSalir16.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir16MouseExited
+
+    private void JpnInicio17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio17MouseClicked
+       Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio17MouseClicked
+
+    private void JpnInicio17MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio17MouseEntered
+        JpnInicio17.setBackground(new java.awt.Color(22, 139, 255));    
+    }//GEN-LAST:event_JpnInicio17MouseEntered
+
+    private void JpnInicio17MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio17MouseExited
+        JpnInicio17.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio17MouseExited
+
+    private void JpnUsuario17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario17MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario17MouseClicked
+
+    private void JpnUsuario17MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario17MouseEntered
+        JpnUsuario17.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario17MouseEntered
+
+    private void JpnUsuario17MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario17MouseExited
+        JpnUsuario17.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario17MouseExited
+
+    private void JpnTecnico17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico17MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico17MouseClicked
+
+    private void JpnTecnico17MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico17MouseEntered
+        JpnTecnico17.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico17MouseEntered
+
+    private void JpnTecnico17MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico17MouseExited
+        JpnTecnico17.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico17MouseExited
+
+    private void JpnServicio17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio17MouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnServicio17MouseClicked
+
+    private void JpnServicio17MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio17MouseEntered
+        JpnServicio17.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio17MouseEntered
+
+    private void JpnServicio17MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio17MouseExited
+        JpnServicio17.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio17MouseExited
+
+    private void JpnSalir17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir17MouseClicked
+             int opcion = javax.swing.JOptionPane.showConfirmDialog(
+    this,
+    "¿Estás seguro de que deseas salir del programa?",
+    "Confirmar salida",
+    javax.swing.JOptionPane.YES_NO_OPTION,
+    javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+    System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir17MouseClicked
+
+    private void JpnSalir17MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir17MouseEntered
+        JpnSalir17.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir17MouseEntered
+
+    private void JpnSalir17MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir17MouseExited
+        JpnSalir17.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir17MouseExited
+
+    private void JpnInicio21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio21MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio21MouseClicked
+
+    private void JpnInicio21MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio21MouseEntered
+        JpnInicio21.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio21MouseEntered
+
+    private void JpnInicio21MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio21MouseExited
+        JpnInicio21.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio21MouseExited
+
+    private void JpnUsuario21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario21MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario21MouseClicked
+
+    private void JpnUsuario21MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario21MouseEntered
+        JpnUsuario21.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario21MouseEntered
+
+    private void JpnUsuario21MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario21MouseExited
+        JpnUsuario21.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario21MouseExited
+
+    private void JpnTecnico21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico21MouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnTecnico21MouseClicked
+
+    private void JpnTecnico21MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico21MouseEntered
+        JpnTecnico21.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico21MouseEntered
+
+    private void JpnTecnico21MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico21MouseExited
+        JpnTecnico21.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico21MouseExited
+
+    private void JpnServicio21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio21MouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnServicio21MouseClicked
+
+    private void JpnServicio21MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio21MouseEntered
+        JpnServicio21.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio21MouseEntered
+
+    private void JpnServicio21MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio21MouseExited
+        JpnServicio21.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio21MouseExited
+
+    private void JpnSalir21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir21MouseClicked
+        int opcion = javax.swing.JOptionPane.showConfirmDialog(
+    this,
+    "¿Estás seguro de que deseas salir del programa?",
+    "Confirmar salida",
+    javax.swing.JOptionPane.YES_NO_OPTION,
+    javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+    System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir21MouseClicked
+
+    private void JpnSalir21MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir21MouseEntered
+        JpnSalir21.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir21MouseEntered
+
+    private void JpnSalir21MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir21MouseExited
+        JpnSalir21.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir21MouseExited
+
+    private void JpnInicio18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio18MouseClicked
+        Principal.setSelectedIndex(0);
+    }//GEN-LAST:event_JpnInicio18MouseClicked
+
+    private void JpnInicio18MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio18MouseEntered
+        JpnInicio18.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnInicio18MouseEntered
+
+    private void JpnInicio18MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio18MouseExited
+        JpnInicio18.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnInicio18MouseExited
+
+    private void JpnUsuario18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario18MouseClicked
+        Principal.setSelectedIndex(1);
+    }//GEN-LAST:event_JpnUsuario18MouseClicked
+
+    private void JpnUsuario18MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario18MouseEntered
+        JpnUsuario18.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnUsuario18MouseEntered
+
+    private void JpnUsuario18MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario18MouseExited
+        JpnUsuario18.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnUsuario18MouseExited
+
+    private void JpnTecnico18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico18MouseClicked
+        Principal.setSelectedIndex(2);
+    }//GEN-LAST:event_JpnTecnico18MouseClicked
+
+    private void JpnTecnico18MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico18MouseEntered
+        JpnTecnico18.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnTecnico18MouseEntered
+
+    private void JpnTecnico18MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico18MouseExited
+        JpnTecnico18.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnTecnico18MouseExited
+
+    private void JpnServicio18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio18MouseClicked
+        Principal.setSelectedIndex(3);
+    }//GEN-LAST:event_JpnServicio18MouseClicked
+
+    private void JpnServicio18MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio18MouseEntered
+        JpnServicio18.setBackground(new java.awt.Color(22, 139, 255));
+    }//GEN-LAST:event_JpnServicio18MouseEntered
+
+    private void JpnServicio18MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio18MouseExited
+        JpnServicio18.setBackground(new java.awt.Color(16, 31, 51));
+    }//GEN-LAST:event_JpnServicio18MouseExited
+
+    private void JpnSalir18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir18MouseClicked
+         int opcion = javax.swing.JOptionPane.showConfirmDialog(
+    this,
+    "¿Estás seguro de que deseas salir del programa?",
+    "Confirmar salida",
+    javax.swing.JOptionPane.YES_NO_OPTION,
+    javax.swing.JOptionPane.QUESTION_MESSAGE);
+
+    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
+    System.exit(0);
+        }
+    }//GEN-LAST:event_JpnSalir18MouseClicked
+
+    private void JpnSalir18MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir18MouseEntered
+        JpnSalir18.setBackground(new java.awt.Color(239, 68, 68));
+    }//GEN-LAST:event_JpnSalir18MouseEntered
+
+    private void JpnSalir18MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir18MouseExited
+        JpnSalir18.setBackground(new java.awt.Color(24, 43, 68));
+    }//GEN-LAST:event_JpnSalir18MouseExited
+
     public static void main(String args[]) {
-    java.awt.EventQueue.invokeLater(() -> {
-        new Admin().setVisible(true);
-    });
-}
+        java.awt.EventQueue.invokeLater(() -> {
+            new Admin().setVisible(true);
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel JpanelServiciosActivos;
@@ -6817,25 +9868,25 @@ public class Admin extends javax.swing.JFrame {
     private javax.swing.JButton agregarServicio;
     private javax.swing.JButton agregarTecnico;
     private javax.swing.JButton agregarUsuario;
-    private javax.swing.JButton btnActualizarServicios;
     private javax.swing.JButton btnActualizarTecnico;
     private javax.swing.JButton btnActualizarTecnico1;
     private javax.swing.JButton btnActualizarTecnico2;
     private javax.swing.JButton btnActualizarUsuario;
     private javax.swing.JButton btnAgregarTecnico;
     private javax.swing.JButton btnAgregarUsuario;
+    private javax.swing.JButton btnBuscarActualizarServicio;
     private javax.swing.JButton btnBuscarActualizarUsuario;
     private javax.swing.JButton btnBuscarEliminarServicio;
     private javax.swing.JButton btnBuscarEliminarTecnico;
     private javax.swing.JButton btnBuscarEliminarUsuario;
     private javax.swing.JButton btnBuscarServicio;
-    private javax.swing.JButton btnBuscarServicio1;
     private javax.swing.JButton btnBuscarTecnico;
     private javax.swing.JButton btnBuscarTecnico1;
     private javax.swing.JButton btnBuscarUsuario;
     private javax.swing.JButton btnEliminarServicio;
     private javax.swing.JButton btnEliminarTecnico;
     private javax.swing.JButton btnEliminarUsuario;
+    private javax.swing.JButton btnGuardarDatosActualizarServicios;
     private javax.swing.JButton btnGuardarDatosActualizarUsuario;
     private javax.swing.JButton btnListarServicios;
     private javax.swing.JButton btnListarTecnicos;
