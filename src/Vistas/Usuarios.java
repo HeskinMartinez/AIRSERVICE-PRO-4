@@ -377,7 +377,7 @@ public class Usuarios extends javax.swing.JFrame {
     private void btn_ContactosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ContactosActionPerformed
         // TODO add your handling code here:
         Pagos vistaPagos = new Pagos();
-        vistaPagos.abrirpestaña(1);
+        vistaPagos.abrirpestaña(2);
         vistaPagos.setVisible(true);
         vistaPagos.setLocationRelativeTo(null);
         this.dispose();
@@ -412,7 +412,7 @@ public class Usuarios extends javax.swing.JFrame {
     private void btn_perfilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_perfilActionPerformed
         // TODO add your handling code here:
         Pagos vistaPagos = new Pagos();
-        vistaPagos.abrirpestaña(2);
+        vistaPagos.abrirpestaña(1);
         vistaPagos.setVisible(true);
         vistaPagos.setLocationRelativeTo(null);
         this.dispose();
