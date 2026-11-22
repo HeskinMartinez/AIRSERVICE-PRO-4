@@ -89,6 +89,10 @@ private void cargarUsuarioActual() {
     txt_mostrarcorreo.setText(u.getCorreo());
 }
 
+public void abrirpestaña(int indice){
+    jTabbedPane1.setSelectedIndex(indice);
+}
+
 private void cancelarPago() {
     int r = JOptionPane.showConfirmDialog(this, "¿Seguro que deseas cancelar el pago?",
             "Cancelar pago", JOptionPane.YES_NO_OPTION);
@@ -674,6 +678,11 @@ private void listarTarjetas() {
         jPanel13.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 70, -1, -1));
 
         txt_departamento.setBorder(null);
+        txt_departamento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_departamentoActionPerformed(evt);
+            }
+        });
         txt_departamento.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txt_departamentoKeyTyped(evt);
@@ -1709,11 +1718,14 @@ private void listarTarjetas() {
     private void txt_departamentoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_departamentoKeyTyped
         // TODO add your handling code here:
         validarSinCaracteresEspeciales(evt);
+        validarSoloLetras(evt);
     }//GEN-LAST:event_txt_departamentoKeyTyped
 
     private void txt_municipioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_municipioKeyTyped
         // TODO add your handling code here:
         validarSinCaracteresEspeciales(evt);
+        
+        validarSoloLetras(evt);
     }//GEN-LAST:event_txt_municipioKeyTyped
 
     private void txt_mostrarNombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_mostrarNombreKeyTyped
@@ -1779,6 +1791,10 @@ private void listarTarjetas() {
         }
     }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void txt_departamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_departamentoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_departamentoActionPerformed
 
     /**
      * @param args the command line arguments

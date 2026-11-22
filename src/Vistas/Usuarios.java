@@ -4,6 +4,8 @@
  */
 package Vistas;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author ACER1
@@ -113,6 +115,11 @@ public class Usuarios extends javax.swing.JFrame {
         btn_perfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/usuario.png"))); // NOI18N
         btn_perfil.setText("Mi perfil");
         btn_perfil.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(5, 51, 102), null));
+        btn_perfil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_perfilActionPerformed(evt);
+            }
+        });
         jPanel1.add(btn_perfil, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 20, 80, 30));
 
         btn_Contactos.setBackground(new java.awt.Color(5, 13, 27));
@@ -364,14 +371,21 @@ public class Usuarios extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "Ya te encuentras en el apartado Inicio de usuario", "INFORMACION", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btn_ContactosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ContactosActionPerformed
         // TODO add your handling code here:
+        Pagos vistaPagos = new Pagos();
+        vistaPagos.abrirpestaña(1);
+        vistaPagos.setVisible(true);
+        vistaPagos.setLocationRelativeTo(null);
+        this.dispose();
     }//GEN-LAST:event_btn_ContactosActionPerformed
 
     private void btn_serviciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_serviciosActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "Los servicios se encuentran disponibles en la parte inferior de esta ventana", "SERVICIOS",JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_btn_serviciosActionPerformed
 
     private void btn_sel_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_sel_1ActionPerformed
@@ -394,6 +408,16 @@ public class Usuarios extends javax.swing.JFrame {
         // TODO add your handling code here:
         abrirPago(Controladores.ControladorPagos.INSTALACIONES);
     }//GEN-LAST:event_btn_sel_4ActionPerformed
+
+    private void btn_perfilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_perfilActionPerformed
+        // TODO add your handling code here:
+        Pagos vistaPagos = new Pagos();
+        vistaPagos.abrirpestaña(2);
+        vistaPagos.setVisible(true);
+        vistaPagos.setLocationRelativeTo(null);
+        this.dispose();
+        
+    }//GEN-LAST:event_btn_perfilActionPerformed
 
     /**
      * @param args the command line arguments
