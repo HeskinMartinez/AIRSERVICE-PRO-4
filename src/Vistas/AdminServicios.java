@@ -2631,21 +2631,21 @@ private String docServicioEncontrado = null;
     }//GEN-LAST:event_btnBuscarServicioMouseExited
 
     private void btnBuscarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarServicioActionPerformed
-        String[] s = controlador.procesarBuscarServicio(txtBuscarDocServicio.getText());
+       String[] s = controlador.procesarBuscarServicio(txtBuscarDocServicio.getText());
 
         if (s != null) {
-            txtNombreClienteBuscarSrv.setText(s[Modelo_Admin.SRV_NOMBRE_CLI]);
-            txtApellidoClienteBuscarSrv.setText(s[Modelo_Admin.SRV_APELLIDO_CLI]);
-            cbxTipoDocBuscarSrv.setSelectedItem(s[Modelo_Admin.SRV_TIPO_DOC]);
-            txtNumDocBuscarSrv.setText(s[Modelo_Admin.SRV_NUM_DOC]);
+            txtNombreClienteBuscarSrv.setText(s[0]);
+            txtApellidoClienteBuscarSrv.setText(s[1]);
+            cbxTipoDocBuscarSrv.setSelectedItem(s[2]);
+            txtNumDocBuscarSrv.setText(s[3]);
 
-            txtDireccionBuscarSrv.setText(s[Modelo_Admin.SRV_DIRECCION]);
-            txtTelefonoBuscarSrv.setText(s[Modelo_Admin.SRV_TELEFONO]);
-            txtFechaBuscarSrv.setText(s[Modelo_Admin.SRV_FECHA]);
+            txtDireccionBuscarSrv.setText(s[5]);
+            txtTelefonoBuscarSrv.setText(s[4]);
+            txtFechaBuscarSrv.setText(s[6]);
 
-            txtNombreTecnicoBuscarSrv.setText(s[Modelo_Admin.SRV_TECNICO]);
-            cbxTipoServicioBuscarSrv.setSelectedItem(s[Modelo_Admin.SRV_TIPO]);
-            txaDescripcionBuscarSrv.setText(s[Modelo_Admin.SRV_DESCRIPCION]);
+            txtNombreTecnicoBuscarSrv.setText(s[7]);
+            cbxTipoServicioBuscarSrv.setSelectedItem(s[8]);
+            txaDescripcionBuscarSrv.setText(s[9]);
         } else {
             txtNombreClienteBuscarSrv.setText("");
             txtApellidoClienteBuscarSrv.setText("");
@@ -2762,17 +2762,17 @@ this.dispose();
         String[] s = controlador.procesarBuscarServicio(txtBuscarDocEliminarSrv.getText());
 
         if (s != null) {
-            txtNombreClienteEliminarSrv.setText(s[Modelo_Admin.SRV_NOMBRE_CLI]);
-            txtApellidoClienteEliminarSrv.setText(s[Modelo_Admin.SRV_APELLIDO_CLI]);
-            cbxTipoDocEliminarSrv.setSelectedItem(s[Modelo_Admin.SRV_TIPO_DOC]);
-            txtNumDocEliminarSrv.setText(s[Modelo_Admin.SRV_NUM_DOC]);
+            txtNombreClienteEliminarSrv.setText(s[0]);
+            txtApellidoClienteEliminarSrv.setText(s[1]);
+            cbxTipoDocEliminarSrv.setSelectedItem(s[2]);
+            txtNumDocEliminarSrv.setText(s[3]);
 
-            txtDireccionEliminarSrv.setText(s[Modelo_Admin.SRV_DIRECCION]);
-            txtTelefonoEliminarSrv.setText(s[Modelo_Admin.SRV_TELEFONO]);
-            txtFechaEliminarSrv.setText(s[Modelo_Admin.SRV_FECHA]);
+            txtDireccionEliminarSrv.setText(s[5]);
+            txtTelefonoEliminarSrv.setText(s[4]);
+            txtFechaEliminarSrv.setText(s[6]);
 
-            txtNombreTecnicoEliminarSrv.setText(s[Modelo_Admin.SRV_TECNICO]);
-            cbxTipoServicioEliminarSrv.setSelectedItem(s[Modelo_Admin.SRV_TIPO]);
+            txtNombreTecnicoEliminarSrv.setText(s[7]);
+            cbxTipoServicioEliminarSrv.setSelectedItem(s[8]);
         } else {
             txtNombreClienteEliminarSrv.setText("");
             txtApellidoClienteEliminarSrv.setText("");
@@ -3018,23 +3018,22 @@ this.dispose();
     }//GEN-LAST:event_volverActualizarServicioMouseExited
 
     private void btnBuscarActualizarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActualizarServicioActionPerformed
-        String[] s = controlador.procesarBuscarServicio(txtBuscarDocActualizarSrv.getText());
-
+       String[] s = controlador.procesarBuscarServicio(txtBuscarDocActualizarSrv.getText());
         if (s != null) {
-            docServicioEncontrado = s[Modelo_Admin.SRV_NUM_DOC];
+            docServicioEncontrado = s[3];
 
-            txtNombreClienteActualizarSrv.setText(s[Modelo_Admin.SRV_NOMBRE_CLI]);
-            txtApellidoClienteActualizarSrv.setText(s[Modelo_Admin.SRV_APELLIDO_CLI]);
-            cbxTipoDocActualizarSrv.setSelectedItem(s[Modelo_Admin.SRV_TIPO_DOC]);
-            txtNumDocActualizarSrv.setText(s[Modelo_Admin.SRV_NUM_DOC]);
+            txtNombreClienteActualizarSrv.setText(s[0]);
+            txtApellidoClienteActualizarSrv.setText(s[1]);
+            cbxTipoDocActualizarSrv.setSelectedItem(s[2]);
+            txtNumDocActualizarSrv.setText(s[3]);
 
-            txtDireccionActualizarSrv.setText(s[Modelo_Admin.SRV_DIRECCION]);
-            txtTelefonoActualizarSrv.setText(s[Modelo_Admin.SRV_TELEFONO]);
-            txtFechaActualizarSrv.setText(s[Modelo_Admin.SRV_FECHA]);
+            txtDireccionActualizarSrv.setText(s[5]);
+            txtTelefonoActualizarSrv.setText(s[4]);
+            txtFechaActualizarSrv.setText(s[6]);
 
-            txtNombreTecnicoActualizarSrv.setText(s[Modelo_Admin.SRV_TECNICO]);
-            cbxTipoServicioActualizarSrv.setSelectedItem(s[Modelo_Admin.SRV_TIPO]);
-            txaDescripcionActualizarSrv.setText(s[Modelo_Admin.SRV_DESCRIPCION]);
+            txtNombreTecnicoActualizarSrv.setText(s[7]);
+            cbxTipoServicioActualizarSrv.setSelectedItem(s[8]);
+            txaDescripcionActualizarSrv.setText(s[9]);
         } else {
             docServicioEncontrado = null;
 

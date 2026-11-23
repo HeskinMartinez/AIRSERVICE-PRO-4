@@ -4633,7 +4633,7 @@ public class Admin extends javax.swing.JFrame {
 
         Principal.addTab("15", jPanel21);
 
-        getContentPane().add(Principal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 680));
+        getContentPane().add(Principal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1060, 680));
     }// </editor-fold>//GEN-END:initComponents
 
     private void JpnInicio13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio13MouseClicked
