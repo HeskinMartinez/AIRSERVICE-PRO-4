@@ -5,13 +5,15 @@ import Modelos.Modelo_login;
 import java.io.IOException;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
 
 public class ControladorAdmin {
 
     private final Modelo_Admin modelo = new Modelo_Admin();
 
-
+    // =========================================================================
     // SECCIÓN 1: CONTROLADOR DE TÉCNICOS (CRUD Completo con Tipo Doc y Nivel)
+    // =========================================================================
 
     public boolean procesarRegistroTecnico(String nombre, String apellidos, String tipoDoc,
             String numDoc, String telefono, String direccion, String correo,
@@ -23,7 +25,6 @@ public class ControladorAdmin {
         direccion = direccion.trim();
         correo = correo.trim();
 
-        // 1. Validar campos obligatorios (*)
         if (nombre.trim().isEmpty() || apellidos.trim().isEmpty() || numDoc.isEmpty()
                 || telefono.isEmpty() || direccion.isEmpty() || correo.isEmpty()
                 || pass.isEmpty() || repetirPass.isEmpty()) {
@@ -36,7 +37,6 @@ public class ControladorAdmin {
             return false;
         }
 
-        // 2. Validar formatos con la clase Validaciones del proyecto
         if (!Validaciones.correoValido(correo)) {
             JOptionPane.showMessageDialog(null, Validaciones.MENSAJE_CORREO, "Correo inválido", JOptionPane.WARNING_MESSAGE);
             return false;
@@ -52,7 +52,6 @@ public class ControladorAdmin {
             return false;
         }
 
-        // 3. Validar contraseña
         if (pass.length() < 8) {
             JOptionPane.showMessageDialog(null, "La contraseña debe tener mínimo 8 caracteres.", "Contraseña inválida", JOptionPane.WARNING_MESSAGE);
             return false;
@@ -63,7 +62,6 @@ public class ControladorAdmin {
             return false;
         }
 
-        // 4. Registrar en ModeloAdmin
         try {
             modelo.registrarTecnico(nombreCompleto, correo, pass, telefono, direccion, tipoDoc, numDoc, nivel);
             JOptionPane.showMessageDialog(null, "Técnico registrado y guardado correctamente.", "Registro exitoso", JOptionPane.INFORMATION_MESSAGE);
@@ -79,7 +77,12 @@ public class ControladorAdmin {
 
     public void cargarTablaTecnicos(JTable tabla) {
         try {
-            tabla.setModel(modelo.listarTecnicos());
+            DefaultTableModel modeloTabla = modelo.listarTecnicos();
+            tabla.setModel(modeloTabla);
+
+            if (modeloTabla.getRowCount() == 0) {
+                JOptionPane.showMessageDialog(null, "No hay ningún técnico registrado todavía.", "Sin registros", JOptionPane.INFORMATION_MESSAGE);
+            }
         } catch (IOException e) {
             JOptionPane.showMessageDialog(null, "Error al cargar los técnicos: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
@@ -238,9 +241,10 @@ public class ControladorAdmin {
             return null;
         }
     }
-public void cargarTablaServicios(JTable tabla) {
+
+    public void cargarTablaServicios(JTable tabla) {
         try {
-            javax.swing.table.DefaultTableModel modeloTabla = modelo.listarServicios();
+            DefaultTableModel modeloTabla = modelo.listarServicios();
             tabla.setModel(modeloTabla);
 
             if (modeloTabla.getRowCount() == 0) {
@@ -250,6 +254,7 @@ public void cargarTablaServicios(JTable tabla) {
             JOptionPane.showMessageDialog(null, "Error al listar servicios: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
+
     public boolean procesarActualizarServicio(String docBuscado, String nombreCli, String apellidoCli,
             String tipoDoc, String nuevoNumDoc, String telefono, String direccion,
             String fecha, String tecnico, String tipoServicio, String descripcion) {
@@ -303,14 +308,170 @@ public void cargarTablaServicios(JTable tabla) {
     }
 
     // =========================================================================
-    // SECCIÓN 3: CONTROLADOR DE USUARIOS / CLIENTES
+    // SECCIÓN 3: CONTROLADOR DE USUARIOS / CLIENTES (CRUD Completo)
     // =========================================================================
+
+    public boolean procesarRegistroCliente(String nombre, String apellidos, String tipoDoc,
+            String numDoc, String telefono, String direccion, String correo,
+            String pass, String repetirPass) {
+
+        if (nombre.trim().isEmpty() || apellidos.trim().isEmpty() || numDoc.trim().isEmpty()
+                || telefono.trim().isEmpty() || direccion.trim().isEmpty() || correo.trim().isEmpty()
+                || pass.isEmpty() || repetirPass.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Todos los campos marcados con (*) son obligatorios.", "Campos vacíos", JOptionPane.WARNING_MESSAGE);
+            return false;
+        }
+
+        if (tipoDoc.equals("Selecciona una opcion")) {
+            JOptionPane.showMessageDialog(null, "Debes seleccionar el tipo de documento.", "Selección requerida", JOptionPane.WARNING_MESSAGE);
+            return false;
+        }
+
+        if (!Validaciones.soloNumeros(numDoc.trim(), 5, 12)) {
+            JOptionPane.showMessageDialog(null, "El documento debe tener solo números (entre 5 y 12 dígitos).", "Documento inválido", JOptionPane.WARNING_MESSAGE);
+            return false;
+        }
+
+        if (!Validaciones.telefonoValido(telefono.trim())) {
+            JOptionPane.showMessageDialog(null, Validaciones.MENSAJE_TELEFONO, "Teléfono inválido", JOptionPane.WARNING_MESSAGE);
+            return false;
+        }
+
+        if (!Validaciones.correoValido(correo.trim())) {
+            JOptionPane.showMessageDialog(null, Validaciones.MENSAJE_CORREO, "Correo inválido", JOptionPane.WARNING_MESSAGE);
+            return false;
+        }
+
+        if (pass.length() < 8) {
+            JOptionPane.showMessageDialog(null, "La contraseña debe tener mínimo 8 caracteres.", "Contraseña inválida", JOptionPane.WARNING_MESSAGE);
+            return false;
+        }
+
+        if (!pass.equals(repetirPass)) {
+            JOptionPane.showMessageDialog(null, "Las contraseñas no coinciden.", "Error de contraseña", JOptionPane.ERROR_MESSAGE);
+            return false;
+        }
+
+        try {
+            modelo.registrarCliente(nombre, apellidos, tipoDoc, numDoc, telefono, direccion, correo, pass);
+            JOptionPane.showMessageDialog(null, "Usuario registrado y guardado correctamente.", "Registro exitoso", JOptionPane.INFORMATION_MESSAGE);
+            return true;
+        } catch (IllegalArgumentException e) {
+            JOptionPane.showMessageDialog(null, e.getMessage(), "Validación", JOptionPane.WARNING_MESSAGE);
+            return false;
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(null, "Error al guardar usuario: " + e.getMessage(), "Error de archivo", JOptionPane.ERROR_MESSAGE);
+            return false;
+        }
+    }
 
     public void cargarTablaClientes(JTable tabla) {
         try {
-            tabla.setModel(modelo.listarClientes());
+            DefaultTableModel modeloTabla = modelo.listarClientes();
+            tabla.setModel(modeloTabla);
+
+            if (modeloTabla.getRowCount() == 0) {
+                JOptionPane.showMessageDialog(null, "No hay ningún usuario registrado todavía.", "Sin registros", JOptionPane.INFORMATION_MESSAGE);
+            }
         } catch (IOException e) {
-            JOptionPane.showMessageDialog(null, "Error al cargar los clientes: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Error al cargar los usuarios: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+
+    public String[] procesarBuscarCliente(String numDoc) {
+        if (numDoc.trim().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Ingresa el N° de Documento del usuario a buscar.", "Campo obligatorio", JOptionPane.WARNING_MESSAGE);
+            return null;
+        }
+
+        try {
+            String[] cliente = modelo.buscarClientePorDocumento(numDoc);
+            if (cliente == null) {
+                JOptionPane.showMessageDialog(null, "No se encontró ningún usuario con ese documento.", "Sin resultados", JOptionPane.INFORMATION_MESSAGE);
+            }
+            return cliente;
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(null, "Error al buscar usuario: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+            return null;
+        }
+    }
+
+    public boolean procesarActualizarCliente(String docBuscado, String nombre, String apellidos,
+            String nuevoTipoDoc, String nuevoNumDoc, String telefono, String direccion,
+            String correo, String pass, String repetirPass) {
+
+        if (docBuscado.trim().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Primero debes buscar el usuario por N° de Documento.", "Aviso", JOptionPane.WARNING_MESSAGE);
+            return false;
+        }
+
+        if (!correo.trim().isEmpty() && !Validaciones.correoValido(correo.trim())) {
+            JOptionPane.showMessageDialog(null, Validaciones.MENSAJE_CORREO, "Correo inválido", JOptionPane.WARNING_MESSAGE);
+            return false;
+        }
+
+        if (!telefono.trim().isEmpty() && !Validaciones.telefonoValido(telefono.trim())) {
+            JOptionPane.showMessageDialog(null, Validaciones.MENSAJE_TELEFONO, "Teléfono inválido", JOptionPane.WARNING_MESSAGE);
+            return false;
+        }
+
+        if (!nuevoNumDoc.trim().isEmpty() && !Validaciones.soloNumeros(nuevoNumDoc.trim(), 5, 12)) {
+            JOptionPane.showMessageDialog(null, "El documento debe tener solo números (5 a 12 dígitos).", "Documento inválido", JOptionPane.WARNING_MESSAGE);
+            return false;
+        }
+
+        if (!pass.isEmpty() || !repetirPass.isEmpty()) {
+            if (pass.length() < 8) {
+                JOptionPane.showMessageDialog(null, "La nueva contraseña debe tener mínimo 8 caracteres.", "Contraseña inválida", JOptionPane.WARNING_MESSAGE);
+                return false;
+            }
+            if (!pass.equals(repetirPass)) {
+                JOptionPane.showMessageDialog(null, "Las contraseñas no coinciden.", "Error", JOptionPane.ERROR_MESSAGE);
+                return false;
+            }
+        }
+
+        try {
+            boolean ok = modelo.actualizarCliente(docBuscado, nombre, apellidos, nuevoTipoDoc, nuevoNumDoc, telefono, direccion, correo, pass);
+            if (ok) {
+                JOptionPane.showMessageDialog(null, "Datos del usuario actualizados correctamente.", "Actualizado", JOptionPane.INFORMATION_MESSAGE);
+                return true;
+            } else {
+                JOptionPane.showMessageDialog(null, "No se encontró el usuario a actualizar.", "Error", JOptionPane.ERROR_MESSAGE);
+                return false;
+            }
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(null, "Error al actualizar usuario: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+            return false;
+        }
+    }
+
+    public boolean procesarEliminarCliente(String numDoc) {
+        if (numDoc.trim().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Primero busca el usuario que deseas eliminar.", "Aviso", JOptionPane.WARNING_MESSAGE);
+            return false;
+        }
+
+        int confirm = JOptionPane.showConfirmDialog(null,
+                "¿Estás seguro de eliminar este usuario? También se borrará su cuenta de inicio de sesión.",
+                "Confirmar eliminación", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
+
+        if (confirm != JOptionPane.YES_OPTION) {
+            return false;
+        }
+
+        try {
+            boolean eliminado = modelo.eliminarClientePorDocumento(numDoc);
+            if (eliminado) {
+                JOptionPane.showMessageDialog(null, "Usuario eliminado correctamente.", "Eliminado", JOptionPane.INFORMATION_MESSAGE);
+                return true;
+            } else {
+                JOptionPane.showMessageDialog(null, "No se encontró el usuario a eliminar.", "Error", JOptionPane.ERROR_MESSAGE);
+                return false;
+            }
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(null, "Error al eliminar usuario: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+            return false;
         }
     }
 

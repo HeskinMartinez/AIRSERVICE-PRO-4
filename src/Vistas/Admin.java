@@ -100,27 +100,27 @@ public class Admin extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtNombreUsuario = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        cmbTipoDocUsuario = new javax.swing.JComboBox<>();
         jLabel14 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        txtDocUsuario = new javax.swing.JTextField();
+        txtPassUsuario = new javax.swing.JPasswordField();
         jLabel15 = new javax.swing.JLabel();
-        jPasswordField2 = new javax.swing.JPasswordField();
+        txtRepetirPassUsuario = new javax.swing.JPasswordField();
         jLabel16 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        txtTelefonoUsuario = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        txtDireccionUsuario = new javax.swing.JTextField();
         jLabel19 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        txtCorreoUsuario = new javax.swing.JTextField();
         btnAgregarUsuario = new javax.swing.JButton();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
-        jTextField13 = new javax.swing.JTextField();
+        txtApellidosUsuario = new javax.swing.JTextField();
         JpnSalir4 = new javax.swing.JPanel();
         lbSalir4 = new javax.swing.JLabel();
         JpnServicio4 = new javax.swing.JPanel();
@@ -145,48 +145,48 @@ public class Admin extends javax.swing.JFrame {
         lbInicio6 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         jLabel25 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
+        txtApellidosBuscarU = new javax.swing.JTextField();
         jLabel26 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        cmbTipoDocBuscarU = new javax.swing.JComboBox<>();
         jLabel27 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
+        txtDocBuscarU = new javax.swing.JTextField();
+        txtTelefonoBuscarU = new javax.swing.JTextField();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
+        txtDireccionBuscarU = new javax.swing.JTextField();
         jLabel32 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
+        txtCorreoBuscarU = new javax.swing.JTextField();
         btnBuscarUsuario = new javax.swing.JButton();
         jLabel33 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
+        txtNombreBuscarU = new javax.swing.JTextField();
         jLabel36 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
+        txtBuscarDocUsuario = new javax.swing.JTextField();
         volverBuscarUsuario = new javax.swing.JButton();
         jLabel24 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
         jPanel10 = new javax.swing.JPanel();
         jLabel38 = new javax.swing.JLabel();
-        jTextField14 = new javax.swing.JTextField();
+        txtApellidosEliminarU = new javax.swing.JTextField();
         jLabel39 = new javax.swing.JLabel();
-        jComboBox3 = new javax.swing.JComboBox<>();
+        cmbTipoDocEliminarU = new javax.swing.JComboBox<>();
         jLabel40 = new javax.swing.JLabel();
-        jTextField15 = new javax.swing.JTextField();
-        jTextField16 = new javax.swing.JTextField();
+        txtDocEliminarU = new javax.swing.JTextField();
+        txtTelefonoEliminarU = new javax.swing.JTextField();
         jLabel41 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
-        jTextField17 = new javax.swing.JTextField();
+        txtDireccionEliminarU = new javax.swing.JTextField();
         jLabel43 = new javax.swing.JLabel();
-        jTextField18 = new javax.swing.JTextField();
+        txtCorreoEliminarU = new javax.swing.JTextField();
         btnBuscarEliminarUsuario = new javax.swing.JButton();
         jLabel44 = new javax.swing.JLabel();
         jLabel45 = new javax.swing.JLabel();
-        jTextField19 = new javax.swing.JTextField();
+        txtNombreEliminarU = new javax.swing.JTextField();
         jLabel46 = new javax.swing.JLabel();
         jLabel47 = new javax.swing.JLabel();
-        jTextField20 = new javax.swing.JTextField();
+        txtBuscarDocEliminarU = new javax.swing.JTextField();
         btnEliminarUsuario = new javax.swing.JButton();
         jLabel35 = new javax.swing.JLabel();
         volverEliminarUsuario = new javax.swing.JButton();
@@ -204,7 +204,7 @@ public class Admin extends javax.swing.JFrame {
         jPanel11 = new javax.swing.JPanel();
         btnListarUsuarios = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
+        tblUsuarios = new javax.swing.JTable();
         volverListarUsuarios = new javax.swing.JButton();
         JpnSalir7 = new javax.swing.JPanel();
         lbSalir7 = new javax.swing.JLabel();
@@ -233,51 +233,51 @@ public class Admin extends javax.swing.JFrame {
         jLabel190 = new javax.swing.JLabel();
         jPanel35 = new javax.swing.JPanel();
         jLabel180 = new javax.swing.JLabel();
-        jTextField81 = new javax.swing.JTextField();
+        txtApellidosActU = new javax.swing.JTextField();
         jLabel181 = new javax.swing.JLabel();
-        jComboBox18 = new javax.swing.JComboBox<>();
+        cmbTipoDocActU = new javax.swing.JComboBox<>();
         jLabel182 = new javax.swing.JLabel();
-        jTextField82 = new javax.swing.JTextField();
-        jTextField83 = new javax.swing.JTextField();
+        txtDocActU = new javax.swing.JTextField();
+        txtTelefonoActU = new javax.swing.JTextField();
         jLabel183 = new javax.swing.JLabel();
         jLabel184 = new javax.swing.JLabel();
-        jTextField84 = new javax.swing.JTextField();
+        txtDireccionActU = new javax.swing.JTextField();
         jLabel185 = new javax.swing.JLabel();
-        jTextField85 = new javax.swing.JTextField();
+        txtCorreoActU = new javax.swing.JTextField();
         btnBuscarActualizarUsuario = new javax.swing.JButton();
         jLabel186 = new javax.swing.JLabel();
         jLabel187 = new javax.swing.JLabel();
-        jTextField86 = new javax.swing.JTextField();
+        txtNombreActU = new javax.swing.JTextField();
         jLabel188 = new javax.swing.JLabel();
         jLabel189 = new javax.swing.JLabel();
-        jTextField87 = new javax.swing.JTextField();
+        txtBuscarDocActU = new javax.swing.JTextField();
         btnActualizarUsuario = new javax.swing.JButton();
         jLabel179 = new javax.swing.JLabel();
         jPanel12 = new javax.swing.JPanel();
         jLabel63 = new javax.swing.JLabel();
         jPanel13 = new javax.swing.JPanel();
         jLabel51 = new javax.swing.JLabel();
-        jTextField21 = new javax.swing.JTextField();
+        txtNuevoNombreU = new javax.swing.JTextField();
         jLabel52 = new javax.swing.JLabel();
-        jComboBox4 = new javax.swing.JComboBox<>();
+        cmbNuevoTipoDocU = new javax.swing.JComboBox<>();
         jLabel53 = new javax.swing.JLabel();
-        jTextField22 = new javax.swing.JTextField();
-        jPasswordField3 = new javax.swing.JPasswordField();
+        txtNuevoDocU = new javax.swing.JTextField();
+        txtNuevaPassU = new javax.swing.JPasswordField();
         jLabel54 = new javax.swing.JLabel();
-        jPasswordField4 = new javax.swing.JPasswordField();
+        txtRepetirNuevaPassU = new javax.swing.JPasswordField();
         jLabel55 = new javax.swing.JLabel();
-        jTextField23 = new javax.swing.JTextField();
+        txtNuevoTelefonoU = new javax.swing.JTextField();
         jLabel56 = new javax.swing.JLabel();
         jLabel57 = new javax.swing.JLabel();
-        jTextField24 = new javax.swing.JTextField();
+        txtNuevaDireccionU = new javax.swing.JTextField();
         jLabel58 = new javax.swing.JLabel();
-        jTextField25 = new javax.swing.JTextField();
+        txtNuevoCorreoU = new javax.swing.JTextField();
         btnGuardarDatosActualizarUsuario = new javax.swing.JButton();
         jLabel59 = new javax.swing.JLabel();
         jLabel60 = new javax.swing.JLabel();
         jLabel61 = new javax.swing.JLabel();
         jLabel62 = new javax.swing.JLabel();
-        jTextField26 = new javax.swing.JTextField();
+        txtNuevosApellidosU = new javax.swing.JTextField();
         JpnSalir8 = new javax.swing.JPanel();
         lbSalir8 = new javax.swing.JLabel();
         JpnServicio8 = new javax.swing.JPanel();
@@ -1313,54 +1313,54 @@ public class Admin extends javax.swing.JFrame {
         jLabel12.setText("Nombre: *");
         jPanel6.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, -1));
 
-        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField1.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField1.setBorder(null);
-        jPanel6.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 200, 20));
+        txtNombreUsuario.setBackground(new java.awt.Color(255, 255, 255));
+        txtNombreUsuario.setForeground(new java.awt.Color(0, 0, 0));
+        txtNombreUsuario.setBorder(null);
+        jPanel6.add(txtNombreUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 200, 20));
 
         jLabel13.setBackground(new java.awt.Color(0, 0, 0));
         jLabel13.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jLabel13.setText("Tipo de documento: *");
         jPanel6.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, -1));
 
-        jComboBox1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona una opcion", "CC", "TI", "CE", "PEP" }));
-        jPanel6.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 200, -1));
+        cmbTipoDocUsuario.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        cmbTipoDocUsuario.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona una opcion", "CC", "TI", "CE", "PEP" }));
+        jPanel6.add(cmbTipoDocUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 200, -1));
 
         jLabel14.setBackground(new java.awt.Color(0, 0, 0));
         jLabel14.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jLabel14.setText("N Documento:*");
         jPanel6.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, -1, -1));
 
-        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField2.setBorder(null);
-        jPanel6.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 200, 20));
+        txtDocUsuario.setBackground(new java.awt.Color(255, 255, 255));
+        txtDocUsuario.setForeground(new java.awt.Color(0, 0, 0));
+        txtDocUsuario.setBorder(null);
+        jPanel6.add(txtDocUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 200, 20));
 
-        jPasswordField1.setBackground(new java.awt.Color(255, 255, 255));
-        jPasswordField1.setForeground(new java.awt.Color(0, 0, 0));
-        jPasswordField1.setBorder(null);
-        jPanel6.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 70, 200, 20));
+        txtPassUsuario.setBackground(new java.awt.Color(255, 255, 255));
+        txtPassUsuario.setForeground(new java.awt.Color(0, 0, 0));
+        txtPassUsuario.setBorder(null);
+        jPanel6.add(txtPassUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 70, 200, 20));
 
         jLabel15.setBackground(new java.awt.Color(0, 0, 0));
         jLabel15.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jLabel15.setText("Contraseña: *");
         jPanel6.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 50, -1, -1));
 
-        jPasswordField2.setBackground(new java.awt.Color(255, 255, 255));
-        jPasswordField2.setForeground(new java.awt.Color(0, 0, 0));
-        jPasswordField2.setBorder(null);
-        jPanel6.add(jPasswordField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 120, 200, 20));
+        txtRepetirPassUsuario.setBackground(new java.awt.Color(255, 255, 255));
+        txtRepetirPassUsuario.setForeground(new java.awt.Color(0, 0, 0));
+        txtRepetirPassUsuario.setBorder(null);
+        jPanel6.add(txtRepetirPassUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 120, 200, 20));
 
         jLabel16.setBackground(new java.awt.Color(0, 0, 0));
         jLabel16.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jLabel16.setText("Repetir contraseña: *");
         jPanel6.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 100, -1, -1));
 
-        jTextField3.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField3.setBorder(null);
-        jPanel6.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 70, 200, 20));
+        txtTelefonoUsuario.setBackground(new java.awt.Color(255, 255, 255));
+        txtTelefonoUsuario.setForeground(new java.awt.Color(0, 0, 0));
+        txtTelefonoUsuario.setBorder(null);
+        jPanel6.add(txtTelefonoUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 70, 200, 20));
 
         jLabel17.setBackground(new java.awt.Color(0, 0, 0));
         jLabel17.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
@@ -1372,20 +1372,20 @@ public class Admin extends javax.swing.JFrame {
         jLabel18.setText("Direccion: *");
         jPanel6.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 100, -1, -1));
 
-        jTextField4.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField4.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField4.setBorder(null);
-        jPanel6.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 120, 200, 20));
+        txtDireccionUsuario.setBackground(new java.awt.Color(255, 255, 255));
+        txtDireccionUsuario.setForeground(new java.awt.Color(0, 0, 0));
+        txtDireccionUsuario.setBorder(null);
+        jPanel6.add(txtDireccionUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 120, 200, 20));
 
         jLabel19.setBackground(new java.awt.Color(0, 0, 0));
         jLabel19.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jLabel19.setText("Correo Electronico: *");
         jPanel6.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 150, -1, -1));
 
-        jTextField5.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField5.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField5.setBorder(null);
-        jPanel6.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 170, 200, 20));
+        txtCorreoUsuario.setBackground(new java.awt.Color(255, 255, 255));
+        txtCorreoUsuario.setForeground(new java.awt.Color(0, 0, 0));
+        txtCorreoUsuario.setBorder(null);
+        jPanel6.add(txtCorreoUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 170, 200, 20));
 
         btnAgregarUsuario.setBackground(new java.awt.Color(0, 210, 255));
         btnAgregarUsuario.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1408,6 +1408,11 @@ public class Admin extends javax.swing.JFrame {
                 btnAgregarUsuarioMouseExited(evt);
             }
         });
+        btnAgregarUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAgregarUsuarioActionPerformed(evt);
+            }
+        });
         jPanel6.add(btnAgregarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 210, 120, 30));
 
         jLabel20.setText("Los campos con (*) son obligatorios.");
@@ -1426,10 +1431,10 @@ public class Admin extends javax.swing.JFrame {
         jLabel28.setText("Apellidos: *");
         jPanel6.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, -1));
 
-        jTextField13.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField13.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField13.setBorder(null);
-        jPanel6.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 200, 20));
+        txtApellidosUsuario.setBackground(new java.awt.Color(255, 255, 255));
+        txtApellidosUsuario.setForeground(new java.awt.Color(0, 0, 0));
+        txtApellidosUsuario.setBorder(null);
+        jPanel6.add(txtApellidosUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 200, 20));
 
         jPanel5.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 900, 370));
 
@@ -1670,37 +1675,37 @@ public class Admin extends javax.swing.JFrame {
         jLabel25.setText("Nombre: ");
         jPanel8.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, -1, -1));
 
-        jTextField6.setEditable(false);
-        jTextField6.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField6.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField6.setBorder(null);
-        jPanel8.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 200, 20));
+        txtApellidosBuscarU.setEditable(false);
+        txtApellidosBuscarU.setBackground(new java.awt.Color(255, 255, 255));
+        txtApellidosBuscarU.setForeground(new java.awt.Color(0, 0, 0));
+        txtApellidosBuscarU.setBorder(null);
+        jPanel8.add(txtApellidosBuscarU, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 200, 20));
 
         jLabel26.setBackground(new java.awt.Color(0, 0, 0));
         jLabel26.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jLabel26.setText("Tipo de documento: ");
         jPanel8.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, -1, -1));
 
-        jComboBox2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona una opcion", "CC", "TI", "CE", "PEP" }));
-        jPanel8.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 200, -1));
+        cmbTipoDocBuscarU.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        cmbTipoDocBuscarU.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona una opcion", "CC", "TI", "CE", "PEP" }));
+        jPanel8.add(cmbTipoDocBuscarU, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 200, -1));
 
         jLabel27.setBackground(new java.awt.Color(0, 0, 0));
         jLabel27.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jLabel27.setText("N Documento:");
         jPanel8.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, -1, -1));
 
-        jTextField7.setEditable(false);
-        jTextField7.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField7.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField7.setBorder(null);
-        jPanel8.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, 200, 20));
+        txtDocBuscarU.setEditable(false);
+        txtDocBuscarU.setBackground(new java.awt.Color(255, 255, 255));
+        txtDocBuscarU.setForeground(new java.awt.Color(0, 0, 0));
+        txtDocBuscarU.setBorder(null);
+        jPanel8.add(txtDocBuscarU, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, 200, 20));
 
-        jTextField8.setEditable(false);
-        jTextField8.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField8.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField8.setBorder(null);
-        jPanel8.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 110, 200, 20));
+        txtTelefonoBuscarU.setEditable(false);
+        txtTelefonoBuscarU.setBackground(new java.awt.Color(255, 255, 255));
+        txtTelefonoBuscarU.setForeground(new java.awt.Color(0, 0, 0));
+        txtTelefonoBuscarU.setBorder(null);
+        jPanel8.add(txtTelefonoBuscarU, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 110, 200, 20));
 
         jLabel30.setBackground(new java.awt.Color(0, 0, 0));
         jLabel30.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
@@ -1712,22 +1717,22 @@ public class Admin extends javax.swing.JFrame {
         jLabel31.setText("Direccion: ");
         jPanel8.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 150, -1, -1));
 
-        jTextField9.setEditable(false);
-        jTextField9.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField9.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField9.setBorder(null);
-        jPanel8.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 170, 200, 20));
+        txtDireccionBuscarU.setEditable(false);
+        txtDireccionBuscarU.setBackground(new java.awt.Color(255, 255, 255));
+        txtDireccionBuscarU.setForeground(new java.awt.Color(0, 0, 0));
+        txtDireccionBuscarU.setBorder(null);
+        jPanel8.add(txtDireccionBuscarU, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 170, 200, 20));
 
         jLabel32.setBackground(new java.awt.Color(0, 0, 0));
         jLabel32.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jLabel32.setText("Correo Electronico: ");
         jPanel8.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 150, -1, 20));
 
-        jTextField10.setEditable(false);
-        jTextField10.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField10.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField10.setBorder(null);
-        jPanel8.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 170, 200, 20));
+        txtCorreoBuscarU.setEditable(false);
+        txtCorreoBuscarU.setBackground(new java.awt.Color(255, 255, 255));
+        txtCorreoBuscarU.setForeground(new java.awt.Color(0, 0, 0));
+        txtCorreoBuscarU.setBorder(null);
+        jPanel8.add(txtCorreoBuscarU, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 170, 200, 20));
 
         btnBuscarUsuario.setBackground(new java.awt.Color(0, 210, 255));
         btnBuscarUsuario.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1750,6 +1755,11 @@ public class Admin extends javax.swing.JFrame {
                 btnBuscarUsuarioMouseExited(evt);
             }
         });
+        btnBuscarUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBuscarUsuarioActionPerformed(evt);
+            }
+        });
         jPanel8.add(btnBuscarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 20, 110, 40));
 
         jLabel33.setText("Los campos con (*) son obligatorios.");
@@ -1760,11 +1770,11 @@ public class Admin extends javax.swing.JFrame {
         jLabel34.setText("NOTA");
         jPanel8.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, -1, 20));
 
-        jTextField11.setEditable(false);
-        jTextField11.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField11.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField11.setBorder(null);
-        jPanel8.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 200, 20));
+        txtNombreBuscarU.setEditable(false);
+        txtNombreBuscarU.setBackground(new java.awt.Color(255, 255, 255));
+        txtNombreBuscarU.setForeground(new java.awt.Color(0, 0, 0));
+        txtNombreBuscarU.setBorder(null);
+        jPanel8.add(txtNombreBuscarU, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 200, 20));
 
         jLabel36.setBackground(new java.awt.Color(0, 0, 0));
         jLabel36.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
@@ -1776,10 +1786,10 @@ public class Admin extends javax.swing.JFrame {
         jLabel37.setText("N Documento:*");
         jPanel8.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, -1, -1));
 
-        jTextField12.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField12.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField12.setBorder(null);
-        jPanel8.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 200, 20));
+        txtBuscarDocUsuario.setBackground(new java.awt.Color(255, 255, 255));
+        txtBuscarDocUsuario.setForeground(new java.awt.Color(0, 0, 0));
+        txtBuscarDocUsuario.setBorder(null);
+        jPanel8.add(txtBuscarDocUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 200, 20));
 
         jPanel7.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 900, 370));
 
@@ -1831,37 +1841,37 @@ public class Admin extends javax.swing.JFrame {
         jLabel38.setText("Nombre: ");
         jPanel10.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, -1, -1));
 
-        jTextField14.setEditable(false);
-        jTextField14.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField14.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField14.setBorder(null);
-        jPanel10.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 200, 20));
+        txtApellidosEliminarU.setEditable(false);
+        txtApellidosEliminarU.setBackground(new java.awt.Color(255, 255, 255));
+        txtApellidosEliminarU.setForeground(new java.awt.Color(0, 0, 0));
+        txtApellidosEliminarU.setBorder(null);
+        jPanel10.add(txtApellidosEliminarU, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 200, 20));
 
         jLabel39.setBackground(new java.awt.Color(0, 0, 0));
         jLabel39.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jLabel39.setText("Tipo de documento: ");
         jPanel10.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, -1, -1));
 
-        jComboBox3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona una opcion", "CC", "TI", "CE", "PEP" }));
-        jPanel10.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 200, -1));
+        cmbTipoDocEliminarU.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        cmbTipoDocEliminarU.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona una opcion", "CC", "TI", "CE", "PEP" }));
+        jPanel10.add(cmbTipoDocEliminarU, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 200, -1));
 
         jLabel40.setBackground(new java.awt.Color(0, 0, 0));
         jLabel40.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jLabel40.setText("N Documento:");
         jPanel10.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, -1, -1));
 
-        jTextField15.setEditable(false);
-        jTextField15.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField15.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField15.setBorder(null);
-        jPanel10.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, 200, 20));
+        txtDocEliminarU.setEditable(false);
+        txtDocEliminarU.setBackground(new java.awt.Color(255, 255, 255));
+        txtDocEliminarU.setForeground(new java.awt.Color(0, 0, 0));
+        txtDocEliminarU.setBorder(null);
+        jPanel10.add(txtDocEliminarU, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, 200, 20));
 
-        jTextField16.setEditable(false);
-        jTextField16.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField16.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField16.setBorder(null);
-        jPanel10.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 110, 200, 20));
+        txtTelefonoEliminarU.setEditable(false);
+        txtTelefonoEliminarU.setBackground(new java.awt.Color(255, 255, 255));
+        txtTelefonoEliminarU.setForeground(new java.awt.Color(0, 0, 0));
+        txtTelefonoEliminarU.setBorder(null);
+        jPanel10.add(txtTelefonoEliminarU, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 110, 200, 20));
 
         jLabel41.setBackground(new java.awt.Color(0, 0, 0));
         jLabel41.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
@@ -1873,22 +1883,22 @@ public class Admin extends javax.swing.JFrame {
         jLabel42.setText("Direccion: ");
         jPanel10.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 150, -1, -1));
 
-        jTextField17.setEditable(false);
-        jTextField17.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField17.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField17.setBorder(null);
-        jPanel10.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 170, 200, 20));
+        txtDireccionEliminarU.setEditable(false);
+        txtDireccionEliminarU.setBackground(new java.awt.Color(255, 255, 255));
+        txtDireccionEliminarU.setForeground(new java.awt.Color(0, 0, 0));
+        txtDireccionEliminarU.setBorder(null);
+        jPanel10.add(txtDireccionEliminarU, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 170, 200, 20));
 
         jLabel43.setBackground(new java.awt.Color(0, 0, 0));
         jLabel43.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jLabel43.setText("Correo Electronico: ");
         jPanel10.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 150, -1, 20));
 
-        jTextField18.setEditable(false);
-        jTextField18.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField18.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField18.setBorder(null);
-        jPanel10.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 170, 200, 20));
+        txtCorreoEliminarU.setEditable(false);
+        txtCorreoEliminarU.setBackground(new java.awt.Color(255, 255, 255));
+        txtCorreoEliminarU.setForeground(new java.awt.Color(0, 0, 0));
+        txtCorreoEliminarU.setBorder(null);
+        jPanel10.add(txtCorreoEliminarU, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 170, 200, 20));
 
         btnBuscarEliminarUsuario.setBackground(new java.awt.Color(0, 210, 255));
         btnBuscarEliminarUsuario.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1911,6 +1921,11 @@ public class Admin extends javax.swing.JFrame {
                 btnBuscarEliminarUsuarioMouseExited(evt);
             }
         });
+        btnBuscarEliminarUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBuscarEliminarUsuarioActionPerformed(evt);
+            }
+        });
         jPanel10.add(btnBuscarEliminarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 20, 110, 40));
 
         jLabel44.setText("Los campos con (*) son obligatorios.");
@@ -1921,11 +1936,11 @@ public class Admin extends javax.swing.JFrame {
         jLabel45.setText("NOTA");
         jPanel10.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, -1, 20));
 
-        jTextField19.setEditable(false);
-        jTextField19.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField19.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField19.setBorder(null);
-        jPanel10.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 200, 20));
+        txtNombreEliminarU.setEditable(false);
+        txtNombreEliminarU.setBackground(new java.awt.Color(255, 255, 255));
+        txtNombreEliminarU.setForeground(new java.awt.Color(0, 0, 0));
+        txtNombreEliminarU.setBorder(null);
+        jPanel10.add(txtNombreEliminarU, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 200, 20));
 
         jLabel46.setBackground(new java.awt.Color(0, 0, 0));
         jLabel46.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
@@ -1937,10 +1952,10 @@ public class Admin extends javax.swing.JFrame {
         jLabel47.setText("N Documento:*");
         jPanel10.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, -1, -1));
 
-        jTextField20.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField20.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField20.setBorder(null);
-        jPanel10.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 200, 20));
+        txtBuscarDocEliminarU.setBackground(new java.awt.Color(255, 255, 255));
+        txtBuscarDocEliminarU.setForeground(new java.awt.Color(0, 0, 0));
+        txtBuscarDocEliminarU.setBorder(null);
+        jPanel10.add(txtBuscarDocEliminarU, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 200, 20));
 
         btnEliminarUsuario.setBackground(new java.awt.Color(0, 210, 255));
         btnEliminarUsuario.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -1961,6 +1976,11 @@ public class Admin extends javax.swing.JFrame {
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 btnEliminarUsuarioMouseExited(evt);
+            }
+        });
+        btnEliminarUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarUsuarioActionPerformed(evt);
             }
         });
         jPanel10.add(btnEliminarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 210, 110, 30));
@@ -2135,16 +2155,21 @@ public class Admin extends javax.swing.JFrame {
                 btnListarUsuariosMouseExited(evt);
             }
         });
+        btnListarUsuarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnListarUsuariosActionPerformed(evt);
+            }
+        });
         jPanel11.add(btnListarUsuarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 530, 110, 30));
 
         jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        jTable2.setBackground(new java.awt.Color(16, 31, 51));
-        jTable2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(16, 31, 51)));
-        jTable2.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
-        jTable2.setForeground(new java.awt.Color(255, 255, 255));
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+        tblUsuarios.setBackground(new java.awt.Color(16, 31, 51));
+        tblUsuarios.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(16, 31, 51)));
+        tblUsuarios.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
+        tblUsuarios.setForeground(new java.awt.Color(255, 255, 255));
+        tblUsuarios.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
@@ -2179,8 +2204,8 @@ public class Admin extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jTable2.setGridColor(new java.awt.Color(22, 139, 255));
-        jScrollPane2.setViewportView(jTable2);
+        tblUsuarios.setGridColor(new java.awt.Color(22, 139, 255));
+        jScrollPane2.setViewportView(tblUsuarios);
 
         jPanel11.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 810, 340));
 
@@ -2477,37 +2502,37 @@ public class Admin extends javax.swing.JFrame {
         jLabel180.setText("Nombre: ");
         jPanel35.add(jLabel180, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, -1, -1));
 
-        jTextField81.setEditable(false);
-        jTextField81.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField81.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField81.setBorder(null);
-        jPanel35.add(jTextField81, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 200, 20));
+        txtApellidosActU.setEditable(false);
+        txtApellidosActU.setBackground(new java.awt.Color(255, 255, 255));
+        txtApellidosActU.setForeground(new java.awt.Color(0, 0, 0));
+        txtApellidosActU.setBorder(null);
+        jPanel35.add(txtApellidosActU, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 200, 20));
 
         jLabel181.setBackground(new java.awt.Color(0, 0, 0));
         jLabel181.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jLabel181.setText("Tipo de documento: ");
         jPanel35.add(jLabel181, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, -1, -1));
 
-        jComboBox18.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jComboBox18.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona una opcion", "CC", "TI", "CE", "PEP" }));
-        jPanel35.add(jComboBox18, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 200, -1));
+        cmbTipoDocActU.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        cmbTipoDocActU.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona una opcion", "CC", "TI", "CE", "PEP" }));
+        jPanel35.add(cmbTipoDocActU, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 200, -1));
 
         jLabel182.setBackground(new java.awt.Color(0, 0, 0));
         jLabel182.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jLabel182.setText("N Documento:");
         jPanel35.add(jLabel182, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, -1, -1));
 
-        jTextField82.setEditable(false);
-        jTextField82.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField82.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField82.setBorder(null);
-        jPanel35.add(jTextField82, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, 200, 20));
+        txtDocActU.setEditable(false);
+        txtDocActU.setBackground(new java.awt.Color(255, 255, 255));
+        txtDocActU.setForeground(new java.awt.Color(0, 0, 0));
+        txtDocActU.setBorder(null);
+        jPanel35.add(txtDocActU, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, 200, 20));
 
-        jTextField83.setEditable(false);
-        jTextField83.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField83.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField83.setBorder(null);
-        jPanel35.add(jTextField83, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 110, 200, 20));
+        txtTelefonoActU.setEditable(false);
+        txtTelefonoActU.setBackground(new java.awt.Color(255, 255, 255));
+        txtTelefonoActU.setForeground(new java.awt.Color(0, 0, 0));
+        txtTelefonoActU.setBorder(null);
+        jPanel35.add(txtTelefonoActU, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 110, 200, 20));
 
         jLabel183.setBackground(new java.awt.Color(0, 0, 0));
         jLabel183.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
@@ -2519,22 +2544,22 @@ public class Admin extends javax.swing.JFrame {
         jLabel184.setText("Direccion: ");
         jPanel35.add(jLabel184, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 150, -1, -1));
 
-        jTextField84.setEditable(false);
-        jTextField84.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField84.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField84.setBorder(null);
-        jPanel35.add(jTextField84, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 170, 200, 20));
+        txtDireccionActU.setEditable(false);
+        txtDireccionActU.setBackground(new java.awt.Color(255, 255, 255));
+        txtDireccionActU.setForeground(new java.awt.Color(0, 0, 0));
+        txtDireccionActU.setBorder(null);
+        jPanel35.add(txtDireccionActU, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 170, 200, 20));
 
         jLabel185.setBackground(new java.awt.Color(0, 0, 0));
         jLabel185.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jLabel185.setText("Correo Electronico: ");
         jPanel35.add(jLabel185, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 150, -1, 20));
 
-        jTextField85.setEditable(false);
-        jTextField85.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField85.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField85.setBorder(null);
-        jPanel35.add(jTextField85, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 170, 200, 20));
+        txtCorreoActU.setEditable(false);
+        txtCorreoActU.setBackground(new java.awt.Color(255, 255, 255));
+        txtCorreoActU.setForeground(new java.awt.Color(0, 0, 0));
+        txtCorreoActU.setBorder(null);
+        jPanel35.add(txtCorreoActU, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 170, 200, 20));
 
         btnBuscarActualizarUsuario.setBackground(new java.awt.Color(0, 210, 255));
         btnBuscarActualizarUsuario.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2557,6 +2582,11 @@ public class Admin extends javax.swing.JFrame {
                 btnBuscarActualizarUsuarioMouseExited(evt);
             }
         });
+        btnBuscarActualizarUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBuscarActualizarUsuarioActionPerformed(evt);
+            }
+        });
         jPanel35.add(btnBuscarActualizarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 20, 100, 40));
 
         jLabel186.setText("Los campos con (*) son obligatorios.");
@@ -2567,11 +2597,11 @@ public class Admin extends javax.swing.JFrame {
         jLabel187.setText("NOTA");
         jPanel35.add(jLabel187, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, -1, 20));
 
-        jTextField86.setEditable(false);
-        jTextField86.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField86.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField86.setBorder(null);
-        jPanel35.add(jTextField86, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 200, 20));
+        txtNombreActU.setEditable(false);
+        txtNombreActU.setBackground(new java.awt.Color(255, 255, 255));
+        txtNombreActU.setForeground(new java.awt.Color(0, 0, 0));
+        txtNombreActU.setBorder(null);
+        jPanel35.add(txtNombreActU, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 200, 20));
 
         jLabel188.setBackground(new java.awt.Color(0, 0, 0));
         jLabel188.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
@@ -2583,10 +2613,10 @@ public class Admin extends javax.swing.JFrame {
         jLabel189.setText("N Documento:*");
         jPanel35.add(jLabel189, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, -1, -1));
 
-        jTextField87.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField87.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField87.setBorder(null);
-        jPanel35.add(jTextField87, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 200, 20));
+        txtBuscarDocActU.setBackground(new java.awt.Color(255, 255, 255));
+        txtBuscarDocActU.setForeground(new java.awt.Color(0, 0, 0));
+        txtBuscarDocActU.setBorder(null);
+        jPanel35.add(txtBuscarDocActU, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 200, 20));
 
         btnActualizarUsuario.setBackground(new java.awt.Color(0, 210, 255));
         btnActualizarUsuario.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2607,6 +2637,11 @@ public class Admin extends javax.swing.JFrame {
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 btnActualizarUsuarioMouseExited(evt);
+            }
+        });
+        btnActualizarUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnActualizarUsuarioActionPerformed(evt);
             }
         });
         jPanel35.add(btnActualizarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 240, 140, 30));
@@ -2635,54 +2670,54 @@ public class Admin extends javax.swing.JFrame {
         jLabel51.setText("Nombre: ");
         jPanel13.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, -1));
 
-        jTextField21.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField21.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField21.setBorder(null);
-        jPanel13.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 200, 20));
+        txtNuevoNombreU.setBackground(new java.awt.Color(255, 255, 255));
+        txtNuevoNombreU.setForeground(new java.awt.Color(0, 0, 0));
+        txtNuevoNombreU.setBorder(null);
+        jPanel13.add(txtNuevoNombreU, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 200, 20));
 
         jLabel52.setBackground(new java.awt.Color(0, 0, 0));
         jLabel52.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jLabel52.setText("Tipo de documento: ");
         jPanel13.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, -1));
 
-        jComboBox4.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona una opcion", "CC", "TI", "CE", "PEP" }));
-        jPanel13.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 200, -1));
+        cmbNuevoTipoDocU.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        cmbNuevoTipoDocU.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona una opcion", "CC", "TI", "CE", "PEP" }));
+        jPanel13.add(cmbNuevoTipoDocU, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 200, -1));
 
         jLabel53.setBackground(new java.awt.Color(0, 0, 0));
         jLabel53.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jLabel53.setText("N Documento:");
         jPanel13.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, -1, -1));
 
-        jTextField22.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField22.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField22.setBorder(null);
-        jPanel13.add(jTextField22, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 200, 20));
+        txtNuevoDocU.setBackground(new java.awt.Color(255, 255, 255));
+        txtNuevoDocU.setForeground(new java.awt.Color(0, 0, 0));
+        txtNuevoDocU.setBorder(null);
+        jPanel13.add(txtNuevoDocU, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 200, 20));
 
-        jPasswordField3.setBackground(new java.awt.Color(255, 255, 255));
-        jPasswordField3.setForeground(new java.awt.Color(0, 0, 0));
-        jPasswordField3.setBorder(null);
-        jPanel13.add(jPasswordField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 70, 200, 20));
+        txtNuevaPassU.setBackground(new java.awt.Color(255, 255, 255));
+        txtNuevaPassU.setForeground(new java.awt.Color(0, 0, 0));
+        txtNuevaPassU.setBorder(null);
+        jPanel13.add(txtNuevaPassU, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 70, 200, 20));
 
         jLabel54.setBackground(new java.awt.Color(0, 0, 0));
         jLabel54.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jLabel54.setText("Contraseña: ");
         jPanel13.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 50, -1, -1));
 
-        jPasswordField4.setBackground(new java.awt.Color(255, 255, 255));
-        jPasswordField4.setForeground(new java.awt.Color(0, 0, 0));
-        jPasswordField4.setBorder(null);
-        jPanel13.add(jPasswordField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 120, 200, 20));
+        txtRepetirNuevaPassU.setBackground(new java.awt.Color(255, 255, 255));
+        txtRepetirNuevaPassU.setForeground(new java.awt.Color(0, 0, 0));
+        txtRepetirNuevaPassU.setBorder(null);
+        jPanel13.add(txtRepetirNuevaPassU, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 120, 200, 20));
 
         jLabel55.setBackground(new java.awt.Color(0, 0, 0));
         jLabel55.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jLabel55.setText("Repetir contraseña: ");
         jPanel13.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 100, -1, -1));
 
-        jTextField23.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField23.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField23.setBorder(null);
-        jPanel13.add(jTextField23, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 70, 200, 20));
+        txtNuevoTelefonoU.setBackground(new java.awt.Color(255, 255, 255));
+        txtNuevoTelefonoU.setForeground(new java.awt.Color(0, 0, 0));
+        txtNuevoTelefonoU.setBorder(null);
+        jPanel13.add(txtNuevoTelefonoU, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 70, 200, 20));
 
         jLabel56.setBackground(new java.awt.Color(0, 0, 0));
         jLabel56.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
@@ -2694,20 +2729,20 @@ public class Admin extends javax.swing.JFrame {
         jLabel57.setText("Direccion: ");
         jPanel13.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 100, -1, -1));
 
-        jTextField24.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField24.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField24.setBorder(null);
-        jPanel13.add(jTextField24, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 120, 200, 20));
+        txtNuevaDireccionU.setBackground(new java.awt.Color(255, 255, 255));
+        txtNuevaDireccionU.setForeground(new java.awt.Color(0, 0, 0));
+        txtNuevaDireccionU.setBorder(null);
+        jPanel13.add(txtNuevaDireccionU, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 120, 200, 20));
 
         jLabel58.setBackground(new java.awt.Color(0, 0, 0));
         jLabel58.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         jLabel58.setText("Correo Electronico: ");
         jPanel13.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 150, -1, -1));
 
-        jTextField25.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField25.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField25.setBorder(null);
-        jPanel13.add(jTextField25, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 170, 200, 20));
+        txtNuevoCorreoU.setBackground(new java.awt.Color(255, 255, 255));
+        txtNuevoCorreoU.setForeground(new java.awt.Color(0, 0, 0));
+        txtNuevoCorreoU.setBorder(null);
+        jPanel13.add(txtNuevoCorreoU, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 170, 200, 20));
 
         btnGuardarDatosActualizarUsuario.setBackground(new java.awt.Color(0, 210, 255));
         btnGuardarDatosActualizarUsuario.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -2753,10 +2788,10 @@ public class Admin extends javax.swing.JFrame {
         jLabel62.setText("Apellidos: ");
         jPanel13.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, -1));
 
-        jTextField26.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField26.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField26.setBorder(null);
-        jPanel13.add(jTextField26, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 200, 20));
+        txtNuevosApellidosU.setBackground(new java.awt.Color(255, 255, 255));
+        txtNuevosApellidosU.setForeground(new java.awt.Color(0, 0, 0));
+        txtNuevosApellidosU.setBorder(null);
+        jPanel13.add(txtNuevosApellidosU, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 200, 20));
 
         jPanel12.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 900, 370));
 
@@ -5472,7 +5507,46 @@ public class Admin extends javax.swing.JFrame {
     }//GEN-LAST:event_JpnSalir8MouseClicked
 
     private void btnGuardarDatosActualizarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarUsuarioActionPerformed
-        // TODO add your handling code here:
+        // Toma el documento original cargado en la pestaña 8
+String docOriginal = txtDocActU.getText().trim();
+
+boolean actualizado = controlador.procesarActualizarCliente(
+        docOriginal,
+        txtNuevoNombreU.getText(),
+        txtNuevosApellidosU.getText(),
+        cmbNuevoTipoDocU.getSelectedItem().toString(),
+        txtNuevoDocU.getText(),
+        txtNuevoTelefonoU.getText(),
+        txtNuevaDireccionU.getText(),
+        txtNuevoCorreoU.getText(),
+        new String(txtNuevaPassU.getPassword()),
+        new String(txtRepetirNuevaPassU.getPassword())
+);
+
+if (actualizado) {
+    // Limpiar todos los campos de la pestaña 9
+    txtNuevoNombreU.setText("");
+    txtNuevosApellidosU.setText("");
+    cmbNuevoTipoDocU.setSelectedIndex(0);
+    txtNuevoDocU.setText("");
+    txtNuevoTelefonoU.setText("");
+    txtNuevaDireccionU.setText("");
+    txtNuevoCorreoU.setText("");
+    txtNuevaPassU.setText("");
+    txtRepetirNuevaPassU.setText("");
+
+    // Limpiar la vista previa de la pestaña 8 y regresar a ella
+    txtBuscarDocActU.setText("");
+    txtNombreActU.setText("");
+    txtApellidosActU.setText("");
+    cmbTipoDocActU.setSelectedIndex(0);
+    txtDocActU.setText("");
+    txtTelefonoActU.setText("");
+    txtDireccionActU.setText("");
+    txtCorreoActU.setText("");
+    
+    Principal.setSelectedIndex(8); // Regresa a la pestaña 8 (índice 7)
+}
     }//GEN-LAST:event_btnGuardarDatosActualizarUsuarioActionPerformed
 
     private void btnGuardarDatosActualizarUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarUsuarioMouseExited
@@ -6371,6 +6445,134 @@ public class Admin extends javax.swing.JFrame {
         Principal.setSelectedIndex(1);
     }//GEN-LAST:event_JpnUsuario13MouseClicked
 
+    private void btnAgregarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarUsuarioActionPerformed
+        boolean registrado = controlador.procesarRegistroCliente(
+        txtNombreUsuario.getText(),
+        txtApellidosUsuario.getText(),
+        cmbTipoDocUsuario.getSelectedItem().toString(),
+        txtDocUsuario.getText(),
+        txtTelefonoUsuario.getText(),
+        txtDireccionUsuario.getText(),
+        txtCorreoUsuario.getText(),
+        new String(txtPassUsuario.getPassword()),
+        new String(txtRepetirPassUsuario.getPassword())
+);
+
+if (registrado) {
+    // Limpiar todos los campos si se guardó correctamente
+    txtNombreUsuario.setText("");
+    txtApellidosUsuario.setText("");
+    cmbTipoDocUsuario.setSelectedIndex(0);
+    txtDocUsuario.setText("");
+    txtTelefonoUsuario.setText("");
+    txtDireccionUsuario.setText("");
+    txtCorreoUsuario.setText("");
+    txtPassUsuario.setText("");
+    txtRepetirPassUsuario.setText("");
+}
+    }//GEN-LAST:event_btnAgregarUsuarioActionPerformed
+
+    private void btnBuscarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarUsuarioActionPerformed
+        String[] u = controlador.procesarBuscarCliente(txtBuscarDocUsuario.getText());
+
+if (u != null) {
+    // u[0]=nombre, u[1]=apellidos, u[2]=tipoDoc, u[3]=numDoc, u[4]=telefono, u[5]=direccion, u[6]=correo
+    txtNombreBuscarU.setText(u[0]);
+    txtApellidosBuscarU.setText(u[1]);
+    cmbTipoDocBuscarU.setSelectedItem(u[2]);
+    txtDocBuscarU.setText(u[3]);
+    txtTelefonoBuscarU.setText(u[4]);
+    txtDireccionBuscarU.setText(u[5]);
+    txtCorreoBuscarU.setText(u[6]);
+} else {
+    // Limpia los campos si no se encontró el usuario
+    txtNombreBuscarU.setText("");
+    txtApellidosBuscarU.setText("");
+    cmbTipoDocBuscarU.setSelectedIndex(0);
+    txtDocBuscarU.setText("");
+    txtTelefonoBuscarU.setText("");
+    txtDireccionBuscarU.setText("");
+    txtCorreoBuscarU.setText("");
+}
+    }//GEN-LAST:event_btnBuscarUsuarioActionPerformed
+
+    private void btnBuscarEliminarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarEliminarUsuarioActionPerformed
+        String[] u = controlador.procesarBuscarCliente(txtBuscarDocEliminarU.getText());
+
+if (u != null) {
+    txtNombreEliminarU.setText(u[0]);
+    txtApellidosEliminarU.setText(u[1]);
+    cmbTipoDocEliminarU.setSelectedItem(u[2]);
+    txtDocEliminarU.setText(u[3]);
+    txtTelefonoEliminarU.setText(u[4]);
+    txtDireccionEliminarU.setText(u[5]);
+    txtCorreoEliminarU.setText(u[6]);
+} else {
+    txtNombreEliminarU.setText("");
+    txtApellidosEliminarU.setText("");
+    cmbTipoDocEliminarU.setSelectedIndex(0);
+    txtDocEliminarU.setText("");
+    txtTelefonoEliminarU.setText("");
+    txtDireccionEliminarU.setText("");
+    txtCorreoEliminarU.setText("");
+}
+    }//GEN-LAST:event_btnBuscarEliminarUsuarioActionPerformed
+
+    private void btnEliminarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarUsuarioActionPerformed
+        // Toma el documento cargado en el campo de resultado (o el de búsqueda)
+String docAEliminar = txtDocEliminarU.getText().trim().isEmpty() 
+        ? txtBuscarDocEliminarU.getText().trim() 
+        : txtDocEliminarU.getText().trim();
+
+boolean eliminado = controlador.procesarEliminarCliente(docAEliminar);
+
+if (eliminado) {
+    // Limpia todas las cajas de texto tras borrarlo
+    txtBuscarDocEliminarU.setText("");
+    txtNombreEliminarU.setText("");
+    txtApellidosEliminarU.setText("");
+    cmbTipoDocEliminarU.setSelectedIndex(0);
+    txtDocEliminarU.setText("");
+    txtTelefonoEliminarU.setText("");
+    txtDireccionEliminarU.setText("");
+    txtCorreoEliminarU.setText("");
+}
+    }//GEN-LAST:event_btnEliminarUsuarioActionPerformed
+
+    private void btnListarUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListarUsuariosActionPerformed
+        controlador.cargarTablaClientes(tblUsuarios);
+    }//GEN-LAST:event_btnListarUsuariosActionPerformed
+
+    private void btnBuscarActualizarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActualizarUsuarioActionPerformed
+        String[] u = controlador.procesarBuscarCliente(txtBuscarDocActU.getText());
+
+if (u != null) {
+    txtNombreActU.setText(u[0]);
+    txtApellidosActU.setText(u[1]);
+    cmbTipoDocActU.setSelectedItem(u[2]);
+    txtDocActU.setText(u[3]);
+    txtTelefonoActU.setText(u[4]);
+    txtDireccionActU.setText(u[5]);
+    txtCorreoActU.setText(u[6]);
+} else {
+    txtNombreActU.setText("");
+    txtApellidosActU.setText("");
+    cmbTipoDocActU.setSelectedIndex(0);
+    txtDocActU.setText("");
+    txtTelefonoActU.setText("");
+    txtDireccionActU.setText("");
+    txtCorreoActU.setText("");
+}
+    }//GEN-LAST:event_btnBuscarActualizarUsuarioActionPerformed
+
+    private void btnActualizarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizarUsuarioActionPerformed
+        if (txtDocActU.getText().trim().isEmpty()) {
+    javax.swing.JOptionPane.showMessageDialog(this, "Primero debes buscar el usuario por N° de Documento.", "Aviso", javax.swing.JOptionPane.WARNING_MESSAGE);
+    return;
+}
+Principal.setSelectedIndex(9);
+    }//GEN-LAST:event_btnActualizarUsuarioActionPerformed
+
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(() -> {
             new Admin().setVisible(true);
@@ -6489,13 +6691,13 @@ public class Admin extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cbxTipoDocEditarTec;
     private javax.swing.JComboBox<String> cbxTipoDocEliminarTec;
     private javax.swing.JComboBox<String> cbxTipoDocTecnico;
+    private javax.swing.JComboBox<String> cmbNuevoTipoDocU;
+    private javax.swing.JComboBox<String> cmbTipoDocActU;
+    private javax.swing.JComboBox<String> cmbTipoDocBuscarU;
+    private javax.swing.JComboBox<String> cmbTipoDocEliminarU;
+    private javax.swing.JComboBox<String> cmbTipoDocUsuario;
     private javax.swing.JButton eliminarTecnico;
     private javax.swing.JButton eliminarUsuario;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox18;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
-    private javax.swing.JComboBox<String> jComboBox4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel100;
@@ -6663,48 +6865,10 @@ public class Admin extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JPasswordField jPasswordField2;
-    private javax.swing.JPasswordField jPasswordField3;
-    private javax.swing.JPasswordField jPasswordField4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTable jTable2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField20;
-    private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField22;
-    private javax.swing.JTextField jTextField23;
-    private javax.swing.JTextField jTextField24;
-    private javax.swing.JTextField jTextField25;
-    private javax.swing.JTextField jTextField26;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField81;
-    private javax.swing.JTextField jTextField82;
-    private javax.swing.JTextField jTextField83;
-    private javax.swing.JTextField jTextField84;
-    private javax.swing.JTextField jTextField85;
-    private javax.swing.JTextField jTextField86;
-    private javax.swing.JTextField jTextField87;
-    private javax.swing.JTextField jTextField9;
     private javax.swing.JPanel jpanel33;
     private javax.swing.JLabel lbClientesTotales;
     private javax.swing.JLabel lbInicio;
@@ -6787,29 +6951,60 @@ public class Admin extends javax.swing.JFrame {
     private javax.swing.JButton listarTecnico;
     private javax.swing.JButton listarUsuarios;
     private javax.swing.JTable tblTecnicos;
+    private javax.swing.JTable tblUsuarios;
+    private javax.swing.JTextField txtApellidosActU;
     private javax.swing.JTextField txtApellidosActualizarTec;
     private javax.swing.JTextField txtApellidosBuscarTec;
+    private javax.swing.JTextField txtApellidosBuscarU;
     private javax.swing.JTextField txtApellidosEditarTec;
     private javax.swing.JTextField txtApellidosEliminarTec;
+    private javax.swing.JTextField txtApellidosEliminarU;
     private javax.swing.JTextField txtApellidosTecnico;
+    private javax.swing.JTextField txtApellidosUsuario;
+    private javax.swing.JTextField txtBuscarDocActU;
     private javax.swing.JTextField txtBuscarDocActualizarTec;
     private javax.swing.JTextField txtBuscarDocEliminarTec;
+    private javax.swing.JTextField txtBuscarDocEliminarU;
     private javax.swing.JTextField txtBuscarDocTecnico;
+    private javax.swing.JTextField txtBuscarDocUsuario;
+    private javax.swing.JTextField txtCorreoActU;
     private javax.swing.JTextField txtCorreoActualizarTec;
     private javax.swing.JTextField txtCorreoBuscarTec;
+    private javax.swing.JTextField txtCorreoBuscarU;
     private javax.swing.JTextField txtCorreoEditarTec;
     private javax.swing.JTextField txtCorreoEliminarTec;
+    private javax.swing.JTextField txtCorreoEliminarU;
     private javax.swing.JTextField txtCorreoTecnico;
+    private javax.swing.JTextField txtCorreoUsuario;
+    private javax.swing.JTextField txtDireccionActU;
     private javax.swing.JTextField txtDireccionActualizarTec;
     private javax.swing.JTextField txtDireccionBuscarTec;
+    private javax.swing.JTextField txtDireccionBuscarU;
     private javax.swing.JTextField txtDireccionEditarTec;
     private javax.swing.JTextField txtDireccionEliminarTec;
+    private javax.swing.JTextField txtDireccionEliminarU;
     private javax.swing.JTextField txtDireccionTecnico;
+    private javax.swing.JTextField txtDireccionUsuario;
+    private javax.swing.JTextField txtDocActU;
+    private javax.swing.JTextField txtDocBuscarU;
+    private javax.swing.JTextField txtDocEliminarU;
+    private javax.swing.JTextField txtDocUsuario;
+    private javax.swing.JTextField txtNombreActU;
     private javax.swing.JTextField txtNombreActualizarTec;
     private javax.swing.JTextField txtNombreBuscarTec;
+    private javax.swing.JTextField txtNombreBuscarU;
     private javax.swing.JTextField txtNombreEditarTec;
     private javax.swing.JTextField txtNombreEliminarTec;
+    private javax.swing.JTextField txtNombreEliminarU;
     private javax.swing.JTextField txtNombreTecnico;
+    private javax.swing.JTextField txtNombreUsuario;
+    private javax.swing.JTextField txtNuevaDireccionU;
+    private javax.swing.JPasswordField txtNuevaPassU;
+    private javax.swing.JTextField txtNuevoCorreoU;
+    private javax.swing.JTextField txtNuevoDocU;
+    private javax.swing.JTextField txtNuevoNombreU;
+    private javax.swing.JTextField txtNuevoTelefonoU;
+    private javax.swing.JTextField txtNuevosApellidosU;
     private javax.swing.JTextField txtNumDocActualizarTec;
     private javax.swing.JTextField txtNumDocBuscarTec;
     private javax.swing.JTextField txtNumDocEditarTec;
@@ -6817,13 +7012,20 @@ public class Admin extends javax.swing.JFrame {
     private javax.swing.JTextField txtNumDocTecnico;
     private javax.swing.JPasswordField txtPassEditarTec;
     private javax.swing.JPasswordField txtPassTecnico;
+    private javax.swing.JPasswordField txtPassUsuario;
+    private javax.swing.JPasswordField txtRepetirNuevaPassU;
     private javax.swing.JPasswordField txtRepetirPassEditarTec;
     private javax.swing.JPasswordField txtRepetirPassTecnico;
+    private javax.swing.JPasswordField txtRepetirPassUsuario;
+    private javax.swing.JTextField txtTelefonoActU;
     private javax.swing.JTextField txtTelefonoActualizarTec;
     private javax.swing.JTextField txtTelefonoBuscarTec;
+    private javax.swing.JTextField txtTelefonoBuscarU;
     private javax.swing.JTextField txtTelefonoEditarTec;
     private javax.swing.JTextField txtTelefonoEliminarTec;
+    private javax.swing.JTextField txtTelefonoEliminarU;
     private javax.swing.JTextField txtTelefonoTecnico;
+    private javax.swing.JTextField txtTelefonoUsuario;
     private javax.swing.JButton volverActualizarTecnico;
     private javax.swing.JButton volverActualizarTecnicos;
     private javax.swing.JButton volverActualizarUsuario;

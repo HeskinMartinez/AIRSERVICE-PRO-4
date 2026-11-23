@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
-package Vistas;
 
-/**
- *
- * @author juank
- */
+package Vistas;
+import Controladores.Controlador_Inventario;
+import Modelos.Material;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
 public class INVENTARIO extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(INVENTARIO.class.getName());
@@ -15,8 +12,54 @@ public class INVENTARIO extends javax.swing.JFrame {
     /**
      * Creates new form INVENTARIO
      */
+    private int numeroSolicitud = 101;
+    
+    private final Controlador_Inventario controlador = new Controlador_Inventario();
+    private int contPendientes = 0;
+    private int contAprobadas = 0;
+    private int contRechazadas = 0;
+    
+    
     public INVENTARIO() {
+        this.setTitle("Inventario");
         initComponents();
+        actualizarTablaYCombo();
+        actualizarContadores();
+            DefaultTableModel modeloHistorial = (DefaultTableModel) jTable2.getModel();
+            modeloHistorial.setRowCount(0);
+            jScrollPane2.getViewport().setBackground(new java.awt.Color(11, 30, 56));
+            jTable2.setFillsViewportHeight(true);
+        // Iniciar los 3 contadores de esta pestaña en 0 (cambia los nombres por tus 3 JLabels)
+        lblPendientes2.setText("0");
+        lblAprobadas2.setText("0");
+        lblRechazadas2.setText("0");
+        this.setResizable(false);
+        this.setLocationRelativeTo(null);
+        this.setSize(1070, 760);
+    }
+     
+    private void actualizarTablaYCombo() {
+        // Verifica en tu Navigator si la tabla se llama 'jTable1' y el combo 'jComboBox1'
+        DefaultTableModel modelo = (DefaultTableModel) jTable1.getModel();
+        modelo.setRowCount(0); // Limpia filas vacías
+        jComboBox1.removeAllItems(); // Quita el 'Item 1' por defecto
+
+        for (Material m : controlador.obtenerMateriales()) {
+            modelo.addRow(new Object[]{
+                m.getCodigo(),
+                m.getNombre(),
+                m.getStockDisponible(),
+                m.getEstadoAlmacen()
+            });
+            jComboBox1.addItem(m.getNombre());
+        }
+    }
+    
+    private void actualizarContadores() {
+        // IMPORTANTE: Cambia estos nombres por los de tus 3 JLabels de las tarjetas de abajo
+        jLabelPend.setText(String.valueOf(contPendientes));
+        jLabelApro.setText(String.valueOf(contAprobadas));
+        jLabelRech.setText(String.valueOf(contRechazadas));
     }
 
     /**
@@ -29,14 +72,14 @@ public class INVENTARIO extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel2 = new javax.swing.JPanel();
@@ -50,20 +93,20 @@ public class INVENTARIO extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        TxtJustificacion = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
+        jLabelRech = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
+        jLabelPend = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
         jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
+        jLabelApro = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
@@ -76,24 +119,21 @@ public class INVENTARIO extends javax.swing.JFrame {
         jLabel26 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         jLabel27 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
+        lblPendientes2 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
         jLabel30 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
+        lblAprobadas2 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jPanel12 = new javax.swing.JPanel();
         jLabel33 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
+        lblRechazadas2 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
         jPanel13 = new javax.swing.JPanel();
         jLabel36 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel37 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel38 = new javax.swing.JLabel();
+        TxtJustificaion = new javax.swing.JTextField();
         jLabel39 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -104,52 +144,88 @@ public class INVENTARIO extends javax.swing.JFrame {
         jPanel1.setRequestFocusEnabled(false);
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/hogar.png"))); // NOI18N
+        jLabel3.setText("Inicio");
+        jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 38, -1, -1));
+
+        jLabel62.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel62.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel62.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel62.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/caja-movil.png"))); // NOI18N
+        jLabel62.setText("Inventario");
+        jLabel62.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel62.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel62MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 40, -1, -1));
+
+        jLabel20.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/grupo.png"))); // NOI18N
+        jLabel20.setText("Clientes");
+        jLabel20.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel20MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 40, -1, -1));
+
+        jLabel18.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/escritura.png"))); // NOI18N
+        jLabel18.setText("Mi Solicitudes");
+        jLabel18.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel18MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 40, -1, -1));
+
         jLabel15.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Sr Tecnico");
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 29, -1, 50));
-
-        jLabel8.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(242, 242, 242));
-        jLabel8.setText("Solicitudes");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 60, -1, -1));
+        jLabel15.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel15MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 30, -1, 50));
 
         jLabel7.setBackground(new java.awt.Color(255, 255, 255));
         jLabel7.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/usuario (1)_1.png"))); // NOI18N
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 30, -1, 50));
-
-        jLabel6.setText("jLabel6");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 30, -1, 50));
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 220, 50));
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/12341396 (1).png"))); // NOI18N
-        jLabel5.setText("Inventario");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 30, -1, 50));
-
-        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel4.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/CASA2 (1).png"))); // NOI18N
-        jLabel4.setText("Inicio");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 30, -1, 50));
-
-        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/negocios-y-finanzas (1).png"))); // NOI18N
-        jLabel3.setText("Finanzas");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 30, 120, 50));
-
-        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/servicio-de-calidad (1).png"))); // NOI18N
-        jLabel1.setText("Mis");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 20, -1, 60));
+        jLabel5.setText("Almacen");
+        jLabel5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel5MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 30, -1, 50));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setForeground(new java.awt.Color(242, 242, 242));
@@ -214,13 +290,13 @@ public class INVENTARIO extends javax.swing.JFrame {
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(17, 136, 220)));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextArea1.setBackground(new java.awt.Color(6, 22, 43));
-        jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
-        jTextArea1.setRows(5);
-        jTextArea1.setWrapStyleWord(true);
-        jScrollPane1.setViewportView(jTextArea1);
+        TxtJustificacion.setBackground(new java.awt.Color(6, 22, 43));
+        TxtJustificacion.setColumns(20);
+        TxtJustificacion.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        TxtJustificacion.setForeground(new java.awt.Color(255, 255, 255));
+        TxtJustificacion.setRows(5);
+        TxtJustificacion.setWrapStyleWord(true);
+        jScrollPane1.setViewportView(TxtJustificacion);
 
         jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 250, 100));
 
@@ -231,6 +307,7 @@ public class INVENTARIO extends javax.swing.JFrame {
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("+ Enviar Solicitud de Material");
         jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.green, java.awt.Color.green, java.awt.Color.green, java.awt.Color.green));
+        jButton1.addActionListener(this::jButton1ActionPerformed);
         jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 270, -1));
 
         jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 310, 350));
@@ -248,9 +325,8 @@ public class INVENTARIO extends javax.swing.JFrame {
         jLabel17.setText("Solicitudes Rechazadas:");
         jPanel7.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 200, 50));
 
-        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel18.setText("jLabel16");
-        jPanel7.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, 40, 30));
+        jLabelRech.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel7.add(jLabelRech, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, 40, 30));
 
         jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/rechazar.png"))); // NOI18N
         jPanel7.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, 50));
@@ -266,9 +342,8 @@ public class INVENTARIO extends javax.swing.JFrame {
         jLabel19.setText("Solicitudes Pendientes:");
         jPanel8.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 190, 50));
 
-        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel20.setText("jLabel16");
-        jPanel8.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, 40, 30));
+        jLabelPend.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel8.add(jLabelPend, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, 40, 30));
 
         jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/reloj (1).png"))); // NOI18N
         jPanel8.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
@@ -284,9 +359,8 @@ public class INVENTARIO extends javax.swing.JFrame {
         jLabel21.setText("Solicitudes Aprobadas:");
         jPanel9.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 190, 50));
 
-        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel22.setText("jLabel16");
-        jPanel9.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, 40, 30));
+        jLabelApro.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel9.add(jLabelApro, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, 50, 30));
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cheque.png"))); // NOI18N
         jPanel9.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 2, -1, 50));
@@ -315,7 +389,15 @@ public class INVENTARIO extends javax.swing.JFrame {
             new String [] {
                 "Codigo ", "Material/Repuesto", "Stock Disponible", "Estado Almacen"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jTable1.setGridColor(new java.awt.Color(17, 136, 220));
         jTable1.setRowHeight(32);
         jTable1.setShowHorizontalLines(true);
@@ -354,9 +436,8 @@ public class INVENTARIO extends javax.swing.JFrame {
         jLabel27.setText("Solicitudes Pendientes:");
         jPanel10.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 190, 50));
 
-        jLabel28.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel28.setText("jLabel16");
-        jPanel10.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, 40, 30));
+        lblPendientes2.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel10.add(lblPendientes2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, 40, 30));
 
         jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/reloj (1).png"))); // NOI18N
         jPanel10.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
@@ -372,9 +453,8 @@ public class INVENTARIO extends javax.swing.JFrame {
         jLabel30.setText("Solicitudes Aprobadas:");
         jPanel11.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 190, 50));
 
-        jLabel31.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel31.setText("jLabel16");
-        jPanel11.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, 40, 30));
+        lblAprobadas2.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel11.add(lblAprobadas2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, 40, 30));
 
         jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cheque.png"))); // NOI18N
         jPanel11.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 2, -1, 50));
@@ -390,9 +470,8 @@ public class INVENTARIO extends javax.swing.JFrame {
         jLabel33.setText("Solicitudes Rechazadas:");
         jPanel12.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 200, 50));
 
-        jLabel34.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel34.setText("jLabel16");
-        jPanel12.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, 40, 30));
+        lblRechazadas2.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel12.add(lblRechazadas2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, 40, 30));
 
         jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/rechazar.png"))); // NOI18N
         jPanel12.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, 50));
@@ -402,6 +481,7 @@ public class INVENTARIO extends javax.swing.JFrame {
         jTable2.setBackground(new java.awt.Color(6, 22, 43));
         jTable2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(17, 136, 220)));
         jTable2.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        jTable2.setForeground(new java.awt.Color(255, 255, 255));
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -418,7 +498,7 @@ public class INVENTARIO extends javax.swing.JFrame {
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                true, true, true, false, false
+                false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -429,6 +509,11 @@ public class INVENTARIO extends javax.swing.JFrame {
         jTable2.setRowHeight(32);
         jTable2.setShowHorizontalLines(true);
         jTable2.setShowVerticalLines(true);
+        jTable2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable2MouseClicked(evt);
+            }
+        });
         jScrollPane3.setViewportView(jTable2);
         if (jTable2.getColumnModel().getColumnCount() > 0) {
             jTable2.getColumnModel().getColumn(3).setResizable(false);
@@ -447,25 +532,11 @@ public class INVENTARIO extends javax.swing.JFrame {
         jLabel36.setText("Justificaion del tecnico");
         jPanel13.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, -1, 30));
 
-        jTextField1.setEditable(false);
-        jTextField1.setBackground(new java.awt.Color(6, 22, 43));
-        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(17, 136, 220)));
-        jPanel13.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 480, 30));
-
-        jLabel37.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        jLabel37.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel37.setText("Respuesta del Administrador");
-        jPanel13.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 40, -1, 30));
-
-        jTextField2.setEditable(false);
-        jTextField2.setBackground(new java.awt.Color(6, 22, 43));
-        jTextField2.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(17, 136, 220)));
-        jPanel13.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 70, 480, 30));
-
-        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/administrador.png"))); // NOI18N
-        jPanel13.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 30, 40, 40));
+        TxtJustificaion.setEditable(false);
+        TxtJustificaion.setBackground(new java.awt.Color(6, 22, 43));
+        TxtJustificaion.setForeground(new java.awt.Color(255, 255, 255));
+        TxtJustificaion.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(17, 136, 220)));
+        jPanel13.add(TxtJustificaion, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 980, 30));
 
         jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/justificacion-del-texto.png"))); // NOI18N
         jPanel13.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 40, 40));
@@ -491,6 +562,84 @@ public class INVENTARIO extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+       String materialSeleccionado = jComboBox1.getSelectedItem().toString();
+    int cantidad = (int) jSpinner1.getValue();
+    String justificacion = TxtJustificacion.getText().trim();
+
+    if (cantidad <= 0) {
+        JOptionPane.showMessageDialog(this, "La cantidad requerida debe ser mayor a 0.", "Cantidad inválida", JOptionPane.WARNING_MESSAGE);
+        return;
+    }
+    if (justificacion.isEmpty()) {
+        JOptionPane.showMessageDialog(this, "Por favor escribe una justificacion o detalle del servicio.", "Falta justificacion", JOptionPane.WARNING_MESSAGE);
+        return;
+    }
+
+    double costoTotal = controlador.calcularCostoSolicitud(materialSeleccionado, cantidad);
+    contPendientes++;
+    actualizarContadores();
+
+    JOptionPane.showMessageDialog(this,
+        "Solicitud enviada al almacén:\n" +
+        "• Material: " + materialSeleccionado + "\n" +
+        "• Cantidad: " + cantidad + "\n" +
+        "• Valor estimado: $" + String.format("%,.0f", costoTotal) + " COP\n" +
+        "• Estado: PENDIENTE DE APROBACIÓN",
+        "Solicitud Registrada", JOptionPane.INFORMATION_MESSAGE);
+
+    // Reinicia el formulario después de enviar
+    jSpinner1.setValue(0);
+    TxtJustificacion.setText("");
+    
+    DefaultTableModel modeloHistorial = (DefaultTableModel) jTable2.getModel();
+     modeloHistorial.insertRow(0, new Object[]{
+    "#SOL-" + numeroSolicitud++,
+    materialSeleccionado,
+    cantidad,
+    justificacion,
+    "PENDIENTE"
+});
+
+  // Actualizar el contador de pendientes de la segunda pestaña
+  lblPendientes2.setText(String.valueOf(contPendientes));
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTable2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable2MouseClicked
+        int fila = jTable2.getSelectedRow();
+if (fila >= 0) {
+    // La columna 3 es "Justificacion"
+    String justificacion = jTable2.getValueAt(fila, 3).toString();
+    TxtJustificaion.setText(justificacion);
+    }
+    }//GEN-LAST:event_jTable2MouseClicked
+
+    private void jLabel18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel18MouseClicked
+    controlador.abrirTecnico(this, 1);
+    }//GEN-LAST:event_jLabel18MouseClicked
+
+    private void jLabel20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel20MouseClicked
+    controlador.abrirTecnico(this, 2);
+    }//GEN-LAST:event_jLabel20MouseClicked
+
+    private void jLabel62MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel62MouseClicked
+    controlador.abrirTecnico(this, 5);
+
+    }//GEN-LAST:event_jLabel62MouseClicked
+
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+        controlador.abrirTecnico(this, 0);
+    }//GEN-LAST:event_jLabel3MouseClicked
+
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+        jTabbedPane1.setSelectedIndex(0);
+    }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void jLabel15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel15MouseClicked
+    controlador.abrirTecnico(this, 3);
+    }//GEN-LAST:event_jLabel15MouseClicked
 
     /**
      * @param args the command line arguments
@@ -518,9 +667,10 @@ public class INVENTARIO extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextArea TxtJustificacion;
+    private javax.swing.JTextField TxtJustificaion;
     private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -534,31 +684,27 @@ public class INVENTARIO extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelApro;
+    private javax.swing.JLabel jLabelPend;
+    private javax.swing.JLabel jLabelRech;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
@@ -579,8 +725,8 @@ public class INVENTARIO extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JLabel lblAprobadas2;
+    private javax.swing.JLabel lblPendientes2;
+    private javax.swing.JLabel lblRechazadas2;
     // End of variables declaration//GEN-END:variables
 }

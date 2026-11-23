@@ -1,0 +1,4 @@
+22/11/2026 00:00|TEC-001|MAT-001|Kit de tubería|2
+22/11/2026 00:18|TEC-001|MAT-003|Metro de cable #12|2
+22/11/2026 13:24|TEC-001|MAT-003|Metro de cable #12|6
+22/11/2026 13:37|TEC-001|MAT-003|Metro de cable #12|12

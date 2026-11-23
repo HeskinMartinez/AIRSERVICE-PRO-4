@@ -6,27 +6,31 @@ package Modelos;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.*;
-import java.util.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Guarda y lee los datos en archivos de texto dentro de la carpeta "datos".
  * Cada linea es un registro y los campos van separados por "|".
  *
  * usuarios.txt: id|nombre|correo|contrasena|rol
- * tecnicos.txt: id_usuario|telefono|ciudad
  * clientes.txt: nombre|correo|telefono|ciudad
- */
-
-/**
- *
- * @author Heskin Martinez
+ * tecnicos.txt: idTecnico|idUsuario|nombre|correo|telefono|ciudad|fechaNacimiento|
+ *               documento|especialidad|anosExperiencia|descripcion
+ * materiales_usados.txt: fecha|idTecnico|codigoMaterial|material|cantidad
+ * solicitudes.txt: idSolicitud|cliente|servicio|fecha|estado|prioridad|idTecnico
  */
 public class Almacen {
     static final String CARPETA = "datos";
     static final String USUARIOS = "usuarios.txt";
     static final String TECNICOS = "tecnicos.txt";
     static final String CLIENTES = "clientes.txt";
+    static final String MATERIALES_USADOS = "materiales_usados.txt";
+    static final String SOLICITUDES = "solicitudes.txt";
 
     // Cuenta de administrador que se crea sola la primera vez.
     private static final String ADMIN_NOMBRE = "Administrador";
@@ -41,7 +45,7 @@ public class Almacen {
             return;
         }
         Files.createDirectories(Paths.get(CARPETA));
-        for (String archivo : new String[]{USUARIOS, TECNICOS, CLIENTES}) {
+        for (String archivo : new String[]{USUARIOS, TECNICOS, CLIENTES, MATERIALES_USADOS, SOLICITUDES}) {
             Path ruta = ruta(archivo);
             if (!Files.exists(ruta)) {
                 Files.createFile(ruta);
@@ -174,6 +178,26 @@ public class Almacen {
         return mayor + 1;
     }
 
+    /** Siguiente numero libre para el ID de la solicitud (SOL-001, SOL-002...). */
+    static int siguienteNumeroSolicitud() throws IOException {
+        int mayor = 0;
+        for (String[] fila : leer(SOLICITUDES)) {
+            String id = fila[0].trim();
+            if (id.startsWith("SOL-")) {
+                try {
+                    mayor = Math.max(mayor, Integer.parseInt(id.substring(4)));
+                } catch (NumberFormatException e) {
+                    // linea danada: se ignora
+                }
+            }
+        }
+        return mayor + 1;
+    }
+
+    static String formatoIdSolicitud(int numero) {
+        return String.format("SOL-%03d", numero);
+    }
+
     static String formatoIdTecnico(int numero) {
         return String.format("TEC-%03d", numero);
     }
@@ -208,5 +232,4 @@ public class Almacen {
     private static String limpiar(String texto) {
         return texto == null ? "" : texto.replace('|', ' ').replace('\r', ' ').replace('\n', ' ').trim();
     }
-    
 }

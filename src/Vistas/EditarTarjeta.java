@@ -3,22 +3,44 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package Vistas;
-
+import Controladores.ControladorPagos;
+import Modelos.Tarjeta;
+import javax.swing.JOptionPane;
 /**
  *
  * @author ACER1
  */
 public class EditarTarjeta extends javax.swing.JFrame {
     
-    private Pagos ventanaEpagos;
+    private Pagos ventanaEPagos;
+    private final ControladorPagos ctrl = ControladorPagos.getInstancia();
+    
+    
+    public EditarTarjeta(){
+        initComponents();
+        setLocationRelativeTo(null);
+    }
+    public EditarTarjeta(Pagos ventanaEPagos) {
+    initComponents();
+    this.ventanaEPagos = ventanaEPagos;
+    Tarjeta t = ctrl.getTarjetaActiva();
+    if (t != null) {
+        jTextField1.setText(t.getNumerotarjeta());   // Numero de tarjeta
+        jTextField2.setText(t.getCodigo());          // CVV
+        jTextField3.setText(t.getNombretitular());   // Titular
+        jTextField4.setText(t.getFechavencimiento());// Vencimiento
+    }
+}
+    
+    
+    
+    
 
     /**
      * Creates new form EditarTarjeta
      */
-    public EditarTarjeta(Pagos ventanaEpagos) {
-        initComponents();
-        this.ventanaEpagos = ventanaEpagos;
-    }
+   
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -45,7 +67,7 @@ public class EditarTarjeta extends javax.swing.JFrame {
         jSeparator4 = new javax.swing.JSeparator();
         jTextField4 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        btn_editarT = new javax.swing.JButton();
+        btn_ConfirmarEdit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -113,10 +135,15 @@ public class EditarTarjeta extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 10, 40, 30));
 
-        btn_editarT.setBackground(new java.awt.Color(51, 255, 153));
-        btn_editarT.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
-        btn_editarT.setText("Confirmar");
-        jPanel1.add(btn_editarT, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 200, -1, -1));
+        btn_ConfirmarEdit.setBackground(new java.awt.Color(51, 255, 153));
+        btn_ConfirmarEdit.setFont(new java.awt.Font("Yu Gothic UI", 1, 14)); // NOI18N
+        btn_ConfirmarEdit.setText("Confirmar");
+        btn_ConfirmarEdit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_ConfirmarEditActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn_ConfirmarEdit, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 200, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -134,8 +161,26 @@ public class EditarTarjeta extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        ventanaEpagos.mostrarMetodosPago();
+        if(ventanaEPagos != null){
+            ventanaEPagos.mostrarMetodosPago();
+        }else{
+            new Pagos().setVisible(true);
+        }
+        this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void btn_ConfirmarEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ConfirmarEditActionPerformed
+        // TODO add your handling code here:
+        String error = ctrl.editarTarjeta(ctrl.indiceTarjetaActiva(),jTextField3.getText(),jTextField1.getText(),jTextField4.getText(),jTextField2.getText());
+        if(error != null){
+            JOptionPane.showMessageDialog(this, error, "Datos invalidos", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        JOptionPane.showMessageDialog(this, "Tarjeta actualizada correctamente");
+        ventanaEPagos.tarjetaGuardada();
+        this.dispose();
+        
+    }//GEN-LAST:event_btn_ConfirmarEditActionPerformed
 
     /**
      * @param args the command line arguments
@@ -173,7 +218,7 @@ public class EditarTarjeta extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_editarT;
+    private javax.swing.JButton btn_ConfirmarEdit;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
