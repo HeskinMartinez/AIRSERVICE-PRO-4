@@ -267,8 +267,7 @@ private String docServicioEncontrado = null;
         volverActualizarServicios = new javax.swing.JButton();
         jLabel165 = new javax.swing.JLabel();
 
-        setPreferredSize(new java.awt.Dimension(1060, 650));
-        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Principal.setPreferredSize(new java.awt.Dimension(1060, 650));
 
@@ -2323,7 +2322,7 @@ private String docServicioEncontrado = null;
 
         Principal.addTab("6", jPanel30);
 
-        add(Principal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 650));
+        getContentPane().add(Principal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, -1, 650));
     }// </editor-fold>//GEN-END:initComponents
 
     private void listarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarServicioMouseMoved
@@ -2331,7 +2330,7 @@ private String docServicioEncontrado = null;
     }//GEN-LAST:event_listarServicioMouseMoved
 
     private void listarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarServicioMouseClicked
-        // TODO add your handling code here:
+        Principal.setSelectedIndex(4);
     }//GEN-LAST:event_listarServicioMouseClicked
 
     private void listarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarServicioMouseExited
@@ -2347,7 +2346,7 @@ private String docServicioEncontrado = null;
     }//GEN-LAST:event_buscarServicioMouseMoved
 
     private void buscarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarServicioMouseClicked
-        // TODO add your handling code here:
+        Principal.setSelectedIndex(2);
     }//GEN-LAST:event_buscarServicioMouseClicked
 
     private void buscarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarServicioMouseExited
@@ -2363,7 +2362,7 @@ private String docServicioEncontrado = null;
     }//GEN-LAST:event_eliminarServicioMouseMoved
 
     private void eliminarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarServicioMouseClicked
-        // TODO add your handling code here:
+        Principal.setSelectedIndex(3);
     }//GEN-LAST:event_eliminarServicioMouseClicked
 
     private void eliminarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarServicioMouseExited
@@ -2379,7 +2378,7 @@ private String docServicioEncontrado = null;
     }//GEN-LAST:event_actualizarServicioMouseMoved
 
     private void actualizarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarServicioMouseClicked
-        // TODO add your handling code here:
+        Principal.setSelectedIndex(5);
     }//GEN-LAST:event_actualizarServicioMouseClicked
 
     private void actualizarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarServicioMouseExited
@@ -2395,7 +2394,7 @@ private String docServicioEncontrado = null;
     }//GEN-LAST:event_agregarServicioMouseMoved
 
     private void agregarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarServicioMouseClicked
-        // TODO add your handling code here:
+        Principal.setSelectedIndex(1);
     }//GEN-LAST:event_agregarServicioMouseClicked
 
     private void agregarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarServicioMouseExited
@@ -2911,7 +2910,7 @@ this.dispose();
     }//GEN-LAST:event_volverListarServiciosMouseMoved
 
     private void volverListarServiciosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverListarServiciosMouseClicked
-        // TODO add your handling code here:
+        Principal.setSelectedIndex(0);
     }//GEN-LAST:event_volverListarServiciosMouseClicked
 
     private void volverListarServiciosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverListarServiciosMouseExited

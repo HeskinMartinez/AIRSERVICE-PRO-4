@@ -238,15 +238,18 @@ public class ControladorAdmin {
             return null;
         }
     }
-
-    public void cargarTablaServicios(JTable tabla) {
+public void cargarTablaServicios(JTable tabla) {
         try {
-            tabla.setModel(modelo.listarServicios());
+            javax.swing.table.DefaultTableModel modeloTabla = modelo.listarServicios();
+            tabla.setModel(modeloTabla);
+
+            if (modeloTabla.getRowCount() == 0) {
+                JOptionPane.showMessageDialog(null, "No hay ningún servicio registrado todavía.", "Sin registros", JOptionPane.INFORMATION_MESSAGE);
+            }
         } catch (IOException e) {
             JOptionPane.showMessageDialog(null, "Error al listar servicios: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
-
     public boolean procesarActualizarServicio(String docBuscado, String nombreCli, String apellidoCli,
             String tipoDoc, String nuevoNumDoc, String telefono, String direccion,
             String fecha, String tecnico, String tipoServicio, String descripcion) {

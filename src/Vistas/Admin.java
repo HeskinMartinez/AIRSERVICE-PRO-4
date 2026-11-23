@@ -3,7 +3,6 @@ package Vistas;
 import java.awt.Color;
 import Controladores.ControladorAdmin;
 import Modelos.Tecnico;
-import Modelos.Modelo_Admin;
 
 public class Admin extends javax.swing.JFrame {
 
@@ -23,7 +22,6 @@ public class Admin extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         
         controlador.cargarTablaTecnicos(tblTecnicos);
-        controlador.cargarTablaServicios(tblServicios);
         
     }
 
@@ -97,25 +95,6 @@ public class Admin extends javax.swing.JFrame {
         JpnInicio2 = new javax.swing.JPanel();
         lbInicio3 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel9 = new javax.swing.JLabel();
-        listarServicio = new javax.swing.JButton();
-        buscarServicio = new javax.swing.JButton();
-        eliminarServicio = new javax.swing.JButton();
-        actualizarServicio = new javax.swing.JButton();
-        agregarServicio = new javax.swing.JButton();
-        volverServicio = new javax.swing.JButton();
-        JpnSalir3 = new javax.swing.JPanel();
-        lbSalir3 = new javax.swing.JLabel();
-        JpnServicio3 = new javax.swing.JPanel();
-        lbServicio3 = new javax.swing.JLabel();
-        JpnTecnico3 = new javax.swing.JPanel();
-        lbTecnico3 = new javax.swing.JLabel();
-        JpnUsuario3 = new javax.swing.JPanel();
-        lbUsuario3 = new javax.swing.JLabel();
-        JpnInicio3 = new javax.swing.JPanel();
-        lbInicio4 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         volverRegistrarNuevoUsuario = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
@@ -515,223 +494,6 @@ public class Admin extends javax.swing.JFrame {
         JpnInicio13 = new javax.swing.JPanel();
         lbInicio14 = new javax.swing.JLabel();
         jLabel106 = new javax.swing.JLabel();
-        jPanel23 = new javax.swing.JPanel();
-        volverAsignarNuevoServicio = new javax.swing.JButton();
-        jLabel121 = new javax.swing.JLabel();
-        jPanel24 = new javax.swing.JPanel();
-        jLabel122 = new javax.swing.JLabel();
-        txtNombreClienteSrv = new javax.swing.JTextField();
-        jLabel123 = new javax.swing.JLabel();
-        cbxTipoDocClienteSrv = new javax.swing.JComboBox<>();
-        jLabel124 = new javax.swing.JLabel();
-        txtNumDocClienteSrv = new javax.swing.JTextField();
-        jLabel125 = new javax.swing.JLabel();
-        jLabel126 = new javax.swing.JLabel();
-        txtTelefonoClienteSrv = new javax.swing.JTextField();
-        jLabel127 = new javax.swing.JLabel();
-        jLabel128 = new javax.swing.JLabel();
-        txtDireccionClienteSrv = new javax.swing.JTextField();
-        jLabel129 = new javax.swing.JLabel();
-        txtFechaSrv = new javax.swing.JTextField();
-        btnAsignarServicio = new javax.swing.JButton();
-        jLabel131 = new javax.swing.JLabel();
-        jLabel133 = new javax.swing.JLabel();
-        txtApellidoClienteSrv = new javax.swing.JTextField();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        txaDescripcionSrv = new javax.swing.JTextArea();
-        cbxTipoServicioSrv = new javax.swing.JComboBox<>();
-        jLabel134 = new javax.swing.JLabel();
-        jLabel132 = new javax.swing.JLabel();
-        txtNombreTecnicoSrv = new javax.swing.JTextField();
-        JpnSalir14 = new javax.swing.JPanel();
-        lbSalir14 = new javax.swing.JLabel();
-        JpnServicio14 = new javax.swing.JPanel();
-        lbServicio14 = new javax.swing.JLabel();
-        JpnTecnico14 = new javax.swing.JPanel();
-        lbTecnico14 = new javax.swing.JLabel();
-        JpnUsuario14 = new javax.swing.JPanel();
-        lbUsuario14 = new javax.swing.JLabel();
-        JpnInicio14 = new javax.swing.JPanel();
-        lbInicio15 = new javax.swing.JLabel();
-        jLabel120 = new javax.swing.JLabel();
-        jPanel25 = new javax.swing.JPanel();
-        jPanel26 = new javax.swing.JPanel();
-        jLabel136 = new javax.swing.JLabel();
-        txtApellidoClienteBuscarSrv = new javax.swing.JTextField();
-        jLabel137 = new javax.swing.JLabel();
-        cbxTipoDocBuscarSrv = new javax.swing.JComboBox<>();
-        jLabel138 = new javax.swing.JLabel();
-        txtNumDocBuscarSrv = new javax.swing.JTextField();
-        txtTelefonoBuscarSrv = new javax.swing.JTextField();
-        jLabel139 = new javax.swing.JLabel();
-        jLabel140 = new javax.swing.JLabel();
-        txtDireccionBuscarSrv = new javax.swing.JTextField();
-        jLabel141 = new javax.swing.JLabel();
-        txtFechaBuscarSrv = new javax.swing.JTextField();
-        btnBuscarServicio = new javax.swing.JButton();
-        jLabel142 = new javax.swing.JLabel();
-        jLabel143 = new javax.swing.JLabel();
-        txtNombreClienteBuscarSrv = new javax.swing.JTextField();
-        jLabel144 = new javax.swing.JLabel();
-        jLabel145 = new javax.swing.JLabel();
-        txtBuscarDocServicio = new javax.swing.JTextField();
-        jLabel146 = new javax.swing.JLabel();
-        txtNombreTecnicoBuscarSrv = new javax.swing.JTextField();
-        cbxTipoServicioBuscarSrv = new javax.swing.JComboBox<>();
-        jLabel147 = new javax.swing.JLabel();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        txaDescripcionBuscarSrv = new javax.swing.JTextArea();
-        jLabel148 = new javax.swing.JLabel();
-        jLabel130 = new javax.swing.JLabel();
-        volverBuscarServicio = new javax.swing.JButton();
-        JpnSalir15 = new javax.swing.JPanel();
-        lbSalir15 = new javax.swing.JLabel();
-        JpnServicio15 = new javax.swing.JPanel();
-        lbServicio15 = new javax.swing.JLabel();
-        JpnTecnico15 = new javax.swing.JPanel();
-        lbTecnico15 = new javax.swing.JLabel();
-        JpnUsuario15 = new javax.swing.JPanel();
-        lbUsuario15 = new javax.swing.JLabel();
-        JpnInicio15 = new javax.swing.JPanel();
-        lbInicio16 = new javax.swing.JLabel();
-        jLabel135 = new javax.swing.JLabel();
-        jPanel27 = new javax.swing.JPanel();
-        jPanel28 = new javax.swing.JPanel();
-        jLabel151 = new javax.swing.JLabel();
-        txtApellidoClienteEliminarSrv = new javax.swing.JTextField();
-        jLabel152 = new javax.swing.JLabel();
-        cbxTipoDocEliminarSrv = new javax.swing.JComboBox<>();
-        jLabel153 = new javax.swing.JLabel();
-        txtNumDocEliminarSrv = new javax.swing.JTextField();
-        txtTelefonoEliminarSrv = new javax.swing.JTextField();
-        jLabel154 = new javax.swing.JLabel();
-        jLabel155 = new javax.swing.JLabel();
-        txtDireccionEliminarSrv = new javax.swing.JTextField();
-        jLabel156 = new javax.swing.JLabel();
-        txtFechaEliminarSrv = new javax.swing.JTextField();
-        btnBuscarEliminarServicio = new javax.swing.JButton();
-        jLabel157 = new javax.swing.JLabel();
-        jLabel158 = new javax.swing.JLabel();
-        txtNombreClienteEliminarSrv = new javax.swing.JTextField();
-        jLabel159 = new javax.swing.JLabel();
-        jLabel160 = new javax.swing.JLabel();
-        txtBuscarDocEliminarSrv = new javax.swing.JTextField();
-        jLabel161 = new javax.swing.JLabel();
-        txtNombreTecnicoEliminarSrv = new javax.swing.JTextField();
-        cbxTipoServicioEliminarSrv = new javax.swing.JComboBox<>();
-        jLabel162 = new javax.swing.JLabel();
-        btnEliminarServicio = new javax.swing.JButton();
-        jLabel150 = new javax.swing.JLabel();
-        volverEliminarServicio = new javax.swing.JButton();
-        JpnSalir16 = new javax.swing.JPanel();
-        lbSalir16 = new javax.swing.JLabel();
-        JpnServicio16 = new javax.swing.JPanel();
-        lbServicio16 = new javax.swing.JLabel();
-        JpnTecnico16 = new javax.swing.JPanel();
-        lbTecnico16 = new javax.swing.JLabel();
-        JpnUsuario16 = new javax.swing.JPanel();
-        lbUsuario16 = new javax.swing.JLabel();
-        JpnInicio16 = new javax.swing.JPanel();
-        lbInicio17 = new javax.swing.JLabel();
-        jLabel149 = new javax.swing.JLabel();
-        jPanel29 = new javax.swing.JPanel();
-        volverListarServicios = new javax.swing.JButton();
-        btnListarServicios = new javax.swing.JButton();
-        JpnSalir17 = new javax.swing.JPanel();
-        lbSalir17 = new javax.swing.JLabel();
-        JpnServicio17 = new javax.swing.JPanel();
-        lbServicio17 = new javax.swing.JLabel();
-        JpnTecnico17 = new javax.swing.JPanel();
-        lbTecnico17 = new javax.swing.JLabel();
-        JpnUsuario17 = new javax.swing.JPanel();
-        lbUsuario17 = new javax.swing.JLabel();
-        JpnInicio17 = new javax.swing.JPanel();
-        lbInicio18 = new javax.swing.JLabel();
-        jLabel164 = new javax.swing.JLabel();
-        jScrollPane6 = new javax.swing.JScrollPane();
-        tblServicios = new javax.swing.JTable();
-        jLabel163 = new javax.swing.JLabel();
-        jPanel34 = new javax.swing.JPanel();
-        volverActualizarServicio = new javax.swing.JButton();
-        jLabel218 = new javax.swing.JLabel();
-        jPanel37 = new javax.swing.JPanel();
-        jLabel205 = new javax.swing.JLabel();
-        txtApellidoClienteActualizarSrv = new javax.swing.JTextField();
-        jLabel206 = new javax.swing.JLabel();
-        cbxTipoDocActualizarSrv = new javax.swing.JComboBox<>();
-        jLabel207 = new javax.swing.JLabel();
-        txtNumDocActualizarSrv = new javax.swing.JTextField();
-        txtTelefonoActualizarSrv = new javax.swing.JTextField();
-        jLabel208 = new javax.swing.JLabel();
-        jLabel209 = new javax.swing.JLabel();
-        txtDireccionActualizarSrv = new javax.swing.JTextField();
-        jLabel210 = new javax.swing.JLabel();
-        txtFechaActualizarSrv = new javax.swing.JTextField();
-        btnBuscarActualizarServicio = new javax.swing.JButton();
-        jLabel211 = new javax.swing.JLabel();
-        jLabel212 = new javax.swing.JLabel();
-        txtNombreClienteActualizarSrv = new javax.swing.JTextField();
-        jLabel213 = new javax.swing.JLabel();
-        jLabel214 = new javax.swing.JLabel();
-        txtBuscarDocActualizarSrv = new javax.swing.JTextField();
-        jLabel215 = new javax.swing.JLabel();
-        txtNombreTecnicoActualizarSrv = new javax.swing.JTextField();
-        cbxTipoServicioActualizarSrv = new javax.swing.JComboBox<>();
-        jLabel216 = new javax.swing.JLabel();
-        jScrollPane8 = new javax.swing.JScrollPane();
-        txaDescripcionActualizarSrv = new javax.swing.JTextArea();
-        jLabel217 = new javax.swing.JLabel();
-        btnActualizarServicio = new javax.swing.JButton();
-        JpnSalir21 = new javax.swing.JPanel();
-        lbSalir21 = new javax.swing.JLabel();
-        JpnServicio21 = new javax.swing.JPanel();
-        lbServicio21 = new javax.swing.JLabel();
-        JpnTecnico21 = new javax.swing.JPanel();
-        lbTecnico21 = new javax.swing.JLabel();
-        JpnUsuario21 = new javax.swing.JPanel();
-        lbUsuario21 = new javax.swing.JLabel();
-        JpnInicio21 = new javax.swing.JPanel();
-        lbInicio22 = new javax.swing.JLabel();
-        jLabel204 = new javax.swing.JLabel();
-        jPanel30 = new javax.swing.JPanel();
-        jLabel166 = new javax.swing.JLabel();
-        JpnSalir18 = new javax.swing.JPanel();
-        lbSalir18 = new javax.swing.JLabel();
-        JpnServicio18 = new javax.swing.JPanel();
-        lbServicio18 = new javax.swing.JLabel();
-        JpnTecnico18 = new javax.swing.JPanel();
-        lbTecnico18 = new javax.swing.JLabel();
-        JpnUsuario18 = new javax.swing.JPanel();
-        lbUsuario18 = new javax.swing.JLabel();
-        JpnInicio18 = new javax.swing.JPanel();
-        lbInicio19 = new javax.swing.JLabel();
-        jPanel31 = new javax.swing.JPanel();
-        jLabel167 = new javax.swing.JLabel();
-        txtNombreClienteEditarSrv = new javax.swing.JTextField();
-        jLabel168 = new javax.swing.JLabel();
-        cbxTipoDocEditarSrv = new javax.swing.JComboBox<>();
-        jLabel169 = new javax.swing.JLabel();
-        txtNumDocEditarSrv = new javax.swing.JTextField();
-        txtNombreTecnicoEditarSrv = new javax.swing.JPasswordField();
-        jLabel170 = new javax.swing.JLabel();
-        jLabel171 = new javax.swing.JLabel();
-        txtTelefonoEditarSrv = new javax.swing.JTextField();
-        jLabel172 = new javax.swing.JLabel();
-        jLabel173 = new javax.swing.JLabel();
-        txtDireccionEditarSrv = new javax.swing.JTextField();
-        jLabel174 = new javax.swing.JLabel();
-        txtFechaEditarSrv = new javax.swing.JTextField();
-        btnGuardarDatosActualizarServicios = new javax.swing.JButton();
-        jLabel175 = new javax.swing.JLabel();
-        jLabel176 = new javax.swing.JLabel();
-        txtApellidoClienteEditarSrv = new javax.swing.JTextField();
-        jScrollPane7 = new javax.swing.JScrollPane();
-        txaDescripcionEditarSrv = new javax.swing.JTextArea();
-        cbxTipoServicioEditarSrv = new javax.swing.JComboBox<>();
-        jLabel177 = new javax.swing.JLabel();
-        jLabel178 = new javax.swing.JLabel();
-        volverActualizarServicios = new javax.swing.JButton();
-        jLabel165 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(11, 15, 26));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -936,6 +698,7 @@ public class Admin extends javax.swing.JFrame {
         listarUsuarios.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         listarUsuarios.setForeground(new java.awt.Color(255, 255, 255));
         listarUsuarios.setText("Listar Usuarios");
+        listarUsuarios.setAutoscrolls(true);
         listarUsuarios.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(209, 213, 219)));
         listarUsuarios.setBorderPainted(false);
         listarUsuarios.setContentAreaFilled(false);
@@ -1510,294 +1273,6 @@ public class Admin extends javax.swing.JFrame {
 
         Principal.addTab("2", jPanel3);
 
-        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("Gestion de Servicio");
-        jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 110, -1, -1));
-
-        listarServicio.setBackground(new java.awt.Color(0, 102, 204));
-        listarServicio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        listarServicio.setForeground(new java.awt.Color(255, 255, 255));
-        listarServicio.setText("Listar Servicios");
-        listarServicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(209, 213, 219)));
-        listarServicio.setBorderPainted(false);
-        listarServicio.setContentAreaFilled(false);
-        listarServicio.setOpaque(true);
-        listarServicio.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                listarServicioMouseMoved(evt);
-            }
-        });
-        listarServicio.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                listarServicioMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                listarServicioMouseExited(evt);
-            }
-        });
-        listarServicio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                listarServicioActionPerformed(evt);
-            }
-        });
-        jPanel4.add(listarServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 350, 205, 40));
-
-        buscarServicio.setBackground(new java.awt.Color(0, 102, 204));
-        buscarServicio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        buscarServicio.setForeground(new java.awt.Color(255, 255, 255));
-        buscarServicio.setText("Buscar Servicios");
-        buscarServicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(209, 213, 219)));
-        buscarServicio.setBorderPainted(false);
-        buscarServicio.setContentAreaFilled(false);
-        buscarServicio.setOpaque(true);
-        buscarServicio.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                buscarServicioMouseMoved(evt);
-            }
-        });
-        buscarServicio.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                buscarServicioMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                buscarServicioMouseExited(evt);
-            }
-        });
-        buscarServicio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buscarServicioActionPerformed(evt);
-            }
-        });
-        jPanel4.add(buscarServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 350, 205, 40));
-
-        eliminarServicio.setBackground(new java.awt.Color(254, 226, 226));
-        eliminarServicio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        eliminarServicio.setForeground(new java.awt.Color(153, 27, 27));
-        eliminarServicio.setText("Eliminar Servicios");
-        eliminarServicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(209, 213, 219)));
-        eliminarServicio.setBorderPainted(false);
-        eliminarServicio.setContentAreaFilled(false);
-        eliminarServicio.setOpaque(true);
-        eliminarServicio.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                eliminarServicioMouseMoved(evt);
-            }
-        });
-        eliminarServicio.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                eliminarServicioMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                eliminarServicioMouseExited(evt);
-            }
-        });
-        eliminarServicio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                eliminarServicioActionPerformed(evt);
-            }
-        });
-        jPanel4.add(eliminarServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 240, 205, 40));
-
-        actualizarServicio.setBackground(new java.awt.Color(0, 102, 204));
-        actualizarServicio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        actualizarServicio.setForeground(new java.awt.Color(255, 255, 255));
-        actualizarServicio.setText("Actualizar Servicios");
-        actualizarServicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(209, 213, 219)));
-        actualizarServicio.setBorderPainted(false);
-        actualizarServicio.setContentAreaFilled(false);
-        actualizarServicio.setOpaque(true);
-        actualizarServicio.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                actualizarServicioMouseMoved(evt);
-            }
-        });
-        actualizarServicio.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                actualizarServicioMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                actualizarServicioMouseExited(evt);
-            }
-        });
-        actualizarServicio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                actualizarServicioActionPerformed(evt);
-            }
-        });
-        jPanel4.add(actualizarServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 240, 205, 40));
-
-        agregarServicio.setBackground(new java.awt.Color(0, 102, 204));
-        agregarServicio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        agregarServicio.setForeground(new java.awt.Color(255, 255, 255));
-        agregarServicio.setText("Agregar Servicios");
-        agregarServicio.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(209, 213, 219), 1, true));
-        agregarServicio.setBorderPainted(false);
-        agregarServicio.setContentAreaFilled(false);
-        agregarServicio.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        agregarServicio.setIconTextGap(10);
-        agregarServicio.setOpaque(true);
-        agregarServicio.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                agregarServicioMouseMoved(evt);
-            }
-        });
-        agregarServicio.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                agregarServicioMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                agregarServicioMouseExited(evt);
-            }
-        });
-        agregarServicio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                agregarServicioActionPerformed(evt);
-            }
-        });
-        jPanel4.add(agregarServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 240, 205, 40));
-
-        volverServicio.setBackground(new java.awt.Color(0, 122, 255));
-        volverServicio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        volverServicio.setForeground(new java.awt.Color(255, 255, 255));
-        volverServicio.setText("Volver");
-        volverServicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(209, 213, 219)));
-        volverServicio.setBorderPainted(false);
-        volverServicio.setContentAreaFilled(false);
-        volverServicio.setOpaque(true);
-        volverServicio.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                volverServicioMouseMoved(evt);
-            }
-        });
-        volverServicio.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                volverServicioMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                volverServicioMouseExited(evt);
-            }
-        });
-        jPanel4.add(volverServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 120, 30));
-
-        JpnSalir3.setBackground(new java.awt.Color(19, 39, 63));
-        JpnSalir3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnSalir3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnSalir3MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnSalir3MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnSalir3MouseExited(evt);
-            }
-        });
-        JpnSalir3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbSalir3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbSalir3.setForeground(new java.awt.Color(255, 255, 255));
-        lbSalir3.setText("SALIR");
-        JpnSalir3.add(lbSalir3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 40, 30));
-
-        jPanel4.add(JpnSalir3, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 40, 90, 30));
-
-        JpnServicio3.setBackground(new java.awt.Color(19, 39, 63));
-        JpnServicio3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnServicio3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnServicio3MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnServicio3MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnServicio3MouseExited(evt);
-            }
-        });
-        JpnServicio3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbServicio3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbServicio3.setForeground(new java.awt.Color(255, 255, 255));
-        lbServicio3.setText("SERVICIOS");
-        JpnServicio3.add(lbServicio3, new org.netbeans.lib.awtextra.AbsoluteConstraints(9, 0, 70, 30));
-
-        jPanel4.add(JpnServicio3, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 40, 90, 30));
-
-        JpnTecnico3.setBackground(new java.awt.Color(19, 39, 63));
-        JpnTecnico3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnTecnico3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnTecnico3MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnTecnico3MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnTecnico3MouseExited(evt);
-            }
-        });
-        JpnTecnico3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbTecnico3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbTecnico3.setForeground(new java.awt.Color(255, 255, 255));
-        lbTecnico3.setText("TECNICOS");
-        JpnTecnico3.add(lbTecnico3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, 30));
-
-        jPanel4.add(JpnTecnico3, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 40, 110, 30));
-
-        JpnUsuario3.setBackground(new java.awt.Color(19, 39, 63));
-        JpnUsuario3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnUsuario3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnUsuario3MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnUsuario3MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnUsuario3MouseExited(evt);
-            }
-        });
-        JpnUsuario3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbUsuario3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbUsuario3.setForeground(new java.awt.Color(255, 255, 255));
-        lbUsuario3.setText("USUARIOS");
-        JpnUsuario3.add(lbUsuario3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, 30));
-
-        jPanel4.add(JpnUsuario3, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 40, 110, 30));
-
-        JpnInicio3.setBackground(new java.awt.Color(19, 39, 63));
-        JpnInicio3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnInicio3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnInicio3MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnInicio3MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnInicio3MouseExited(evt);
-            }
-        });
-        JpnInicio3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbInicio4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbInicio4.setForeground(new java.awt.Color(255, 255, 255));
-        lbInicio4.setText("INICIO");
-        JpnInicio3.add(lbInicio4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 50, 30));
-
-        jPanel4.add(JpnInicio3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 40, 80, 30));
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo tecnológico oscuro AIRSERVICE PRO (1).png"))); // NOI18N
-        jLabel8.setText("jLabel8");
-        jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        Principal.addTab("3", jPanel4);
-
         jPanel5.setMinimumSize(new java.awt.Dimension(1060, 660));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -2306,7 +1781,7 @@ public class Admin extends javax.swing.JFrame {
         jTextField12.setBorder(null);
         jPanel8.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 200, 20));
 
-        jPanel7.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, 900, 370));
+        jPanel7.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 900, 370));
 
         volverBuscarUsuario.setBackground(new java.awt.Color(19, 39, 63));
         volverBuscarUsuario.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -5123,1898 +4598,8 @@ public class Admin extends javax.swing.JFrame {
 
         Principal.addTab("15", jPanel21);
 
-        jPanel23.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        volverAsignarNuevoServicio.setBackground(new java.awt.Color(19, 39, 63));
-        volverAsignarNuevoServicio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        volverAsignarNuevoServicio.setForeground(new java.awt.Color(169, 195, 224));
-        volverAsignarNuevoServicio.setText("Volver");
-        volverAsignarNuevoServicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 60, 93)));
-        volverAsignarNuevoServicio.setBorderPainted(false);
-        volverAsignarNuevoServicio.setContentAreaFilled(false);
-        volverAsignarNuevoServicio.setOpaque(true);
-        volverAsignarNuevoServicio.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                volverAsignarNuevoServicioMouseMoved(evt);
-            }
-        });
-        volverAsignarNuevoServicio.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                volverAsignarNuevoServicioMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                volverAsignarNuevoServicioMouseExited(evt);
-            }
-        });
-        jPanel23.add(volverAsignarNuevoServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 120, 30));
-
-        jLabel121.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jLabel121.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel121.setText("ASIGNAR NUEVO SERVICIO");
-        jPanel23.add(jLabel121, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, -1, -1));
-
-        jPanel24.setBackground(new java.awt.Color(16, 31, 51));
-        jPanel24.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        jPanel24.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel122.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel122.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel122.setText("Nombre del cliente: ");
-        jPanel24.add(jLabel122, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, -1));
-
-        txtNombreClienteSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtNombreClienteSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtNombreClienteSrv.setBorder(null);
-        jPanel24.add(txtNombreClienteSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 200, 20));
-
-        jLabel123.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel123.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel123.setText("Tipo de documento: ");
-        jPanel24.add(jLabel123, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, -1));
-
-        cbxTipoDocClienteSrv.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        cbxTipoDocClienteSrv.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona una opcion", "CC", "TI", "CE", "PEP" }));
-        jPanel24.add(cbxTipoDocClienteSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 200, -1));
-
-        jLabel124.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel124.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel124.setText("N Documento: ");
-        jPanel24.add(jLabel124, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, -1, -1));
-
-        txtNumDocClienteSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtNumDocClienteSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtNumDocClienteSrv.setBorder(null);
-        jPanel24.add(txtNumDocClienteSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 200, 20));
-
-        jLabel125.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel125.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel125.setText("Nombre del tecnico: ");
-        jPanel24.add(jLabel125, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 50, -1, -1));
-
-        jLabel126.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel126.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel126.setText("Descripcion del servicio: ");
-        jPanel24.add(jLabel126, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 160, -1, -1));
-
-        txtTelefonoClienteSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtTelefonoClienteSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtTelefonoClienteSrv.setBorder(null);
-        jPanel24.add(txtTelefonoClienteSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 70, 200, 20));
-
-        jLabel127.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel127.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel127.setText("Telefono del cliente:");
-        jPanel24.add(jLabel127, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 50, -1, -1));
-
-        jLabel128.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel128.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel128.setText("Direccion del cliente: ");
-        jPanel24.add(jLabel128, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 100, -1, -1));
-
-        txtDireccionClienteSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtDireccionClienteSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtDireccionClienteSrv.setBorder(null);
-        jPanel24.add(txtDireccionClienteSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 120, 200, 20));
-
-        jLabel129.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel129.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel129.setText("Fecha del servicio: ");
-        jPanel24.add(jLabel129, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 150, -1, -1));
-
-        txtFechaSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtFechaSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtFechaSrv.setBorder(null);
-        jPanel24.add(txtFechaSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 170, 200, 20));
-
-        btnAsignarServicio.setBackground(new java.awt.Color(0, 210, 255));
-        btnAsignarServicio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnAsignarServicio.setForeground(new java.awt.Color(255, 255, 255));
-        btnAsignarServicio.setText("Asignar servicio");
-        btnAsignarServicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        btnAsignarServicio.setBorderPainted(false);
-        btnAsignarServicio.setContentAreaFilled(false);
-        btnAsignarServicio.setOpaque(true);
-        btnAsignarServicio.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                btnAsignarServicioMouseMoved(evt);
-            }
-        });
-        btnAsignarServicio.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnAsignarServicioMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAsignarServicioMouseExited(evt);
-            }
-        });
-        btnAsignarServicio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAsignarServicioActionPerformed(evt);
-            }
-        });
-        jPanel24.add(btnAsignarServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 290, 120, 30));
-
-        jLabel131.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel131.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel131.setText("NOTA");
-        jPanel24.add(jLabel131, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, -1, 30));
-
-        jLabel133.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel133.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel133.setText("Apellido del cliente: ");
-        jPanel24.add(jLabel133, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, -1));
-
-        txtApellidoClienteSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtApellidoClienteSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtApellidoClienteSrv.setBorder(null);
-        jPanel24.add(txtApellidoClienteSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 200, 20));
-
-        jScrollPane4.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane4.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        txaDescripcionSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txaDescripcionSrv.setColumns(20);
-        txaDescripcionSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txaDescripcionSrv.setLineWrap(true);
-        txaDescripcionSrv.setRows(5);
-        txaDescripcionSrv.setWrapStyleWord(true);
-        txaDescripcionSrv.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        txaDescripcionSrv.setName(""); // NOI18N
-        txaDescripcionSrv.setRequestFocusEnabled(false);
-        jScrollPane4.setViewportView(txaDescripcionSrv);
-
-        jPanel24.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 180, 200, -1));
-
-        cbxTipoServicioSrv.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        cbxTipoServicioSrv.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona una opcion", "Mantenimiento", "Instalacion", "Reparacion", " " }));
-        jPanel24.add(cbxTipoServicioSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 120, 200, -1));
-
-        jLabel134.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel134.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel134.setText("Tipo de Servicio: ");
-        jPanel24.add(jLabel134, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 100, -1, -1));
-
-        jLabel132.setText("Los campos que no desee actualizar dejarlos en blanco.");
-        jPanel24.add(jLabel132, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, -1, 20));
-
-        txtNombreTecnicoSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtNombreTecnicoSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtNombreTecnicoSrv.setBorder(null);
-        jPanel24.add(txtNombreTecnicoSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 70, 200, 20));
-
-        jPanel23.add(jPanel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 900, 370));
-
-        JpnSalir14.setBackground(new java.awt.Color(19, 39, 63));
-        JpnSalir14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnSalir14.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnSalir14MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnSalir14MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnSalir14MouseExited(evt);
-            }
-        });
-        JpnSalir14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbSalir14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbSalir14.setForeground(new java.awt.Color(255, 255, 255));
-        lbSalir14.setText("SALIR");
-        JpnSalir14.add(lbSalir14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 40, 30));
-
-        jPanel23.add(JpnSalir14, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 40, 90, 30));
-
-        JpnServicio14.setBackground(new java.awt.Color(19, 39, 63));
-        JpnServicio14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnServicio14.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnServicio14MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnServicio14MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnServicio14MouseExited(evt);
-            }
-        });
-        JpnServicio14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbServicio14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbServicio14.setForeground(new java.awt.Color(255, 255, 255));
-        lbServicio14.setText("SERVICIOS");
-        JpnServicio14.add(lbServicio14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 30));
-
-        jPanel23.add(JpnServicio14, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 40, 90, 30));
-
-        JpnTecnico14.setBackground(new java.awt.Color(19, 39, 63));
-        JpnTecnico14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnTecnico14.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnTecnico14MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnTecnico14MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnTecnico14MouseExited(evt);
-            }
-        });
-        JpnTecnico14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbTecnico14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbTecnico14.setForeground(new java.awt.Color(255, 255, 255));
-        lbTecnico14.setText("TECNICOS");
-        JpnTecnico14.add(lbTecnico14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, 30));
-
-        jPanel23.add(JpnTecnico14, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 40, 110, 30));
-
-        JpnUsuario14.setBackground(new java.awt.Color(19, 39, 63));
-        JpnUsuario14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnUsuario14.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnUsuario14MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnUsuario14MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnUsuario14MouseExited(evt);
-            }
-        });
-        JpnUsuario14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbUsuario14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbUsuario14.setForeground(new java.awt.Color(255, 255, 255));
-        lbUsuario14.setText("USUARIOS");
-        JpnUsuario14.add(lbUsuario14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, 30));
-
-        jPanel23.add(JpnUsuario14, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 40, 110, 30));
-
-        JpnInicio14.setBackground(new java.awt.Color(19, 39, 63));
-        JpnInicio14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnInicio14.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnInicio14MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnInicio14MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnInicio14MouseExited(evt);
-            }
-        });
-        JpnInicio14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbInicio15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbInicio15.setForeground(new java.awt.Color(255, 255, 255));
-        lbInicio15.setText("INICIO");
-        JpnInicio14.add(lbInicio15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 50, 30));
-
-        jPanel23.add(JpnInicio14, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 40, 80, 30));
-
-        jLabel120.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo tecnológico oscuro AIRSERVICE PRO (1).png"))); // NOI18N
-        jLabel120.setText("jLabel120");
-        jPanel23.add(jLabel120, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        Principal.addTab("16", jPanel23);
-
-        jPanel25.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel26.setBackground(new java.awt.Color(16, 31, 51));
-        jPanel26.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        jPanel26.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel136.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel136.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel136.setText("Nombre del cliente: ");
-        jPanel26.add(jLabel136, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, -1));
-
-        txtApellidoClienteBuscarSrv.setEditable(false);
-        txtApellidoClienteBuscarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtApellidoClienteBuscarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtApellidoClienteBuscarSrv.setBorder(null);
-        jPanel26.add(txtApellidoClienteBuscarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 200, 20));
-
-        jLabel137.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel137.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel137.setText("Tipo de documento: ");
-        jPanel26.add(jLabel137, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, -1, -1));
-
-        cbxTipoDocBuscarSrv.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        cbxTipoDocBuscarSrv.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona una opcion", "CC", "TI", "CE", "PEP" }));
-        jPanel26.add(cbxTipoDocBuscarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 200, -1));
-
-        jLabel138.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel138.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel138.setText("N Documento:");
-        jPanel26.add(jLabel138, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, -1, -1));
-
-        txtNumDocBuscarSrv.setEditable(false);
-        txtNumDocBuscarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtNumDocBuscarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtNumDocBuscarSrv.setBorder(null);
-        jPanel26.add(txtNumDocBuscarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 280, 200, 20));
-
-        txtTelefonoBuscarSrv.setEditable(false);
-        txtTelefonoBuscarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtTelefonoBuscarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtTelefonoBuscarSrv.setBorder(null);
-        jPanel26.add(txtTelefonoBuscarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 170, 200, 20));
-
-        jLabel139.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel139.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel139.setText("Telefono del cliente: ");
-        jPanel26.add(jLabel139, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 150, -1, -1));
-
-        jLabel140.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel140.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel140.setText("Direccion del cliente: ");
-        jPanel26.add(jLabel140, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 100, -1, -1));
-
-        txtDireccionBuscarSrv.setEditable(false);
-        txtDireccionBuscarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtDireccionBuscarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtDireccionBuscarSrv.setBorder(null);
-        jPanel26.add(txtDireccionBuscarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 120, 200, 20));
-
-        jLabel141.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel141.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel141.setText("Fecha del servicio:");
-        jPanel26.add(jLabel141, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 200, -1, 20));
-
-        txtFechaBuscarSrv.setEditable(false);
-        txtFechaBuscarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtFechaBuscarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtFechaBuscarSrv.setBorder(null);
-        jPanel26.add(txtFechaBuscarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 220, 200, 20));
-
-        btnBuscarServicio.setBackground(new java.awt.Color(0, 210, 255));
-        btnBuscarServicio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnBuscarServicio.setForeground(new java.awt.Color(255, 255, 255));
-        btnBuscarServicio.setText("Buscar");
-        btnBuscarServicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        btnBuscarServicio.setBorderPainted(false);
-        btnBuscarServicio.setContentAreaFilled(false);
-        btnBuscarServicio.setOpaque(true);
-        btnBuscarServicio.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                btnBuscarServicioMouseMoved(evt);
-            }
-        });
-        btnBuscarServicio.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnBuscarServicioMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnBuscarServicioMouseExited(evt);
-            }
-        });
-        btnBuscarServicio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBuscarServicioActionPerformed(evt);
-            }
-        });
-        jPanel26.add(btnBuscarServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 20, 110, 40));
-
-        jLabel142.setText("Los campos con (*) son obligatorios.");
-        jPanel26.add(jLabel142, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, -1, 20));
-
-        jLabel143.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jLabel143.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel143.setText("NOTA");
-        jPanel26.add(jLabel143, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, -1, 20));
-
-        txtNombreClienteBuscarSrv.setEditable(false);
-        txtNombreClienteBuscarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtNombreClienteBuscarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtNombreClienteBuscarSrv.setBorder(null);
-        jPanel26.add(txtNombreClienteBuscarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 200, 20));
-
-        jLabel144.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel144.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel144.setText("Apellido del cliente: ");
-        jPanel26.add(jLabel144, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, -1));
-
-        jLabel145.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel145.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel145.setText("N Documento:*");
-        jPanel26.add(jLabel145, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, -1, -1));
-
-        txtBuscarDocServicio.setBackground(new java.awt.Color(255, 255, 255));
-        txtBuscarDocServicio.setForeground(new java.awt.Color(0, 0, 0));
-        txtBuscarDocServicio.setBorder(null);
-        jPanel26.add(txtBuscarDocServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 200, 20));
-
-        jLabel146.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel146.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel146.setText("Nombre del tecnico: ");
-        jPanel26.add(jLabel146, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 100, -1, -1));
-
-        txtNombreTecnicoBuscarSrv.setEditable(false);
-        txtNombreTecnicoBuscarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtNombreTecnicoBuscarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtNombreTecnicoBuscarSrv.setBorder(null);
-        jPanel26.add(txtNombreTecnicoBuscarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 120, 200, 20));
-
-        cbxTipoServicioBuscarSrv.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        cbxTipoServicioBuscarSrv.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona una opcion", "CC", "TI", "CE", "PEP" }));
-        jPanel26.add(cbxTipoServicioBuscarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 170, 200, -1));
-
-        jLabel147.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel147.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel147.setText("Tipo de servicio: ");
-        jPanel26.add(jLabel147, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 150, -1, -1));
-
-        jScrollPane5.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane5.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        txaDescripcionBuscarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txaDescripcionBuscarSrv.setColumns(20);
-        txaDescripcionBuscarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txaDescripcionBuscarSrv.setLineWrap(true);
-        txaDescripcionBuscarSrv.setRows(5);
-        txaDescripcionBuscarSrv.setWrapStyleWord(true);
-        txaDescripcionBuscarSrv.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        txaDescripcionBuscarSrv.setName(""); // NOI18N
-        txaDescripcionBuscarSrv.setRequestFocusEnabled(false);
-        jScrollPane5.setViewportView(txaDescripcionBuscarSrv);
-
-        jPanel26.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 240, 220, 90));
-
-        jLabel148.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel148.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel148.setText("Descripcion del servicio: ");
-        jPanel26.add(jLabel148, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 220, -1, -1));
-
-        jPanel25.add(jPanel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 900, 370));
-
-        jLabel130.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jLabel130.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel130.setText("BUSCAR SERVICIO");
-        jPanel25.add(jLabel130, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 140, -1, -1));
-
-        volverBuscarServicio.setBackground(new java.awt.Color(19, 39, 63));
-        volverBuscarServicio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        volverBuscarServicio.setForeground(new java.awt.Color(169, 195, 224));
-        volverBuscarServicio.setText("Volver");
-        volverBuscarServicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 60, 93)));
-        volverBuscarServicio.setBorderPainted(false);
-        volverBuscarServicio.setContentAreaFilled(false);
-        volverBuscarServicio.setOpaque(true);
-        volverBuscarServicio.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                volverBuscarServicioMouseMoved(evt);
-            }
-        });
-        volverBuscarServicio.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                volverBuscarServicioMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                volverBuscarServicioMouseExited(evt);
-            }
-        });
-        jPanel25.add(volverBuscarServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 120, 30));
-
-        JpnSalir15.setBackground(new java.awt.Color(19, 39, 63));
-        JpnSalir15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnSalir15.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnSalir15MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnSalir15MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnSalir15MouseExited(evt);
-            }
-        });
-        JpnSalir15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbSalir15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbSalir15.setForeground(new java.awt.Color(255, 255, 255));
-        lbSalir15.setText("SALIR");
-        JpnSalir15.add(lbSalir15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 40, 30));
-
-        jPanel25.add(JpnSalir15, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 40, 90, 30));
-
-        JpnServicio15.setBackground(new java.awt.Color(19, 39, 63));
-        JpnServicio15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnServicio15.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnServicio15MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnServicio15MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnServicio15MouseExited(evt);
-            }
-        });
-        JpnServicio15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbServicio15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbServicio15.setForeground(new java.awt.Color(255, 255, 255));
-        lbServicio15.setText("SERVICIOS");
-        JpnServicio15.add(lbServicio15, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 30));
-
-        jPanel25.add(JpnServicio15, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 40, 90, 30));
-
-        JpnTecnico15.setBackground(new java.awt.Color(19, 39, 63));
-        JpnTecnico15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnTecnico15.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnTecnico15MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnTecnico15MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnTecnico15MouseExited(evt);
-            }
-        });
-        JpnTecnico15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbTecnico15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbTecnico15.setForeground(new java.awt.Color(255, 255, 255));
-        lbTecnico15.setText("TECNICOS");
-        JpnTecnico15.add(lbTecnico15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, 30));
-
-        jPanel25.add(JpnTecnico15, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 40, 110, 30));
-
-        JpnUsuario15.setBackground(new java.awt.Color(19, 39, 63));
-        JpnUsuario15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnUsuario15.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnUsuario15MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnUsuario15MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnUsuario15MouseExited(evt);
-            }
-        });
-        JpnUsuario15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbUsuario15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbUsuario15.setForeground(new java.awt.Color(255, 255, 255));
-        lbUsuario15.setText("USUARIOS");
-        JpnUsuario15.add(lbUsuario15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, 30));
-
-        jPanel25.add(JpnUsuario15, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 40, 110, 30));
-
-        JpnInicio15.setBackground(new java.awt.Color(19, 39, 63));
-        JpnInicio15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnInicio15.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnInicio15MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnInicio15MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnInicio15MouseExited(evt);
-            }
-        });
-        JpnInicio15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbInicio16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbInicio16.setForeground(new java.awt.Color(255, 255, 255));
-        lbInicio16.setText("INICIO");
-        JpnInicio15.add(lbInicio16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 50, 30));
-
-        jPanel25.add(JpnInicio15, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 40, 80, 30));
-
-        jLabel135.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo tecnológico oscuro AIRSERVICE PRO (1).png"))); // NOI18N
-        jLabel135.setText("jLabel135");
-        jPanel25.add(jLabel135, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        Principal.addTab("17", jPanel25);
-
-        jPanel27.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel28.setBackground(new java.awt.Color(16, 31, 51));
-        jPanel28.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        jPanel28.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel151.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel151.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel151.setText("Nombre del cliente: ");
-        jPanel28.add(jLabel151, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, -1, -1));
-
-        txtApellidoClienteEliminarSrv.setEditable(false);
-        txtApellidoClienteEliminarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtApellidoClienteEliminarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtApellidoClienteEliminarSrv.setBorder(null);
-        jPanel28.add(txtApellidoClienteEliminarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 200, 20));
-
-        jLabel152.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel152.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel152.setText("Tipo de documento: ");
-        jPanel28.add(jLabel152, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, -1, -1));
-
-        cbxTipoDocEliminarSrv.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        cbxTipoDocEliminarSrv.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona una opcion", "CC", "TI", "CE", "PEP" }));
-        jPanel28.add(cbxTipoDocEliminarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 200, -1));
-
-        jLabel153.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel153.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel153.setText("N Documento:");
-        jPanel28.add(jLabel153, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, -1, -1));
-
-        txtNumDocEliminarSrv.setEditable(false);
-        txtNumDocEliminarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtNumDocEliminarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtNumDocEliminarSrv.setBorder(null);
-        jPanel28.add(txtNumDocEliminarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, 200, 20));
-
-        txtTelefonoEliminarSrv.setEditable(false);
-        txtTelefonoEliminarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtTelefonoEliminarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtTelefonoEliminarSrv.setBorder(null);
-        jPanel28.add(txtTelefonoEliminarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 160, 200, 20));
-
-        jLabel154.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel154.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel154.setText("Telefono del cliente: ");
-        jPanel28.add(jLabel154, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 140, -1, -1));
-
-        jLabel155.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel155.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel155.setText("Direccion del cliente: ");
-        jPanel28.add(jLabel155, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, -1, -1));
-
-        txtDireccionEliminarSrv.setEditable(false);
-        txtDireccionEliminarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtDireccionEliminarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtDireccionEliminarSrv.setBorder(null);
-        jPanel28.add(txtDireccionEliminarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, 200, 20));
-
-        jLabel156.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel156.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel156.setText("Fecha del servicio:");
-        jPanel28.add(jLabel156, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 190, -1, 20));
-
-        txtFechaEliminarSrv.setEditable(false);
-        txtFechaEliminarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtFechaEliminarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtFechaEliminarSrv.setBorder(null);
-        jPanel28.add(txtFechaEliminarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 210, 200, 20));
-
-        btnBuscarEliminarServicio.setBackground(new java.awt.Color(0, 210, 255));
-        btnBuscarEliminarServicio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnBuscarEliminarServicio.setForeground(new java.awt.Color(255, 255, 255));
-        btnBuscarEliminarServicio.setText("Buscar");
-        btnBuscarEliminarServicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        btnBuscarEliminarServicio.setBorderPainted(false);
-        btnBuscarEliminarServicio.setContentAreaFilled(false);
-        btnBuscarEliminarServicio.setOpaque(true);
-        btnBuscarEliminarServicio.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                btnBuscarEliminarServicioMouseMoved(evt);
-            }
-        });
-        btnBuscarEliminarServicio.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnBuscarEliminarServicioMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnBuscarEliminarServicioMouseExited(evt);
-            }
-        });
-        btnBuscarEliminarServicio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBuscarEliminarServicioActionPerformed(evt);
-            }
-        });
-        jPanel28.add(btnBuscarEliminarServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 20, 110, 40));
-
-        jLabel157.setText("Los campos con (*) son obligatorios.");
-        jPanel28.add(jLabel157, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 330, -1, 20));
-
-        jLabel158.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jLabel158.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel158.setText("NOTA");
-        jPanel28.add(jLabel158, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, -1, 20));
-
-        txtNombreClienteEliminarSrv.setEditable(false);
-        txtNombreClienteEliminarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtNombreClienteEliminarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtNombreClienteEliminarSrv.setBorder(null);
-        jPanel28.add(txtNombreClienteEliminarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 200, 20));
-
-        jLabel159.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel159.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel159.setText("Apellido del cliente: ");
-        jPanel28.add(jLabel159, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, -1, -1));
-
-        jLabel160.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel160.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel160.setText("N Documento:*");
-        jPanel28.add(jLabel160, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, -1, -1));
-
-        txtBuscarDocEliminarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtBuscarDocEliminarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtBuscarDocEliminarSrv.setBorder(null);
-        jPanel28.add(txtBuscarDocEliminarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 200, 20));
-
-        jLabel161.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel161.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel161.setText("Nombre del tecnico: ");
-        jPanel28.add(jLabel161, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 90, -1, -1));
-
-        txtNombreTecnicoEliminarSrv.setEditable(false);
-        txtNombreTecnicoEliminarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtNombreTecnicoEliminarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtNombreTecnicoEliminarSrv.setBorder(null);
-        jPanel28.add(txtNombreTecnicoEliminarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 110, 200, 20));
-
-        cbxTipoServicioEliminarSrv.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        cbxTipoServicioEliminarSrv.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona una opcion", "CC", "TI", "CE", "PEP" }));
-        jPanel28.add(cbxTipoServicioEliminarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 160, 200, -1));
-
-        jLabel162.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel162.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel162.setText("Tipo de servicio: ");
-        jPanel28.add(jLabel162, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 140, -1, -1));
-
-        btnEliminarServicio.setBackground(new java.awt.Color(0, 210, 255));
-        btnEliminarServicio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnEliminarServicio.setForeground(new java.awt.Color(255, 255, 255));
-        btnEliminarServicio.setText("Eliminar");
-        btnEliminarServicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        btnEliminarServicio.setBorderPainted(false);
-        btnEliminarServicio.setContentAreaFilled(false);
-        btnEliminarServicio.setOpaque(true);
-        btnEliminarServicio.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                btnEliminarServicioMouseMoved(evt);
-            }
-        });
-        btnEliminarServicio.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnEliminarServicioMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnEliminarServicioMouseExited(evt);
-            }
-        });
-        btnEliminarServicio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEliminarServicioActionPerformed(evt);
-            }
-        });
-        jPanel28.add(btnEliminarServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 260, 110, 30));
-
-        jPanel27.add(jPanel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 900, 370));
-
-        jLabel150.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jLabel150.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel150.setText("ELIMINAR SERVICIO");
-        jPanel27.add(jLabel150, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 140, -1, -1));
-
-        volverEliminarServicio.setBackground(new java.awt.Color(19, 39, 63));
-        volverEliminarServicio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        volverEliminarServicio.setForeground(new java.awt.Color(169, 195, 224));
-        volverEliminarServicio.setText("Volver");
-        volverEliminarServicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 60, 93)));
-        volverEliminarServicio.setBorderPainted(false);
-        volverEliminarServicio.setContentAreaFilled(false);
-        volverEliminarServicio.setOpaque(true);
-        volverEliminarServicio.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                volverEliminarServicioMouseMoved(evt);
-            }
-        });
-        volverEliminarServicio.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                volverEliminarServicioMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                volverEliminarServicioMouseExited(evt);
-            }
-        });
-        jPanel27.add(volverEliminarServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 120, 30));
-
-        JpnSalir16.setBackground(new java.awt.Color(19, 39, 63));
-        JpnSalir16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnSalir16.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnSalir16MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnSalir16MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnSalir16MouseExited(evt);
-            }
-        });
-        JpnSalir16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbSalir16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbSalir16.setForeground(new java.awt.Color(255, 255, 255));
-        lbSalir16.setText("SALIR");
-        JpnSalir16.add(lbSalir16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 40, 30));
-
-        jPanel27.add(JpnSalir16, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 40, 90, 30));
-
-        JpnServicio16.setBackground(new java.awt.Color(19, 39, 63));
-        JpnServicio16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnServicio16.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnServicio16MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnServicio16MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnServicio16MouseExited(evt);
-            }
-        });
-        JpnServicio16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbServicio16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbServicio16.setForeground(new java.awt.Color(255, 255, 255));
-        lbServicio16.setText("SERVICIOS");
-        JpnServicio16.add(lbServicio16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 30));
-
-        jPanel27.add(JpnServicio16, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 40, 90, 30));
-
-        JpnTecnico16.setBackground(new java.awt.Color(19, 39, 63));
-        JpnTecnico16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnTecnico16.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnTecnico16MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnTecnico16MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnTecnico16MouseExited(evt);
-            }
-        });
-        JpnTecnico16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbTecnico16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbTecnico16.setForeground(new java.awt.Color(255, 255, 255));
-        lbTecnico16.setText("TECNICOS");
-        JpnTecnico16.add(lbTecnico16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, 30));
-
-        jPanel27.add(JpnTecnico16, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 40, 110, 30));
-
-        JpnUsuario16.setBackground(new java.awt.Color(19, 39, 63));
-        JpnUsuario16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnUsuario16.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnUsuario16MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnUsuario16MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnUsuario16MouseExited(evt);
-            }
-        });
-        JpnUsuario16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbUsuario16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbUsuario16.setForeground(new java.awt.Color(255, 255, 255));
-        lbUsuario16.setText("USUARIOS");
-        JpnUsuario16.add(lbUsuario16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, 30));
-
-        jPanel27.add(JpnUsuario16, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 40, 110, 30));
-
-        JpnInicio16.setBackground(new java.awt.Color(19, 39, 63));
-        JpnInicio16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnInicio16.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnInicio16MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnInicio16MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnInicio16MouseExited(evt);
-            }
-        });
-        JpnInicio16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbInicio17.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbInicio17.setForeground(new java.awt.Color(255, 255, 255));
-        lbInicio17.setText("INICIO");
-        JpnInicio16.add(lbInicio17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 50, 30));
-
-        jPanel27.add(JpnInicio16, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 40, 80, 30));
-
-        jLabel149.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo tecnológico oscuro AIRSERVICE PRO (1).png"))); // NOI18N
-        jLabel149.setText("jLabel149");
-        jPanel27.add(jLabel149, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        Principal.addTab("18", jPanel27);
-
-        jPanel29.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        volverListarServicios.setBackground(new java.awt.Color(19, 39, 63));
-        volverListarServicios.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        volverListarServicios.setForeground(new java.awt.Color(169, 195, 224));
-        volverListarServicios.setText("Volver");
-        volverListarServicios.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 60, 93)));
-        volverListarServicios.setBorderPainted(false);
-        volverListarServicios.setContentAreaFilled(false);
-        volverListarServicios.setOpaque(true);
-        volverListarServicios.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                volverListarServiciosMouseMoved(evt);
-            }
-        });
-        volverListarServicios.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                volverListarServiciosMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                volverListarServiciosMouseExited(evt);
-            }
-        });
-        jPanel29.add(volverListarServicios, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 120, 30));
-
-        btnListarServicios.setBackground(new java.awt.Color(0, 210, 255));
-        btnListarServicios.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnListarServicios.setForeground(new java.awt.Color(255, 255, 255));
-        btnListarServicios.setText("Listar servicios");
-        btnListarServicios.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        btnListarServicios.setBorderPainted(false);
-        btnListarServicios.setContentAreaFilled(false);
-        btnListarServicios.setOpaque(true);
-        btnListarServicios.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                btnListarServiciosMouseMoved(evt);
-            }
-        });
-        btnListarServicios.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnListarServiciosMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnListarServiciosMouseExited(evt);
-            }
-        });
-        btnListarServicios.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnListarServiciosActionPerformed(evt);
-            }
-        });
-        jPanel29.add(btnListarServicios, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 530, 110, 30));
-
-        JpnSalir17.setBackground(new java.awt.Color(19, 39, 63));
-        JpnSalir17.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnSalir17.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnSalir17MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnSalir17MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnSalir17MouseExited(evt);
-            }
-        });
-        JpnSalir17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbSalir17.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbSalir17.setForeground(new java.awt.Color(255, 255, 255));
-        lbSalir17.setText("SALIR");
-        JpnSalir17.add(lbSalir17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 40, 30));
-
-        jPanel29.add(JpnSalir17, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 40, 90, 30));
-
-        JpnServicio17.setBackground(new java.awt.Color(19, 39, 63));
-        JpnServicio17.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnServicio17.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnServicio17MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnServicio17MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnServicio17MouseExited(evt);
-            }
-        });
-        JpnServicio17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbServicio17.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbServicio17.setForeground(new java.awt.Color(255, 255, 255));
-        lbServicio17.setText("SERVICIOS");
-        JpnServicio17.add(lbServicio17, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 30));
-
-        jPanel29.add(JpnServicio17, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 40, 90, 30));
-
-        JpnTecnico17.setBackground(new java.awt.Color(19, 39, 63));
-        JpnTecnico17.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnTecnico17.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnTecnico17MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnTecnico17MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnTecnico17MouseExited(evt);
-            }
-        });
-        JpnTecnico17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbTecnico17.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbTecnico17.setForeground(new java.awt.Color(255, 255, 255));
-        lbTecnico17.setText("TECNICOS");
-        JpnTecnico17.add(lbTecnico17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, 30));
-
-        jPanel29.add(JpnTecnico17, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 40, 110, 30));
-
-        JpnUsuario17.setBackground(new java.awt.Color(19, 39, 63));
-        JpnUsuario17.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnUsuario17.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnUsuario17MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnUsuario17MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnUsuario17MouseExited(evt);
-            }
-        });
-        JpnUsuario17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbUsuario17.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbUsuario17.setForeground(new java.awt.Color(255, 255, 255));
-        lbUsuario17.setText("USUARIOS");
-        JpnUsuario17.add(lbUsuario17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, 30));
-
-        jPanel29.add(JpnUsuario17, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 40, 110, 30));
-
-        JpnInicio17.setBackground(new java.awt.Color(19, 39, 63));
-        JpnInicio17.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnInicio17.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnInicio17MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnInicio17MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnInicio17MouseExited(evt);
-            }
-        });
-        JpnInicio17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbInicio18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbInicio18.setForeground(new java.awt.Color(255, 255, 255));
-        lbInicio18.setText("INICIO");
-        JpnInicio17.add(lbInicio18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 50, 30));
-
-        jPanel29.add(JpnInicio17, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 40, 80, 30));
-
-        jLabel164.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jLabel164.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel164.setText("LISTAR SERVICIOS");
-        jPanel29.add(jLabel164, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 130, -1, -1));
-
-        jScrollPane6.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane6.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        tblServicios.setBackground(new java.awt.Color(16, 31, 51));
-        tblServicios.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(16, 31, 51)));
-        tblServicios.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
-        tblServicios.setForeground(new java.awt.Color(255, 255, 255));
-        tblServicios.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
-            },
-            new String [] {
-                " Tipo de Servicio", "Direccion cliente", "Nombre cliente", "Nombre Tecnico", "Fecha"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        tblServicios.setGridColor(new java.awt.Color(22, 139, 255));
-        jScrollPane6.setViewportView(tblServicios);
-
-        jPanel29.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 810, 340));
-
-        jLabel163.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo tecnológico oscuro AIRSERVICE PRO (1).png"))); // NOI18N
-        jLabel163.setText("jLabel163");
-        jPanel29.add(jLabel163, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        Principal.addTab("19", jPanel29);
-
-        jPanel34.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        volverActualizarServicio.setBackground(new java.awt.Color(19, 39, 63));
-        volverActualizarServicio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        volverActualizarServicio.setForeground(new java.awt.Color(169, 195, 224));
-        volverActualizarServicio.setText("Volver");
-        volverActualizarServicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 60, 93)));
-        volverActualizarServicio.setBorderPainted(false);
-        volverActualizarServicio.setContentAreaFilled(false);
-        volverActualizarServicio.setOpaque(true);
-        volverActualizarServicio.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                volverActualizarServicioMouseMoved(evt);
-            }
-        });
-        volverActualizarServicio.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                volverActualizarServicioMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                volverActualizarServicioMouseExited(evt);
-            }
-        });
-        jPanel34.add(volverActualizarServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 120, 30));
-
-        jLabel218.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jLabel218.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel218.setText("ACTUALIZAR SERVICIO");
-        jPanel34.add(jLabel218, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, -1, -1));
-
-        jPanel37.setBackground(new java.awt.Color(16, 31, 51));
-        jPanel37.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        jPanel37.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel205.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel205.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel205.setText("Nombre del cliente: ");
-        jPanel37.add(jLabel205, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, -1));
-
-        txtApellidoClienteActualizarSrv.setEditable(false);
-        txtApellidoClienteActualizarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtApellidoClienteActualizarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtApellidoClienteActualizarSrv.setBorder(null);
-        jPanel37.add(txtApellidoClienteActualizarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 200, 20));
-
-        jLabel206.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel206.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel206.setText("Tipo de documento: ");
-        jPanel37.add(jLabel206, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, -1, -1));
-
-        cbxTipoDocActualizarSrv.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        cbxTipoDocActualizarSrv.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona una opcion", "CC", "TI", "CE", "PEP" }));
-        jPanel37.add(cbxTipoDocActualizarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 200, -1));
-
-        jLabel207.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel207.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel207.setText("N Documento:");
-        jPanel37.add(jLabel207, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, -1, -1));
-
-        txtNumDocActualizarSrv.setEditable(false);
-        txtNumDocActualizarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtNumDocActualizarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtNumDocActualizarSrv.setBorder(null);
-        jPanel37.add(txtNumDocActualizarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 280, 200, 20));
-
-        txtTelefonoActualizarSrv.setEditable(false);
-        txtTelefonoActualizarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtTelefonoActualizarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtTelefonoActualizarSrv.setBorder(null);
-        jPanel37.add(txtTelefonoActualizarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 170, 200, 20));
-
-        jLabel208.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel208.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel208.setText("Telefono del cliente: ");
-        jPanel37.add(jLabel208, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 150, -1, -1));
-
-        jLabel209.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel209.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel209.setText("Direccion del cliente: ");
-        jPanel37.add(jLabel209, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 100, -1, -1));
-
-        txtDireccionActualizarSrv.setEditable(false);
-        txtDireccionActualizarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtDireccionActualizarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtDireccionActualizarSrv.setBorder(null);
-        jPanel37.add(txtDireccionActualizarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 120, 200, 20));
-
-        jLabel210.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel210.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel210.setText("Fecha del servicio:");
-        jPanel37.add(jLabel210, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 200, -1, 20));
-
-        txtFechaActualizarSrv.setEditable(false);
-        txtFechaActualizarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtFechaActualizarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtFechaActualizarSrv.setBorder(null);
-        jPanel37.add(txtFechaActualizarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 220, 200, 20));
-
-        btnBuscarActualizarServicio.setBackground(new java.awt.Color(0, 210, 255));
-        btnBuscarActualizarServicio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnBuscarActualizarServicio.setForeground(new java.awt.Color(255, 255, 255));
-        btnBuscarActualizarServicio.setText("Buscar");
-        btnBuscarActualizarServicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        btnBuscarActualizarServicio.setBorderPainted(false);
-        btnBuscarActualizarServicio.setContentAreaFilled(false);
-        btnBuscarActualizarServicio.setOpaque(true);
-        btnBuscarActualizarServicio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBuscarActualizarServicioActionPerformed(evt);
-            }
-        });
-        jPanel37.add(btnBuscarActualizarServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 20, 110, 40));
-
-        jLabel211.setText("Los campos con (*) son obligatorios.");
-        jPanel37.add(jLabel211, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, -1, 20));
-
-        jLabel212.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jLabel212.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel212.setText("NOTA");
-        jPanel37.add(jLabel212, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, -1, 20));
-
-        txtNombreClienteActualizarSrv.setEditable(false);
-        txtNombreClienteActualizarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtNombreClienteActualizarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtNombreClienteActualizarSrv.setBorder(null);
-        jPanel37.add(txtNombreClienteActualizarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 200, 20));
-
-        jLabel213.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel213.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel213.setText("Apellido del cliente: ");
-        jPanel37.add(jLabel213, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, -1));
-
-        jLabel214.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel214.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel214.setText("N Documento:*");
-        jPanel37.add(jLabel214, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, -1, -1));
-
-        txtBuscarDocActualizarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtBuscarDocActualizarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtBuscarDocActualizarSrv.setBorder(null);
-        txtBuscarDocActualizarSrv.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                txtBuscarDocActualizarSrvKeyReleased(evt);
-            }
-        });
-        jPanel37.add(txtBuscarDocActualizarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 200, 20));
-
-        jLabel215.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel215.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel215.setText("Nombre del tecnico: ");
-        jPanel37.add(jLabel215, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 100, -1, -1));
-
-        txtNombreTecnicoActualizarSrv.setEditable(false);
-        txtNombreTecnicoActualizarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtNombreTecnicoActualizarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtNombreTecnicoActualizarSrv.setBorder(null);
-        jPanel37.add(txtNombreTecnicoActualizarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 120, 200, 20));
-
-        cbxTipoServicioActualizarSrv.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        cbxTipoServicioActualizarSrv.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona una opcion", "CC", "TI", "CE", "PEP" }));
-        jPanel37.add(cbxTipoServicioActualizarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 170, 200, -1));
-
-        jLabel216.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel216.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel216.setText("Tipo de servicio: ");
-        jPanel37.add(jLabel216, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 150, -1, -1));
-
-        jScrollPane8.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane8.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        txaDescripcionActualizarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txaDescripcionActualizarSrv.setColumns(20);
-        txaDescripcionActualizarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txaDescripcionActualizarSrv.setLineWrap(true);
-        txaDescripcionActualizarSrv.setRows(5);
-        txaDescripcionActualizarSrv.setWrapStyleWord(true);
-        txaDescripcionActualizarSrv.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        txaDescripcionActualizarSrv.setName(""); // NOI18N
-        txaDescripcionActualizarSrv.setRequestFocusEnabled(false);
-        jScrollPane8.setViewportView(txaDescripcionActualizarSrv);
-
-        jPanel37.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 240, 220, 90));
-
-        jLabel217.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel217.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel217.setText("Descripcion del servicio: ");
-        jPanel37.add(jLabel217, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 220, -1, -1));
-
-        btnActualizarServicio.setBackground(new java.awt.Color(0, 210, 255));
-        btnActualizarServicio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnActualizarServicio.setForeground(new java.awt.Color(255, 255, 255));
-        btnActualizarServicio.setText("Actualizar servicio");
-        btnActualizarServicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        btnActualizarServicio.setBorderPainted(false);
-        btnActualizarServicio.setContentAreaFilled(false);
-        btnActualizarServicio.setOpaque(true);
-        btnActualizarServicio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnActualizarServicioActionPerformed(evt);
-            }
-        });
-        jPanel37.add(btnActualizarServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 350, 130, 30));
-
-        jPanel34.add(jPanel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, 900, 400));
-
-        JpnSalir21.setBackground(new java.awt.Color(19, 39, 63));
-        JpnSalir21.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnSalir21.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnSalir21MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnSalir21MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnSalir21MouseExited(evt);
-            }
-        });
-        JpnSalir21.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbSalir21.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbSalir21.setForeground(new java.awt.Color(255, 255, 255));
-        lbSalir21.setText("SALIR");
-        JpnSalir21.add(lbSalir21, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 40, 30));
-
-        jPanel34.add(JpnSalir21, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 40, 90, 30));
-
-        JpnServicio21.setBackground(new java.awt.Color(19, 39, 63));
-        JpnServicio21.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnServicio21.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnServicio21MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnServicio21MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnServicio21MouseExited(evt);
-            }
-        });
-        JpnServicio21.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbServicio21.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbServicio21.setForeground(new java.awt.Color(255, 255, 255));
-        lbServicio21.setText("SERVICIOS");
-        JpnServicio21.add(lbServicio21, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 30));
-
-        jPanel34.add(JpnServicio21, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 40, 90, 30));
-
-        JpnTecnico21.setBackground(new java.awt.Color(19, 39, 63));
-        JpnTecnico21.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnTecnico21.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnTecnico21MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnTecnico21MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnTecnico21MouseExited(evt);
-            }
-        });
-        JpnTecnico21.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbTecnico21.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbTecnico21.setForeground(new java.awt.Color(255, 255, 255));
-        lbTecnico21.setText("TECNICOS");
-        JpnTecnico21.add(lbTecnico21, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, 30));
-
-        jPanel34.add(JpnTecnico21, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 40, 110, 30));
-
-        JpnUsuario21.setBackground(new java.awt.Color(19, 39, 63));
-        JpnUsuario21.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnUsuario21.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnUsuario21MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnUsuario21MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnUsuario21MouseExited(evt);
-            }
-        });
-        JpnUsuario21.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbUsuario21.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbUsuario21.setForeground(new java.awt.Color(255, 255, 255));
-        lbUsuario21.setText("USUARIOS");
-        JpnUsuario21.add(lbUsuario21, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, 30));
-
-        jPanel34.add(JpnUsuario21, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 40, 110, 30));
-
-        JpnInicio21.setBackground(new java.awt.Color(19, 39, 63));
-        JpnInicio21.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnInicio21.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnInicio21MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnInicio21MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnInicio21MouseExited(evt);
-            }
-        });
-        JpnInicio21.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbInicio22.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbInicio22.setForeground(new java.awt.Color(255, 255, 255));
-        lbInicio22.setText("INICIO");
-        JpnInicio21.add(lbInicio22, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 50, 30));
-
-        jPanel34.add(JpnInicio21, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 40, 80, 30));
-
-        jLabel204.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo tecnológico oscuro AIRSERVICE PRO (1).png"))); // NOI18N
-        jLabel204.setText("jLabel135");
-        jPanel34.add(jLabel204, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        Principal.addTab("20", jPanel34);
-
-        jPanel30.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel166.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jLabel166.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel166.setText("ACTUALIZAR SERVICIOS");
-        jPanel30.add(jLabel166, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 130, -1, -1));
-
-        JpnSalir18.setBackground(new java.awt.Color(19, 39, 63));
-        JpnSalir18.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnSalir18.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnSalir18MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnSalir18MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnSalir18MouseExited(evt);
-            }
-        });
-        JpnSalir18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbSalir18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbSalir18.setForeground(new java.awt.Color(255, 255, 255));
-        lbSalir18.setText("SALIR");
-        JpnSalir18.add(lbSalir18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 40, 30));
-
-        jPanel30.add(JpnSalir18, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 40, 90, 30));
-
-        JpnServicio18.setBackground(new java.awt.Color(19, 39, 63));
-        JpnServicio18.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnServicio18.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnServicio18MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnServicio18MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnServicio18MouseExited(evt);
-            }
-        });
-        JpnServicio18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbServicio18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbServicio18.setForeground(new java.awt.Color(255, 255, 255));
-        lbServicio18.setText("SERVICIOS");
-        JpnServicio18.add(lbServicio18, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 30));
-
-        jPanel30.add(JpnServicio18, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 40, 90, 30));
-
-        JpnTecnico18.setBackground(new java.awt.Color(19, 39, 63));
-        JpnTecnico18.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnTecnico18.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnTecnico18MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnTecnico18MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnTecnico18MouseExited(evt);
-            }
-        });
-        JpnTecnico18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbTecnico18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbTecnico18.setForeground(new java.awt.Color(255, 255, 255));
-        lbTecnico18.setText("TECNICOS");
-        JpnTecnico18.add(lbTecnico18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, 30));
-
-        jPanel30.add(JpnTecnico18, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 40, 110, 30));
-
-        JpnUsuario18.setBackground(new java.awt.Color(19, 39, 63));
-        JpnUsuario18.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnUsuario18.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnUsuario18MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnUsuario18MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnUsuario18MouseExited(evt);
-            }
-        });
-        JpnUsuario18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbUsuario18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbUsuario18.setForeground(new java.awt.Color(255, 255, 255));
-        lbUsuario18.setText("USUARIOS");
-        JpnUsuario18.add(lbUsuario18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, 30));
-
-        jPanel30.add(JpnUsuario18, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 40, 110, 30));
-
-        JpnInicio18.setBackground(new java.awt.Color(19, 39, 63));
-        JpnInicio18.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        JpnInicio18.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JpnInicio18MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                JpnInicio18MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                JpnInicio18MouseExited(evt);
-            }
-        });
-        JpnInicio18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lbInicio19.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        lbInicio19.setForeground(new java.awt.Color(255, 255, 255));
-        lbInicio19.setText("INICIO");
-        JpnInicio18.add(lbInicio19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 50, 30));
-
-        jPanel30.add(JpnInicio18, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 40, 80, 30));
-
-        jPanel31.setBackground(new java.awt.Color(16, 31, 51));
-        jPanel31.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        jPanel31.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel167.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel167.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel167.setText("Nombre del cliente: *");
-        jPanel31.add(jLabel167, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, -1));
-
-        txtNombreClienteEditarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtNombreClienteEditarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtNombreClienteEditarSrv.setBorder(null);
-        jPanel31.add(txtNombreClienteEditarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 200, 20));
-
-        jLabel168.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel168.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel168.setText("Tipo de documento: *");
-        jPanel31.add(jLabel168, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, -1));
-
-        cbxTipoDocEditarSrv.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        cbxTipoDocEditarSrv.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona una opcion", "CC", "TI", "CE", "PEP" }));
-        jPanel31.add(cbxTipoDocEditarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 200, -1));
-
-        jLabel169.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel169.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel169.setText("N Documento: *");
-        jPanel31.add(jLabel169, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, -1, -1));
-
-        txtNumDocEditarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtNumDocEditarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtNumDocEditarSrv.setBorder(null);
-        jPanel31.add(txtNumDocEditarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 200, 20));
-
-        txtNombreTecnicoEditarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtNombreTecnicoEditarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtNombreTecnicoEditarSrv.setBorder(null);
-        jPanel31.add(txtNombreTecnicoEditarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 70, 200, 20));
-
-        jLabel170.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel170.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel170.setText("Nombre del tecnico: * ");
-        jPanel31.add(jLabel170, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 50, -1, -1));
-
-        jLabel171.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel171.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel171.setText("Descripcion del servicio: *");
-        jPanel31.add(jLabel171, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 160, -1, -1));
-
-        txtTelefonoEditarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtTelefonoEditarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtTelefonoEditarSrv.setBorder(null);
-        jPanel31.add(txtTelefonoEditarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 70, 200, 20));
-
-        jLabel172.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel172.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel172.setText("Telefono del cliente:*");
-        jPanel31.add(jLabel172, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 50, -1, -1));
-
-        jLabel173.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel173.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel173.setText("Direccion del cliente: *");
-        jPanel31.add(jLabel173, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 100, -1, -1));
-
-        txtDireccionEditarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtDireccionEditarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtDireccionEditarSrv.setBorder(null);
-        jPanel31.add(txtDireccionEditarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 120, 200, 20));
-
-        jLabel174.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel174.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel174.setText("Fecha del servicio: *");
-        jPanel31.add(jLabel174, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 150, -1, -1));
-
-        txtFechaEditarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtFechaEditarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtFechaEditarSrv.setBorder(null);
-        jPanel31.add(txtFechaEditarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 170, 200, 20));
-
-        btnGuardarDatosActualizarServicios.setBackground(new java.awt.Color(0, 210, 255));
-        btnGuardarDatosActualizarServicios.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnGuardarDatosActualizarServicios.setForeground(new java.awt.Color(255, 255, 255));
-        btnGuardarDatosActualizarServicios.setText("Guardar Datos");
-        btnGuardarDatosActualizarServicios.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(22, 139, 255)));
-        btnGuardarDatosActualizarServicios.setBorderPainted(false);
-        btnGuardarDatosActualizarServicios.setContentAreaFilled(false);
-        btnGuardarDatosActualizarServicios.setOpaque(true);
-        btnGuardarDatosActualizarServicios.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGuardarDatosActualizarServiciosActionPerformed(evt);
-            }
-        });
-        jPanel31.add(btnGuardarDatosActualizarServicios, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 290, 120, 30));
-
-        jLabel175.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel175.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel175.setText("NOTA");
-        jPanel31.add(jLabel175, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, -1, 30));
-
-        jLabel176.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel176.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel176.setText("Apellido del cliente: *");
-        jPanel31.add(jLabel176, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, -1));
-
-        txtApellidoClienteEditarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txtApellidoClienteEditarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txtApellidoClienteEditarSrv.setBorder(null);
-        jPanel31.add(txtApellidoClienteEditarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 200, 20));
-
-        jScrollPane7.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane7.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        txaDescripcionEditarSrv.setBackground(new java.awt.Color(255, 255, 255));
-        txaDescripcionEditarSrv.setColumns(20);
-        txaDescripcionEditarSrv.setForeground(new java.awt.Color(0, 0, 0));
-        txaDescripcionEditarSrv.setLineWrap(true);
-        txaDescripcionEditarSrv.setRows(5);
-        txaDescripcionEditarSrv.setWrapStyleWord(true);
-        txaDescripcionEditarSrv.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        txaDescripcionEditarSrv.setName(""); // NOI18N
-        txaDescripcionEditarSrv.setRequestFocusEnabled(false);
-        jScrollPane7.setViewportView(txaDescripcionEditarSrv);
-
-        jPanel31.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 180, 200, -1));
-
-        cbxTipoServicioEditarSrv.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        cbxTipoServicioEditarSrv.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona una opcion", "Mantenimiento", "Instalacion", "Reparacion", " " }));
-        jPanel31.add(cbxTipoServicioEditarSrv, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 120, 200, -1));
-
-        jLabel177.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel177.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        jLabel177.setText("Tipo de Servicio: *");
-        jPanel31.add(jLabel177, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 100, -1, -1));
-
-        jLabel178.setText("Los campos que no desee actualizar, dejarlos en blanco.");
-        jPanel31.add(jLabel178, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, -1, 20));
-
-        jPanel30.add(jPanel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 900, 370));
-
-        volverActualizarServicios.setBackground(new java.awt.Color(19, 39, 63));
-        volverActualizarServicios.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        volverActualizarServicios.setForeground(new java.awt.Color(169, 195, 224));
-        volverActualizarServicios.setText("Volver");
-        volverActualizarServicios.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 60, 93)));
-        volverActualizarServicios.setBorderPainted(false);
-        volverActualizarServicios.setContentAreaFilled(false);
-        volverActualizarServicios.setOpaque(true);
-        volverActualizarServicios.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                volverActualizarServiciosMouseMoved(evt);
-            }
-        });
-        volverActualizarServicios.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                volverActualizarServiciosMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                volverActualizarServiciosMouseExited(evt);
-            }
-        });
-        jPanel30.add(volverActualizarServicios, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 120, 30));
-
-        jLabel165.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo tecnológico oscuro AIRSERVICE PRO (1).png"))); // NOI18N
-        jLabel165.setText("jLabel165");
-        jPanel30.add(jLabel165, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        Principal.addTab("21", jPanel30);
-
         getContentPane().add(Principal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 680));
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnAsignarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAsignarServicioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAsignarServicioMouseMoved
-
-    private void btnAsignarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAsignarServicioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAsignarServicioMouseClicked
-
-    private void btnAsignarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAsignarServicioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAsignarServicioMouseExited
-
-    private void volverAsignarNuevoServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverAsignarNuevoServicioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverAsignarNuevoServicioMouseMoved
-
-    private void volverAsignarNuevoServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverAsignarNuevoServicioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverAsignarNuevoServicioMouseClicked
-
-    private void volverAsignarNuevoServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverAsignarNuevoServicioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverAsignarNuevoServicioMouseExited
-
-    private void volverBuscarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverBuscarServicioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverBuscarServicioMouseMoved
-
-    private void volverBuscarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverBuscarServicioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverBuscarServicioMouseClicked
-
-    private void volverBuscarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverBuscarServicioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverBuscarServicioMouseExited
-
-    private void btnBuscarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarServicioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarServicioMouseMoved
-
-    private void btnBuscarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarServicioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarServicioMouseClicked
-
-    private void btnBuscarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarServicioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarServicioMouseExited
-
-    private void volverEliminarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverEliminarServicioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverEliminarServicioMouseMoved
-
-    private void volverEliminarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverEliminarServicioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverEliminarServicioMouseClicked
-
-    private void volverEliminarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverEliminarServicioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverEliminarServicioMouseExited
-
-    private void btnBuscarEliminarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarEliminarServicioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarEliminarServicioMouseMoved
-
-    private void btnBuscarEliminarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarEliminarServicioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarEliminarServicioMouseClicked
-
-    private void btnBuscarEliminarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuscarEliminarServicioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuscarEliminarServicioMouseExited
-
-    private void btnEliminarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEliminarServicioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnEliminarServicioMouseMoved
-
-    private void btnEliminarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEliminarServicioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnEliminarServicioMouseClicked
-
-    private void btnEliminarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEliminarServicioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnEliminarServicioMouseExited
-
-    private void btnListarServiciosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnListarServiciosMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnListarServiciosMouseMoved
-
-    private void btnListarServiciosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnListarServiciosMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnListarServiciosMouseClicked
-
-    private void btnListarServiciosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnListarServiciosMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnListarServiciosMouseExited
-
-    private void volverListarServiciosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverListarServiciosMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverListarServiciosMouseMoved
-
-    private void volverListarServiciosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverListarServiciosMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverListarServiciosMouseClicked
-
-    private void volverListarServiciosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverListarServiciosMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverListarServiciosMouseExited
-
-    private void volverActualizarServiciosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarServiciosMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverActualizarServiciosMouseMoved
-
-    private void volverActualizarServiciosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarServiciosMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverActualizarServiciosMouseClicked
-
-    private void volverActualizarServiciosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarServiciosMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverActualizarServiciosMouseExited
-
-    private void volverActualizarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarServicioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverActualizarServicioMouseMoved
-
-    private void volverActualizarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarServicioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverActualizarServicioMouseClicked
-
-    private void volverActualizarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarServicioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverActualizarServicioMouseExited
 
     private void JpnInicio13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio13MouseClicked
         Principal.setSelectedIndex(0);
@@ -7035,644 +4620,6 @@ public class Admin extends javax.swing.JFrame {
     private void JpnUsuario13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario13MouseExited
         JpnUsuario13.setBackground(new java.awt.Color(16, 31, 51));
     }//GEN-LAST:event_JpnUsuario13MouseExited
-
-    private void JpnInicio14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio14MouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnInicio14MouseClicked
-
-    private void JpnInicio14MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio14MouseEntered
-        JpnInicio14.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnInicio14MouseEntered
-
-    private void JpnInicio14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio14MouseExited
-        JpnInicio14.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnInicio14MouseExited
-
-    private void JpnUsuario14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario14MouseClicked
-        Principal.setSelectedIndex(1);
-    }//GEN-LAST:event_JpnUsuario14MouseClicked
-
-    private void JpnUsuario14MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario14MouseEntered
-        JpnUsuario14.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario14MouseEntered
-
-    private void JpnUsuario14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario14MouseExited
-        JpnUsuario14.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnUsuario14MouseExited
-
-    private void JpnTecnico14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico14MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnTecnico14MouseClicked
-
-    private void JpnTecnico14MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico14MouseEntered
-        JpnTecnico14.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnTecnico14MouseEntered
-
-    private void JpnTecnico14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico14MouseExited
-        JpnTecnico14.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnico14MouseExited
-
-    private void JpnServicio14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio14MouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnServicio14MouseClicked
-
-    private void JpnServicio14MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio14MouseEntered
-        JpnServicio14.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicio14MouseEntered
-
-    private void JpnServicio14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio14MouseExited
-        JpnServicio14.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnServicio14MouseExited
-
-    private void JpnSalir14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir14MouseClicked
-             int opcion = javax.swing.JOptionPane.showConfirmDialog(
-    this,
-    "¿Estás seguro de que deseas salir del programa?",
-    "Confirmar salida",
-    javax.swing.JOptionPane.YES_NO_OPTION,
-    javax.swing.JOptionPane.QUESTION_MESSAGE);
-
-    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-    System.exit(0);
-        }
-    }//GEN-LAST:event_JpnSalir14MouseClicked
-
-    private void JpnSalir14MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir14MouseEntered
-        JpnSalir14.setBackground(new java.awt.Color(239, 68, 68));
-    }//GEN-LAST:event_JpnSalir14MouseEntered
-
-    private void JpnSalir14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir14MouseExited
-        JpnSalir14.setBackground(new java.awt.Color(24, 43, 68));
-    }//GEN-LAST:event_JpnSalir14MouseExited
-
-    private void JpnInicio15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio15MouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnInicio15MouseClicked
-
-    private void JpnInicio15MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio15MouseEntered
-        JpnInicio15.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnInicio15MouseEntered
-
-    private void JpnInicio15MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio15MouseExited
-        JpnInicio15.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnInicio15MouseExited
-
-    private void JpnUsuario15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario15MouseClicked
-        Principal.setSelectedIndex(1);
-    }//GEN-LAST:event_JpnUsuario15MouseClicked
-
-    private void JpnUsuario15MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario15MouseEntered
-        JpnUsuario15.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario15MouseEntered
-
-    private void JpnUsuario15MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario15MouseExited
-        JpnUsuario15.setBackground(new java.awt.Color(15, 31, 51));
-    }//GEN-LAST:event_JpnUsuario15MouseExited
-
-    private void JpnTecnico15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico15MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnTecnico15MouseClicked
-
-    private void JpnTecnico15MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico15MouseEntered
-        JpnTecnico15.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnTecnico15MouseEntered
-
-    private void JpnTecnico15MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico15MouseExited
-        JpnTecnico15.setBackground(new java.awt.Color(15, 31, 51));
-    }//GEN-LAST:event_JpnTecnico15MouseExited
-
-    private void JpnServicio15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio15MouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnServicio15MouseClicked
-
-    private void JpnServicio15MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio15MouseEntered
-        JpnServicio2.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicio15MouseEntered
-
-    private void JpnServicio15MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio15MouseExited
-        JpnServicio2.setBackground(new java.awt.Color(15, 31, 51));
-    }//GEN-LAST:event_JpnServicio15MouseExited
-
-    private void JpnSalir15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir15MouseClicked
-             int opcion = javax.swing.JOptionPane.showConfirmDialog(
-    this,
-    "¿Estás seguro de que deseas salir del programa?",
-    "Confirmar salida",
-    javax.swing.JOptionPane.YES_NO_OPTION,
-    javax.swing.JOptionPane.QUESTION_MESSAGE);
-
-    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-    System.exit(0);
-        }
-    }//GEN-LAST:event_JpnSalir15MouseClicked
-
-    private void JpnSalir15MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir15MouseEntered
-        JpnSalir15.setBackground(new java.awt.Color(239, 68, 68));
-    }//GEN-LAST:event_JpnSalir15MouseEntered
-
-    private void JpnSalir15MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir15MouseExited
-        JpnSalir15.setBackground(new java.awt.Color(24, 43, 68));
-    }//GEN-LAST:event_JpnSalir15MouseExited
-
-    private void JpnInicio16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio16MouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnInicio16MouseClicked
-
-    private void JpnInicio16MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio16MouseEntered
-        JpnInicio16.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnInicio16MouseEntered
-
-    private void JpnInicio16MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio16MouseExited
-        JpnInicio16.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnInicio16MouseExited
-
-    private void JpnUsuario16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario16MouseClicked
-        Principal.setSelectedIndex(1);
-    }//GEN-LAST:event_JpnUsuario16MouseClicked
-
-    private void JpnUsuario16MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario16MouseEntered
-        JpnUsuario16.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario16MouseEntered
-
-    private void JpnUsuario16MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario16MouseExited
-        JpnUsuario16.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnUsuario16MouseExited
-
-    private void JpnTecnico16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico16MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnTecnico16MouseClicked
-
-    private void JpnTecnico16MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico16MouseEntered
-        JpnTecnico16.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnTecnico16MouseEntered
-
-    private void JpnTecnico16MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico16MouseExited
-        JpnTecnico16.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnico16MouseExited
-
-    private void JpnServicio16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio16MouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnServicio16MouseClicked
-
-    private void JpnServicio16MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio16MouseEntered
-        JpnServicio16.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicio16MouseEntered
-
-    private void JpnServicio16MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio16MouseExited
-        JpnServicio16.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnServicio16MouseExited
-
-    private void JpnSalir16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir16MouseClicked
-             int opcion = javax.swing.JOptionPane.showConfirmDialog(
-    this,
-    "¿Estás seguro de que deseas salir del programa?",
-    "Confirmar salida",
-    javax.swing.JOptionPane.YES_NO_OPTION,
-    javax.swing.JOptionPane.QUESTION_MESSAGE);
-
-    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-    System.exit(0);
-        }
-    }//GEN-LAST:event_JpnSalir16MouseClicked
-
-    private void JpnSalir16MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir16MouseEntered
-        JpnSalir16.setBackground(new java.awt.Color(239, 68, 68));
-    }//GEN-LAST:event_JpnSalir16MouseEntered
-
-    private void JpnSalir16MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir16MouseExited
-        JpnSalir16.setBackground(new java.awt.Color(24, 43, 68));
-    }//GEN-LAST:event_JpnSalir16MouseExited
-
-    private void JpnInicio17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio17MouseClicked
-       Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnInicio17MouseClicked
-
-    private void JpnInicio17MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio17MouseEntered
-        JpnInicio17.setBackground(new java.awt.Color(22, 139, 255));    
-    }//GEN-LAST:event_JpnInicio17MouseEntered
-
-    private void JpnInicio17MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio17MouseExited
-        JpnInicio17.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnInicio17MouseExited
-
-    private void JpnUsuario17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario17MouseClicked
-        Principal.setSelectedIndex(1);
-    }//GEN-LAST:event_JpnUsuario17MouseClicked
-
-    private void JpnUsuario17MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario17MouseEntered
-        JpnUsuario17.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario17MouseEntered
-
-    private void JpnUsuario17MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario17MouseExited
-        JpnUsuario17.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnUsuario17MouseExited
-
-    private void JpnTecnico17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico17MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnTecnico17MouseClicked
-
-    private void JpnTecnico17MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico17MouseEntered
-        JpnTecnico17.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnTecnico17MouseEntered
-
-    private void JpnTecnico17MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico17MouseExited
-        JpnTecnico17.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnico17MouseExited
-
-    private void JpnServicio17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio17MouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnServicio17MouseClicked
-
-    private void JpnServicio17MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio17MouseEntered
-        JpnServicio17.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicio17MouseEntered
-
-    private void JpnServicio17MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio17MouseExited
-        JpnServicio17.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnServicio17MouseExited
-
-    private void JpnSalir17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir17MouseClicked
-             int opcion = javax.swing.JOptionPane.showConfirmDialog(
-    this,
-    "¿Estás seguro de que deseas salir del programa?",
-    "Confirmar salida",
-    javax.swing.JOptionPane.YES_NO_OPTION,
-    javax.swing.JOptionPane.QUESTION_MESSAGE);
-
-    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-    System.exit(0);
-        }
-    }//GEN-LAST:event_JpnSalir17MouseClicked
-
-    private void JpnSalir17MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir17MouseEntered
-        JpnSalir17.setBackground(new java.awt.Color(239, 68, 68));
-    }//GEN-LAST:event_JpnSalir17MouseEntered
-
-    private void JpnSalir17MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir17MouseExited
-        JpnSalir17.setBackground(new java.awt.Color(24, 43, 68));
-    }//GEN-LAST:event_JpnSalir17MouseExited
-
-    private void JpnInicio21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio21MouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnInicio21MouseClicked
-
-    private void JpnInicio21MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio21MouseEntered
-        JpnInicio21.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnInicio21MouseEntered
-
-    private void JpnInicio21MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio21MouseExited
-        JpnInicio21.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnInicio21MouseExited
-
-    private void JpnUsuario21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario21MouseClicked
-        Principal.setSelectedIndex(1);
-    }//GEN-LAST:event_JpnUsuario21MouseClicked
-
-    private void JpnUsuario21MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario21MouseEntered
-        JpnUsuario21.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario21MouseEntered
-
-    private void JpnUsuario21MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario21MouseExited
-        JpnUsuario21.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario21MouseExited
-
-    private void JpnTecnico21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico21MouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnTecnico21MouseClicked
-
-    private void JpnTecnico21MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico21MouseEntered
-        JpnTecnico21.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnTecnico21MouseEntered
-
-    private void JpnTecnico21MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico21MouseExited
-        JpnTecnico21.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnico21MouseExited
-
-    private void JpnServicio21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio21MouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnServicio21MouseClicked
-
-    private void JpnServicio21MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio21MouseEntered
-        JpnServicio21.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicio21MouseEntered
-
-    private void JpnServicio21MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio21MouseExited
-        JpnServicio21.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnServicio21MouseExited
-
-    private void JpnSalir21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir21MouseClicked
-        int opcion = javax.swing.JOptionPane.showConfirmDialog(
-    this,
-    "¿Estás seguro de que deseas salir del programa?",
-    "Confirmar salida",
-    javax.swing.JOptionPane.YES_NO_OPTION,
-    javax.swing.JOptionPane.QUESTION_MESSAGE);
-
-    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-    System.exit(0);
-        }
-    }//GEN-LAST:event_JpnSalir21MouseClicked
-
-    private void JpnSalir21MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir21MouseEntered
-        JpnSalir21.setBackground(new java.awt.Color(239, 68, 68));
-    }//GEN-LAST:event_JpnSalir21MouseEntered
-
-    private void JpnSalir21MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir21MouseExited
-        JpnSalir21.setBackground(new java.awt.Color(24, 43, 68));
-    }//GEN-LAST:event_JpnSalir21MouseExited
-
-    private void JpnInicio18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio18MouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnInicio18MouseClicked
-
-    private void JpnInicio18MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio18MouseEntered
-        JpnInicio18.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnInicio18MouseEntered
-
-    private void JpnInicio18MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio18MouseExited
-        JpnInicio18.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnInicio18MouseExited
-
-    private void JpnUsuario18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario18MouseClicked
-        Principal.setSelectedIndex(1);
-    }//GEN-LAST:event_JpnUsuario18MouseClicked
-
-    private void JpnUsuario18MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario18MouseEntered
-        JpnUsuario18.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario18MouseEntered
-
-    private void JpnUsuario18MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario18MouseExited
-        JpnUsuario18.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnUsuario18MouseExited
-
-    private void JpnTecnico18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico18MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnTecnico18MouseClicked
-
-    private void JpnTecnico18MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico18MouseEntered
-        JpnTecnico18.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnTecnico18MouseEntered
-
-    private void JpnTecnico18MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico18MouseExited
-        JpnTecnico18.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnico18MouseExited
-
-    private void JpnServicio18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio18MouseClicked
-        Principal.setSelectedIndex(3);
-    }//GEN-LAST:event_JpnServicio18MouseClicked
-
-    private void JpnServicio18MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio18MouseEntered
-        JpnServicio18.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicio18MouseEntered
-
-    private void JpnServicio18MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio18MouseExited
-        JpnServicio18.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnServicio18MouseExited
-
-    private void JpnSalir18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir18MouseClicked
-         int opcion = javax.swing.JOptionPane.showConfirmDialog(
-    this,
-    "¿Estás seguro de que deseas salir del programa?",
-    "Confirmar salida",
-    javax.swing.JOptionPane.YES_NO_OPTION,
-    javax.swing.JOptionPane.QUESTION_MESSAGE);
-
-    if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-    System.exit(0);
-        }
-    }//GEN-LAST:event_JpnSalir18MouseClicked
-
-    private void JpnSalir18MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir18MouseEntered
-        JpnSalir18.setBackground(new java.awt.Color(239, 68, 68));
-    }//GEN-LAST:event_JpnSalir18MouseEntered
-
-    private void JpnSalir18MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir18MouseExited
-        JpnSalir18.setBackground(new java.awt.Color(24, 43, 68));
-    }//GEN-LAST:event_JpnSalir18MouseExited
-
-    private void btnAsignarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAsignarServicioActionPerformed
-        boolean asignado = controlador.procesarAsignarServicio(
-        txtNombreClienteSrv.getText(),
-        txtApellidoClienteSrv.getText(),
-        cbxTipoDocClienteSrv.getSelectedItem().toString(),
-        txtNumDocClienteSrv.getText(),
-        txtTelefonoClienteSrv.getText(),
-        txtDireccionClienteSrv.getText(),
-        txtFechaSrv.getText(),
-        txtNombreTecnicoSrv.getText(),
-        cbxTipoServicioSrv.getSelectedItem().toString(),
-        txaDescripcionSrv.getText()
-    );
-
-    if (asignado) {
-        txtNombreClienteSrv.setText("");
-        txtApellidoClienteSrv.setText("");
-        cbxTipoDocClienteSrv.setSelectedIndex(0);
-        txtNumDocClienteSrv.setText("");
-        txtTelefonoClienteSrv.setText("");
-        txtDireccionClienteSrv.setText("");
-        txtFechaSrv.setText("");
-        txtNombreTecnicoSrv.setText("");
-        cbxTipoServicioSrv.setSelectedIndex(0);
-        txaDescripcionSrv.setText("");
-
-        // Refresca la tabla de servicios automáticamente
-        controlador.cargarTablaServicios(tblServicios);
-    }
-    }//GEN-LAST:event_btnAsignarServicioActionPerformed
-
-    private void btnBuscarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarServicioActionPerformed
-        String[] s = controlador.procesarBuscarServicio(txtBuscarDocServicio.getText());
-
-    if (s != null) {
-        txtNombreClienteBuscarSrv.setText(s[Modelo_Admin.SRV_NOMBRE_CLI]);
-        txtApellidoClienteBuscarSrv.setText(s[Modelo_Admin.SRV_APELLIDO_CLI]);
-        cbxTipoDocBuscarSrv.setSelectedItem(s[Modelo_Admin.SRV_TIPO_DOC]);
-        txtNumDocBuscarSrv.setText(s[Modelo_Admin.SRV_NUM_DOC]);
-        
-        txtDireccionBuscarSrv.setText(s[Modelo_Admin.SRV_DIRECCION]);
-        txtTelefonoBuscarSrv.setText(s[Modelo_Admin.SRV_TELEFONO]);
-        txtFechaBuscarSrv.setText(s[Modelo_Admin.SRV_FECHA]);
-        
-        txtNombreTecnicoBuscarSrv.setText(s[Modelo_Admin.SRV_TECNICO]);
-        cbxTipoServicioBuscarSrv.setSelectedItem(s[Modelo_Admin.SRV_TIPO]);
-        txaDescripcionBuscarSrv.setText(s[Modelo_Admin.SRV_DESCRIPCION]);
-    } else {
-        txtNombreClienteBuscarSrv.setText("");
-        txtApellidoClienteBuscarSrv.setText("");
-        cbxTipoDocBuscarSrv.setSelectedIndex(0);
-        txtNumDocBuscarSrv.setText("");
-        
-        txtDireccionBuscarSrv.setText("");
-        txtTelefonoBuscarSrv.setText("");
-        txtFechaBuscarSrv.setText("");
-        
-        txtNombreTecnicoBuscarSrv.setText("");
-        cbxTipoServicioBuscarSrv.setSelectedIndex(0);
-        txaDescripcionBuscarSrv.setText("");
-    }
-    }//GEN-LAST:event_btnBuscarServicioActionPerformed
-
-    private void btnBuscarEliminarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarEliminarServicioActionPerformed
-        String[] s = controlador.procesarBuscarServicio(txtBuscarDocEliminarSrv.getText());
-
-    if (s != null) {
-        txtNombreClienteEliminarSrv.setText(s[Modelo_Admin.SRV_NOMBRE_CLI]);
-        txtApellidoClienteEliminarSrv.setText(s[Modelo_Admin.SRV_APELLIDO_CLI]);
-        cbxTipoDocEliminarSrv.setSelectedItem(s[Modelo_Admin.SRV_TIPO_DOC]);
-        txtNumDocEliminarSrv.setText(s[Modelo_Admin.SRV_NUM_DOC]);
-        
-        txtDireccionEliminarSrv.setText(s[Modelo_Admin.SRV_DIRECCION]);
-        txtTelefonoEliminarSrv.setText(s[Modelo_Admin.SRV_TELEFONO]);
-        txtFechaEliminarSrv.setText(s[Modelo_Admin.SRV_FECHA]);
-        
-        txtNombreTecnicoEliminarSrv.setText(s[Modelo_Admin.SRV_TECNICO]);
-        cbxTipoServicioEliminarSrv.setSelectedItem(s[Modelo_Admin.SRV_TIPO]);
-    } else {
-        txtNombreClienteEliminarSrv.setText("");
-        txtApellidoClienteEliminarSrv.setText("");
-        cbxTipoDocEliminarSrv.setSelectedIndex(0);
-        txtNumDocEliminarSrv.setText("");
-        
-        txtDireccionEliminarSrv.setText("");
-        txtTelefonoEliminarSrv.setText("");
-        txtFechaEliminarSrv.setText("");
-        
-        txtNombreTecnicoEliminarSrv.setText("");
-        cbxTipoServicioEliminarSrv.setSelectedIndex(0);
-    }
-    }//GEN-LAST:event_btnBuscarEliminarServicioActionPerformed
-
-    private void btnEliminarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarServicioActionPerformed
-        boolean eliminado = controlador.procesarEliminarServicio(txtBuscarDocEliminarSrv.getText());
-
-    if (eliminado) {
-        txtBuscarDocEliminarSrv.setText("");
-        txtNombreClienteEliminarSrv.setText("");
-        txtApellidoClienteEliminarSrv.setText("");
-        cbxTipoDocEliminarSrv.setSelectedIndex(0);
-        txtNumDocEliminarSrv.setText("");
-        
-        txtDireccionEliminarSrv.setText("");
-        txtTelefonoEliminarSrv.setText("");
-        txtFechaEliminarSrv.setText("");
-        
-        txtNombreTecnicoEliminarSrv.setText("");
-        cbxTipoServicioEliminarSrv.setSelectedIndex(0);
-
-        controlador.cargarTablaServicios(tblServicios);
-    }
-    }//GEN-LAST:event_btnEliminarServicioActionPerformed
-
-    private void btnListarServiciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListarServiciosActionPerformed
-        controlador.cargarTablaServicios(tblServicios);
-    }//GEN-LAST:event_btnListarServiciosActionPerformed
-
-    private void btnBuscarActualizarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActualizarServicioActionPerformed
-        String[] s = controlador.procesarBuscarServicio(txtBuscarDocActualizarSrv.getText());
-
-    if (s != null) {
-        docServicioEncontrado = s[Modelo_Admin.SRV_NUM_DOC];
-
-        txtNombreClienteActualizarSrv.setText(s[Modelo_Admin.SRV_NOMBRE_CLI]);
-        txtApellidoClienteActualizarSrv.setText(s[Modelo_Admin.SRV_APELLIDO_CLI]);
-        cbxTipoDocActualizarSrv.setSelectedItem(s[Modelo_Admin.SRV_TIPO_DOC]);
-        txtNumDocActualizarSrv.setText(s[Modelo_Admin.SRV_NUM_DOC]);
-
-        txtDireccionActualizarSrv.setText(s[Modelo_Admin.SRV_DIRECCION]);
-        txtTelefonoActualizarSrv.setText(s[Modelo_Admin.SRV_TELEFONO]);
-        txtFechaActualizarSrv.setText(s[Modelo_Admin.SRV_FECHA]);
-
-        txtNombreTecnicoActualizarSrv.setText(s[Modelo_Admin.SRV_TECNICO]);
-        cbxTipoServicioActualizarSrv.setSelectedItem(s[Modelo_Admin.SRV_TIPO]);
-        txaDescripcionActualizarSrv.setText(s[Modelo_Admin.SRV_DESCRIPCION]);
-    } else {
-        docServicioEncontrado = null;
-
-        txtNombreClienteActualizarSrv.setText("");
-        txtApellidoClienteActualizarSrv.setText("");
-        cbxTipoDocActualizarSrv.setSelectedIndex(0);
-        txtNumDocActualizarSrv.setText("");
-
-        txtDireccionActualizarSrv.setText("");
-        txtTelefonoActualizarSrv.setText("");
-        txtFechaActualizarSrv.setText("");
-
-        txtNombreTecnicoActualizarSrv.setText("");
-        cbxTipoServicioActualizarSrv.setSelectedIndex(0);
-        txaDescripcionActualizarSrv.setText("");
-    }
-    }//GEN-LAST:event_btnBuscarActualizarServicioActionPerformed
-
-    private void btnActualizarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizarServicioActionPerformed
-        if (docServicioEncontrado == null) {
-    javax.swing.JOptionPane.showMessageDialog(
-        this,
-        "Primero debes buscar y encontrar un servicio válido antes de pasar a actualizar sus datos.",
-        "Acceso denegado",
-        javax.swing.JOptionPane.WARNING_MESSAGE
-    );
-    return;
-}
-
-// Cambia el índice por el de tu pestaña de edición de servicio
-Principal.setSelectedIndex(21);
-    }//GEN-LAST:event_btnActualizarServicioActionPerformed
-
-    private void txtBuscarDocActualizarSrvKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtBuscarDocActualizarSrvKeyReleased
-        if (docServicioEncontrado != null && !txtBuscarDocActualizarSrv.getText().trim().equals(docServicioEncontrado)) {
-        docServicioEncontrado = null;
-
-        txtNombreClienteActualizarSrv.setText("");
-        txtApellidoClienteActualizarSrv.setText("");
-        cbxTipoDocActualizarSrv.setSelectedIndex(0);
-        txtNumDocActualizarSrv.setText("");
-
-        txtDireccionActualizarSrv.setText("");
-        txtTelefonoActualizarSrv.setText("");
-        txtFechaActualizarSrv.setText("");
-
-        txtNombreTecnicoActualizarSrv.setText("");
-        cbxTipoServicioActualizarSrv.setSelectedIndex(0);
-        txaDescripcionActualizarSrv.setText("");
-    }
-    }//GEN-LAST:event_txtBuscarDocActualizarSrvKeyReleased
-
-    private void btnGuardarDatosActualizarServiciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarDatosActualizarServiciosActionPerformed
-        boolean actualizado = controlador.procesarActualizarServicio(
-        docServicioEncontrado, // El documento encontrado en la pantalla anterior
-        txtNombreClienteEditarSrv.getText(),
-        txtApellidoClienteEditarSrv.getText(),
-        cbxTipoDocEditarSrv.getSelectedItem().toString(),
-        txtNumDocEditarSrv.getText(),
-        txtTelefonoEditarSrv.getText(),
-        txtDireccionEditarSrv.getText(),
-        txtFechaEditarSrv.getText(),
-        txtNombreTecnicoEditarSrv.getText(),
-        cbxTipoServicioEditarSrv.getSelectedItem().toString(),
-        txaDescripcionEditarSrv.getText()
-    );
-
-    if (actualizado) {
-        docServicioEncontrado = null; // Reinicia el bloqueo para la próxima vez
-        
-        txtNombreClienteEditarSrv.setText("");
-        txtApellidoClienteEditarSrv.setText("");
-        cbxTipoDocEditarSrv.setSelectedIndex(0);
-        txtNumDocEditarSrv.setText("");
-        
-        txtTelefonoEditarSrv.setText("");
-        txtDireccionEditarSrv.setText("");
-        txtFechaEditarSrv.setText("");
-        
-        txtNombreTecnicoEditarSrv.setText("");
-        cbxTipoServicioEditarSrv.setSelectedIndex(0);
-        txaDescripcionEditarSrv.setText("");
-
-        // Refresca la tabla de servicios automáticamente
-        controlador.cargarTablaServicios(tblServicios);
-    }
-    }//GEN-LAST:event_btnGuardarDatosActualizarServiciosActionPerformed
 
     private void JpnTecnico13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico13MouseExited
         JpnTecnico13.setBackground(new java.awt.Color(16, 31, 51));
@@ -7768,7 +4715,7 @@ Principal.setSelectedIndex(21);
     }//GEN-LAST:event_volverActualizarTecnicosMouseExited
 
     private void volverActualizarTecnicosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarTecnicosMouseClicked
-        // TODO add your handling code here:
+        Principal.setSelectedIndex(2);
     }//GEN-LAST:event_volverActualizarTecnicosMouseClicked
 
     private void volverActualizarTecnicosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarTecnicosMouseMoved
@@ -7943,7 +4890,7 @@ Principal.setSelectedIndex(21);
     }//GEN-LAST:event_volverActualizarTecnicoMouseExited
 
     private void volverActualizarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarTecnicoMouseClicked
-        // TODO add your handling code here:
+        Principal.setSelectedIndex(2);
     }//GEN-LAST:event_volverActualizarTecnicoMouseClicked
 
     private void volverActualizarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarTecnicoMouseMoved
@@ -8025,7 +4972,7 @@ Principal.setSelectedIndex(21);
     }//GEN-LAST:event_volverListarTecnicosMouseExited
 
     private void volverListarTecnicosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverListarTecnicosMouseClicked
-        // TODO add your handling code here:
+        Principal.setSelectedIndex(2);
     }//GEN-LAST:event_volverListarTecnicosMouseClicked
 
     private void volverListarTecnicosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverListarTecnicosMouseMoved
@@ -8194,7 +5141,7 @@ Principal.setSelectedIndex(21);
     }//GEN-LAST:event_volverEliminarTecnicoMouseExited
 
     private void volverEliminarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverEliminarTecnicoMouseClicked
-        // TODO add your handling code here:
+       Principal.setSelectedIndex(2);
     }//GEN-LAST:event_volverEliminarTecnicoMouseClicked
 
     private void volverEliminarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverEliminarTecnicoMouseMoved
@@ -8319,7 +5266,7 @@ Principal.setSelectedIndex(21);
     }//GEN-LAST:event_volverBuscarTecnicoMouseExited
 
     private void volverBuscarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverBuscarTecnicoMouseClicked
-        // TODO add your handling code here:
+        Principal.setSelectedIndex(2);
     }//GEN-LAST:event_volverBuscarTecnicoMouseClicked
 
     private void volverBuscarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverBuscarTecnicoMouseMoved
@@ -8435,7 +5382,7 @@ Principal.setSelectedIndex(21);
     }//GEN-LAST:event_volverRegistrarNuevoTecnicoMouseExited
 
     private void volverRegistrarNuevoTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverRegistrarNuevoTecnicoMouseClicked
-        // TODO add your handling code here:
+        Principal.setSelectedIndex(2);
     }//GEN-LAST:event_volverRegistrarNuevoTecnicoMouseClicked
 
     private void volverRegistrarNuevoTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverRegistrarNuevoTecnicoMouseMoved
@@ -8447,7 +5394,7 @@ Principal.setSelectedIndex(21);
     }//GEN-LAST:event_volverActualizarUsuariosMouseExited
 
     private void volverActualizarUsuariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarUsuariosMouseClicked
-        // TODO add your handling code here:
+        Principal.setSelectedIndex(1);
     }//GEN-LAST:event_volverActualizarUsuariosMouseClicked
 
     private void volverActualizarUsuariosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarUsuariosMouseMoved
@@ -8639,7 +5586,7 @@ Principal.setSelectedIndex(21);
     }//GEN-LAST:event_volverActualizarUsuarioMouseExited
 
     private void volverActualizarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarUsuarioMouseClicked
-        // TODO add your handling code here:
+        Principal.setSelectedIndex(1);
     }//GEN-LAST:event_volverActualizarUsuarioMouseClicked
 
     private void volverActualizarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverActualizarUsuarioMouseMoved
@@ -8721,7 +5668,7 @@ Principal.setSelectedIndex(21);
     }//GEN-LAST:event_volverListarUsuariosMouseExited
 
     private void volverListarUsuariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverListarUsuariosMouseClicked
-        // TODO add your handling code here:
+        Principal.setSelectedIndex(1);
     }//GEN-LAST:event_volverListarUsuariosMouseClicked
 
     private void volverListarUsuariosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverListarUsuariosMouseMoved
@@ -8815,7 +5762,7 @@ Principal.setSelectedIndex(21);
     }//GEN-LAST:event_volverEliminarUsuarioMouseExited
 
     private void volverEliminarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverEliminarUsuarioMouseClicked
-        // TODO add your handling code here:
+        Principal.setSelectedIndex(1);
     }//GEN-LAST:event_volverEliminarUsuarioMouseClicked
 
     private void volverEliminarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverEliminarUsuarioMouseMoved
@@ -8851,7 +5798,7 @@ Principal.setSelectedIndex(21);
     }//GEN-LAST:event_volverBuscarUsuarioMouseExited
 
     private void volverBuscarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverBuscarUsuarioMouseClicked
-        // TODO add your handling code here:
+        Principal.setSelectedIndex(1);
     }//GEN-LAST:event_volverBuscarUsuarioMouseClicked
 
     private void volverBuscarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverBuscarUsuarioMouseMoved
@@ -9027,175 +5974,12 @@ Principal.setSelectedIndex(21);
     }//GEN-LAST:event_volverRegistrarNuevoUsuarioMouseExited
 
     private void volverRegistrarNuevoUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverRegistrarNuevoUsuarioMouseClicked
-        // TODO add your handling code here:
+        Principal.setSelectedIndex(1);
     }//GEN-LAST:event_volverRegistrarNuevoUsuarioMouseClicked
 
     private void volverRegistrarNuevoUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverRegistrarNuevoUsuarioMouseMoved
         // TODO add your handling code here:
     }//GEN-LAST:event_volverRegistrarNuevoUsuarioMouseMoved
-
-    private void JpnInicio3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio3MouseExited
-        JpnInicio3.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnInicio3MouseExited
-
-    private void JpnInicio3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio3MouseEntered
-        JpnInicio3.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnInicio3MouseEntered
-
-    private void JpnInicio3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio3MouseClicked
-        Principal.setSelectedIndex(0);
-    }//GEN-LAST:event_JpnInicio3MouseClicked
-
-    private void JpnUsuario3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario3MouseExited
-        JpnUsuario3.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnUsuario3MouseExited
-
-    private void JpnUsuario3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario3MouseEntered
-        JpnUsuario3.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnUsuario3MouseEntered
-
-    private void JpnUsuario3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnUsuario3MouseClicked
-        Principal.setSelectedIndex(1);
-    }//GEN-LAST:event_JpnUsuario3MouseClicked
-
-    private void JpnTecnico3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico3MouseExited
-        JpnTecnico3.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnTecnico3MouseExited
-
-    private void JpnTecnico3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico3MouseEntered
-        JpnTecnico3.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnTecnico3MouseEntered
-
-    private void JpnTecnico3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnTecnico3MouseClicked
-        Principal.setSelectedIndex(2);
-    }//GEN-LAST:event_JpnTecnico3MouseClicked
-
-    private void JpnServicio3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio3MouseExited
-        JpnServicio3.setBackground(new java.awt.Color(16, 31, 51));
-    }//GEN-LAST:event_JpnServicio3MouseExited
-
-    private void JpnServicio3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio3MouseEntered
-        JpnServicio3.setBackground(new java.awt.Color(22, 139, 255));
-    }//GEN-LAST:event_JpnServicio3MouseEntered
-
-    private void JpnServicio3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnServicio3MouseClicked
-        new AdminServicios().setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_JpnServicio3MouseClicked
-
-    private void JpnSalir3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir3MouseExited
-        JpnSalir3.setBackground(new java.awt.Color(24, 43, 68));
-    }//GEN-LAST:event_JpnSalir3MouseExited
-
-    private void JpnSalir3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir3MouseEntered
-        JpnSalir3.setBackground(new java.awt.Color(239, 68, 68));
-    }//GEN-LAST:event_JpnSalir3MouseEntered
-
-    private void JpnSalir3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnSalir3MouseClicked
-        int opcion = javax.swing.JOptionPane.showConfirmDialog(
-            this,
-            "¿Estás seguro de que deseas salir del programa?",
-            "Confirmar salida",
-            javax.swing.JOptionPane.YES_NO_OPTION,
-            javax.swing.JOptionPane.QUESTION_MESSAGE);
-
-        if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-            System.exit(0);
-        }
-
-    }//GEN-LAST:event_JpnSalir3MouseClicked
-
-    private void volverServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverServicioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverServicioMouseExited
-
-    private void volverServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverServicioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverServicioMouseClicked
-
-    private void volverServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverServicioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_volverServicioMouseMoved
-
-    private void agregarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarServicioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_agregarServicioActionPerformed
-
-    private void agregarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarServicioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_agregarServicioMouseExited
-
-    private void agregarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarServicioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_agregarServicioMouseClicked
-
-    private void agregarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarServicioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_agregarServicioMouseMoved
-
-    private void actualizarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actualizarServicioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_actualizarServicioActionPerformed
-
-    private void actualizarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarServicioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_actualizarServicioMouseExited
-
-    private void actualizarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarServicioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_actualizarServicioMouseClicked
-
-    private void actualizarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarServicioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_actualizarServicioMouseMoved
-
-    private void eliminarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminarServicioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_eliminarServicioActionPerformed
-
-    private void eliminarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarServicioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_eliminarServicioMouseExited
-
-    private void eliminarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarServicioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_eliminarServicioMouseClicked
-
-    private void eliminarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarServicioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_eliminarServicioMouseMoved
-
-    private void buscarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscarServicioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buscarServicioActionPerformed
-
-    private void buscarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarServicioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buscarServicioMouseExited
-
-    private void buscarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarServicioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buscarServicioMouseClicked
-
-    private void buscarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarServicioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buscarServicioMouseMoved
-
-    private void listarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listarServicioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_listarServicioActionPerformed
-
-    private void listarServicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarServicioMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_listarServicioMouseExited
-
-    private void listarServicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarServicioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_listarServicioMouseClicked
-
-    private void listarServicioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarServicioMouseMoved
-        // TODO add your handling code here:
-    }//GEN-LAST:event_listarServicioMouseMoved
 
     private void JpnInicio2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JpnInicio2MouseExited
         JpnInicio2.setBackground(new java.awt.Color(16, 31, 51));
@@ -9272,7 +6056,7 @@ Principal.setSelectedIndex(21);
     }//GEN-LAST:event_volverTecnicoMouseExited
 
     private void volverTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverTecnicoMouseClicked
-        // TODO add your handling code here:
+        Principal.setSelectedIndex(0);
     }//GEN-LAST:event_volverTecnicoMouseClicked
 
     private void volverTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverTecnicoMouseMoved
@@ -9304,7 +6088,7 @@ Principal.setSelectedIndex(21);
     }//GEN-LAST:event_buscarTecnicoMouseExited
 
     private void buscarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarTecnicoMouseClicked
-        // TODO add your handling code here:
+        Principal.setSelectedIndex(11);
     }//GEN-LAST:event_buscarTecnicoMouseClicked
 
     private void buscarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buscarTecnicoMouseMoved
@@ -9320,7 +6104,7 @@ Principal.setSelectedIndex(21);
     }//GEN-LAST:event_agregarTecnicoMouseExited
 
     private void agregarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarTecnicoMouseClicked
-        // TODO add your handling code here:
+        Principal.setSelectedIndex(10);
     }//GEN-LAST:event_agregarTecnicoMouseClicked
 
     private void agregarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarTecnicoMouseMoved
@@ -9352,7 +6136,7 @@ Principal.setSelectedIndex(21);
     }//GEN-LAST:event_actualizarTecnicoMouseExited
 
     private void actualizarTecnicoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarTecnicoMouseClicked
-        // TODO add your handling code here:
+        Principal.setSelectedIndex(14);
     }//GEN-LAST:event_actualizarTecnicoMouseClicked
 
     private void actualizarTecnicoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarTecnicoMouseMoved
@@ -9454,7 +6238,7 @@ Principal.setSelectedIndex(21);
     }//GEN-LAST:event_eliminarUsuarioMouseExited
 
     private void eliminarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarUsuarioMouseClicked
-        Principal.setSelectedIndex(0);
+        Principal.setSelectedIndex(6);
     }//GEN-LAST:event_eliminarUsuarioMouseClicked
 
     private void eliminarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarUsuarioMouseMoved
@@ -9482,7 +6266,7 @@ Principal.setSelectedIndex(21);
     }//GEN-LAST:event_actualizarUsuarioMouseExited
 
     private void actualizarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarUsuarioMouseClicked
-        Principal.setSelectedIndex(16);
+        Principal.setSelectedIndex(8);
     }//GEN-LAST:event_actualizarUsuarioMouseClicked
 
     private void actualizarUsuarioMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarUsuarioMouseMoved
@@ -9514,7 +6298,7 @@ Principal.setSelectedIndex(21);
     }//GEN-LAST:event_listarUsuariosMouseExited
 
     private void listarUsuariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarUsuariosMouseClicked
-        Principal.setSelectedIndex(0);
+        Principal.setSelectedIndex(7);
     }//GEN-LAST:event_listarUsuariosMouseClicked
 
     private void listarUsuariosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listarUsuariosMouseMoved
@@ -9603,16 +6387,9 @@ Principal.setSelectedIndex(21);
     private javax.swing.JPanel JpnInicio11;
     private javax.swing.JPanel JpnInicio12;
     private javax.swing.JPanel JpnInicio13;
-    private javax.swing.JPanel JpnInicio14;
-    private javax.swing.JPanel JpnInicio15;
-    private javax.swing.JPanel JpnInicio16;
-    private javax.swing.JPanel JpnInicio17;
-    private javax.swing.JPanel JpnInicio18;
     private javax.swing.JPanel JpnInicio19;
     private javax.swing.JPanel JpnInicio2;
     private javax.swing.JPanel JpnInicio20;
-    private javax.swing.JPanel JpnInicio21;
-    private javax.swing.JPanel JpnInicio3;
     private javax.swing.JPanel JpnInicio4;
     private javax.swing.JPanel JpnInicio5;
     private javax.swing.JPanel JpnInicio6;
@@ -9625,16 +6402,9 @@ Principal.setSelectedIndex(21);
     private javax.swing.JPanel JpnSalir11;
     private javax.swing.JPanel JpnSalir12;
     private javax.swing.JPanel JpnSalir13;
-    private javax.swing.JPanel JpnSalir14;
-    private javax.swing.JPanel JpnSalir15;
-    private javax.swing.JPanel JpnSalir16;
-    private javax.swing.JPanel JpnSalir17;
-    private javax.swing.JPanel JpnSalir18;
     private javax.swing.JPanel JpnSalir19;
     private javax.swing.JPanel JpnSalir2;
     private javax.swing.JPanel JpnSalir20;
-    private javax.swing.JPanel JpnSalir21;
-    private javax.swing.JPanel JpnSalir3;
     private javax.swing.JPanel JpnSalir4;
     private javax.swing.JPanel JpnSalir5;
     private javax.swing.JPanel JpnSalir6;
@@ -9647,16 +6417,9 @@ Principal.setSelectedIndex(21);
     private javax.swing.JPanel JpnServicio11;
     private javax.swing.JPanel JpnServicio12;
     private javax.swing.JPanel JpnServicio13;
-    private javax.swing.JPanel JpnServicio14;
-    private javax.swing.JPanel JpnServicio15;
-    private javax.swing.JPanel JpnServicio16;
-    private javax.swing.JPanel JpnServicio17;
-    private javax.swing.JPanel JpnServicio18;
     private javax.swing.JPanel JpnServicio19;
     private javax.swing.JPanel JpnServicio2;
     private javax.swing.JPanel JpnServicio20;
-    private javax.swing.JPanel JpnServicio21;
-    private javax.swing.JPanel JpnServicio3;
     private javax.swing.JPanel JpnServicio4;
     private javax.swing.JPanel JpnServicio5;
     private javax.swing.JPanel JpnServicio6;
@@ -9669,16 +6432,9 @@ Principal.setSelectedIndex(21);
     private javax.swing.JPanel JpnTecnico11;
     private javax.swing.JPanel JpnTecnico12;
     private javax.swing.JPanel JpnTecnico13;
-    private javax.swing.JPanel JpnTecnico14;
-    private javax.swing.JPanel JpnTecnico15;
-    private javax.swing.JPanel JpnTecnico16;
-    private javax.swing.JPanel JpnTecnico17;
-    private javax.swing.JPanel JpnTecnico18;
     private javax.swing.JPanel JpnTecnico19;
     private javax.swing.JPanel JpnTecnico2;
     private javax.swing.JPanel JpnTecnico20;
-    private javax.swing.JPanel JpnTecnico21;
-    private javax.swing.JPanel JpnTecnico3;
     private javax.swing.JPanel JpnTecnico4;
     private javax.swing.JPanel JpnTecnico5;
     private javax.swing.JPanel JpnTecnico6;
@@ -9692,16 +6448,9 @@ Principal.setSelectedIndex(21);
     private javax.swing.JPanel JpnUsuario11;
     private javax.swing.JPanel JpnUsuario12;
     private javax.swing.JPanel JpnUsuario13;
-    private javax.swing.JPanel JpnUsuario14;
-    private javax.swing.JPanel JpnUsuario15;
-    private javax.swing.JPanel JpnUsuario16;
-    private javax.swing.JPanel JpnUsuario17;
-    private javax.swing.JPanel JpnUsuario18;
     private javax.swing.JPanel JpnUsuario19;
     private javax.swing.JPanel JpnUsuario2;
     private javax.swing.JPanel JpnUsuario20;
-    private javax.swing.JPanel JpnUsuario21;
-    private javax.swing.JPanel JpnUsuario3;
     private javax.swing.JPanel JpnUsuario4;
     private javax.swing.JPanel JpnUsuario5;
     private javax.swing.JPanel JpnUsuario6;
@@ -9709,59 +6458,37 @@ Principal.setSelectedIndex(21);
     private javax.swing.JPanel JpnUsuario8;
     private javax.swing.JPanel JpnUsuario9;
     private javax.swing.JTabbedPane Principal;
-    private javax.swing.JButton actualizarServicio;
     private javax.swing.JButton actualizarTecnico;
     private javax.swing.JButton actualizarUsuario;
-    private javax.swing.JButton agregarServicio;
     private javax.swing.JButton agregarTecnico;
     private javax.swing.JButton agregarUsuario;
-    private javax.swing.JButton btnActualizarServicio;
     private javax.swing.JButton btnActualizarTecnico;
     private javax.swing.JButton btnActualizarUsuario;
     private javax.swing.JButton btnAgregarTecnico;
     private javax.swing.JButton btnAgregarUsuario;
-    private javax.swing.JButton btnAsignarServicio;
-    private javax.swing.JButton btnBuscarActualizarServicio;
     private javax.swing.JButton btnBuscarActualizarUsuario;
-    private javax.swing.JButton btnBuscarEliminarServicio;
     private javax.swing.JButton btnBuscarEliminarTecnico;
     private javax.swing.JButton btnBuscarEliminarUsuario;
-    private javax.swing.JButton btnBuscarServicio;
     private javax.swing.JButton btnBuscarTecnico;
     private javax.swing.JButton btnBuscarTecnico1;
     private javax.swing.JButton btnBuscarUsuario;
-    private javax.swing.JButton btnEliminarServicio;
     private javax.swing.JButton btnEliminarTecnico;
     private javax.swing.JButton btnEliminarUsuario;
-    private javax.swing.JButton btnGuardarDatosActualizarServicios;
     private javax.swing.JButton btnGuardarDatosActualizarTecnico;
     private javax.swing.JButton btnGuardarDatosActualizarUsuario;
-    private javax.swing.JButton btnListarServicios;
     private javax.swing.JButton btnListarTecnicos;
     private javax.swing.JButton btnListarUsuarios;
-    private javax.swing.JButton buscarServicio;
     private javax.swing.JButton buscarTecnico;
     private javax.swing.JButton buscarUsuario;
     private javax.swing.JComboBox<String> cbxNivelActualizarTec;
     private javax.swing.JComboBox<String> cbxNivelBuscarTec;
     private javax.swing.JComboBox<String> cbxNivelEditarTec;
     private javax.swing.JComboBox<String> cbxNivelTecnico;
-    private javax.swing.JComboBox<String> cbxTipoDocActualizarSrv;
     private javax.swing.JComboBox<String> cbxTipoDocActualizarTec;
-    private javax.swing.JComboBox<String> cbxTipoDocBuscarSrv;
     private javax.swing.JComboBox<String> cbxTipoDocBuscarTec;
-    private javax.swing.JComboBox<String> cbxTipoDocClienteSrv;
-    private javax.swing.JComboBox<String> cbxTipoDocEditarSrv;
     private javax.swing.JComboBox<String> cbxTipoDocEditarTec;
-    private javax.swing.JComboBox<String> cbxTipoDocEliminarSrv;
     private javax.swing.JComboBox<String> cbxTipoDocEliminarTec;
     private javax.swing.JComboBox<String> cbxTipoDocTecnico;
-    private javax.swing.JComboBox<String> cbxTipoServicioActualizarSrv;
-    private javax.swing.JComboBox<String> cbxTipoServicioBuscarSrv;
-    private javax.swing.JComboBox<String> cbxTipoServicioEditarSrv;
-    private javax.swing.JComboBox<String> cbxTipoServicioEliminarSrv;
-    private javax.swing.JComboBox<String> cbxTipoServicioSrv;
-    private javax.swing.JButton eliminarServicio;
     private javax.swing.JButton eliminarTecnico;
     private javax.swing.JButton eliminarUsuario;
     private javax.swing.JComboBox<String> jComboBox1;
@@ -9793,70 +6520,11 @@ Principal.setSelectedIndex(21);
     private javax.swing.JLabel jLabel118;
     private javax.swing.JLabel jLabel119;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel120;
-    private javax.swing.JLabel jLabel121;
-    private javax.swing.JLabel jLabel122;
-    private javax.swing.JLabel jLabel123;
-    private javax.swing.JLabel jLabel124;
-    private javax.swing.JLabel jLabel125;
-    private javax.swing.JLabel jLabel126;
-    private javax.swing.JLabel jLabel127;
-    private javax.swing.JLabel jLabel128;
-    private javax.swing.JLabel jLabel129;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel130;
-    private javax.swing.JLabel jLabel131;
-    private javax.swing.JLabel jLabel132;
-    private javax.swing.JLabel jLabel133;
-    private javax.swing.JLabel jLabel134;
-    private javax.swing.JLabel jLabel135;
-    private javax.swing.JLabel jLabel136;
-    private javax.swing.JLabel jLabel137;
-    private javax.swing.JLabel jLabel138;
-    private javax.swing.JLabel jLabel139;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel140;
-    private javax.swing.JLabel jLabel141;
-    private javax.swing.JLabel jLabel142;
-    private javax.swing.JLabel jLabel143;
-    private javax.swing.JLabel jLabel144;
-    private javax.swing.JLabel jLabel145;
-    private javax.swing.JLabel jLabel146;
-    private javax.swing.JLabel jLabel147;
-    private javax.swing.JLabel jLabel148;
-    private javax.swing.JLabel jLabel149;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel150;
-    private javax.swing.JLabel jLabel151;
-    private javax.swing.JLabel jLabel152;
-    private javax.swing.JLabel jLabel153;
-    private javax.swing.JLabel jLabel154;
-    private javax.swing.JLabel jLabel155;
-    private javax.swing.JLabel jLabel156;
-    private javax.swing.JLabel jLabel157;
-    private javax.swing.JLabel jLabel158;
-    private javax.swing.JLabel jLabel159;
     private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel160;
-    private javax.swing.JLabel jLabel161;
-    private javax.swing.JLabel jLabel162;
-    private javax.swing.JLabel jLabel163;
-    private javax.swing.JLabel jLabel164;
-    private javax.swing.JLabel jLabel165;
-    private javax.swing.JLabel jLabel166;
-    private javax.swing.JLabel jLabel167;
-    private javax.swing.JLabel jLabel168;
-    private javax.swing.JLabel jLabel169;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel170;
-    private javax.swing.JLabel jLabel171;
-    private javax.swing.JLabel jLabel172;
-    private javax.swing.JLabel jLabel173;
-    private javax.swing.JLabel jLabel174;
-    private javax.swing.JLabel jLabel175;
-    private javax.swing.JLabel jLabel176;
-    private javax.swing.JLabel jLabel177;
-    private javax.swing.JLabel jLabel178;
     private javax.swing.JLabel jLabel179;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel180;
@@ -9886,22 +6554,7 @@ Principal.setSelectedIndex(21);
     private javax.swing.JLabel jLabel201;
     private javax.swing.JLabel jLabel202;
     private javax.swing.JLabel jLabel203;
-    private javax.swing.JLabel jLabel204;
-    private javax.swing.JLabel jLabel205;
-    private javax.swing.JLabel jLabel206;
-    private javax.swing.JLabel jLabel207;
-    private javax.swing.JLabel jLabel208;
-    private javax.swing.JLabel jLabel209;
     private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel210;
-    private javax.swing.JLabel jLabel211;
-    private javax.swing.JLabel jLabel212;
-    private javax.swing.JLabel jLabel213;
-    private javax.swing.JLabel jLabel214;
-    private javax.swing.JLabel jLabel215;
-    private javax.swing.JLabel jLabel216;
-    private javax.swing.JLabel jLabel217;
-    private javax.swing.JLabel jLabel218;
     private javax.swing.JLabel jLabel219;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
@@ -9966,7 +6619,6 @@ Principal.setSelectedIndex(21);
     private javax.swing.JLabel jLabel77;
     private javax.swing.JLabel jLabel78;
     private javax.swing.JLabel jLabel79;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel80;
     private javax.swing.JLabel jLabel81;
     private javax.swing.JLabel jLabel82;
@@ -9977,7 +6629,6 @@ Principal.setSelectedIndex(21);
     private javax.swing.JLabel jLabel87;
     private javax.swing.JLabel jLabel88;
     private javax.swing.JLabel jLabel89;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabel90;
     private javax.swing.JLabel jLabel91;
     private javax.swing.JLabel jLabel92;
@@ -10003,22 +6654,10 @@ Principal.setSelectedIndex(21);
     private javax.swing.JPanel jPanel20;
     private javax.swing.JPanel jPanel21;
     private javax.swing.JPanel jPanel22;
-    private javax.swing.JPanel jPanel23;
-    private javax.swing.JPanel jPanel24;
-    private javax.swing.JPanel jPanel25;
-    private javax.swing.JPanel jPanel26;
-    private javax.swing.JPanel jPanel27;
-    private javax.swing.JPanel jPanel28;
-    private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel30;
-    private javax.swing.JPanel jPanel31;
     private javax.swing.JPanel jPanel32;
     private javax.swing.JPanel jPanel33;
-    private javax.swing.JPanel jPanel34;
     private javax.swing.JPanel jPanel35;
-    private javax.swing.JPanel jPanel37;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
@@ -10031,11 +6670,6 @@ Principal.setSelectedIndex(21);
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JScrollPane jScrollPane6;
-    private javax.swing.JScrollPane jScrollPane7;
-    private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JTextField jTextField1;
@@ -10079,17 +6713,10 @@ Principal.setSelectedIndex(21);
     private javax.swing.JLabel lbInicio12;
     private javax.swing.JLabel lbInicio13;
     private javax.swing.JLabel lbInicio14;
-    private javax.swing.JLabel lbInicio15;
-    private javax.swing.JLabel lbInicio16;
-    private javax.swing.JLabel lbInicio17;
-    private javax.swing.JLabel lbInicio18;
-    private javax.swing.JLabel lbInicio19;
     private javax.swing.JLabel lbInicio2;
     private javax.swing.JLabel lbInicio20;
     private javax.swing.JLabel lbInicio21;
-    private javax.swing.JLabel lbInicio22;
     private javax.swing.JLabel lbInicio3;
-    private javax.swing.JLabel lbInicio4;
     private javax.swing.JLabel lbInicio5;
     private javax.swing.JLabel lbInicio6;
     private javax.swing.JLabel lbInicio7;
@@ -10101,16 +6728,9 @@ Principal.setSelectedIndex(21);
     private javax.swing.JLabel lbSalir11;
     private javax.swing.JLabel lbSalir12;
     private javax.swing.JLabel lbSalir13;
-    private javax.swing.JLabel lbSalir14;
-    private javax.swing.JLabel lbSalir15;
-    private javax.swing.JLabel lbSalir16;
-    private javax.swing.JLabel lbSalir17;
-    private javax.swing.JLabel lbSalir18;
     private javax.swing.JLabel lbSalir19;
     private javax.swing.JLabel lbSalir2;
     private javax.swing.JLabel lbSalir20;
-    private javax.swing.JLabel lbSalir21;
-    private javax.swing.JLabel lbSalir3;
     private javax.swing.JLabel lbSalir4;
     private javax.swing.JLabel lbSalir5;
     private javax.swing.JLabel lbSalir6;
@@ -10123,16 +6743,9 @@ Principal.setSelectedIndex(21);
     private javax.swing.JLabel lbServicio11;
     private javax.swing.JLabel lbServicio12;
     private javax.swing.JLabel lbServicio13;
-    private javax.swing.JLabel lbServicio14;
-    private javax.swing.JLabel lbServicio15;
-    private javax.swing.JLabel lbServicio16;
-    private javax.swing.JLabel lbServicio17;
-    private javax.swing.JLabel lbServicio18;
     private javax.swing.JLabel lbServicio19;
     private javax.swing.JLabel lbServicio2;
     private javax.swing.JLabel lbServicio20;
-    private javax.swing.JLabel lbServicio21;
-    private javax.swing.JLabel lbServicio3;
     private javax.swing.JLabel lbServicio4;
     private javax.swing.JLabel lbServicio5;
     private javax.swing.JLabel lbServicio6;
@@ -10146,16 +6759,9 @@ Principal.setSelectedIndex(21);
     private javax.swing.JLabel lbTecnico11;
     private javax.swing.JLabel lbTecnico12;
     private javax.swing.JLabel lbTecnico13;
-    private javax.swing.JLabel lbTecnico14;
-    private javax.swing.JLabel lbTecnico15;
-    private javax.swing.JLabel lbTecnico16;
-    private javax.swing.JLabel lbTecnico17;
-    private javax.swing.JLabel lbTecnico18;
     private javax.swing.JLabel lbTecnico19;
     private javax.swing.JLabel lbTecnico2;
     private javax.swing.JLabel lbTecnico20;
-    private javax.swing.JLabel lbTecnico21;
-    private javax.swing.JLabel lbTecnico3;
     private javax.swing.JLabel lbTecnico4;
     private javax.swing.JLabel lbTecnico5;
     private javax.swing.JLabel lbTecnico6;
@@ -10169,125 +6775,67 @@ Principal.setSelectedIndex(21);
     private javax.swing.JLabel lbUsuario11;
     private javax.swing.JLabel lbUsuario12;
     private javax.swing.JLabel lbUsuario13;
-    private javax.swing.JLabel lbUsuario14;
-    private javax.swing.JLabel lbUsuario15;
-    private javax.swing.JLabel lbUsuario16;
-    private javax.swing.JLabel lbUsuario17;
-    private javax.swing.JLabel lbUsuario18;
     private javax.swing.JLabel lbUsuario19;
     private javax.swing.JLabel lbUsuario2;
     private javax.swing.JLabel lbUsuario20;
-    private javax.swing.JLabel lbUsuario21;
-    private javax.swing.JLabel lbUsuario3;
     private javax.swing.JLabel lbUsuario4;
     private javax.swing.JLabel lbUsuario5;
     private javax.swing.JLabel lbUsuario6;
     private javax.swing.JLabel lbUsuario7;
     private javax.swing.JLabel lbUsuario8;
     private javax.swing.JLabel lbUsuario9;
-    private javax.swing.JButton listarServicio;
     private javax.swing.JButton listarTecnico;
     private javax.swing.JButton listarUsuarios;
-    private javax.swing.JTable tblServicios;
     private javax.swing.JTable tblTecnicos;
-    private javax.swing.JTextArea txaDescripcionActualizarSrv;
-    private javax.swing.JTextArea txaDescripcionBuscarSrv;
-    private javax.swing.JTextArea txaDescripcionEditarSrv;
-    private javax.swing.JTextArea txaDescripcionSrv;
-    private javax.swing.JTextField txtApellidoClienteActualizarSrv;
-    private javax.swing.JTextField txtApellidoClienteBuscarSrv;
-    private javax.swing.JTextField txtApellidoClienteEditarSrv;
-    private javax.swing.JTextField txtApellidoClienteEliminarSrv;
-    private javax.swing.JTextField txtApellidoClienteSrv;
     private javax.swing.JTextField txtApellidosActualizarTec;
     private javax.swing.JTextField txtApellidosBuscarTec;
     private javax.swing.JTextField txtApellidosEditarTec;
     private javax.swing.JTextField txtApellidosEliminarTec;
     private javax.swing.JTextField txtApellidosTecnico;
-    private javax.swing.JTextField txtBuscarDocActualizarSrv;
     private javax.swing.JTextField txtBuscarDocActualizarTec;
-    private javax.swing.JTextField txtBuscarDocEliminarSrv;
     private javax.swing.JTextField txtBuscarDocEliminarTec;
-    private javax.swing.JTextField txtBuscarDocServicio;
     private javax.swing.JTextField txtBuscarDocTecnico;
     private javax.swing.JTextField txtCorreoActualizarTec;
     private javax.swing.JTextField txtCorreoBuscarTec;
     private javax.swing.JTextField txtCorreoEditarTec;
     private javax.swing.JTextField txtCorreoEliminarTec;
     private javax.swing.JTextField txtCorreoTecnico;
-    private javax.swing.JTextField txtDireccionActualizarSrv;
     private javax.swing.JTextField txtDireccionActualizarTec;
-    private javax.swing.JTextField txtDireccionBuscarSrv;
     private javax.swing.JTextField txtDireccionBuscarTec;
-    private javax.swing.JTextField txtDireccionClienteSrv;
-    private javax.swing.JTextField txtDireccionEditarSrv;
     private javax.swing.JTextField txtDireccionEditarTec;
-    private javax.swing.JTextField txtDireccionEliminarSrv;
     private javax.swing.JTextField txtDireccionEliminarTec;
     private javax.swing.JTextField txtDireccionTecnico;
-    private javax.swing.JTextField txtFechaActualizarSrv;
-    private javax.swing.JTextField txtFechaBuscarSrv;
-    private javax.swing.JTextField txtFechaEditarSrv;
-    private javax.swing.JTextField txtFechaEliminarSrv;
-    private javax.swing.JTextField txtFechaSrv;
     private javax.swing.JTextField txtNombreActualizarTec;
     private javax.swing.JTextField txtNombreBuscarTec;
-    private javax.swing.JTextField txtNombreClienteActualizarSrv;
-    private javax.swing.JTextField txtNombreClienteBuscarSrv;
-    private javax.swing.JTextField txtNombreClienteEditarSrv;
-    private javax.swing.JTextField txtNombreClienteEliminarSrv;
-    private javax.swing.JTextField txtNombreClienteSrv;
     private javax.swing.JTextField txtNombreEditarTec;
     private javax.swing.JTextField txtNombreEliminarTec;
     private javax.swing.JTextField txtNombreTecnico;
-    private javax.swing.JTextField txtNombreTecnicoActualizarSrv;
-    private javax.swing.JTextField txtNombreTecnicoBuscarSrv;
-    private javax.swing.JPasswordField txtNombreTecnicoEditarSrv;
-    private javax.swing.JTextField txtNombreTecnicoEliminarSrv;
-    private javax.swing.JTextField txtNombreTecnicoSrv;
-    private javax.swing.JTextField txtNumDocActualizarSrv;
     private javax.swing.JTextField txtNumDocActualizarTec;
-    private javax.swing.JTextField txtNumDocBuscarSrv;
     private javax.swing.JTextField txtNumDocBuscarTec;
-    private javax.swing.JTextField txtNumDocClienteSrv;
-    private javax.swing.JTextField txtNumDocEditarSrv;
     private javax.swing.JTextField txtNumDocEditarTec;
-    private javax.swing.JTextField txtNumDocEliminarSrv;
     private javax.swing.JTextField txtNumDocEliminarTec;
     private javax.swing.JTextField txtNumDocTecnico;
     private javax.swing.JPasswordField txtPassEditarTec;
     private javax.swing.JPasswordField txtPassTecnico;
     private javax.swing.JPasswordField txtRepetirPassEditarTec;
     private javax.swing.JPasswordField txtRepetirPassTecnico;
-    private javax.swing.JTextField txtTelefonoActualizarSrv;
     private javax.swing.JTextField txtTelefonoActualizarTec;
-    private javax.swing.JTextField txtTelefonoBuscarSrv;
     private javax.swing.JTextField txtTelefonoBuscarTec;
-    private javax.swing.JTextField txtTelefonoClienteSrv;
-    private javax.swing.JTextField txtTelefonoEditarSrv;
     private javax.swing.JTextField txtTelefonoEditarTec;
-    private javax.swing.JTextField txtTelefonoEliminarSrv;
     private javax.swing.JTextField txtTelefonoEliminarTec;
     private javax.swing.JTextField txtTelefonoTecnico;
-    private javax.swing.JButton volverActualizarServicio;
-    private javax.swing.JButton volverActualizarServicios;
     private javax.swing.JButton volverActualizarTecnico;
     private javax.swing.JButton volverActualizarTecnicos;
     private javax.swing.JButton volverActualizarUsuario;
     private javax.swing.JButton volverActualizarUsuarios;
-    private javax.swing.JButton volverAsignarNuevoServicio;
-    private javax.swing.JButton volverBuscarServicio;
     private javax.swing.JButton volverBuscarTecnico;
     private javax.swing.JButton volverBuscarUsuario;
-    private javax.swing.JButton volverEliminarServicio;
     private javax.swing.JButton volverEliminarTecnico;
     private javax.swing.JButton volverEliminarUsuario;
-    private javax.swing.JButton volverListarServicios;
     private javax.swing.JButton volverListarTecnicos;
     private javax.swing.JButton volverListarUsuarios;
     private javax.swing.JButton volverRegistrarNuevoTecnico;
     private javax.swing.JButton volverRegistrarNuevoUsuario;
-    private javax.swing.JButton volverServicio;
     private javax.swing.JButton volverTecnico;
     private javax.swing.JButton volverUsuario;
     // End of variables declaration//GEN-END:variables
